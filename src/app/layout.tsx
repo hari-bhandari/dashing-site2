@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="light">
-      <body className={`${barlow.variable} antialiased`} suppressHydrationWarning>
+      <body className={`${barlow.variable} antialiased`}>
         {children}
       </body>
     </html>
