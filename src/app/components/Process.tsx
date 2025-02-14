@@ -45,8 +45,7 @@ export default function Process() {
         {/* Left section */}
         <div className="w-[45%] flex flex-col justify-center min-h-[600px]"> {/* Added flex, justify-center and min-height */}
           <h1 className="text-4xl font-bold mb-4 text-black ">Our quick and easy onboarding process</h1>
-          <h2 className="text-2xl font-bold text-gray-500 mb-2 ">We are with you every step of the way</h2>
-          <h3 className="text-l font-semibold mb-8">We empower our clients to achieve measurable, high-impact results through tailored software solutions and a seamless onboarding experience designed for success.</h3>
+          <h3 className="text-2xl text-gray-400 font-semibold  mb-8">We empower our clients to achieve measurable, high-impact results through tailored software solutions and a seamless onboarding experience designed for success.</h3>
         </div>
 
         {/* Right section with timeline */}
@@ -127,8 +126,8 @@ export default function Process() {
           </div>
           <div ref={contentRef} className="space-y-8">
             <div className="ml-8">
-              <h3 className="text-2xl font-bold mb-2 font-sans">Request a Demo</h3>
-              <p className="text-gray-600 font-sans">
+              <h3 className="text-2xl font-bold mb-2">Request a Demo</h3>
+              <p className="text-gray-400 font-semibold">
                 Interested clients can request a live demo of our software
                 to gain a better understanding of its features and
                 capabilities. Our team will provide a comprehensive
@@ -137,8 +136,8 @@ export default function Process() {
               </p>
             </div>
             <div className="ml-8">
-              <h3 className="text-2xl font-bold mb-2 font-sans">Data Migration</h3>
-              <p className="text-gray-600 font-sans">
+              <h3 className="text-2xl font-bold mb-2">Data Migration</h3>
+              <p className="text-gray-400 font-semibold">
                 Once you decide to move forward with our software, we will
                 assist you in migrating all your data from your existing
                 platform to ours. This includes transferring customer and
@@ -147,8 +146,8 @@ export default function Process() {
               </p>
             </div>
             <div className="ml-8">
-              <h3 className="text-2xl font-bold mb-2 font-sans">Onsite Training</h3>
-              <p className="text-gray-600 font-sans">
+              <h3 className="text-2xl font-bold mb-2">Onsite Training</h3>
+              <p className="text-gray-400 font-semibold">
                 To ensure your team is well-equipped to use our software
                 effectively, we provide onsite training sessions tailored to
                 your business needs. Our trainers will cover all the essential
@@ -157,8 +156,8 @@ export default function Process() {
               </p>
             </div>
             <div className="ml-8">
-              <h3 className="text-2xl font-bold mb-2 font-sans">Go Live</h3>
-              <p className="text-gray-600 font-sans">
+              <h3 className="text-2xl font-bold mb-2">Go Live</h3>
+              <p className="text-gray-400 font-semibold">
                 After the data migration and training sessions are
                 completed, your business is ready to start using our
                 software. Our team will provide ongoing support as
