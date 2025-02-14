@@ -44,9 +44,9 @@ export default function Process() {
       <div className="flex justify-between items-center gap-8"> {/* Changed items-start to items-center */}
         {/* Left section */}
         <div className="w-[45%] flex flex-col justify-center min-h-[600px]"> {/* Added flex, justify-center and min-height */}
-          <h1 className="text-4xl font-bold mb-4 text-black font-sans">Our quick and easy onboarding process</h1>
-          <h2 className="text-2xl font-bold text-gray-500 mb-2 font-sans">We are with you every step of the way</h2>
-          <h3 className="text-l font-semibold font-sans mb-8">We empower our clients to achieve measurable, high-impact results through tailored software solutions and a seamless onboarding experience designed for success.</h3>
+          <h1 className="text-4xl font-bold mb-4 text-black ">Our quick and easy onboarding process</h1>
+          <h2 className="text-2xl font-bold text-gray-500 mb-2 ">We are with you every step of the way</h2>
+          <h3 className="text-l font-semibold mb-8">We empower our clients to achieve measurable, high-impact results through tailored software solutions and a seamless onboarding experience designed for success.</h3>
         </div>
 
         {/* Right section with timeline */}

@@ -95,7 +95,7 @@ export default function Testimonials({
         </p>
       </div>
       {/* Main content section - Added border and shadow */}
-      <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-8">
+      <div className="max-w-sm md:max-w-4xl mx-auto antialiased px-4 md:px-8 lg:px-12 py-8">
         <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
           <div>
             <div className="relative h-80 w-full">
