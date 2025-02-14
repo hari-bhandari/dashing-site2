@@ -141,7 +141,8 @@ const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-grey-400 tracking-wide leading-relaxed text-m dark:text-white"
+        "mt-8 text-grey-400 tracking-wide leading-relaxed text-m dark:text-white",
+        className
       )}
     >
       {children}
