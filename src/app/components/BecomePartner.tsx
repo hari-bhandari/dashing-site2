@@ -1,46 +1,130 @@
 "use client";
-import React from "react";
-import { BsStars } from "react-icons/bs";
 
-export default function BecomePartner() {
+import { cn } from "@/app/lib/utils";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { useState } from "react";
+
+const featureItems = [
+  {
+    id: 1,
+    title: "Real-Time Market Data",
+    description: "Access live market data and trading insights with our advanced analytics platform.",
+    link: "/features/market-data"
+  },
+  {
+    id: 2,
+    title: "Automated Trading",
+    description: "Set up automated trading rules and let our system execute trades based on your strategy.",
+    link: "/features/automated-trading"
+  },
+  {
+    id: 3,
+    title: "Risk Management",
+    description: "Comprehensive risk management tools to protect your investments and optimize returns.",
+    link: "/features/risk-management"
+  }
+];
+
+export default function FeatureDiv() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
-    <section className="mx-auto w-[60%] bg-[#22263e] relative rounded-2xl overflow-hidden">
-      <div
-        className="relative h-full [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.9),rgba(3, 196, 255, 0.8))] sm:mx-0 sm:rounded-2xl overflow-hidden"
-        style={{
-          boxShadow:
-            "0 10px 32px rgba(5, 109, 255, 0.25), 0 1px 1px rgba(0, 119, 255, 0.1), 0 0 0 1px rgba(0, 106, 255, 0.1), 0 4px 6px rgba(34, 42, 53, 0.15), 0 24px 108px rgba(123, 139, 255, 0.2)",
-        }}
-      >
-        <div className="h-full px-4 py-20 sm:px-10">
-          <Noise />
-          <div className="flex flex-col items-center justify-center text-center text-white">
-            <h2 className="text-4xl font-bold mb-4">
-              Become a Dashing Partner
-            </h2>
-            <h3 className="text-xl font-semibold mb-4">
-                test
-            </h3>
-            <button className="flex items-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25">
-              Contact Us
-              <BsStars className="w-4 h-4 text-white" />
-            </button>
-          </div>
-        </div>
+    <div className="flex flex-col items-center w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 w-[60%] mx-auto gap-4">
+        {featureItems.map((item, idx) => (
+          <Link
+            href={item.link}
+            key={item.id} // Using unique id instead of link
+            className="relative group block p-2 h-full w-full"
+            onMouseEnter={() => setHoveredIndex(idx)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <AnimatePresence>
+              {hoveredIndex === idx && (
+                <motion.span
+                  className="absolute inset-0 h-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
+                  layoutId="hoverBackground"
+                  initial={{ opacity: 0 }}
+                  animate={{
+                    opacity: 1,
+                    transition: { duration: 0.15 },
+                  }}
+                  exit={{
+                    opacity: 0,
+                    transition: { duration: 0.15, delay: 0.2 },
+                  }}
+                />
+              )}
+            </AnimatePresence>
+            <Card>
+              <CardTitle>{item.title}</CardTitle>
+              <CardDescription>{item.description}</CardDescription>
+            </Card>
+          </Link>
+        ))}
       </div>
-    </section>
+      
+      {/* Added button section */}
+      <div className="mt-8 mb-12">
+        <button className="px-8 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg">
+          Explore More Features
+        </button>
+      </div>
+    </div>
   );
 }
 
-const Noise = () => {
+const Card = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
   return (
     <div
-      className="absolute inset-0 w-full h-full scale-100 transform opacity-100"
-      style={{
-        backgroundImage: "url('/bgtest.svg')",
-        backgroundSize: "55%",
-        mixBlendMode: "overlay",
-      }}
-    ></div>
+      className={cn(
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-white border border-gray-200 shadow-lg group-hover:shadow-xl transition-all duration-200 relative z-20",
+        className
+      )}
+    >
+      <div className="relative z-50">
+        <div className="p-4">{children}</div>
+      </div>
+    </div>
+  );
+};
+
+const CardTitle = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <h4 className={cn("text-zinc-900 font-bold tracking-wide mt-4", className)}>
+      {children}
+    </h4>
+  );
+};
+
+const CardDescription = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-8 text-zinc-600 tracking-wide leading-relaxed text-sm",
+        className
+      )}
+    >
+      {children}
+    </p>
   );
 };
