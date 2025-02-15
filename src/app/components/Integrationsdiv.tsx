@@ -1,14 +1,15 @@
 "use client";
 
+import dynamic from 'next/dynamic';
 
-//import Lottie from '@lottielab/lottie-player/react';
+const Lottie = dynamic(() => import('@lottielab/lottie-player/react'), { ssr: false });
 
 export default function Integrationsdiv() {
   return (
     <div className="max-w-[60%] mx-auto py-20">
       <div className="flex items-center justify-between gap-12">
         {/* Video section */}
-        
+        <Lottie src="https://cdn.lottielab.com/l/ApkB1Vgh2nCdEM.json" autoplay />
         
         
 
