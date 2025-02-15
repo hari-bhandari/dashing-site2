@@ -46,7 +46,7 @@ export default function WobbleCard() {
               : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
             transition: "transform 0.1s ease-out",
           }}
-          className="h-full px-4 py-20 sm:px-10"
+          className="h-full px-2 py-12 sm:px-10"
         >
           <Noise />
           <div className="flex items-center justify-between gap-8 text-white">
@@ -102,10 +102,10 @@ export default function WobbleCard() {
 const Noise = () => {
   return (
     <div
-      className="absolute inset-0 w-full h-full scale-[100%] transform opacity-100 mb-6"
+      className="absolute inset-0 w-full h-full scale-[100%] transform opacity-50 mb-6"
       style={{
         backgroundImage: "url('/bgtest.svg')",
-        backgroundSize: "60%",
+        backgroundSize: "80%",
         mixBlendMode: "overlay",
       }}
     ></div>
