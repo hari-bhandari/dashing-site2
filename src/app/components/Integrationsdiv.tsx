@@ -1,7 +1,7 @@
 "use client";
 
 
-import Lottie from '@lottielab/lottie-player/react';
+//import Lottie from '@lottielab/lottie-player/react';
 
 export default function Integrationsdiv() {
   return (
@@ -9,7 +9,7 @@ export default function Integrationsdiv() {
       <div className="flex items-center justify-between gap-12">
         {/* Video section */}
         
-        <Lottie src="https://cdn.lottielab.com/l/ApkB1Vgh2nCdEM.json" autoplay />
+        
         
 
         {/* Content section */}
