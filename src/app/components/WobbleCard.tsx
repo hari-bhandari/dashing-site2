@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { IconBriefcase } from '@tabler/icons-react'; // Add this import at the top
+import {IconRobot, IconHeadset, IconDeviceDesktopCode } from '@tabler/icons-react'; 
 import { BsStars } from "react-icons/bs";
 
 export default function WobbleCard() {
@@ -63,30 +63,30 @@ export default function WobbleCard() {
             <div className="flex-1 flex flex-col gap-4"> 
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <IconBriefcase className="w-6 h-6 text-white" />
+                  <IconRobot className="w-6 h-6 text-white" />
                   <div>
-                    <h1 className="font-bold">Title</h1>
-                    <h2>Description</h2>
+                    <h1 className="font-bold">AI-Powered Workflow</h1>
+                    <h2>Ask Dashing AI streamlines RFQs, tariff codes, datasheets, and images for seamless component distribution.</h2>
                   </div>
                 </div>
               </div>
               
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <IconBriefcase className="w-6 h-6 text-white" />
+                  <IconHeadset className="w-6 h-6 text-white" />
                   <div>
-                    <h1 className="font-bold">Title</h1>
-                    <h2>Description</h2>
+                    <h1 className="font-bold">Exceptional Customer Service</h1>
+                    <h2>We deliver 24/7 unmatched support—on-site, phone, live tickets, and chat—to keep your business running smoothly.</h2>
                   </div>
                 </div>
                 
               </div>
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <IconBriefcase className="w-6 h-6 text-white" />
+                  <IconDeviceDesktopCode className="w-6 h-6 text-white" />
                   <div>
-                    <h1 className="font-bold">Title</h1>
-                    <h2>Description</h2>
+                    <h1 className="font-bold">Cutting-Edge Software Suite</h1>
+                    <h2>Broker-designed software: sales, inventory, and finance tools in one platform for efficiency</h2>
                   </div>
                 </div>
                 
