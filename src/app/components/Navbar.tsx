@@ -65,7 +65,7 @@ export default function Navbar() {
               Features
             </Link>
             <Link 
-              href="/contact" 
+              href="/your-data" 
               className="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 text-m font-medium"
             >
               Your Data
