@@ -87,7 +87,7 @@ export default function MacbookScroll({
               translateY: textTransform,
               opacity: textOpacity,
             }}
-            className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold"
+            className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950"
           >
             <BsStars className="w-4 h-4 text-blue-500" />
             <span>Unlock Full Distribution Capability</span>

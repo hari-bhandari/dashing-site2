@@ -86,17 +86,17 @@ export default function Testimonials({
     <div>
       {/* Header section */}
       <div className="text-center max-w-4xl mx-auto mb-4">
-        <h1 className="text-4xl font-bold mb-4 text-black">
+        <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
           Don&apos;t Just Take our Word for it!
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-gray-600 dark:text-white">
           Our users consistently praise our software for its user-friendly
           interface, advanced features and robust security.
         </p>
       </div>
       {/* Main content section - Added border and shadow */}
-      <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-8">
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
+      <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-8 ">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl border border-gray-200 shadow-lg dark:bg-[#22263e]">
           <div>
             <div className="relative h-80 w-full">
               <AnimatePresence>
@@ -164,13 +164,13 @@ export default function Testimonials({
                 ease: "easeInOut",
               }}
             >
-              <h3 className="text-2xl font-bold dark:text-white text-black">
+              <h3 className="text-2xl font-bold text-black dark:text-white">
                 {testimonials[active].name}
               </h3>
-              <p className="text-sm text-gray-500 dark:text-neutral-500">
+              <p className="text-sm text-gray-500 dark:text-white">
                 {testimonials[active].designation}
               </p>
-              <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
+              <motion.p className="text-lg text-gray-500 mt-8 dark:text-white">
                 {testimonials[active].quote.split(" ").map((word, index) => (
                   <motion.span
                     key={index}

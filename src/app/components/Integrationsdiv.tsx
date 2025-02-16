@@ -16,13 +16,13 @@ export default function Integrationsdiv() {
 
         {/* Content section */}
         <div className="w-1/2 flex flex-col gap-6">
-          <h2 className="text-4xl font-bold text-black">
+          <h2 className="text-4xl font-bold text-black dark:text-white">
             Seamless Integrations
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-white">
           Easily integrate Dashing with your existing software solutions to save time & money.
           </p>
-          <ul className="space-y-4 text-gray-600">
+          <ul className="space-y-4 text-gray-600 dark:text-white">
             <li className="flex items-center gap-2">
               • Easy setup and configuration
             </li>
