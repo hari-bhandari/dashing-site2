@@ -59,7 +59,7 @@ export default function Navbar() {
               About Us
             </Link>
             <Link 
-              href="/contact" 
+              href="/features" 
               className="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 text-m font-medium"
             >
               Features
