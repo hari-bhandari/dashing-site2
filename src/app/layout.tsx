@@ -20,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${barlow.variable} font-sans antialiased`}>
+    <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
+      <body className={`${barlow.variable} font-sans antialiased overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}
         </ThemeProvider>
