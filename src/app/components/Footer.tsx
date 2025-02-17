@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { IconBrandTwitter, IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
+import { IconBrandTwitter, IconBrandLinkedin } from '@tabler/icons-react';
 import ContactPopup from './ContactPopup';
 
 export default function Footer() {
