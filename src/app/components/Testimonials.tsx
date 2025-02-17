@@ -48,12 +48,15 @@ const StarRating = ({ rating = 5 }) => {
 
 export default function Testimonials({
   testimonials = defaultTestimonials,
-  autoplay = false,
+  autoplay = true, // Changed default to true
+  interval = 5000, // Added interval prop with default value
 }: {
   testimonials?: Testimonial[];
   autoplay?: boolean;
+  interval?: number;
 }) {
   const [active, setActive] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -63,16 +66,16 @@ export default function Testimonials({
     setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   }, [testimonials.length]);
 
+  useEffect(() => {
+    if (autoplay && !isPaused) {
+      const intervalId = setInterval(handleNext, interval);
+      return () => clearInterval(intervalId);
+    }
+  }, [autoplay, handleNext, interval, isPaused]);
+
   const isActive = (index: number) => {
     return index === active;
   };
-
-  useEffect(() => {
-    if (autoplay) {
-      const interval = setInterval(handleNext, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [autoplay, handleNext]);
 
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
@@ -96,7 +99,11 @@ export default function Testimonials({
       </div>
       {/* Main content section - Added border and shadow */}
       <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-8  ">
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl  shadow-lg dark:bg-slate-950 dark:border dark:border-gray-200">
+        <div 
+          className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl  shadow-lg dark:bg-slate-950 dark:border dark:border-gray-200"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
           <div>
             <div className="relative h-80 w-full">
               <AnimatePresence>
