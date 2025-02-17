@@ -63,8 +63,8 @@ export default function MacbookScroll({
   );
   const translate = useTransform(
     scrollYProgress,
-    [0, 1], // Input range (0 to 1)
-    [0, 500]  // Output range - adjust this second number to control scroll distance
+    [0, 0.5], // Input range (0 to 1)
+    [0, 300]  // Output range - adjust this second number to control scroll distance
     // Example ranges:
 // [0, 500] for shorter scroll
 // [0, 1500] for longer scroll

@@ -40,7 +40,7 @@ export default function Process() {
   );
 
   return (
-    <div className="relative w-[60%] mx-auto h-full">
+    <div className="relative w-[60%] mx-auto h-full mb-8">
       <div className="flex justify-between items-center gap-8"> 
         {/* Left section */}
         <div className="w-[45%] flex flex-col justify-center min-h-[600px]"> 

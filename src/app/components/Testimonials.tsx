@@ -85,7 +85,7 @@ export default function Testimonials({
   return (
     <div>
       {/* Header section */}
-      <div className="text-center max-w-4xl mx-auto mb-4">
+      <div className="text-center max-w-4xl mx-auto mb-8">
         <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
           Don&apos;t Just Take our Word for it!
         </h1>
@@ -95,8 +95,8 @@ export default function Testimonials({
         </p>
       </div>
       {/* Main content section - Added border and shadow */}
-      <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-8 ">
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl border border-gray-200 shadow-lg dark:bg-[#22263e]">
+      <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-8  ">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl  shadow-lg dark:bg-slate-950 dark:border dark:border-gray-200">
           <div>
             <div className="relative h-80 w-full">
               <AnimatePresence>

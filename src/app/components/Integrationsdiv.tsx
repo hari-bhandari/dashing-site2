@@ -6,7 +6,7 @@ const Lottie = dynamic(() => import('@lottielab/lottie-player/react'), { ssr: fa
 
 export default function Integrationsdiv() {
   return (
-    <div className="max-w-[60%] mx-auto py-20">
+    <div className="max-w-[60%] mx-auto pb-8">
       <div className="flex items-center justify-between gap-12">
         {/* Video section */}
         <div className="w-1/2 relative aspect-video rounded-lg overflow-hidden h-[415px]">

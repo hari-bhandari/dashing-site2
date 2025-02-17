@@ -43,9 +43,7 @@ export default function Footer() {
               <Link href="/blog" className="text-gray-600 hover:text-gray-900 dark:text-white">
                 Blog
               </Link>
-              <Link href="/docs" className="text-gray-600 hover:text-gray-900 dark:text-white">
-                Documentation
-              </Link>
+           
             </div>
           </div>
 
@@ -70,14 +68,21 @@ export default function Footer() {
               Social
             </h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-white">
+              <a 
+                href="https://x.com/dashingdisty" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 dark:text-white"
+              >
                 <IconBrandTwitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-white">
+              <a 
+                href="https://www.linkedin.com/company/dashing-distribution-software" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-900 dark:text-white"
+              >
                 <IconBrandLinkedin className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900 dark:text-white">
-                <IconBrandGithub className="h-6 w-6" />
               </a>
             </div>
           </div>
