@@ -5,8 +5,11 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun } from 'lucide-react'
+import ContactPopup from './ContactPopup';
+
 
 export default function Navbar() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -77,7 +80,11 @@ export default function Navbar() {
               Blog
             </Link>
             <Link 
-              href="/contact" 
+              href="#" 
+                onClick={(e) => {
+                e.preventDefault();
+                setIsContactOpen(true);
+                }} 
               className="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 px-3 py-2 text-m font-medium"
             >
               Contact Us
@@ -99,6 +106,12 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      <ContactPopup 
+        isOpen={isContactOpen} 
+        onClose={() => setIsContactOpen(false)} 
+      />
+
     </nav>
   )
 }

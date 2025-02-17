@@ -1,9 +1,15 @@
-import Link from 'next/link'
-import { IconBrandTwitter, IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react'
+"use client";
+
+import { useState } from 'react';
+import Link from 'next/link';
+import { IconBrandTwitter, IconBrandLinkedin, IconBrandGithub } from '@tabler/icons-react';
+import ContactPopup from './ContactPopup';
 
 export default function Footer() {
+  const [isContactOpen, setIsContactOpen] = useState(false);
+
   return (
-    <footer className= "w-full bg-white border-t border-gray-200 dark:bg-slate-950">
+    <footer className="w-full bg-white border-t border-gray-200 dark:bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -15,7 +21,14 @@ export default function Footer() {
               <Link href="/about" className="text-gray-600 hover:text-gray-900 dark:text-white">
                 About
               </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900 dark:text-white">
+              <Link 
+                href="#" 
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsContactOpen(true);
+                }}
+                className="text-gray-600 hover:text-gray-900 dark:text-white"
+              >
                 Contact
               </Link>
             </div>
@@ -77,6 +90,12 @@ export default function Footer() {
           </p>
         </div>
       </div>
+
+      {/* Add the ContactPopup component */}
+      <ContactPopup 
+        isOpen={isContactOpen} 
+        onClose={() => setIsContactOpen(false)} 
+      />
     </footer>
-  )
+  );
 }
