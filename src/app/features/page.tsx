@@ -1,5 +1,4 @@
 "use client";
-import dynamic from 'next/dynamic';
 import Navbar from '@/app/components/Navbar';
 import Footer from "@/app/components/Footer";
 import FeaturedivExpanded from "@/app/components/FeaturedivExpanded";
