@@ -49,19 +49,20 @@ export default function WobbleCard() {
           className="h-full px-2 py-12 sm:px-10"
         >
           <Noise />
-          {/* Change the flex layout to column on small screens */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white">
-            <div className="flex-1 w-full text-center md:text-left">
-              <h2 className="hidden md:block text-2xl sm:text-4xl font-bold mb-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white h-full">
+            {/* Desktop version - hidden on mobile */}
+            <div className="hidden md:flex flex-1 w-full text-center md:text-left">
+              <h2 className="text-2xl sm:text-4xl font-bold mb-4">
                 Ready to Transform Your Brokerage?
               </h2>
-              <button className="flex sm:hidden md:flex items-center justify-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 hover:cursor-pointer w-full md:w-auto">
+              <button className="flex items-center justify-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 hover:cursor-pointer md:w-auto">
                 Get Started
                 <BsStars className="w-4 h-4 text-white" />
               </button>
             </div>
             
-            <div className="flex-1 flex flex-col gap-4 w-full"> 
+            {/* Cards section */}
+            <div className="flex-1 flex flex-col gap-4 w-full">
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
                   <IconRobot className="w-6 h-6 text-white" />
@@ -92,6 +93,14 @@ export default function WobbleCard() {
                 </div>
                 
               </div>
+            </div>
+
+            {/* Mobile button - shown below md breakpoint */}
+            <div className="md:hidden w-full mt-auto">
+              <button className="flex items-center justify-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 hover:cursor-pointer w-full">
+                Get Started
+                <BsStars className="w-4 h-4 text-white" />
+              </button>
             </div>
           </div>
         </motion.div>

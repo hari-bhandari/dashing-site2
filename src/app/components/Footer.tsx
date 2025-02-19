@@ -53,7 +53,7 @@ export default function Footer() {
               Legal
             </h3>
             <div className="flex flex-col space-y-2">
-              <Link href="/privacy" className="text-gray-600 hover:text-gray-900 dark:text-white">
+              <Link href="/privacy-policy" className="text-gray-600 hover:text-gray-900 dark:text-white">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-gray-600 hover:text-gray-900 dark:text-white">
