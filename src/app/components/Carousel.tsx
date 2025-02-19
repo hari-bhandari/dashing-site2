@@ -2,17 +2,24 @@
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { useState, useRef, useId, useEffect } from "react";
 import Image from "next/image";
-// Update the slides data and interface
+// In the slides data array, add dimensions
 const slides = [
   {
-    src: "/office.webp"
+    src: "/office.webp",
+    width: 1920,
+    height: 1080
   },
   {
-    src: "/interior.webp"
+    src: "/interior.webp",
+    width: 1920,
+    height: 1080
   }
 ];
+// Update the SlideData interface
 interface SlideData {
   src: string;
+  width: number;
+  height: number;
 }
 // Update the SlideProps interface
 interface SlideProps {
@@ -57,7 +64,7 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
   const imageLoaded = (event: React.SyntheticEvent<HTMLImageElement>) => {
     event.currentTarget.style.opacity = "1";
   };
-  const { src } = slide;
+  const { src, width, height } = slide;
   return (
     <div className="[perspective:1200px] [transform-style:preserve-3d]">
       <li
@@ -90,6 +97,8 @@ const Slide = ({ slide, index, current, handleSlideClick }: SlideProps) => {
               opacity: current === index ? 1 : 0.5,
             }}
             src={src}
+            width={width}
+            height={height}
             onLoad={imageLoaded}
             loading="eager"
             decoding="sync"

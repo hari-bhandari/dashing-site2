@@ -30,7 +30,7 @@ export default function WobbleCard() {
           : "translate3d(0px, 0px, 0) scale3d(1, 1, 1)",
         transition: "transform 0.1s ease-out",
       }}
-      className="mx-auto w-[60%] bg-[#22263e] relative rounded-2xl overflow-hidden"
+      className="mx-auto w-[75%] lg:w-[60%] bg-[#22263e] relative rounded-2xl overflow-hidden"
     >
       <div
     className="relative h-full [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.9),rgba(3, 196, 255, 0.8))] sm:mx-0 sm:rounded-2xl overflow-hidden hover:cursor-pointer"
@@ -49,18 +49,19 @@ export default function WobbleCard() {
           className="h-full px-2 py-12 sm:px-10"
         >
           <Noise />
-          <div className="flex items-center justify-between gap-8 text-white">
-            <div className="flex-1">
-              <h2 className="text-4xl font-bold mb-4">
+          {/* Change the flex layout to column on small screens */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white">
+            <div className="flex-1 w-full text-center md:text-left">
+              <h2 className="hidden md:block text-2xl sm:text-4xl font-bold mb-4">
                 Ready to Transform Your Brokerage?
               </h2>
-              <button className="flex items-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 hover:cursor-pointer">
+              <button className="flex sm:hidden md:flex items-center justify-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 hover:cursor-pointer w-full md:w-auto">
                 Get Started
                 <BsStars className="w-4 h-4 text-white" />
               </button>
             </div>
             
-            <div className="flex-1 flex flex-col gap-4"> 
+            <div className="flex-1 flex flex-col gap-4 w-full"> 
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
                   <IconRobot className="w-6 h-6 text-white" />
@@ -102,12 +103,14 @@ export default function WobbleCard() {
 const Noise = () => {
   return (
     <div
-      className="absolute inset-0 w-full h-full scale-[100%] transform opacity-50 mb-6"
+      className="absolute inset-0 w-full h-full transform opacity-50"
       style={{
         backgroundImage: "url('/bgtest.svg')",
-        backgroundSize: "80%",
+        backgroundSize: "100% 100%", // This will stretch the image to fill the container
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
         mixBlendMode: "overlay",
       }}
-    ></div>
+    />
   );
 };

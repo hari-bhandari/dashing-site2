@@ -1,8 +1,6 @@
 "use client";
 import dynamic from 'next/dynamic';
-const Navbar = dynamic(() => import('@/app/components/Navbar'), {
-  ssr: false
-});
+import Navbar from '@/app/components/Navbar';
 import Footer from "@/app/components/Footer";
 import FeaturedivExpanded from "@/app/components/FeaturedivExpanded";
 

@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Partners() {
   return (
-    <div className="w-full py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="md-w-[60%] w-[75%] py-12 bg-white">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-xl font-semibold text-gray-600 mb-8">
           Our Partners
         </h2>

@@ -1,5 +1,6 @@
 "use client";
 
+import { useTheme } from 'next-themes';
 import InfoBox from '@/app/components/Featureddiv';
 import Footer from "@/app/components/Footer";
 import WobbleCard from "@/app/components/WobbleCard";
@@ -11,14 +12,21 @@ import Navbar from '@/app/components/Navbar';
 import Testimonials from '@/app/components/Testimonials';
 
 export default function Home() {
+  const { theme } = useTheme();
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
       <Navbar />
-      <MacbookScroll src="/DashingScreenshot.png"/>
-      <div className="flex flex-col gap-20 w-full -mt-[350px] "> 
-        <div className="flex flex-col gap-8"> 
-          <h1 className="text-4xl font-bold text-center dark:text-white">Unlock Unparralled Efficiency</h1>
-          <h2 className="text-xl text-gray-400 text-center dark:text-white">Streamline Processes, optimise Inventory, and Supercharge Your Sales Team with Our Cutting-Edge Solution</h2>
+      <MacbookScroll 
+        src={theme === 'dark' 
+          ? "/DarkDashingScreenshot.png" 
+          : "/DashingScreenshot.png"
+        }
+      />
+      <div className="flex flex-col gap-20 w-full mt-0 sm:mt-0 md:mt-64"> 
+        <div className="flex flex-col gap-4 md:gap-8"> 
+          <h1 className="text-3xl font-bold text-center dark:text-white lg:text-4xl">Unlock Unparralled Efficiency</h1>
+          <h2 className="text-lg text-gray-400 text-center dark:text-white lg:text-xl">Streamline Processes, optimise Inventory, and Supercharge Your Sales Team with Our Cutting-Edge Solution</h2>
           <InfoBox/>
         </div>
         <WobbleCard />

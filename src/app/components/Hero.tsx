@@ -37,40 +37,42 @@ export default function MacbookScroll({
   title?: string | React.ReactNode;
   badge?: React.ReactNode;
 }) {
+  const [isMobile, setIsMobile] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
 
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window && window.innerWidth < 768) {
-      setIsMobile(true);
-    }
-  }, []);
-
   const scaleX = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [1.2, isMobile ? 1 : 1.5]
+    [1.2, 1.5]
   );
+  
   const scaleY = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [0.6, isMobile ? 1 : 1.5]
+    [0.6, 1.5]
   );
+
   const translate = useTransform(
     scrollYProgress,
-    [0, 0.5], // Input range (0 to 1)
-    [0, 300]  // Output range - adjust this second number to control scroll distance
-    // Example ranges:
-// [0, 500] for shorter scroll
-// [0, 1500] for longer scroll
-// [0, 2000] for even longer scroll
-    
+    [0, 0.5],
+    [0, isMobile ? 1000: 150] // Reduced scroll distance on mobile
   );
+
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -78,7 +80,7 @@ export default function MacbookScroll({
   return (
     <div
         ref={ref}
-        className="min-h-[200vh] flex flex-col items-center py-0 md:py-40 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100 scale-[0.35] sm:scale-50"
+        className="h-fit-content flex flex-col items-center mt-12 md:mt-0 py-0 md:py-40 justify-start flex-shrink-0 [perspective:800px] transform scale-[0.35] sm:scale-[0.5] md:scale-100 origin-top"
       >
         <div className="text-center">
           {/* New rounded div with border */}

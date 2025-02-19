@@ -63,7 +63,7 @@ export default function FeatureDiv() {
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 w-[60%] mx-auto gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 w-[75%] md:w-[60%] mx-auto gap-4">
         {featureItems.map((item, idx) => (
           <Link
             href={item.link}
@@ -96,16 +96,6 @@ export default function FeatureDiv() {
           </Link>
         ))}
       </div>
-      
-      {/* Added button section */}
-      <div className="mt-8 mb-12">
-        <Link 
-          href="/features" 
-          className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg inline-block"
-        >
-          Explore More Features
-        </Link>
-      </div>
     </div>
   );
 }
@@ -122,10 +112,9 @@ const Card = ({
       className={cn(
         "rounded-2xl h-full w-full p-4 overflow-hidden bg-white border border-gray-200 shadow-lg group-hover:shadow-xl transition-all duration-200 relative z-20 dark:bg-slate-950",
         className
-      )}
-    >
+      )}>
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        {children}
       </div>
     </div>
   );
@@ -141,11 +130,11 @@ const CardTitle = ({
   icon: React.ElementType;
 }) => {
   return (
-    <div className="flex items-center justify-between gap-3">
-      <h4 className={cn("text-black text-2xl font-bold tracking-wide mt-4 dark:text-white", className)}>
+    <div className="flex flex-col items-center text-center">
+      <Icon className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-4" stroke={1.5} />
+      <h4 className={cn("text-black text-2xl font-bold tracking-wide dark:text-white", className)}>
         {children}
       </h4>
-      <Icon className="w-10 h-auto text-[#22263e] dark:text-white" stroke={1.5} />
     </div>
   );
 };
@@ -160,7 +149,7 @@ const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-grey-400 tracking-wide leading-relaxed text-m dark:text-white",
+        "mt-4 text-grey-400 tracking-wide leading-relaxed text-m text-center dark:text-white",
         className
       )}
     >

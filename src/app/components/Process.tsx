@@ -40,21 +40,26 @@ export default function Process() {
   );
 
   return (
-    <div className="relative w-[60%] mx-auto h-full mb-8">
-      <div className="flex justify-between items-center gap-8"> 
-        {/* Left section */}
-        <div className="w-[45%] flex flex-col justify-center min-h-[600px]"> 
-          <h1 className="text-4xl font-bold mb-4 text-black dark:text-white ">Our quick and easy onboarding process</h1>
-          <h3 className="text-2xl text-gray-400 mb-8 dark:text-white">We empower our clients to achieve measurable, high-impact results through tailored software solutions and a seamless onboarding experience designed for success.</h3>
+    <div className="relative w-[75%] md:w-[60%] mx-auto h-full mb-8">
+      {/* Flex container with column direction on mobile, row on desktop */}
+      <div className="flex flex-col md:flex-row justify-between items-center gap-8"> 
+        {/* Left section - full width on mobile */}
+        <div className="w-full md:w-[45%] flex flex-col justify-center min-h-[300px] md:min-h-[600px]"> 
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">
+            Our quick and easy onboarding process
+          </h1>
+          <h3 className="text-xl md:text-2xl text-gray-400 mb-8 dark:text-white">
+            We empower our clients to achieve measurable, high-impact results through tailored software solutions and a seamless onboarding experience designed for success.
+          </h3>
           <button className="mt-4 px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg">
             Get Started
           </button>
         </div>
 
-        {/* Right section with timeline */}
+        {/* Right section with timeline - full width on mobile */}
         <motion.div
           ref={ref}
-          className="relative w-[45%]"
+          className="relative w-full md:w-[45%]"
         >
           <div className="absolute -left-4 md:-left-20 top-3">
             <motion.div
