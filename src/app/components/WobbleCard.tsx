@@ -51,11 +51,11 @@ export default function WobbleCard() {
           <Noise />
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white h-full">
             {/* Desktop version - hidden on mobile */}
-            <div className="hidden md:flex flex-1 w-full text-center md:text-left">
+            <div className="hidden md:flex flex-1 w-full text-center md:text-left flex-col"> {/* Added flex-col */}
               <h2 className="text-2xl sm:text-4xl font-bold mb-4">
                 Ready to Transform Your Brokerage?
               </h2>
-              <button className="flex items-center justify-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 hover:cursor-pointer md:w-auto">
+              <button className="flex items-center justify-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 hover:cursor-pointer w-fit"> {/* Changed md:w-auto to w-fit */}
                 Get Started
                 <BsStars className="w-4 h-4 text-white" />
               </button>
