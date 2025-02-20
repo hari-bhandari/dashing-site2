@@ -42,7 +42,7 @@ export default function MacbookScroll({
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint
+      setIsMobile(window.innerWidth < 768); 
     };
     
     checkMobile();
