@@ -96,6 +96,16 @@ export default function FeatureDiv() {
           </Link>
         ))}
       </div>
+      
+      {/* View More Button */}
+      <div className="mt-8 mb-12">
+        <Link 
+          href="/features" 
+          className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg inline-block"
+        >
+          Explore More Features
+        </Link>
+      </div>
     </div>
   );
 }
