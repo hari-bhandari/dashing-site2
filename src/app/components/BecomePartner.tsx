@@ -70,14 +70,14 @@ export default function BecomePartner() {
 const Noise = () => {
   return (
     <div
-    className="absolute inset-0 w-full h-full transform opacity-50"
-    style={{
-      backgroundImage: "url('/bgtest.svg')",
-      backgroundSize: "100% 100%", // This will stretch the image to fill the container
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-      mixBlendMode: "overlay",
+      className="absolute inset-0 w-full h-full transform opacity-50 hidden md:block"
+      style={{
+        backgroundImage: "url('/bgtest.svg')",
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        mixBlendMode: "overlay",
       }}
-    ></div>
+    />
   );
 };

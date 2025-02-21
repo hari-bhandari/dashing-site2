@@ -112,7 +112,7 @@ export default function WobbleCard() {
 const Noise = () => {
   return (
     <div
-      className="absolute inset-0 w-full h-full transform opacity-50"
+      className="absolute inset-0 w-full h-full transform opacity-50 hidden md:block" // Added hidden md:block
       style={{
         backgroundImage: "url('/bgtest.svg')",
         backgroundSize: "100% 100%", // This will stretch the image to fill the container
