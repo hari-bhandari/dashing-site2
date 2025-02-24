@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {IconRobot, IconHeadset, IconDeviceDesktopCode } from '@tabler/icons-react'; 
 import { BsStars } from "react-icons/bs";
 
-export default function WobbleCard() {
+export default function InfoDiv() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 

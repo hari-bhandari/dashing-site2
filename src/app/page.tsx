@@ -3,7 +3,8 @@
 import { useTheme } from 'next-themes';
 import InfoBox from '@/app/components/Featureddiv';
 import Footer from "@/app/components/Footer";
-import WobbleCard from "@/app/components/WobbleCard";
+import InfoDiv from './components/InfoDiv';
+import InfoDivMobile from "@/app/components/InfoDivMobile";
 import Process from "@/app/components/Process";
 import BecomePartner from "@/app/components/BecomePartner";
 import Integrationsdiv from "@/app/components/Integrationsdiv";
@@ -29,7 +30,12 @@ export default function Home() {
           <h2 className="text-lg text-gray-400 text-center dark:text-white lg:text-xl">Streamline Processes, optimise Inventory, and Supercharge Your Sales Team with Our Cutting-Edge Solution</h2>
           <InfoBox/>
         </div>
-        <WobbleCard />
+        <div className="block md:hidden">
+          <InfoDivMobile />
+        </div>
+        <div className="hidden md:block">
+          <InfoDiv />
+        </div>
         <Integrationsdiv/>
         <Testimonials />
         <Process />
