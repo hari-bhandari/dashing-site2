@@ -63,17 +63,3 @@ export default function InfoDivMobile() {
   );
 }
 
-const StaticNoise = () => {
-  return (
-    <div
-      className="absolute inset-0 w-full h-full transform opacity-50 hidden md:block"
-      style={{
-        backgroundImage: "url('/bgtest.svg')",
-        backgroundSize: "100% 100%",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        mixBlendMode: "overlay",
-      }}
-    />
-  );
-};
