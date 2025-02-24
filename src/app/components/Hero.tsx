@@ -17,7 +17,6 @@ import {
   IconVolume,
   IconVolume2,
   IconVolume3,
-
 } from "@tabler/icons-react";
 import { BsStars } from "react-icons/bs";
 import { IconSearch } from "@tabler/icons-react";
@@ -44,10 +43,10 @@ export default function MacbookScroll({
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768); // md breakpoint
     };
-    
+
     checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const { scrollYProgress } = useScroll({
@@ -55,22 +54,14 @@ export default function MacbookScroll({
     offset: ["start start", "end start"],
   });
 
-  const scaleX = useTransform(
-    scrollYProgress,
-    [0, 0.3],
-    [1.2, 1.5]
-  );
-  
-  const scaleY = useTransform(
-    scrollYProgress,
-    [0, 0.3],
-    [0.6, 1.5]
-  );
+  const scaleX = useTransform(scrollYProgress, [0, 0.3], [1.2, 1.5]);
+
+  const scaleY = useTransform(scrollYProgress, [0, 0.3], [0.6, 1.5]);
 
   const translate = useTransform(
     scrollYProgress,
     [0, 0.5],
-    [0, isMobile ? 1000: 150] // Reduced scroll distance on mobile
+    [0, isMobile ? 1000 : 150] // Reduced scroll distance on mobile
   );
 
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
@@ -78,88 +69,116 @@ export default function MacbookScroll({
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   return (
-    <div
-        ref={ref}
-        className="h-fit-content flex flex-col items-center mt-12 md:mt-0 py-0 md:py-40 justify-start flex-shrink-0 [perspective:800px] transform scale-[0.35] sm:scale-[0.5] md:scale-100 origin-top"
-      >
-        <div className="text-center">
-          {/* New rounded div with border */}
-          <motion.div
-            style={{
-              translateY: textTransform,
-              opacity: textOpacity,
-            }}
-            className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950"
-          >
+    <>
+      {/* Mobile View */}
+      <div className="md:hidden w-full flex flex-col items-center justify-center py-8">
+        <div className="text-center px-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950">
             <BsStars className="w-4 h-4 text-blue-500" />
             <span>Unlock Full Distribution Capability</span>
-          </motion.div>
+          </div>
 
-          <motion.h2
-            style={{
-              translateY: textTransform,
-              opacity: textOpacity,
-            }}
-            className="dark:text-white text-neutral-800 text-5xl font-semibold mb-12 text-center"
-          >
-            {title || (
-              <span>
-                Software Built By Brokers For Brokers
-              </span>
-            )}
-          </motion.h2>
-          <motion.p
-            style={{
-              translateY: textTransform,
-              opacity: textOpacity,
-            }}
-            className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto"
-          >
+          <h2 className="dark:text-white text-neutral-800 text-4xl font-semibold mb-8">
+            {title || <span>Software Built By Brokers For Brokers</span>}
+          </h2>
+          <p className="text-gray-400 text-base mb-8">
             Empower your business with cutting-edge software to manage, optimise, and expand
             your distribution operations seamlessly.
-          </motion.p>
-          {/* New button */}
-          <motion.div className="mb-12">
+          </p>
+          <div className="mb-8">
             <button className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg">
-          Get Started
-        </button>
-          </motion.div>
-        </div>
-      {/* Lid */}
-      <Lid
-        src={src}
-        scaleX={scaleX}
-        scaleY={scaleY}
-        rotate={rotate}
-        translate={translate}
-      />
-      {/* Base area */}
-      <div className="h-[22rem] w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
-        {/* above keyboard bar */}
-        <div className="h-10 w-full relative">
-          <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
-        </div>
-        <div className="flex relative">
-          <div className="mx-auto w-[10%] overflow-hidden  h-full">
-            <SpeakerGrid />
+              Get Started
+            </button>
           </div>
-          <div className="mx-auto w-[80%] h-full">
-            <Keypad />
-          </div>
-          <div className="mx-auto w-[10%] overflow-hidden  h-full">
-            <SpeakerGrid />
+          {/* Optional: Add a mobile-optimized image */}
+          <div className="w-full max-w-sm mx-auto">
+            <Image
+              src={src as string}
+              alt="Product Preview"
+              width={400}
+              height={300}
+              className="rounded-lg shadow-xl"
+            />
           </div>
         </div>
-        <Trackpad />
-        <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
-        {showGradient && (
-          <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
-        )}
-        {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
       </div>
-    </div>
+
+      {/* Desktop MacBook View */}
+      <div className="hidden md:block">
+        <div
+          ref={ref}
+          className="h-fit-content flex flex-col items-center py-40 justify-start flex-shrink-0 [perspective:800px] transform scale-100 origin-top"
+        >
+          <div className="text-center">
+            {/* New rounded div with border */}
+            <motion.div
+              style={{
+                translateY: textTransform,
+                opacity: textOpacity,
+              }}
+              className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950"
+            >
+              <BsStars className="w-4 h-4 text-blue-500" />
+              <span>Unlock Full Distribution Capability</span>
+            </motion.div>
+
+            <motion.h2
+              style={{
+                translateY: textTransform,
+                opacity: textOpacity,
+              }}
+              className="dark:text-white text-neutral-800 text-5xl font-semibold mb-12 text-center"
+            >
+              {title || <span>Software Built By Brokers For Brokers</span>}
+            </motion.h2>
+            <motion.p
+              style={{
+                translateY: textTransform,
+                opacity: textOpacity,
+              }}
+              className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto"
+            >
+              Empower your business with cutting-edge software to manage, optimise, and expand
+              your distribution operations seamlessly.
+            </motion.p>
+            {/* New button */}
+            <motion.div className="mb-12">
+              <button className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg">
+                Get Started
+              </button>
+            </motion.div>
+          </div>
+          {/* Lid */}
+          <Lid src={src} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
+          {/* Base area */}
+          <div className="h-[22rem] w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
+            {/* above keyboard bar */}
+            <div className="h-10 w-full relative">
+              <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
+            </div>
+            <div className="flex relative">
+              <div className="mx-auto w-[10%] overflow-hidden  h-full">
+                <SpeakerGrid />
+              </div>
+              <div className="mx-auto w-[80%] h-full">
+                <Keypad />
+              </div>
+              <div className="mx-auto w-[10%] overflow-hidden  h-full">
+                <SpeakerGrid />
+              </div>
+            </div>
+            <Trackpad />
+            <div className="h-2 w-20 mx-auto inset-x-0 absolute bottom-0 bg-gradient-to-t from-[#272729] to-[#050505] rounded-tr-3xl rounded-tl-3xl" />
+            {showGradient && (
+              <div className="h-40 w-full absolute bottom-0 inset-x-0 bg-gradient-to-t dark:from-black from-white via-white dark:via-black to-transparent z-50"></div>
+            )}
+            {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
+          </div>
+        </div>
+      </div>
+    </>
   );
-};
+}
 
 export const Lid = ({
   scaleX,
@@ -190,9 +209,7 @@ export const Lid = ({
           }}
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
-          <span className="text-white">
-            
-          </span>
+          <span className="text-white"></span>
         </div>
       </div>
       <motion.div
