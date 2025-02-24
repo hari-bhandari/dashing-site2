@@ -65,7 +65,7 @@ export default function WobbleCard() {
             <div className="flex-1 flex flex-col gap-4 w-full">
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <IconRobot className="w-6 h-6 text-white" />
+                  <IconRobot className="w-10 h-10 text-white" />
                   <div>
                     <h1 className="font-bold">AI-Powered Workflow</h1>
                     <h2>Ask Dashing AI streamlines RFQs, tariff codes, datasheets, and images for seamless component distribution.</h2>
@@ -75,7 +75,7 @@ export default function WobbleCard() {
               
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <IconHeadset className="w-6 h-6 text-white" />
+                  <IconHeadset className="w-10 h-10 text-white" />
                   <div>
                     <h1 className="font-bold">Exceptional Customer Service</h1>
                     <h2>We deliver 24/7 unmatched support—on-site, phone, live tickets, and chat—to keep your business running smoothly.</h2>
@@ -85,7 +85,7 @@ export default function WobbleCard() {
               </div>
               <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                 <div className="flex items-center gap-3">
-                  <IconDeviceDesktopCode className="w-6 h-6 text-white" />
+                  <IconDeviceDesktopCode className="w-10 h-10 text-white" />
                   <div>
                     <h1 className="font-bold">Cutting-Edge Software Suite</h1>
                     <h2>Broker-designed software: sales, inventory, and finance tools in one platform for efficiency</h2>

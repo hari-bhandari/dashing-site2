@@ -12,20 +12,20 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",],
   
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-barlow)"],
-      },
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+  	extend: {
+  		fontFamily: {
+  			sans: ["var(--font-barlow)"],
+  		},
+  		colors: {
+  			background: "var(--background)",
+  			foreground: "var(--foreground)",
   },
 },
   },
   plugins: [
     // rest of the code
     addVariablesForColors,
-  ],
+      ],
 }; 
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).

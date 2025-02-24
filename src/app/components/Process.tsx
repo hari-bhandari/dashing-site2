@@ -45,9 +45,7 @@ export default function Process() {
         {/* Left section */}
         <div className="w-[45%] flex flex-col justify-center min-h-[600px]"> {/* Added flex, justify-center and min-height */}
           <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">Our quick and easy onboarding process</h1>
-          <h2 className="text-2xl font-bold mb-2 dark:text-white">We are with you every step of the way</h2>
-          <h3 className="text-l font-semibold  text-gray-400 mb-8 dark:text-white">We empower our clients to achieve measurable, high-impact results through tailored software solutions and a seamless onboarding experience designed for success.</h3>
-          <button className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg inline-block dark:text-white">Get Started</button>      
+          <button className="text-l font-semibold py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg inline-block dark:text-white">Get Started</button>      
         </div>
 
         {/* Right section with timeline */}

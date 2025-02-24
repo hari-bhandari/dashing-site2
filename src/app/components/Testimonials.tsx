@@ -90,7 +90,7 @@ export default function Testimonials({
       {/* Header section */}
       <div className="text-center max-w-4xl mx-auto mb-8">
         <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
-          Don&apos;t Just Take our Word for it!
+          Don&apos;t Just Take Our Word For It!
         </h1>
         <p className="text-xl text-gray-600 dark:text-white">
           Our users consistently praise our software for its user-friendly
