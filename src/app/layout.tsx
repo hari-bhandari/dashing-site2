@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
+      <SpeedInsights />
       <body className={`${barlow.variable} font-sans antialiased overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="light">
           {children}
