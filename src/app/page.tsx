@@ -6,7 +6,7 @@ import Footer from "@/app/components/Footer";
 import InfoDiv from './components/InfoDiv';
 import InfoDivMobile from "@/app/components/InfoDivMobile";
 import BecomePartner from "@/app/components/BecomePartner";
-import Integrationsdiv from "@/app/components/Integrationsdiv";
+
 import MacbookScroll from '@/app/components/Hero';
 import Navbar from '@/app/components/Navbar';
 import Testimonials from '@/app/components/Testimonials';
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="hidden md:block">
           <InfoDiv />
         </div>
-        <Integrationsdiv/>
+      
         <Testimonials />
         <Timeline />
         <BecomePartner />
