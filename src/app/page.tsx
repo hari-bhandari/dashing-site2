@@ -5,12 +5,12 @@ import InfoBox from '@/app/components/Featureddiv';
 import Footer from "@/app/components/Footer";
 import InfoDiv from './components/InfoDiv';
 import InfoDivMobile from "@/app/components/InfoDivMobile";
-import Process from "@/app/components/Process";
 import BecomePartner from "@/app/components/BecomePartner";
 import Integrationsdiv from "@/app/components/Integrationsdiv";
 import MacbookScroll from '@/app/components/Hero';
 import Navbar from '@/app/components/Navbar';
 import Testimonials from '@/app/components/Testimonials';
+import Timeline from './components/Timeline';
 
 export default function Home() {
   const { theme } = useTheme();
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
         <Integrationsdiv/>
         <Testimonials />
-        <Process />
+        <Timeline />
         <BecomePartner />
         <Footer /> 
       </div>
