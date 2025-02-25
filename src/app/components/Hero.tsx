@@ -71,7 +71,7 @@ export default function MacbookScroll({
   return (
     <>
       {/* Mobile View */}
-      <div className="md:hidden w-full flex flex-col items-center justify-center py-8">
+      <div className="md:hidden w-full flex flex-col items-center justify-center py-40">
         <div className="text-center px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950">
             <BsStars className="w-4 h-4 text-blue-500" />
@@ -107,7 +107,7 @@ export default function MacbookScroll({
       <div className="hidden md:block">
         <div
           ref={ref}
-          className="h-fit-content flex flex-col items-center py-40 justify-start flex-shrink-0 [perspective:800px] transform scale-100 origin-top"
+          className="h-fit-content flex flex-col items-center py-64 justify-start flex-shrink-0 [perspective:800px] transform scale-100 origin-top"
         >
           <div className="text-center">
             {/* New rounded div with border */}
