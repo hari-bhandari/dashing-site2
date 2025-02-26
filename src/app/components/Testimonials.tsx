@@ -210,6 +210,7 @@ export default function Testimonials({
                   e.stopPropagation();
                   handlePrev();
                 }}
+                aria-label="Previous testimonial"
                 className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-[999]"
               >
                 <IconArrowLeft className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
@@ -219,6 +220,7 @@ export default function Testimonials({
                   e.stopPropagation();
                   handleNext();
                 }}
+                aria-label="Next testimonial"
                 className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-[999]"
               >
                 <IconArrowRight className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
