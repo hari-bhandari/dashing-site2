@@ -5,6 +5,7 @@ import {
   motion,
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { BsStars } from "react-icons/bs";
 
 interface TimelineEntry {
   title: string;
@@ -59,6 +60,7 @@ export default function Timeline() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
   const [activeDotIndex, setActiveDotIndex] = useState(-1);
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
   useEffect(() => {
     if (ref.current) {
@@ -112,11 +114,18 @@ export default function Timeline() {
             <h2 className="text-2xl md:text-4xl mb-4 text-black dark:text-white font-bold">
               Our quick and easy onboarding process
             </h2>
-            <p className="text-neutral-700 dark:text-white text-gray-400 text-lg md:text-lg">
+            <p className="text-neutral-700 dark:text-white text-gray-400 text-lg md:text-lg mb-6">
               We empower our clients to achieve measurable, high-impact results through 
               tailored software solutions and a seamless onboarding experience designed 
               for success.
             </p>
+            <button 
+              className="flex items-center gap-2 bg-[#22263e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors relative z-[60]"
+              onClick={() => setIsCalendlyOpen(true)}
+            >
+              Get Started
+              <BsStars className="w-4 h-4 text-white" />
+            </button>
           </div>
         </div>
 

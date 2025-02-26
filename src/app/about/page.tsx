@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
       <Navbar />
-      <div className="w-full flex flex-col gap-10 mt-14">
+      <div className="w-full flex flex-col gap-10 mt-32">
         <h1 className="text-center text-5xl font-bold dark:text-white">Who are we?</h1>
         <h2 className="text-xl text-gray-500 text-center font-semibold max-w-[60%] mx-auto dark:text-white">
           Dashing Distribution Software are the provider of the most comprehensive, electronic component distribution software, on the market today. Combining cutting edge technology, with timeless principles.

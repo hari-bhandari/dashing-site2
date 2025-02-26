@@ -6,11 +6,14 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun, Menu, X } from 'lucide-react'
 import ContactPopup from './ContactPopup'
+import { InlineWidget } from "react-calendly";
+import CalendlyPopup from './CalendlyPopup'
 
 export default function Navbar() {
   const [isContactOpen, setIsContactOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false)
   const { theme, setTheme } = useTheme()
 
   useEffect(() => {
@@ -137,7 +140,10 @@ export default function Navbar() {
                 <Moon className="h-5 w-5 text-gray-800 dark:text-gray-200" />
               )}
             </button>
-            <button className='bg-[#22263e] hover:bg-blue-700 text-white text-xs md:text-sm lg:text-base font-semibold py-2 px-2 md:px-4 rounded-xl'>
+            <button 
+              onClick={() => setIsCalendlyOpen(true)}
+              className='bg-[#22263e] hover:bg-blue-700 text-white text-xs md:text-sm lg:text-base font-semibold py-2 px-2 md:px-4 rounded-xl'
+            >
               Book a Demo 
             </button>
           </div>
@@ -171,7 +177,7 @@ export default function Navbar() {
               <div className="mt-6 pt-6 border-t border-gray-200 dark:border-gray-800">
                 <button 
                   className='w-full bg-[#22263e] hover:bg-blue-700 text-white font-medium font-semibold py-3 px-4 rounded-xl transition-colors duration-200'
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={() => setIsCalendlyOpen(true)}
                 >
                   Book a Demo
                 </button>
@@ -180,6 +186,14 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+
+      
+      {isCalendlyOpen && (
+    <CalendlyPopup 
+        isOpen={isCalendlyOpen} 
+        onClose={() => setIsCalendlyOpen(false)}
+    />
+    )}
 
       <ContactPopup 
         isOpen={isContactOpen} 

@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
       <Navbar />
-      <div className=' mt-14 max-w-[60%] mx-auto'>
+      <div className=' mt-32 max-w-[60%] mx-auto'>
         <h1 className="text-center text-5xl font-bold dark:text-white">Your Data is your Data</h1>
         <h2 className="text-xl text-gray-500 text-center mx-auto dark:text-white mt-4">Your data is what makes your business unique. We understand the importance of keeping your data safe and secure. Our software is designed to work independently from your data, ensuring you have complete control over your valuable company information.</h2>
       </div>
