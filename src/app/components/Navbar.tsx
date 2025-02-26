@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun, Menu, X } from 'lucide-react'
 import ContactPopup from './ContactPopup'
-import { InlineWidget } from "react-calendly";
 import CalendlyPopup from './CalendlyPopup'
 
 export default function Navbar() {

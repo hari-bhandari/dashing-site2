@@ -25,7 +25,7 @@ import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import CalendlyPopup from "./CalendlyPopup";
-import { s } from "framer-motion/client";
+
 
 export default function MacbookScroll({
   src,

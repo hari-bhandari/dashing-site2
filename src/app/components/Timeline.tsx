@@ -6,6 +6,7 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { BsStars } from "react-icons/bs";
+import CalendlyPopup from "./CalendlyPopup";
 
 interface TimelineEntry {
   title: string;
@@ -178,6 +179,10 @@ export default function Timeline() {
           </div>
         </div>
       </div>
+      <CalendlyPopup 
+        isOpen={isCalendlyOpen}
+        onClose={() => setIsCalendlyOpen(false)}
+      />
     </div>
   );
 }
