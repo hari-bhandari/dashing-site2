@@ -18,7 +18,12 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+// Fix the params type to match Next.js requirements
+export default async function BlogPostPage({ 
+  params 
+}: { 
+  params: { slug: string } 
+}) {
   const post = await getBlogPostBySlug(params.slug);
   
   if (!post) {
