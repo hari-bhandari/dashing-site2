@@ -1,5 +1,4 @@
 import { createClient } from 'contentful';
-import { Document } from '@contentful/rich-text-types';
 
 // Initialize Contentful client with your space ID and access token
 // This will only run on the server
@@ -32,7 +31,7 @@ export interface BlogPost {
       };
     };
     excerpt?: string;
-    content: Document; // Rich text content typed correctly
+    content: Document; // Rich text content
     author?: {
       fields: {
         name: string;

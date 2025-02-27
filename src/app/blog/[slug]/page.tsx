@@ -4,10 +4,12 @@ import RichText from "@/app/components/RichText";
 import { getBlogPostBySlug, getAllBlogPosts } from '@/app/lib/contentful';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { Metadata } from 'next';
 
 export const dynamic = 'force-dynamic';
+// Or use a specific revalidation period (in seconds)
+// export const revalidate = 3600; // Revalidate at most every hour
 
+// Generate static paths for all blog posts
 export async function generateStaticParams() {
   const posts = await getAllBlogPosts();
   
@@ -16,16 +18,12 @@ export async function generateStaticParams() {
   }));
 }
 
-interface BlogPostPageProps {
-  params: {
-    slug: string;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-
+// Use a simple type definition that works with Next.js
 export default async function BlogPostPage({ 
   params 
-}: BlogPostPageProps) {
+}: { 
+  params: { slug: string } 
+}) {
   const post = await getBlogPostBySlug(params.slug);
   
   if (!post) {
