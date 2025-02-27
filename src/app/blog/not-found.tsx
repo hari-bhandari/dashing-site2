@@ -12,7 +12,7 @@ export default function BlogNotFound() {
           <h1 className="text-6xl font-bold mb-4 dark:text-white">404</h1>
           <h2 className="text-2xl font-semibold mb-6 dark:text-white">Blog Post Not Found</h2>
           <p className="text-gray-600 dark:text-gray-400 mb-8">
-            We couldn't find the blog post you were looking for.
+            We couldn&apos;t find the blog post you were looking for.
           </p>
           <Link 
             href="/blog" 
