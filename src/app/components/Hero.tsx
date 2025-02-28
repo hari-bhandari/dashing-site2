@@ -25,7 +25,7 @@ import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import CalendlyPopup from "./CalendlyPopup";
-
+import Typewriter from "./Typewriter"; // Import the default export
 
 export default function MacbookScroll({
   src,
@@ -71,6 +71,34 @@ export default function MacbookScroll({
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
+  // Define the typewriter words for the heading
+  const typewriterWords = [
+    {
+      text: "Software",
+      className: "text-neutral-800 dark:text-white",
+    },
+    {
+      text: "Built",
+      className: "text-neutral-800 dark:text-white",
+    },
+    {
+      text: "By",
+      className: "text-neutral-800 dark:text-white",
+    },
+    {
+      text: "Brokers",
+      className: "text-blue-500",
+    },
+    {
+      text: "For",
+      className: "text-neutral-800 dark:text-white",
+    },
+    {
+      text: "Brokers",
+      className: "text-blue-500",
+    },
+  ];
+
   return (
     <>
       {/* Mobile View */}
@@ -81,9 +109,14 @@ export default function MacbookScroll({
             <span>Unlock Full Distribution Capability</span>
           </div>
 
-          <h2 className="dark:text-white text-neutral-800 text-4xl font-semibold mb-8">
-            {title || <span>Software Built By Brokers For Brokers</span>}
-          </h2>
+          {/* Replace static heading with Typewriter */}
+          {title || 
+            <Typewriter
+              words={typewriterWords}
+              className="mb-6 text-center text-5xl md:text-5xl flex justify-center" /* Added flex justify-center */
+            />
+          }
+          
           <p className="text-gray-400 text-base mb-8">
             Empower your business with cutting-edge software to manage, optimise, and expand
             your distribution operations seamlessly.
@@ -132,15 +165,22 @@ export default function MacbookScroll({
               <span>Unlock Full Distribution Capability</span>
             </motion.div>
 
-            <motion.h2
+            {/* Replace static heading with Typewriter inside motion div */}
+            <motion.div
               style={{
                 translateY: textTransform,
                 opacity: textOpacity,
               }}
-              className="dark:text-white text-neutral-800 text-5xl font-semibold mb-12 text-center"
+              className="mb-8 flex flex-col items-center" /* Added flex-col items-center */
             >
-              {title || <span>Software Built By Brokers For Brokers</span>}
-            </motion.h2>
+              {title || 
+                <Typewriter
+                  words={typewriterWords}
+                  className="text-center text-4xl md:text-5xl"
+                />
+              }
+            </motion.div>
+            
             <motion.p
               style={{
                 translateY: textTransform,
