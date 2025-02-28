@@ -64,7 +64,7 @@ export default function MacbookScroll({
   const translate = useTransform(
     scrollYProgress,
     [0, 0.5],
-    [0, isMobile ? 1000 : 150] // Reduced scroll distance on mobile
+    [0, isMobile ? 1000 : 325] 
   );
 
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
