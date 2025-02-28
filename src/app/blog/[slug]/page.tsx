@@ -1,6 +1,6 @@
 import Navbar from '@/app/components/Navbar';
 import Footer from "@/app/components/Footer";
-import RichText from "@/app/components/RichText";
+import RichText from "@/app/components/Blog/RichText";
 import { getBlogPostBySlug, getAllBlogPosts } from '@/app/lib/contentful';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';

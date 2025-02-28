@@ -7,7 +7,7 @@ import InfoDiv from './components/InfoDiv';
 import InfoDivMobile from "@/app/components/InfoDivMobile";
 import BecomePartner from "@/app/components/BecomePartner";
 import Integrationsdiv from "@/app/components/Integrationsdiv";
-import MacbookScroll from '@/app/components/Hero';
+import MacbookScroll from '@/app/components/Hero/Hero';
 import Navbar from '@/app/components/Navbar';
 import Testimonials from '@/app/components/Testimonials';
 import Timeline from './components/Timeline';
