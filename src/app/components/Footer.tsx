@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { IconBrandTwitter, IconBrandLinkedin } from '@tabler/icons-react';
+import {IconBrandLinkedin } from '@tabler/icons-react';
 import ContactPopup from './ContactPopup';
 
 export default function Footer() {
@@ -76,7 +76,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4 dark:text-white">
               Social
             </h3>
-            <div className="flex space-x-4">
+            <div className="flex">
               <a 
                 href="https://x.com/dashingdisty" 
                 target="_blank" 
@@ -84,7 +84,6 @@ export default function Footer() {
                 aria-label="Visit Dashing Distribution on X (formerly Twitter)"
                 className="text-gray-600 hover:text-gray-900 dark:text-white"
               >
-                <IconBrandTwitter className="h-6 w-6" aria-hidden="true" />
               </a>
               <a 
                 href="https://www.linkedin.com/company/dashing-distribution-software" 

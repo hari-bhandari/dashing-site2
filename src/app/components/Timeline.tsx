@@ -35,11 +35,11 @@ const timelineData: TimelineEntry[] = [
       ),
     },
     {
-      title: "Onsite Training",
+      title: "On-site Training",
       content: (
         <div className="prose prose-sm dark:prose-invert">
           <p className="text-neutral-600 dark:text-neutral-300">
-            To ensure your team is well-equipped to use our software effectively, we provide onsite training sessions tailored to your business needs. Our trainers will cover all the essential features and functionalities, as well as any specific areas of interest for your team.
+            To ensure your team is well-equipped to use our software effectively, we provide on-site training sessions tailored to your business needs. Our trainers will cover all the essential features and functionalities, as well as any specific areas of interest for your team.
           </p>
         </div>
       ),

@@ -106,7 +106,7 @@ export default function MacbookScroll({
         <div className="text-center px-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950">
             <BsStars className="w-4 h-4 text-blue-500" />
-            <span>Unlock Full Distribution Capability</span>
+            <span>Sell With Confidence & Ease</span>
           </div>
 
           {/* Static heading for mobile instead of Typewriter */}
@@ -122,14 +122,13 @@ export default function MacbookScroll({
           }
           
           <p className="text-gray-400 text-base mb-8">
-            Empower your business with cutting-edge software to manage, optimise, and expand
-            your distribution operations seamlessly.
+          Unlock your business&apos;s full potential with innovative software designed to effortlessly manage, optimise, and scale your distribution operations, driving efficiency and growth every step of the way
           </p>
           <div className="mb-8">
             <button 
               className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg"
               onClick={() => setIsCalendlyOpen(true)}>
-              Get Started
+              Book a Demo
             </button>
           </div>
           {/* Optional: Add a mobile-optimized image */}
@@ -166,7 +165,7 @@ export default function MacbookScroll({
               className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950"
             >
               <BsStars className="w-4 h-4 text-blue-500" />
-              <span>Unlock Full Distribution Capability</span>
+              <span>Sell With Confidence & Ease</span>
             </motion.div>
 
             {/* Replace static heading with Typewriter inside motion div */}
@@ -192,15 +191,14 @@ export default function MacbookScroll({
               }}
               className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto"
             >
-              Empower your business with cutting-edge software to manage, optimise, and expand
-              your distribution operations seamlessly.
+              Unlock your business&apos;s full potential with innovative software designed to effortlessly manage, optimise, and scale your distribution operations, driving efficiency and growth every step of the way
             </motion.p>
             {/* New button */}
             <motion.div className="mb-12">
               <button 
                 className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg"
                 onClick={() => setIsCalendlyOpen(true)}>
-                Get Started
+                Book a Demo
               </button>
             </motion.div>
           </div>
@@ -213,13 +211,13 @@ export default function MacbookScroll({
               <div className="absolute inset-x-0 mx-auto w-[80%] h-4 bg-[#050505]" />
             </div>
             <div className="flex relative">
-              <div className="mx-auto w-[10%] overflow-hidden  h-full">
+              <div className="mx-auto w-[10%] overflow-hidden h-full">
                 <SpeakerGrid />
               </div>
               <div className="mx-auto w-[80%] h-full">
                 <Keypad />
               </div>
-              <div className="mx-auto w-[10%] overflow-hidden  h-full">
+              <div className="mx-auto w-[10%] overflow-hidden h-full">
                 <SpeakerGrid />
               </div>
             </div>
@@ -230,6 +228,28 @@ export default function MacbookScroll({
             )}
             {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
           </div>
+          
+          {/* Motion button that follows the screen */}
+          <motion.div 
+            className="text-center mt-8"
+            style={{
+              opacity: useTransform(scrollYProgress, [0.22, 0.3], [0, 1]),
+              translateY: useTransform(translate, 
+                [0, 100, 200, 325], 
+                [0, 100, 200, 325]
+              ),
+              position: "relative",
+              zIndex: 10,
+              width: "48rem", // Match the MacBook width
+              maxWidth: "100%"
+            }}
+          >
+            <button 
+              className="px-8 py-3 mt-8 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg w-full mx-auto"
+              onClick={() => setIsCalendlyOpen(true)}>
+              Learn More
+            </button>
+          </motion.div>
         </div>
         <CalendlyPopup isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
       </div>

@@ -2,7 +2,6 @@
 
 import { cn } from "@/app/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
 import {
   IconDashboard,
@@ -33,7 +32,7 @@ const featureItems: FeatureItem[] = [
   {
     id: 1,
     title: "Interactive Dashboard",
-    description: "Experience a colorful and informative dashboard with an interactive map to visualize your global business reach. Monitor sales, invoicing, quote-to-order ratios, and company performance against targets with shortcut icons for easy navigation.",
+    description: "Experience a colourful and informative dashboard with an interactive map to visualize your global business reach. Monitor sales, invoicing, quote-to-order ratios, and company performance against targets with shortcut icons for easy navigation.",
     link: "/features/market-data",
     icon: IconDashboard
   },
@@ -75,7 +74,7 @@ const featureItems: FeatureItem[] = [
   {
     id: 7,
     title: "Purchasing",
-    description: "Streamline purchasing with one-click online purchasing for web shop suppliers, authorized spend control on purchase orders, and management of back orders, sourcing, and resourcing. Receive detailed email notifications for purchase order arrivals.",
+    description: "Streamline purchasing with one-click online purchasing for web shop suppliers, authorised spend control on purchase orders, and management of back orders, sourcing, and resourcing. Receive detailed email notifications for purchase order arrivals.",
     link: "/features/risk-management",
     icon: IconShoppingCart
   },
@@ -96,7 +95,7 @@ const featureItems: FeatureItem[] = [
   {
     id: 11,
     title: "Excess Stock Management",
-    description: "Optimize excess stock management with a dedicated dashboard, live monitoring of bids, quotes, and purchases, consigned inventory tracking, and stock and financial report generation. Incorporate WooCommerce Auto Posting for added efficiency.",
+    description: "Optimise excess stock management with a dedicated dashboard, live monitoring of bids, quotes, and purchases, consigned inventory tracking, and stock and financial report generation. Incorporate WooCommerce Auto Posting for added efficiency.",
     link: "/features/risk-management",
     icon: IconPackageExport // Fixed typo in icon name
   },
@@ -110,7 +109,7 @@ const featureItems: FeatureItem[] = [
   {
     id: 13,
     title: "Business Reporting",
-    description: "Utilize a full range of business reporting tools in our reporting suite to keep track of your business in real-time.",
+    description: "Utilise a full range of business reporting tools in our reporting suite to keep track of your business in real-time.",
     link: "/features/risk-management",
     icon: IconChartDots
   },
@@ -194,9 +193,8 @@ export default function FeatureDivExpanded() {
     <div className="flex flex-col items-center w-full">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 w-[75%] md:w-[60%] mx-auto gap-4">
         {featureItems.map((item, idx) => (
-          <Link
-            href={item.link}
-            key={item.id} // Using unique id instead of link
+          <div
+            key={item.id}
             className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -222,12 +220,9 @@ export default function FeatureDivExpanded() {
               <CardTitle icon={item.icon}>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
             </Card>
-          </Link>
+          </div>
         ))}
       </div>
-      
-  
-     
     </div>
   );
 }

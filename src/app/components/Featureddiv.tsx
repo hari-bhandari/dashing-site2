@@ -17,43 +17,43 @@ const featureItems = [
   {
     id: 1,
     title: "Interactive Dashboard",
-    description: "Experience a colorful and informative dashboard with an interactive map to visualize your global business reach. Monitor sales, invoicing, quote-to-order ratios, and company performance against targets with shortcut icons for easy navigation.",
-    link: "/features/market-data",
+    description: "Experience a colourful and informative dashboard with an interactive map to visualize your global business reach. Monitor sales, invoicing, quote-to-order ratios, and company performance against targets with shortcut icons for easy navigation.",
+    link: "/features",
     icon: IconDashboard
   },
   {
     id: 2,
     title: "Sales Management",
     description: "Set and monitor company and individual sales targets in various currencies. Track quote-to-order ratios, customer maintenance, and merge companies with different offices or trading names for effective management.",
-    link: "/features/automated-trading",
+    link: "/features",
     icon: IconChartBar
   },
   {
     id: 3,
     title: "Quoting",
-    description: "Create, manage, and send quotes using live franchised stock and price checkers. Add descriptions and images, handle single-line items or full BOMs, and customize pricing margins. Easily offer price breaks with instant second-line addition.",
-    link: "/features/risk-management",
+    description: "Create, manage, and send quotes using live franchised stock and price checkers. Add descriptions and images, handle single-line items or full BOMs, and customise pricing margins. Easily offer price breaks with instant second-line addition.",
+    link: "/features",
     icon: IconFileDescription
   },
   {
     id: 4,
     title: "Customer and Supplier Management",
     description: "Manage customers and suppliers with a single company record. Set different terms and currencies, merge and associate companies, monitor interactions, rate companies, and manage their shipping and invoice addresses.",
-    link: "/features/market-data",
+    link: "/features",
     icon: IconUsers
   },
   {
     id: 5,
     title: "Inventory Management",
     description: "Efficiently manage your inventory with ecommerce integration, store locations, pictures, and datasheets. Handle consignments and costings, and export stocklists for seamless operations.",
-    link: "/features/automated-trading",
+    link: "/features",
     icon: IconBoxSeam
   },
   {
     id: 6,
     title: "Shipping Management",
     description: "Integrate EasyPost with your system to manage shipments, collections, and deliveries. Track packages online, and generate commercial invoices and customs paperwork effortlessly.",
-    link: "/features/risk-management",
+    link: "/features",
     icon: IconTruck
   }
 ];

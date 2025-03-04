@@ -5,8 +5,8 @@ import InfoBox from '@/app/components/Featureddiv';
 import Footer from "@/app/components/Footer";
 import InfoDiv from './components/InfoDiv';
 import InfoDivMobile from "@/app/components/InfoDivMobile";
-import BecomePartner from "@/app/components/BecomePartner";
-import Integrationsdiv from "@/app/components/Integrationsdiv";
+import BlogPreview from "@/app/components/Blog/BlogPreview";
+import IntegrationsDiv from "@/app/components/Integrationsdiv";
 import MacbookScroll from '@/app/components/Hero/Hero';
 import Navbar from '@/app/components/Navbar';
 import Testimonials from '@/app/components/Testimonials';
@@ -20,13 +20,13 @@ export default function Home() {
       <Navbar />
       <MacbookScroll 
         src={theme === 'dark' 
-          ? "/DarkDashingScreenshot.png" 
-          : "/DashingScreenshot.png"
+          ? "/DarkDashingScreenshot.svg" 
+          : "/DashingScreenshot.svg"
         }
       />
       <div className="flex flex-col gap-20 w-full mt-0 sm:mt-0 md:mt-64"> 
         <div className="flex flex-col gap-4 md:gap-8"> 
-          <h1 className="text-3xl font-bold text-center dark:text-white lg:text-4xl">Unlock Unparralled Efficiency</h1>
+          <h1 className="text-3xl font-bold text-center dark:text-white lg:text-4xl">Scale at Speed & Drive Higher Sales</h1>
           <h2 className="text-lg text-gray-400 text-center dark:text-white lg:text-xl">Streamline Processes, optimise Inventory, and Supercharge Your Sales Team with Our Cutting-Edge Solution</h2>
           <InfoBox/>
         </div>
@@ -36,10 +36,10 @@ export default function Home() {
         <div className="hidden md:block">
           <InfoDiv />
         </div>
-        <Integrationsdiv/>
+        <IntegrationsDiv/>
         <Testimonials />
         <Timeline />
-        <BecomePartner />
+        <BlogPreview />
         <Footer /> 
       </div>
     </div>

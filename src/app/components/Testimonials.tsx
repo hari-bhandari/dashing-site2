@@ -4,32 +4,48 @@ import { IconArrowLeft, IconArrowRight, IconStar } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState, useCallback } from "react";
+import { useTheme } from "next-themes"; // Add this import
+
+const scrollbarStyles = `
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* Internet Explorer and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+`;
 
 type Testimonial = {
   quote: string;
   name: string;
   designation: string;
   src: string;
+  darkSrc?: string; // Add optional darkSrc property
 };
 
 const defaultTestimonials: Testimonial[] = [
   {
-    quote: "This platform has transformed how we manage our brokerage operations.",
-    name: "John Doe",
-    designation: "CEO, Broker Inc",
+    quote: "The Dashing support team and programmers have been awesome to work with. They have really listened to our suggestions and requests, and continuously make improvements to the software. I finally have an ERP software that I can rely on and where I know I will get the support and flexibility that is needed in this industry.",
+    name: "Michael",
+    designation: "Sonicare Solutions Inc.",
     src: "/testimonials/Sonicare.png",
+    darkSrc: "/testimonials/SonicareDark.png"
   },
   {
-    quote: "The best solution we've found for our brokerage needs.",
-    name: "Jane Smith",
-    designation: "Director, Trading Co",
+    quote: "Our new Dashing software has been instrumental in streamlining our operations and the customer service and technical support is on point. Highly recommend!",
+    name: "Travis",
+    designation: "Sonar",
     src: "/testimonials/Sonar.png",
+    darkSrc: "/testimonials/SonarDark.png"
   },
   {
-    quote: "The best solution we've found for our brokerage needs.",
-    name: "Jane Smith",
-    designation: "Director, Trading Co",
+    quote: "Dashing Distribution Software. Our journey to finding and utilizing a software platform was an exhausting, frustrating, and, at times, seemingly hopeless process. Thankfully, through word-of-mouth by a fellow distributor, Dashing was presented. The software flows nicely and is very user friendly. Purchase orders are easily created, sent, and received and are directly linked to the correlating sales order. The shipping process is easily navigated and has the ability to adhere to customer needs and requirements specifically. Myself and my team certainly feel relieved. This industry is unique and securing the appropriate software is difficult. The Dashing team is amazing. I could not be happier, quite honestly.",
+    name: "Michelle Gorman",
+    designation: "K-1 Technologies",
     src: "/testimonials/K1.png",
+    darkSrc: "/testimonials/K1Dark.png" // Add dark mode version
   },
 ];
 
@@ -57,6 +73,7 @@ export default function Testimonials({
 }) {
   const [active, setActive] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const { resolvedTheme } = useTheme(); // Add this hook
 
   const handleNext = useCallback(() => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -87,6 +104,7 @@ export default function Testimonials({
 
   return (
     <div>
+      <style jsx global>{scrollbarStyles}</style>
       {/* Header section */}
       <div className="text-center max-w-4xl mx-auto mb-8">
         <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
@@ -139,7 +157,7 @@ export default function Testimonials({
                     className="absolute inset-0 origin-bottom"
                   >
                     <Image
-                      src={testimonial.src}
+                      src={resolvedTheme === 'dark' && testimonial.darkSrc ? testimonial.darkSrc : testimonial.src}
                       alt={testimonial.name}
                       width={400}
                       height={64}
@@ -170,41 +188,49 @@ export default function Testimonials({
                 duration: 0.2,
                 ease: "easeInOut",
               }}
+              className="flex flex-col h-full"
             >
-              <h3 className="text-2xl font-bold text-black dark:text-white">
-                {testimonials[active].name}
-              </h3>
-              <p className="text-sm text-gray-500 dark:text-white">
-                {testimonials[active].designation}
-              </p>
-              <motion.p className="text-lg text-gray-500 mt-8 dark:text-white">
-                {testimonials[active].quote.split(" ").map((word, index) => (
-                  <motion.span
-                    key={index}
-                    initial={{
-                      filter: "blur(10px)",
-                      opacity: 0,
-                      y: 5,
-                    }}
-                    animate={{
-                      filter: "blur(0px)",
-                      opacity: 1,
-                      y: 0,
-                    }}
-                    transition={{
-                      duration: 0.2,
-                      ease: "easeInOut",
-                      delay: 0.02 * index,
-                    }}
-                    className="inline-block"
-                  >
-                    {word}&nbsp;
-                  </motion.span>
-                ))}
-              </motion.p>
+              <div>
+                <h3 className="text-2xl font-bold text-black dark:text-white">
+                  {testimonials[active].name}
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-white">
+                  {testimonials[active].designation}
+                </p>
+              </div>
+              
+              {/* Scrollable testimonial text container */}
+              <div className="mt-8 overflow-y-auto max-h-[200px] pr-2 hide-scrollbar">
+                <motion.p className="text-lg text-gray-500 dark:text-white">
+                  {testimonials[active].quote.split(" ").map((word, index) => (
+                    <motion.span
+                      key={index}
+                      initial={{
+                        filter: "blur(10px)",
+                        opacity: 0,
+                        y: 5,
+                      }}
+                      animate={{
+                        filter: "blur(0px)",
+                        opacity: 1,
+                        y: 0,
+                      }}
+                      transition={{
+                        duration: 0.2,
+                        ease: "easeInOut",
+                        delay: 0.02 * index,
+                      }}
+                      className="inline-block"
+                    >
+                      {word}&nbsp;
+                    </motion.span>
+                  ))}
+                </motion.p>
+              </div>
+              
               <StarRating />
             </motion.div>
-            <div className="flex gap-4 pt-12 md:pt-0">
+            <div className="flex gap-4 pt-6 md:pt-4">
               <button
                 onClick={(e) => {
                   e.stopPropagation();

@@ -90,7 +90,7 @@ export default function Home() {
               <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
                 <IconRotate className="w-10 h-10 text-blue-500 mb-4" />
                 <h3 className="font-bold mb-2 dark:text-white">Fast Performance</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400 dark:text-white">We understand the importance of speed, so we optimize our software to perform quickly and efficiently for our customers.</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 dark:text-white">We understand the importance of speed, so we optimise our software to perform quickly and efficiently for our customers.</p>
               </div>
               <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
                 <IconUsers className="w-10 h-10 text-blue-500 mb-4" />

@@ -1,16 +1,24 @@
 "use client";
 
 import dynamic from 'next/dynamic';
+import { useTheme } from 'next-themes'; // Import useTheme
 
 const Lottie = dynamic(() => import('@lottielab/lottie-player/react'), { ssr: false });
 
 export default function Integrationsdiv() {
+  const { resolvedTheme } = useTheme(); // Get the current theme
+  
+  // Define different animation sources for light and dark modes
+  const lottieSource = resolvedTheme === 'dark' 
+    ? "https://cdn.lottielab.com/l/27ECMbzqpgnsV6.json" // Replace with your dark theme animation
+    : "https://cdn.lottielab.com/l/ApkB1Vgh2nCdEM.json";
+
   return (
     <div className="max-w-[60%] mx-auto pb-8">
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-        {/* Video section */}
+        {/* Video section with conditional Lottie source */}
         <div className="w-full md:w-1/2 relative aspect-video rounded-lg overflow-hidden h-[415px] order-2 md:order-1">
-          <Lottie src="https://cdn.lottielab.com/l/ApkB1Vgh2nCdEM.json" autoplay />
+          <Lottie src={lottieSource} autoplay />
         </div>
 
         {/* Content section */}
@@ -33,7 +41,7 @@ export default function Integrationsdiv() {
             </li>
           </ul>
           <p className="text-xl text-gray-600 dark:text-white">
-            Simple, smooth, and stress-free. That’s Dashing.
+            Simple, smooth, and stress-free. That&apos;s Dashing.
           </p>
         </div>
       </div>
