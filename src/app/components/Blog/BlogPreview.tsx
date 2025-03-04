@@ -405,7 +405,7 @@ export default function BlogPreview({ blogs = defaultBlogs, initialScroll = 0, u
         <div className="mt-4 mb-4">
           <Link 
             href="/blog" 
-            className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg text-base font-medium text-white bg-[#22263e] hover:bg-gray-50 transition duration-200"
+            className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-700 rounded-lg text-base font-medium text-white bg-[#22263e] hover:bg-blue transition duration-200"
           >
             View All Posts
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
