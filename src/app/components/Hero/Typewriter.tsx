@@ -111,7 +111,7 @@ const TypewriterEffectSmooth = ({
   className?: string;
   cursorClassName?: string;
 }) => {
-  // Split text inside of words into array of characters
+ 
   const wordsArray = words.map((word) => {
     return {
       ...word,
