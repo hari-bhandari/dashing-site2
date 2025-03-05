@@ -2,7 +2,29 @@
 
 import { cn } from "@/app/lib/utils";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useMemo, memo } from "react";
+
+// Memoized character component to reduce re-renders
+const Character = memo(({ char, className }: { char: string; className?: string }) => (
+  <motion.span
+    initial={{ opacity: 0, display: "none" }}
+    className={cn(`dark:text-white text-black opacity-0 hidden`, className)}
+  >
+    {char}
+  </motion.span>
+));
+Character.displayName = "Character";
+
+// Memoized word component
+const Word = memo(({ word, idx }: { word: { text: string[]; className?: string }; idx: number }) => (
+  <div key={`word-${idx}`} className="inline-block">
+    {word.text.map((char, index) => (
+      <Character key={`char-${index}`} char={char} className={word.className} />
+    ))}
+    &nbsp;
+  </div>
+));
+Word.displayName = "Word";
 
 // Keep this as a named export for backward compatibility
 export const TypewriterEffect = ({
@@ -17,16 +39,17 @@ export const TypewriterEffect = ({
   className?: string;
   cursorClassName?: string;
 }) => {
-  // split text inside of words into array of characters
-  const wordsArray = words.map((word) => {
-    return {
+  // Process words only when they change
+  const wordsArray = useMemo(() => {
+    return words.map((word) => ({
       ...word,
       text: word.text.split(""),
-    };
-  });
+    }));
+  }, [words]);
 
   const [scope, animate] = useAnimate();
-  const isInView = useInView(scope);
+  const isInView = useInView(scope, { once: true, amount: 0.2 });
+  
   useEffect(() => {
     if (isInView) {
       animate(
@@ -45,31 +68,6 @@ export const TypewriterEffect = ({
     }
   }, [isInView, animate]);
 
-  const renderWords = () => {
-    return (
-      <motion.div ref={scope} className="inline">
-        {wordsArray.map((word, idx) => {
-          return (
-            <div key={`word-${idx}`} className="inline-block">
-              {word.text.map((char, index) => (
-                <motion.span
-                  initial={{}}
-                  key={`char-${index}`}
-                  className={cn(
-                    `dark:text-white text-black opacity-0 hidden`,
-                    word.className
-                  )}
-                >
-                  {char}
-                </motion.span>
-              ))}
-              &nbsp;
-            </div>
-          );
-        })}
-      </motion.div>
-    );
-  };
   return (
     <div
       className={cn(
@@ -77,14 +75,14 @@ export const TypewriterEffect = ({
         className
       )}
     >
-      {renderWords()}
+      <motion.div ref={scope} className="inline">
+        {wordsArray.map((word, idx) => (
+          <Word key={`word-${idx}`} word={word} idx={idx} />
+        ))}
+      </motion.div>
       <motion.span
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
           duration: 0.8,
           repeat: Infinity,
@@ -99,7 +97,15 @@ export const TypewriterEffect = ({
   );
 };
 
-const TypewriterEffectSmooth = ({
+// Memoized span for smooth effect
+const SmoothCharacter = memo(({ char, className }: { char: string; className?: string }) => (
+  <span className={cn(`dark:text-white text-black`, className)}>
+    {char}
+  </span>
+));
+SmoothCharacter.displayName = "SmoothCharacter";
+
+const TypewriterEffectSmooth = memo(({
   words,
   className,
   cursorClassName,
@@ -111,80 +117,61 @@ const TypewriterEffectSmooth = ({
   className?: string;
   cursorClassName?: string;
 }) => {
-  // Split text inside of words into array of characters
-  const wordsArray = words.map((word) => {
-    return {
+  // Process words only when they change
+  const wordsArray = useMemo(() => {
+    return words.map((word) => ({
       ...word,
       text: word.text.split(""),
-    };
-  });
+    }));
+  }, [words]);
   
-  const renderWords = () => {
-    return (
-      <div>
-        {wordsArray.map((word, idx) => {
-          return (
-            <div key={`word-${idx}`} className="inline-block">
-              {word.text.map((char, index) => (
-                <span
-                  key={`char-${index}`}
-                  className={cn(`dark:text-white text-black `, word.className)}
-                >
-                  {char}
-                </span>
-              ))}
-              &nbsp;
-            </div>
-          );
-        })}
-      </div>
-    );
-  };
-
   return (
-    <div className={cn("flex items-center", className)}> {/* Removed my-6, added items-center */}
+    <div className={cn("flex items-center", className)}>
       <motion.div
-        className="overflow-hidden" /* Removed pb-2 */
-        initial={{
-          width: "0%",
-        }}
-        whileInView={{
-          width: "fit-content",
-        }}
+        className="overflow-hidden"
+        initial={{ width: "0%" }}
+        whileInView={{ width: "fit-content" }}
         transition={{
           duration: 2,
           ease: "linear",
           delay: 1,
         }}
+        viewport={{ once: true, amount: 0.2 }}
       >
         <div
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold flex items-center" /* Added flex and items-center */
-          style={{
-            whiteSpace: "nowrap",
-          }}
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold flex items-center"
+          style={{ whiteSpace: "nowrap" }}
         >
-          {renderWords()}{" "}
+          {wordsArray.map((word, idx) => (
+            <div key={`word-${idx}`} className="inline-block">
+              {word.text.map((char, index) => (
+                <SmoothCharacter 
+                  key={`char-${index}`} 
+                  char={char} 
+                  className={word.className} 
+                />
+              ))}
+              &nbsp;
+            </div>
+          ))}
         </div>
       </motion.div>
       <motion.span
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{
           duration: 0.8,
           repeat: Infinity,
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px] h-6 sm:h-7 md:h-8 lg:h-10 xl:h-12 bg-blue-500 self-center", /* Added self-center */
+          "block rounded-sm w-[4px] h-6 sm:h-7 md:h-8 lg:h-10 xl:h-12 bg-blue-500 self-center",
           cursorClassName
         )}
       ></motion.span>
     </div>
   );
-};
+});
+TypewriterEffectSmooth.displayName = "TypewriterEffectSmooth";
 
 export default TypewriterEffectSmooth;
