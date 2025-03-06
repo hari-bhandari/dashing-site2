@@ -20,8 +20,8 @@ export default function Home() {
       <Navbar />
       <MacbookScroll 
         src={theme === 'dark' 
-          ? "/DarkDashingScreenshot.svg" 
-          : "/DashingScreenshot.svg"
+          ? "/screenshots/DarkDashingScreenshot.svg" 
+          : "/screenshots/DashingScreenshot.svg"
         }
       />
       <div className="flex flex-col gap-20 w-full mt-0 sm:mt-0 md:mt-64"> 

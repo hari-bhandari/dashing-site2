@@ -136,6 +136,7 @@ export default function MacbookScroll({
             <Image
               src={src as string}
               alt="Product Preview"
+              rel="preload"
               width={400}
               height={300}
               sizes="(max-width: 400px) 100vw, 400px"
@@ -300,6 +301,7 @@ export const Lid = ({
         <Image
           src={src as string}
           alt="aceternity logo"
+          rel="preload"
           fill
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
           sizes="(max-width: 400px) 100vw, 400px"
