@@ -153,7 +153,7 @@ export default function MacbookScroll({
       <div className="hidden md:block">
         <div
           ref={ref}
-          className="h-fit-content flex flex-col items-center py-64 justify-start flex-shrink-0 [perspective:800px] transform scale-100 origin-top"
+          className="h-fit-content flex flex-col items-center py-48 justify-start flex-shrink-0 [perspective:800px] transform scale-100 origin-top"
         >
           <div className="text-center">
             {/* New rounded div with border */}
@@ -244,11 +244,7 @@ export default function MacbookScroll({
               maxWidth: "100%"
             }}
           >
-            <button 
-              className="px-8 py-3 mt-8 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg w-full mx-auto"
-              onClick={() => setIsCalendlyOpen(true)}>
-              Learn More
-            </button>
+            
           </motion.div>
         </div>
         <CalendlyPopup isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />

@@ -1,0 +1,13 @@
+fetch("https://api.dashingdisty.com/api/utils/formsubmit", {
+  "headers": {
+    "accept": "application/json",
+    "content-type": "application/json",
+    "sec-ch-ua": "\"Not(A:Brand\";v=\"99\", \"Google Chrome\";v=\"133\", \"Chromium\";v=\"133\"",
+    "sec-ch-ua-mobile": "?1",
+    "sec-ch-ua-platform": "\"Android\"",
+    "Referer": "https://www.dashingdisty.com/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": "{\"name\":\"testt\",\"email\":\"test@gmail.com\",\"subject\":\"\",\"message\":\"test\",\"isDemo\":false,\"form-name\":\"Contact\"}",
+  "method": "POST"
+});
