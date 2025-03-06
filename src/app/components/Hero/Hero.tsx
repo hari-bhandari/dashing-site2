@@ -117,11 +117,10 @@ export default function MacbookScroll({
               alt="Product Preview Mobile"
               width={400}
               height={300}
-              priority // Add this to prioritize loading
+              priority // Add priority flag to improve LCP
               loading="eager" // Ensure it loads early
               sizes="(max-width: 400px) 100vw, 400px"
               className="rounded-lg shadow-xl"
-              quality={85} // Slightly reduce quality for better load time
             />
           </div>
         </div>

@@ -48,25 +48,13 @@ export const Lid = ({
         className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
         <div className="absolute inset-0 bg-[#272729] rounded-lg" />
-        <div className="absolute inset-0 bg-gray-300 animate-pulse rounded-lg" />
         <Image
           src={src as string}
           alt="Product Preview"
           fill
-          priority // Add this to prioritize loading
-          loading="eager" // Ensure it loads early
+          priority
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // More specific sizes
-          quality={85} // Slightly reduce quality for better load time
-          onLoadingComplete={(img) => {
-            // Remove placeholder when image is loaded
-            const parent = img.parentElement;
-            if (parent) {
-              // Find and remove the placeholder
-              const placeholder = parent.querySelector('.bg-gray-300');
-              if (placeholder) placeholder.remove();
-            }
-          }}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </motion.div>
     </div>
