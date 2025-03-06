@@ -136,12 +136,13 @@ export default function MacbookScroll({
             <Image
               src={src as string}
               alt="Product Preview Mobile"
-              
               width={400}
               height={300}
+              priority // Add this to prioritize loading
+              loading="eager" // Ensure it loads early
               sizes="(max-width: 400px) 100vw, 400px"
               className="rounded-lg shadow-xl"
-              
+              quality={85} // Slightly reduce quality for better load time
             />
           </div>
         </div>
@@ -298,11 +299,12 @@ export const Lid = ({
         <Image
           src={src as string}
           alt="Product Preview"
-          
           fill
+          priority // Add this to prioritize loading
+          loading="eager" // Ensure it loads early
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
-          sizes="(max-width: 400px) 100vw, 400px"
-          
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // More specific sizes
+          quality={85} // Slightly reduce quality for better load time
         />
       </motion.div>
     </div>
