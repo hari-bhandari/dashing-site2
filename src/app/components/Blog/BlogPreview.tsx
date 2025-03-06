@@ -476,6 +476,7 @@ export default function BlogPreview({ blogs = defaultBlogs, initialScroll = 0, u
             </div>
             <div className="flex justify-end gap-2 mr-10">
               <button
+                id="scroll-left"
                 className="relative z-40 h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center disabled:opacity-50"
                 onClick={scrollLeft}
                 disabled={!canScrollLeft}
@@ -483,6 +484,7 @@ export default function BlogPreview({ blogs = defaultBlogs, initialScroll = 0, u
                 <IconArrowNarrowLeft className="h-6 w-6 text-gray-500 dark:text-gray-300" />
               </button>
               <button
+                id="scroll-right"
                 className="relative z-40 h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center disabled:opacity-50"
                 onClick={scrollRight}
                 disabled={!canScrollRight}
