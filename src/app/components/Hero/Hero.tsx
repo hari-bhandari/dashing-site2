@@ -160,6 +160,7 @@ export default function MacbookScroll({
               style={{
                 translateY: textTransform,
                 opacity: textOpacity,
+                willChange: 'transform, opacity'
               }}
               className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-white border border-gray-200 text-sm text-gray-400 font-semibold dark:bg-slate-950"
             >
@@ -172,6 +173,7 @@ export default function MacbookScroll({
               style={{
                 translateY: textTransform,
                 opacity: textOpacity,
+                willChange: 'transform, opacity'
               }}
               className="mb-8 flex flex-col items-center" /* Added flex-col items-center */
             >
@@ -187,6 +189,7 @@ export default function MacbookScroll({
               style={{
                 translateY: textTransform,
                 opacity: textOpacity,
+                willChange: 'transform, opacity'
               }}
               className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto"
             >
