@@ -477,6 +477,7 @@ export default function BlogPreview({ blogs = defaultBlogs, initialScroll = 0, u
             <div className="flex justify-end gap-2 mr-10">
               <button
                 id="scroll-left"
+                aria-label="Scroll left"
                 className="relative z-40 h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center disabled:opacity-50"
                 onClick={scrollLeft}
                 disabled={!canScrollLeft}
@@ -485,6 +486,7 @@ export default function BlogPreview({ blogs = defaultBlogs, initialScroll = 0, u
               </button>
               <button
                 id="scroll-right"
+                aria-label="Scroll right"
                 className="relative z-40 h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center disabled:opacity-50"
                 onClick={scrollRight}
                 disabled={!canScrollRight}
