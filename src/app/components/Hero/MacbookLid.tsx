@@ -53,8 +53,13 @@ export const Lid = ({
           alt="Product Preview"
           fill
           priority
+          quality={100} // Add maximum quality
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          sizes="(min-width: 1280px) 32rem, (min-width: 768px) 100vw, 100vw" // More specific sizes
+          placeholder="blur" // Add a blur placeholder
+          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==" // Simple blur placeholder
+          loading="eager" // Eager loading for above-the-fold content
+          unoptimized={true} // For SVG images, bypass Next.js optimization
         />
       </motion.div>
     </div>
