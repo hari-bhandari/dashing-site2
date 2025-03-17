@@ -202,7 +202,14 @@ export default function MacbookScroll({
             </motion.div>
           </div>
           {/* Lid */}
-          <Lid src={src} scaleX={scaleX} scaleY={scaleY} rotate={rotate} translate={translate} />
+          <Lid 
+            src={src} 
+            scaleX={scaleX} 
+            scaleY={scaleY} 
+            rotate={rotate} 
+            translate={translate}
+            setIsCalendlyOpen={setIsCalendlyOpen}
+          />
           {/* Base area */}
           <div className="h-[22rem] w-[32rem] bg-gray-200 dark:bg-[#272729] rounded-2xl overflow-hidden relative -z-10">
             {/* above keyboard bar */}
@@ -258,12 +265,14 @@ export const Lid = ({
   rotate,
   translate,
   src,
+  setIsCalendlyOpen
 }: {
   scaleX: MotionValue<number>;
   scaleY: MotionValue<number>;
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
   src?: string;
+  setIsCalendlyOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
     <div className="relative [perspective:800px]">
