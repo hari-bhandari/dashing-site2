@@ -36,7 +36,7 @@ export default function InfoDivMobile() {
                   <IconHeadset className="w-10 h-10 text-neutral-900 dark:text-white" />
                   <div>
                     <h3 className="font-bold text-lg text-neutral-900 dark:text-white">Exceptional Customer Service</h3>
-                    <p className="text-neutral-700 dark:text-white/80">We deliver 24/7 unmatched support—on-site, phone, live tickets, and chat—to keep your business running smoothly.</p>
+                    <p className="text-neutral-700 dark:text-white/80">We deliver 24/7 unmatched support on-site, phone, live tickets, and chat to keep your business running smoothly.</p>
                   </div>
                 </div>
               </div>

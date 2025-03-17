@@ -26,7 +26,7 @@ export default function Home() {
       <div className="w-full flex flex-col gap-10 mt-32">
         <h1 className="text-center text-5xl font-bold dark:text-white">Who are we?</h1>
         <h2 className="text-xl text-gray-500 text-center font-semibold max-w-[60%] mx-auto dark:text-white">
-          Dashing Distribution Software are the provider of the most comprehensive, electronic component distribution software, on the market today. Combining cutting edge technology, with timeless principles.
+          Powering the Electronic Component Distribution industry, we are the leading provider of software on the market. Built to lead industry standards, Dashing Distribution Software is where cutting edge technology meets timeless reliability. 
         </h2>
         <Carousel />
         
@@ -39,29 +39,36 @@ export default function Home() {
           </div>
 
           <div className='max-w-[60%] mx-auto'>
-            <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Our Story</h1>
+            <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">The Dashing Difference</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
-              At Dashing, we started out searching for software that catered to the needs of the electronic component industry. However, we soon realized that there wasn&apos;t a single program that checked all the boxes for us. We wanted software that was efficient, visually appealing, and lightning fast. When we couldn&apos;t find it, we decided to build it ourselves. And that&apos;s how Dashing came into existence.
-              After three years of relentless effort, we built a software that we are immensely proud of. We started small, with a customer-first approach, and grew organically. We took one customer at a time, ensuring that we provided the best possible service.
-              We made a conscious decision to reinvent the installation and training process. We send a member of our team to each customer site to train their staff, making sure they can leverage the software&apos;s features to the fullest.
-              Our customers are at the heart of everything we do. We&apos;re always available, no matter the time zone. We&apos;ve created training videos, support tools, and manuals to help users get the most out of the software.
-              We&apos;re proud that our first test version of the application had its flaws. It helped us shape the software into what it is today.
+              We set out to find the perfect electronic component distribution software. When we couldn't find it, we built it ourselves.
+              For three years, we developed a solution that truly delivers what the industry needs: efficient, visually appealing, and lightning fast. We didn't cut corners. We didn't settle. We created something we're genuinely proud of.
+              Our growth has been intentional and measured. One customer at a time, each receiving our complete attention taking consideration to improvements as we develop our solution further. We reimagined the traditional implementation process, alignment of educating the team with flawless knowledge to ensure they can understand not just the software but the entire flow of business processing embedded into the intelligent workflows.
+              Your success drives everything we do. That's why we're available whenever you need us, regardless of time zone. We've developed comprehensive training materials, utilising AI responsive support tools, traditional manuals, all because we believe in empowering our users.
+              The journey wasn't perfect. Our first test version had flaws and we're proud of that. Those challenges shaped Dashing into the robust, responsive solution it is today. We learnt. We adapted. We improved.
+              This isn't just software. It's a partnership built on understanding the unique challenges of electronic component distribution industry and our unwavering commitment to solving them together.
             </p>
           </div>
 
           {/* New Strengths section */}
           <div className='max-w-[60%] mx-auto'>
-            <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Our Strengths</h1>
+            <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Why Dashing?</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
-              As some of the leading experts backed by years of experience within electronic components distribution, we were able to build a system that meets your every need, making your data accessible and private, as well as keeping track of tracked orders, processed orders, and stock. With the flexibility of non-committal licensing, we wanted to ensure we made a system that doesn&apos;t tie you down to contracts, so that you&apos;re still in control. We also wanted to offer our customers the best value we could, so all you need is one license per company and you will have all the information you need in one place.
+              As industry leaders with decades of collective experience in electronic components distribution and software development, we've crafted a system that truly understands your challenges. 
+              Our solution makes your data simultaneously accessible and secure, whilst providing comprehensive tracking for orders in progress, processed shipments, and inventory management. We've designed it to deliver exactly what you need, where you need it.
+              We believe in putting you in control. That's why we've rejected the industry standard of restrictive contracts in favour of flexible, non-committal licensing. Your business deserves freedom, not constraints.
+              Value matters. We've structured our pricing with a single company wide licence that gives your entire team access to powerful tools and critical information all centralised in one intuitive platform.
+              This isn't about selling you software. It's about equipping your business with the capabilities it deserves.
             </p>
           </div>
 
           {/* New Customer Support section */}
           <div className='max-w-[60%] mx-auto'>
-            <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Customer-Focused Support</h1>
+            <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Support your Success</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
-              We know how frustrating it can be to find yourself stuck without any help, so we make sure we&apos;re available to offer you support every step of the way, 24/7, regardless of your time zone. We are constantly striving to make our great software even greater, with regular software updates and new features as well as training in order to fully utilize our system.
+              We understand the frustration of being left without assistance when you need it most. That's why we're committed to providing round the clock support, 24/7, no matter where your business operates across the globe. When you need us, we are there. Our dedication extends beyond the initial implementation. We relentlessly pursue excellence, regularly deploying software updates and introducing new industry leading features that keep you ahead of the competition.
+              We believe that powerful software deserves skilled users. Our consistent approach to continued education ensures your team harnesses Dashing's full capabilities, maximising your return on investment and operational efficiency.
+              This isn't just about solving problems when they arise. It's about creating a partnership that proactively drives your business forward with every interaction, every update, and every innovation we deliver.
             </p>
           </div>
 

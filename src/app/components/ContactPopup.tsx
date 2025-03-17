@@ -36,7 +36,6 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
         headers: {
           'accept': 'application/json',
           'content-type': 'application/json',
-          'Referer': 'https://www.dashingdisty.com/'
         }
       });
       

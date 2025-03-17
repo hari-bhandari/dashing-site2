@@ -19,7 +19,7 @@ const timelineData: TimelineEntry[] = [
       content: (
         <div className="prose prose-sm dark:prose-invert">
           <p className="text-neutral-600 dark:text-neutral-300">
-            Interested clients can request a live demo of our software to gain a better understanding of its features and capabilities. Our team will provide a comprehensive walkthrough of the platform and answer any questions you may have.
+          Interested in discovering more? Request a live online demo of our software to gain a better understanding of its features and capabilities. Our team will provide a comprehensive walkthrough of the platform and answer any questions you may have.
           </p>
         </div>
       ),
@@ -29,17 +29,17 @@ const timelineData: TimelineEntry[] = [
       content: (
         <div className="prose prose-sm dark:prose-invert">
           <p className="text-neutral-600 dark:text-neutral-300">
-            Once you decide to move forward with our software, we will assist you in migrating all your data from your existing platform to ours. This includes transferring customer and supplier information, inventory data, and any other relevant business records.
+            Our methods of migrating your data are tried and tested, with evolving routines we will assist and support the data transfer from your existing platform. 
           </p>
         </div>
       ),
     },
     {
-      title: "On-site Training",
+      title: "Educate",
       content: (
         <div className="prose prose-sm dark:prose-invert">
           <p className="text-neutral-600 dark:text-neutral-300">
-            To ensure your team is well-equipped to use our software effectively, we provide on-site training sessions tailored to your business needs. Our trainers will cover all the essential features and functionalities, as well as any specific areas of interest for your team.
+            Our priority is to ensure your team are effective on how the business processes operate in our software. Our team are packed with industry experience, ensuring support and guidance on operations are appropriate and relevant.
           </p>
         </div>
       ),
@@ -49,7 +49,7 @@ const timelineData: TimelineEntry[] = [
       content: (
         <div className="prose prose-sm dark:prose-invert">
           <p className="text-neutral-600 dark:text-neutral-300">
-            After the data migration and training sessions are completed, your business is ready to start using our software. Our team will provide ongoing support as needed, helping you maximise the benefits of our platform and drive growth for your business.
+            A full roadmap of events are agreed to deliver a go-live, maximising the best time with seamless disruption to business activities. Our customer support is unprecedented with 24/7 coverage across multiple communication channels.  
           </p>
         </div>
       ),

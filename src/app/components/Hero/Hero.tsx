@@ -141,7 +141,7 @@ export default function MacbookScroll({
               priority // Add this to prioritize loading
               loading="eager" // Ensure it loads early
               sizes="(max-width: 400px) 100vw, 400px"
-              className="rounded-lg shadow-xl"
+              className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full blur-[2px] brightness-95 backdrop-filter backdrop-blur-sm"
               quality={85} // Slightly reduce quality for better load time
             />
           </div>
@@ -285,28 +285,41 @@ export const Lid = ({
         </div>
       </div>
       <motion.div
-        style={{
-          scaleX: scaleX,
-          scaleY: scaleY,
-          rotateX: rotate,
-          translateY: translate,
-          transformStyle: "preserve-3d",
-          transformOrigin: "top",
-        }}
-        className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
+  style={{
+    scaleX: scaleX,
+    scaleY: scaleY,
+    rotateX: rotate,
+    translateY: translate,
+    transformStyle: "preserve-3d",
+    transformOrigin: "top",
+  }}
+  className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
+>
+  <div className="absolute inset-0 bg-[#272729] rounded-lg" />
+  <Image
+    src={src as string}
+    alt="Product Preview"
+    fill
+    priority // Add this to prioritize loading
+    loading="eager" // Ensure it loads early
+    className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full blur-[2px] brightness-95" // Added blur and adjusted brightness
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // More specific sizes
+    quality={85} // Slightly reduce quality for better load time
+  />
+  
+  {/* Call-to-action button on screen */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    <div className="bg-black/50 backdrop-blur-sm p-6 rounded-xl shadow-2xl flex flex-col items-center">
+      <h3 className="text-white text-xl font-bold mb-4">Want to learn more?</h3>
+      <button 
+        onClick={() => setIsCalendlyOpen(true)}
+        className="px-3 py-2 bg-[#22263e] hover:bg-blue-700 text-white text-[13px] font-semibold rounded-lg transition-colors duration-200 shadow-lg"
       >
-        <div className="absolute inset-0 bg-[#272729] rounded-lg" />
-        <Image
-          src={src as string}
-          alt="Product Preview"
-          fill
-          priority // Add this to prioritize loading
-          loading="eager" // Ensure it loads early
-          className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // More specific sizes
-          quality={85} // Slightly reduce quality for better load time
-        />
-      </motion.div>
+        Book a Demo 
+      </button>
+    </div>
+  </div>
+</motion.div>
     </div>
   );
 };
