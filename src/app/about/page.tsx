@@ -41,12 +41,12 @@ export default function Home() {
           <div className='max-w-[60%] mx-auto'>
             <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">The Dashing Difference</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
-              We set out to find the perfect electronic component distribution software. When we couldn't find it, we built it ourselves.
-              For three years, we developed a solution that truly delivers what the industry needs: efficient, visually appealing, and lightning fast. We didn't cut corners. We didn't settle. We created something we're genuinely proud of.
+              We set out to find the perfect electronic component distribution software. When we couldn&apos;t find it, we built it ourselves.
+              For three years, we developed a solution that truly delivers what the industry needs: efficient, visually appealing, and lightning fast. We didn&apos;t cut corners. We didn&apos;t settle. We created something we&apos;re genuinely proud of.
               Our growth has been intentional and measured. One customer at a time, each receiving our complete attention taking consideration to improvements as we develop our solution further. We reimagined the traditional implementation process, alignment of educating the team with flawless knowledge to ensure they can understand not just the software but the entire flow of business processing embedded into the intelligent workflows.
-              Your success drives everything we do. That's why we're available whenever you need us, regardless of time zone. We've developed comprehensive training materials, utilising AI responsive support tools, traditional manuals, all because we believe in empowering our users.
-              The journey wasn't perfect. Our first test version had flaws and we're proud of that. Those challenges shaped Dashing into the robust, responsive solution it is today. We learnt. We adapted. We improved.
-              This isn't just software. It's a partnership built on understanding the unique challenges of electronic component distribution industry and our unwavering commitment to solving them together.
+              Your success drives everything we do. That&apos;s why we&apos;re available whenever you need us, regardless of time zone. We&apos;ve developed comprehensive training materials, utilising AI responsive support tools, traditional manuals, all because we believe in empowering our users.
+              The journey wasn&apos;t perfect. Our first test version had flaws and we&apos;re proud of that. Those challenges shaped Dashing into the robust, responsive solution it is today. We learnt. We adapted. We improved.
+              This isn&apos;t just software. It&apos;s a partnership built on understanding the unique challenges of electronic component distribution industry and our unwavering commitment to solving them together.
             </p>
           </div>
 
@@ -54,11 +54,11 @@ export default function Home() {
           <div className='max-w-[60%] mx-auto'>
             <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Why Dashing?</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
-              As industry leaders with decades of collective experience in electronic components distribution and software development, we've crafted a system that truly understands your challenges. 
-              Our solution makes your data simultaneously accessible and secure, whilst providing comprehensive tracking for orders in progress, processed shipments, and inventory management. We've designed it to deliver exactly what you need, where you need it.
-              We believe in putting you in control. That's why we've rejected the industry standard of restrictive contracts in favour of flexible, non-committal licensing. Your business deserves freedom, not constraints.
-              Value matters. We've structured our pricing with a single company wide licence that gives your entire team access to powerful tools and critical information all centralised in one intuitive platform.
-              This isn't about selling you software. It's about equipping your business with the capabilities it deserves.
+              As industry leaders with decades of collective experience in electronic components distribution and software development, we&apos;ve crafted a system that truly understands your challenges. 
+              Our solution makes your data simultaneously accessible and secure, whilst providing comprehensive tracking for orders in progress, processed shipments, and inventory management. We&apos;ve designed it to deliver exactly what you need, where you need it.
+              We believe in putting you in control. That&apos;s why we&apos;ve rejected the industry standard of restrictive contracts in favour of flexible, non-committal licensing. Your business deserves freedom, not constraints.
+              Value matters. We&apos;ve structured our pricing with a single company wide licence that gives your entire team access to powerful tools and critical information all centralised in one intuitive platform.
+              This isn&apos;t about selling you software. It&apos;s about equipping your business with the capabilities it deserves.
             </p>
           </div>
 
@@ -66,9 +66,9 @@ export default function Home() {
           <div className='max-w-[60%] mx-auto'>
             <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Support your Success</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
-              We understand the frustration of being left without assistance when you need it most. That's why we're committed to providing round the clock support, 24/7, no matter where your business operates across the globe. When you need us, we are there. Our dedication extends beyond the initial implementation. We relentlessly pursue excellence, regularly deploying software updates and introducing new industry leading features that keep you ahead of the competition.
-              We believe that powerful software deserves skilled users. Our consistent approach to continued education ensures your team harnesses Dashing's full capabilities, maximising your return on investment and operational efficiency.
-              This isn't just about solving problems when they arise. It's about creating a partnership that proactively drives your business forward with every interaction, every update, and every innovation we deliver.
+              We understand the frustration of being left without assistance when you need it most. That&apos;s why we&apos;re committed to providing round the clock support, 24/7, no matter where your business operates across the globe. When you need us, we are there. Our dedication extends beyond the initial implementation. We relentlessly pursue excellence, regularly deploying software updates and introducing new industry leading features that keep you ahead of the competition.
+              We believe that powerful software deserves skilled users. Our consistent approach to continued education ensures your team harnesses Dashing&apos;s full capabilities, maximising your return on investment and operational efficiency.
+              This isn&apos;t just about solving problems when they arise. It&apos;s about creating a partnership that proactively drives your business forward with every interaction, every update, and every innovation we deliver.
             </p>
           </div>
 

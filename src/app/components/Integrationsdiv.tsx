@@ -24,7 +24,7 @@ export default function IntegrationsDiv() {
             <li>Real-time data syncing, always up to date</li>
             <li>A solution that fits your needs</li>
           </ul>
-          <h2 className="text-lg md:text-xl text-gray-600 font-bold dark:text-white">Simple, smooth, and stress-free. That's Dashing.</h2>
+          <h2 className="text-lg md:text-xl text-gray-600 font-bold dark:text-white">Simple, smooth, and stress-free. That&apos;s Dashing.</h2>
         </div>
       </div>
     </div>
