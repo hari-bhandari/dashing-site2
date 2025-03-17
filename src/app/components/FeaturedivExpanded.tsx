@@ -32,21 +32,21 @@ const featureItems: FeatureItem[] = [
   {
     id: 1,
     title: "Interactive Dashboard",
-    description: "Experience a colourful and informative dashboard with an interactive map to visualize your global business reach. Monitor sales, invoicing, quote-to-order ratios, and company performance against targets with shortcut icons for easy navigation.",
+    description: "Experience a colourful and informative dashboard with an interactive map to visualise your global business reach. Monitor sales, invoicing, quote to order ratiosalong with company performance metrics making instant decisions easy.",
     link: "/features/market-data",
     icon: IconDashboard
   },
   {
     id: 2,
     title: "Sales Management",
-    description: "Set and monitor company and individual sales targets in various currencies. Track quote-to-order ratios, customer maintenance, and merge companies with different offices or trading names for effective management.",
+    description: "Set and monitor Team and individual sales targets in multi currencies. Track Quote to Order ratio’s, manage customer performance, including effective merging of multi channel offices.",
     link: "/features/automated-trading",
     icon: IconChartBar
   },
   {
     id: 3,
     title: "Quoting",
-    description: "Create, manage, and send quotes using live franchised stock and price checkers. Add descriptions and images, handle single-line items or full BOMs, and customize pricing margins. Easily offer price breaks with instant second-line addition.",
+    description: "Create, manage, and send quotes using live franchised stock and price checkers. Add descriptions and images, handle single-line items or full BOMs, and customise pricing margins. Easily offer price breaks with instant multi line additions.",
     link: "/features/risk-management",
     icon: IconFileDescription  // Added missing icon
   },
@@ -60,7 +60,7 @@ const featureItems: FeatureItem[] = [
   {
     id: 5,
     title: "Inventory Management",
-    description: "Efficiently manage your inventory with ecommerce integration, store locations, pictures, and datasheets. Handle consignments and costings, and export stocklists for seamless operations.",
+    description: "Efficiently manage your inventory - physical, logical, availability, product testing, store locations, images, datasheets and more. Handle consignments, costings, and export stock lists for seamless operations.",
     link: "/features/automated-trading",
     icon: IconBoxSeam  // Added missing icon
   },
@@ -81,7 +81,7 @@ const featureItems: FeatureItem[] = [
   {
     id: 8,
     title: "Quality Management",
-    description: "Ensure ISO compliance with a multi-step inspection process, visual inspection checklists, incoming inspection reports, and non-conforming material management. Track inspection authorizations and manage the RMA process with up-to-date analysis.",
+    description: "Ensure ISO compliance with a multi-step inspection process, visual inspection checklists, incoming inspection reports, and non-conforming material management. Track inspection authorisations and manage the RMA process with up-to-date analysis.",
     link: "/features/risk-management",
     icon: IconClipboardCheck
   },
@@ -95,14 +95,14 @@ const featureItems: FeatureItem[] = [
   {
     id: 11,
     title: "Excess Stock Management",
-    description: "Optimise excess stock management with a dedicated dashboard, live monitoring of bids, quotes, and purchases, consigned inventory tracking, and stock and financial report generation. Incorporate WooCommerce Auto Posting for added efficiency.",
+    description: "Optimise Excess Stock management with a dedicated Excess Portal, assisted monitoring of bids and quotes, Excess inventory management and financial report generation. Incorporated into WebCommerce shop with Auto Posting for instant purchase.",
     link: "/features/risk-management",
     icon: IconPackageExport // Fixed typo in icon name
   },
   {
     id: 12,
-    title: "User Stock Management",
-    description: "Customize user permissions with pre-set profiles or create your own. Add user personnel files and commission structures for a flexible, tailored experience.",
+    title: "User Management",
+    description: "Customise user permissions and authorisation levels against values to ensure compliance to procedures. Flexible profile management, reporting of commissions for pay and performance management.",
     link: "/features/risk-management",
     icon: IconUserCircle
   },

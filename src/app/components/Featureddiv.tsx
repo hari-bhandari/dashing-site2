@@ -17,21 +17,21 @@ const featureItems = [
   {
     id: 1,
     title: "Interactive Dashboard",
-    description: "Experience a colourful and informative dashboard with an interactive map to visualize your global business reach. Monitor sales, invoicing, quote-to-order ratios, and company performance against targets with shortcut icons for easy navigation.",
+    description: "Experience a colourful and informative dashboard with an interactive map to visualise your global business reach. Monitor sales, invoicing, quote to order ratios along with company performance metrics making instant decisions easy.",
     link: "/features",
     icon: IconDashboard
   },
   {
     id: 2,
     title: "Sales Management",
-    description: "Set and monitor company and individual sales targets in various currencies. Track quote-to-order ratios, customer maintenance, and merge companies with different offices or trading names for effective management.",
+    description: "Set and monitor Team and individual sales targets in multi currencies. Track Quote to Order ratio’s, manage customer performance, including effective merging of multi channel offices.",
     link: "/features",
     icon: IconChartBar
   },
   {
     id: 3,
     title: "Quoting",
-    description: "Create, manage, and send quotes using live franchised stock and price checkers. Add descriptions and images, handle single-line items or full BOMs, and customise pricing margins. Easily offer price breaks with instant second-line addition.",
+    description: "Create, manage, and send quotes using live franchised stock and price checkers. Add descriptions and images, handle single-line items or full BOMs, and customise pricing margins. Easily offer price breaks with instant multi line additions.",
     link: "/features",
     icon: IconFileDescription
   },
@@ -45,7 +45,7 @@ const featureItems = [
   {
     id: 5,
     title: "Inventory Management",
-    description: "Efficiently manage your inventory with ecommerce integration, store locations, pictures, and datasheets. Handle consignments and costings, and export stocklists for seamless operations.",
+    description: "Efficiently manage your inventory - physical, logical, availability, product testing, store locations, images, datasheets and more. Handle consignments, costings, and export stock lists for seamless operations.",
     link: "/features",
     icon: IconBoxSeam
   },

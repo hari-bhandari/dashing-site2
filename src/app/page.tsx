@@ -27,7 +27,7 @@ export default function Home() {
       <div className="flex flex-col gap-20 w-full mt-0 sm:mt-0 md:mt-64"> 
         <div className="flex flex-col gap-4 md:gap-8"> 
           <h1 className="text-3xl font-bold text-center dark:text-white lg:text-4xl">Scale at Speed & Drive Higher Sales</h1>
-          <h2 className="text-lg text-gray-400 text-center dark:text-white lg:text-xl">Streamline Processes, optimise Inventory, and Supercharge Your Sales Team with Our Cutting-Edge Solution</h2>
+          <h2 className="text-lg text-gray-400 text-center dark:text-white lg:text-xl">Streamline Processes, optimise Inventory, and Supercharge Your Sales Team with our Proven Solution</h2>
           <InfoBox/>
         </div>
         <div className="block md:hidden">
