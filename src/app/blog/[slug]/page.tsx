@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from '@/app/components/Navbar';
 import Footer from "@/app/components/Footer";
 import RichText from "@/app/components/Blog/RichText";
 import { getBlogPostBySlug } from '@/app/lib/contentful';
@@ -8,10 +7,40 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { useEffect, useState, use } from 'react';
 import dynamic from 'next/dynamic';
+import { Entry } from 'contentful';
+import { Document } from '@contentful/rich-text-types';
 
 const DynamicNavbar = dynamic(() => import('@/app/components/Navbar'), {
   ssr: false
 });
+
+// Define the structure of your Contentful blog post
+interface BlogPostFields {
+  title: string;
+  slug: string;
+  publishDate: string;
+  content: Document; // You can further type this based on the rich text structure
+  featuredImage?: {
+    fields: {
+      title?: string;
+      file: {
+        url: string;
+      };
+    };
+  };
+  author?: {
+    fields: {
+      name: string;
+      picture?: {
+        fields: {
+          file: {
+            url: string;
+          };
+        };
+      };
+    };
+  };
+}
 
 interface BlogPostProps {
   params: { slug: string } | Promise<{ slug: string }>;
@@ -22,7 +51,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
   const resolvedParams = params instanceof Promise ? use(params) : params;
   const slug = resolvedParams.slug;
   
-  const [post, setPost] = useState<any>(null);
+  const [post, setPost] = useState<Entry<BlogPostFields> | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,7 +61,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
         if (!fetchedPost) {
           notFound();
         }
-        setPost(fetchedPost);
+        setPost(fetchedPost as Entry<BlogPostFields>);
       } catch (error) {
         console.error("Failed to load blog post:", error);
       } finally {
