@@ -1,35 +1,58 @@
+"use client";
+
 import Navbar from '@/app/components/Navbar';
 import Footer from "@/app/components/Footer";
 import RichText from "@/app/components/Blog/RichText";
-import { getBlogPostBySlug, getAllBlogPosts } from '@/app/lib/contentful';
+import { getBlogPostBySlug } from '@/app/lib/contentful';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { useEffect, useState, use } from 'react';
+import dynamic from 'next/dynamic';
 
-export const dynamic = 'force-dynamic';
-// Or use a specific revalidation period (in seconds)
-// export const revalidate = 3600; // Revalidate at most every hour
+const DynamicNavbar = dynamic(() => import('@/app/components/Navbar'), {
+  ssr: false
+});
 
-// Generate static paths for all blog posts
-export async function generateStaticParams() {
-  const posts = await getAllBlogPosts();
-  
-  return posts.map((post) => ({
-    slug: post.fields.slug,
-  }));
+interface BlogPostProps {
+  params: { slug: string } | Promise<{ slug: string }>;
 }
 
-// Use a simple type definition that works with Next.js
-export default async function BlogPostPage({ 
-  params 
-}: { 
-  params: { slug: string } 
-}) {
-  const post = await getBlogPostBySlug(params.slug);
+export default function BlogPostPage({ params }: BlogPostProps) {
+  // Safely unwrap params using React.use() if it's a promise
+  const resolvedParams = params instanceof Promise ? use(params) : params;
+  const slug = resolvedParams.slug;
   
-  if (!post) {
-    notFound();
+  const [post, setPost] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function loadPost() {
+      try {
+        const fetchedPost = await getBlogPostBySlug(slug);
+        if (!fetchedPost) {
+          notFound();
+        }
+        setPost(fetchedPost);
+      } catch (error) {
+        console.error("Failed to load blog post:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadPost();
+  }, [slug]); // Use the unwrapped slug instead of params.slug
+
+  if (loading) {
+    return <div className="min-h-screen flex items-center justify-center dark:bg-slate-950">
+      <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+    </div>;
   }
-  
+
+  if (!post) {
+    return notFound();
+  }
+
   const { title, publishDate, featuredImage, content, author } = post.fields;
   
   const formattedDate = new Date(publishDate).toLocaleDateString('en-US', {
@@ -40,7 +63,7 @@ export default async function BlogPostPage({
   
   return (
     <div className="flex flex-col items-stretch justify-between min-h-screen dark:bg-slate-950">
-      <Navbar />
+      <DynamicNavbar />
       
       <main className="flex-grow container mx-auto px-4 py-12 mt-20 max-w-3xl">
         <article>

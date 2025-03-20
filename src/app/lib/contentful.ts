@@ -1,10 +1,26 @@
 import { createClient } from 'contentful';
 
+// Use environment variables as defined in .env.local
+const spaceId = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
+const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN;
+
+console.log("Environment variables:", {
+  spaceId: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+  allEnvVars: process.env
+});
+
+// Check if environment variables are available
+if (!spaceId || !accessToken) {
+  throw new Error(
+    'Contentful environment variables are missing. Please check your .env.local file.'
+  );
+}
+
 // Initialize Contentful client with your space ID and access token
-// This will only run on the server
 export const contentfulClient = createClient({
-  space: process.env.CONTENTFUL_SPACE_ID || '',
-  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
+  space: spaceId,
+  accessToken: accessToken,
 });
 
 // Type definitions for blog post
@@ -51,13 +67,12 @@ export interface BlogPost {
 // This only runs on the server
 export async function getAllBlogPosts(): Promise<BlogPost[]> {
   try {
-    const entries = await contentfulClient.getEntries<BlogPost>({
+    const response = await contentfulClient.getEntries({
       content_type: 'blogPost',
       order: '-fields.publishDate',
-      include: 2, // Include linked entries (like authors)
     });
     
-    return entries.items as unknown as BlogPost[];
+    return response.items as unknown as BlogPost[];
   } catch (error) {
     console.error('Error fetching blog posts:', error);
     return [];
@@ -68,16 +83,18 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
 // This only runs on the server
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
-    const entries = await contentfulClient.getEntries<BlogPost>({
+    console.log("Fetching blog post with slug:", slug);
+    const response = await contentfulClient.getEntries({
       content_type: 'blogPost',
       'fields.slug': slug,
-      include: 2,
-      limit: 1,
+      include: 2, // Include 2 levels of linked entries (for author and other references)
     });
     
-    return entries.items.length > 0 
-      ? (entries.items[0] as unknown as BlogPost) 
-      : null;
+    if (response.items.length === 0) {
+      return null;
+    }
+    
+    return response.items[0] as unknown as BlogPost;
   } catch (error) {
     console.error(`Error fetching blog post with slug ${slug}:`, error);
     return null;

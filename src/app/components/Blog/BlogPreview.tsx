@@ -17,91 +17,16 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps } from "next/image";
 import { useOutsideClick } from "@/app/components/Blog/hooks/use-outside-click";
 import Link from "next/link";
-// Remove or comment out the RichText import if not used
-// import RichText from "@/app/components/Blog/RichText"; 
 
-// Define Card type internally
 type Card = {
   src: string;
   title: string;
   category: string;
   content: React.ReactNode;
-  slug?: string; // Add slug for CMS blog posts
+  slug?: string; 
 };
 
-// Define default blogs data
-const defaultBlogs: Card[] = [
-  {
-    src: "/blog/industry-insights.jpg",
-    title: "5 Industry Trends Shaping Distribution Software in 2025",
-    category: "Industry Insights",
-    content: (
-      <>
-        <p className="mb-4 text-gray-700 dark:text-gray-300">
-          The distribution industry is evolving rapidly with emerging technologies and changing customer expectations. Here are five key trends we&apos;re seeing in 2025:
-        </p>
-        <ul className="list-disc pl-6 mb-4 space-y-2 text-gray-700 dark:text-gray-300">
-          <li>AI-powered inventory management systems that predict demand with unprecedented accuracy</li>
-          <li>Real-time tracking and visibility across the entire supply chain</li>
-          <li>Sustainability-focused distribution practices becoming a competitive advantage</li>
-          <li>Integration of autonomous vehicles and drones for last-mile delivery</li>
-          <li>Cloud-based systems replacing legacy software for improved scalability</li>
-        </ul>
-        <p className="text-gray-700 dark:text-gray-300">
-          These trends aren&apos;t just changing how distribution works—they&apos;re creating new opportunities for companies willing to embrace innovation and adapt to the changing landscape.
-        </p>
-      </>
-    ),
-  },
-  {
-    src: "/blog/tech-talk.jpg",
-    title: "How We Built a Distribution Platform That Actually Works for Brokers",
-    category: "Tech Talk",
-    content: (
-      <>
-        <p className="mb-4 text-gray-700 dark:text-gray-300">
-          When we set out to build Dashing, we wanted to solve the real problems brokers face every day. Here&apos;s our approach:
-        </p>
-        <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">Understanding the Problem</h3>
-        <p className="mb-4 text-gray-700 dark:text-gray-300">
-          We spent months talking to brokers, observing workflows, and identifying pain points in existing systems.
-        </p>
-        <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">Building for Real Users</h3>
-        <p className="mb-4 text-gray-700 dark:text-gray-300">
-          Our development process includes constant feedback from active brokers, ensuring we&apos;re building features that actually solve problems.
-        </p>
-        <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">Focusing on Flexibility</h3>
-        <p className="text-gray-700 dark:text-gray-300">
-          Distribution needs vary widely across businesses. Our platform is designed to be customizable while maintaining ease of use.
-        </p>
-      </>
-    ),
-  },
-  {
-    src: "/blog/case-studies.jpg",
-    title: "Case Study: How Sonar Increased Efficiency by 45% with Dashing",
-    category: "Case Studies",
-    content: (
-      <>
-        <p className="mb-4 text-gray-700 dark:text-gray-300">
-          Sonar, a mid-sized distribution company, was struggling with fragmented systems and manual processes that were slowing down operations.
-        </p>
-        <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">The Challenge</h3>
-        <p className="mb-4 text-gray-700 dark:text-gray-300">
-          Before implementing Dashing, Sonar was using three different software systems that didn&apos;t communicate with each other, leading to data silos and duplicate work.
-        </p>
-        <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">The Solution</h3>
-        <p className="mb-4 text-gray-700 dark:text-gray-300">
-          We worked closely with Sonar to implement Dashing&apos;s integrated platform, consolidating their operations into one seamless system.
-        </p>
-        <h3 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">The Results</h3>
-        <p className="text-gray-700 dark:text-gray-300">
-          Within three months, Sonar reported a 45% increase in operational efficiency, 30% reduction in order errors, and significantly improved customer satisfaction scores.
-        </p>
-      </>
-    ),
-  },
-];
+
 
 // Import your existing contentful functions
 import { BlogPost } from "@/app/lib/contentful";
@@ -311,7 +236,7 @@ interface BlogPreviewProps {
   initialScroll?: number;
 }
 
-export default function BlogPreview({ blogs = defaultBlogs, initialScroll = 0, useCMS = true }: BlogPreviewProps & { useCMS?: boolean }) {
+export default function BlogPreview({ blogs = [], initialScroll = 0, useCMS = true }: BlogPreviewProps & { useCMS?: boolean }) {
   const carouselRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
