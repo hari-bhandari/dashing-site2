@@ -4,8 +4,6 @@ import React, { forwardRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
-import { CiDeliveryTruck } from "react-icons/ci";
-import { LiaFileContractSolid } from "react-icons/lia";
 import { LuFileSearch, LuFilePenLine, LuTruck } from "react-icons/lu";
 
 const Circle = forwardRef<
