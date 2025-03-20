@@ -4,6 +4,9 @@ import React, { forwardRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import { CiDeliveryTruck } from "react-icons/ci";
+import { LiaFileContractSolid } from "react-icons/lia";
+import { LuFileSearch, LuFilePenLine, LuTruck } from "react-icons/lu";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -116,54 +119,11 @@ export default function AnimatedBeamDemo() {
 
 const Icons = {
     shipping: () => (
-      <svg viewBox="0 -2 20.001 20.001" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="truck" transform="translate(-2 -4)"> <path id="secondary" fill="#b5b5b5" d="M20.24,10.81,19,10.5l-.79-2.77a1,1,0,0,0-1-.73H13V6a1,1,0,0,0-1-1H4A1,1,0,0,0,3,6V16a1,1,0,0,0,1,1H5a2,2,0,0,1,4,0h6a2,2,0,0,1,4,0h1a1,1,0,0,0,1-1V11.78A1,1,0,0,0,20.24,10.81Z"></path> <path id="primary" d="M5,17H4a1,1,0,0,1-1-1V6A1,1,0,0,1,4,5h8a1,1,0,0,1,1,1V17H9" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path> <path id="primary-2" data-name="primary" d="M15,17H13V7h4.25a1,1,0,0,1,1,.73L19,10.5l1.24.31a1,1,0,0,1,.76,1V16a1,1,0,0,1-1,1H19" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path> <path id="primary-3" data-name="primary" d="M7,15a2,2,0,1,0,2,2A2,2,0,0,0,7,15Zm10,0a2,2,0,1,0,2,2A2,2,0,0,0,17,15Z" fill="none" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path> </g> </g></svg>
+      <LuTruck className="w-8 h-8"/>
       ),
     
   contract: () => (
-    <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        xmlnsXlink="http://www.w3.org/1999/xlink" 
-        height="40px" 
-        width="40px" 
-        version="1.1" 
-        id="Layer_1" 
-        viewBox="0 0 511.882 511.882"
-        >
-        <polygon 
-            style={{fill:"#E6E9ED"}} 
-            points="388.314,70.233 324.328,6.248 318.081,0 309.27,0 31.981,0 10.657,0 10.657,21.323 10.657,490.559 10.657,511.882 31.981,511.882 373.254,511.882 394.563,511.882 394.563,490.559 394.563,85.308 394.563,76.482"
-          />
-          <g>
-            <path 
-              style={{fill:"#434A54"}} 
-              d="M85.313,298.602h234.611c5.873,0,10.652-4.779,10.652-10.669s-4.779-10.669-10.652-10.669H85.313 c-5.905,0-10.669,4.779-10.669,10.669S79.408,298.602,85.313,298.602z"
-            />
-            <path 
-              style={{fill:"#434A54"}} 
-              d="M319.923,341.249H85.313c-5.905,0-10.669,4.781-10.669,10.67c0,5.89,4.765,10.669,10.669,10.669 h234.611c5.873,0,10.652-4.779,10.652-10.669C330.577,346.03,325.797,341.249,319.923,341.249z"
-            />
-            <path 
-              style={{fill:"#434A54"}} 
-              d="M202.613,405.235H85.313c-5.905,0-10.669,4.779-10.669,10.669s4.765,10.67,10.669,10.67h117.301 c5.889,0,10.669-4.78,10.669-10.67S208.503,405.235,202.613,405.235z"
-            />
-          </g>
-          <polygon 
-            style={{fill:"#E6E9ED"}} 
-            points="472.732,341.03 444.395,341.03 415.901,440.57 458.547,469.002 501.224,440.57"
-          />
-          <path 
-            style={{fill:"#656D78"}} 
-            d="M458.547,63.766c-23.557,0-42.646,19.089-42.646,42.646v287.934h85.324V106.413 C501.224,82.855,482.105,63.766,458.547,63.766z"
-          />
-          <path 
-            style={{fill:"#8CC153"}} 
-            d="M127.96,148.372v-20.62h21.339c5.889,0,10.654-4.78,10.654-10.67c0-5.889-4.765-10.669-10.654-10.669 H127.96V95.758c0-5.889-4.765-10.669-10.654-10.669s-10.669,4.78-10.669,10.669v10.654h-5.327c-18.417,0-24.307,7.545-26.025,13.855 c-3.218,11.951,7.045,25.12,31.353,40.179v20.62H85.313c-5.889,0-10.669,4.78-10.669,10.67c0,5.889,4.78,10.653,10.669,10.653 h21.323c0,5.905,4.78,10.67,10.669,10.67s10.654-4.765,10.654-10.67h5.342c18.402,0,24.307-7.529,26.01-13.856 C162.546,176.599,152.266,163.43,127.96,148.372z M98.918,127.814c0.703-0.047,1.5-0.062,2.39-0.062h5.327v6.857 C103.09,131.891,100.606,129.594,98.918,127.814z M133.301,181.067h-5.342v-6.857c3.546,2.718,6.03,5.015,7.717,6.795 C134.973,181.051,134.176,181.067,133.301,181.067z"
-          />
-          <polygon 
-            style={{fill:"#CCD1D9"}} 
-            points="394.563,76.482 318.081,76.482 318.081,0"
-          />
-        </svg>
+    <LuFilePenLine className="w-8 h-8"/>
       ),
   dashing: () => (
     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="41" height="41" viewBox="0 0 41 41" fill="none">
@@ -404,24 +364,6 @@ const Icons = {
 
   ),
   search: () => (
-    <svg 
-      viewBox="0 0 448 448" 
-      fill="#000000" 
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <title>file-preview</title>
-      <g transform="translate(0,-604.36224)">
-        <path 
-          style={{fillOpacity: 1, stroke: "none", strokeWidth: 36, strokeLinecap: "round", strokeMiterlimit: 4, strokeDasharray: "none", strokeOpacity: 1}}
-          d="M 96 0 L 96 32 L 96 160 L 128 160 L 128 32 L 320 32 L 320 128 L 416 128 L 416 416 L 160 416 L 144 416 L 128 416 L 96 416 L 96 448 L 128 448 L 448 448 L 448 416 L 448 111.01953 L 336.98047 0 L 128 0 L 96 0 z" 
-          transform="translate(0,604.36224)"
-        />
-        <path 
-          style={{fillOpacity: 1, stroke: "none", strokeWidth: 36, strokeLinecap: "round", strokeMiterlimit: 4, strokeDasharray: "none", strokeOpacity: 1}}
-          d="M 160 192 A 96 95.999992 0 0 0 64 288 A 96 95.999992 0 0 0 78.117188 337.88281 L 0 416 L 32 448 L 110.09375 369.90625 A 96 95.999992 0 0 0 160 384 A 96 95.999992 0 0 0 256 288 A 96 95.999992 0 0 0 160 192 z M 160 224 A 64 63.999996 0 0 1 224 288 A 64 63.999996 0 0 1 160 352 A 64 63.999996 0 0 1 96 288 A 64 63.999996 0 0 1 160 224 z" 
-          transform="translate(0,604.36224)"
-        />
-      </g>
-    </svg>
+    <LuFileSearch className="w-8 h-8" />
   ),
 };
