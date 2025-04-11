@@ -14,12 +14,12 @@ const DynamicNavbar = dynamic(() => import('@/app/components/Navbar'), {
   ssr: false
 });
 
-// Define the structure of your Contentful blog post
+
 interface BlogPostFields {
   title: string;
   slug: string;
   publishDate: string;
-  content: Document; // You can further type this based on the rich text structure
+  content: Document; 
   featuredImage?: {
     fields: {
       title?: string;
@@ -47,7 +47,6 @@ interface BlogPostProps {
 }
 
 export default function BlogPostPage({ params }: BlogPostProps) {
-  // Safely unwrap params using React.use() if it's a promise
   const resolvedParams = params instanceof Promise ? use(params) : params;
   const slug = resolvedParams.slug;
   
@@ -70,7 +69,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
     }
 
     loadPost();
-  }, [slug]); // Use the unwrapped slug instead of params.slug
+  }, [slug]);
 
   if (loading) {
     return <div className="min-h-screen flex items-center justify-center dark:bg-slate-950">

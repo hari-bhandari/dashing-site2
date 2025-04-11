@@ -7,9 +7,9 @@ import Footer from "@/app/components/Footer";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="flex flex-col items-stretch justify-between min-h-screen">
+    <div className="flex flex-col items-stretch justify-between min-h-screen dark:bg-slate-950">
       <Navbar />
-      <main className="flex-grow max-w-4xl mx-auto px-4 py-12">
+      <main className="flex-grow max-w-4xl mx-auto px-4 py-32">
         <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 dark:text-white">
           Privacy Policy
         </h1>

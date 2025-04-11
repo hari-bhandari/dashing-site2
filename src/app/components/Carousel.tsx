@@ -38,35 +38,31 @@ const Slide = ({ slide, index, current }: SlideProps) => {
   const { src, width, height } = slide;
   
   return (
-    <div className="w-full">
-      <li
-        ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center opacity-100 transition-all duration-300 ease-in-out w-full h-[40vmin] z-10"
-        style={{
-          transform: current !== index ? "scale(0.98)" : "scale(1)",
-          transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
-          display: current === index ? "flex" : "none" // Only show current slide
-        }}
+    <li
+      ref={slideRef}
+      className="flex flex-1 flex-col items-center justify-center relative text-center opacity-100 transition-all duration-300 ease-in-out w-full h-[40vmin]"
+      style={{
+        transform: current !== index ? "scale(0.98)" : "scale(1)",
+        transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+        display: current === index ? "flex" : "none" // Only show current slide
+      }}
+    >
+      <div
+        className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
       >
-        <div
-          className="absolute top-0 left-0 w-full h-full bg-[#1D1F2F] rounded-[1%] overflow-hidden transition-all duration-150 ease-out"
-        >
-          <Image
-            className="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-600 ease-in-out"
-            style={{
-              opacity: 1,
-            }}
-            src={src}
-            width={width}
-            height={height}
-            onLoad={imageLoaded}
-            loading="eager"
-            decoding="sync"
-            alt="Office Images"
-          />
-        </div>
-      </li>
-    </div>
+        <Image
+          className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-600 ease-in-out"
+          src={src}
+          width={width}
+          height={height}
+          onLoad={imageLoaded}
+          loading="eager"
+          decoding="sync"
+          alt="Office Images"
+          priority={index === 0} // Add priority to first image
+        />
+      </div>
+    </li>
   );
 };
 
@@ -110,11 +106,11 @@ export default function Carousel() {
   const id = useId();
   
   return (
-    <div
-      className="relative w-full max-w-[60%] mx-auto h-[40vmin]"
+    <div 
+      className="relative w-full max-w-[60%] mx-auto mt-24 h-[40vmin]" // Added mt-24 for spacing below navbar
       aria-labelledby={`carousel-heading-${id}`}
     >
-      <ul className="absolute w-full h-full">
+      <ul className="w-full h-full">
         {slides.map((slide, index) => (
           <Slide
             key={index}
@@ -124,6 +120,7 @@ export default function Carousel() {
           />
         ))}
       </ul>
+      
       <div className="absolute flex justify-center w-full top-[calc(100%+1rem)]">
         <CarouselControl
           type="previous"
