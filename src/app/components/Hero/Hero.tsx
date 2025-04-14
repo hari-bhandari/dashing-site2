@@ -45,6 +45,7 @@ export default function MacbookScroll({
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768); // md breakpoint
+      
     };
 
     checkMobile();
@@ -131,31 +132,15 @@ export default function MacbookScroll({
               Book a Demo
             </button>
           </div>
-          {/* Optional: Add a mobile-optimized image */}
-          <div className="w-full max-w-sm mx-auto">
-            <Image
-              src={src as string}
-              alt="Product Preview Mobile"
-              width={400}
-              height={300}
-              priority // Add this to prioritize loading
-              loading="eager" // Ensure it loads early
-              sizes="(max-width: 400px) 100vw, 400px"
-              className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full blur-[2px] brightness-95 backdrop-filter backdrop-blur-sm"
-              quality={85} // Slightly reduce quality for better load time
-            />
-          </div>
         </div>
       </div>
-
-      {/* Desktop MacBook View */}
       <div className="hidden md:block">
         <div
           ref={ref}
           className="h-fit-content flex flex-col items-center py-48 justify-start flex-shrink-0 [perspective:800px] transform scale-100 origin-top"
         >
           <div className="text-center">
-            {/* New rounded div with border */}
+            
             <motion.div
               style={{
                 translateY: textTransform,
@@ -167,13 +152,13 @@ export default function MacbookScroll({
               <span>Sell With Confidence & Ease</span>
             </motion.div>
 
-            {/* Replace static heading with Typewriter inside motion div */}
+          
             <motion.div
               style={{
                 translateY: textTransform,
                 opacity: textOpacity,
               }}
-              className="mb-8 flex flex-col items-center" /* Added flex-col items-center */
+              className="mb-8 flex flex-col items-center" 
             >
               {title || 
                 <Typewriter
