@@ -74,7 +74,7 @@ export default function FeatureDiv() {
 
   return (
     <div className="flex flex-col items-center w-full">
-      {/* Desktop layout */}
+ 
       <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 py-10 w-[75%] md:w-[60%] mx-auto gap-4">
         {featureItems.map((item, idx) => (
           <Link
@@ -109,7 +109,7 @@ export default function FeatureDiv() {
         ))}
       </div>
 
-      {/* Mobile layout with improved navigation */}
+    
       <div className="md:hidden w-full py-10 px-2 sm:px-4">
         <div className="relative w-full max-w-sm mx-auto">
           {/* Card content */}
@@ -123,8 +123,7 @@ export default function FeatureDiv() {
               </CardDescription>
             </Card>
           </div>
-          
-          {/* Navigation buttons positioned outside the card */}
+        
           <button
             className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-slate-700 transition-all"
             onClick={prevSlide}
@@ -142,8 +141,7 @@ export default function FeatureDiv() {
           </button>
         </div>
       </div>
-      
-      {/* Mobile indicator dots */}
+    
       <div className="flex md:hidden justify-center space-x-2 mt-4">
         {featureItems.map((_, idx) => (
           <button
@@ -158,9 +156,8 @@ export default function FeatureDiv() {
           />
         ))}
       </div>
-      
-      {/* View More Button */}
-      <div className="mt-8 mb-12">
+    
+            <div className="mt-8 mb-12">
         <Link 
           href="/features" 
           className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg inline-block"
