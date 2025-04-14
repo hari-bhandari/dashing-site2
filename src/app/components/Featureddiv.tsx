@@ -3,7 +3,7 @@
 import { cn } from "@/app/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   IconDashboard,
   IconChartBar,
@@ -63,21 +63,6 @@ const featureItems = [
 export default function FeatureDiv() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Check if we're on mobile screen
-  useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint in Tailwind
-    };
-    
-    checkIfMobile();
-    window.addEventListener("resize", checkIfMobile);
-    
-    return () => {
-      window.removeEventListener("resize", checkIfMobile);
-    };
-  }, []);
 
   const nextSlide = () => {
     setActiveIndex((prevIndex) => (prevIndex + 1) % featureItems.length);
@@ -128,7 +113,7 @@ export default function FeatureDiv() {
       <div className="md:hidden w-full py-10 px-2 sm:px-4">
         <div className="relative w-full max-w-sm mx-auto">
           {/* Card content */}
-          <div className="mx-8 sm:mx-12">
+          <div className="px-10 sm:px-14">
             <Card>
               <CardTitle icon={featureItems[activeIndex].icon}>
                 {featureItems[activeIndex].title}
@@ -141,7 +126,7 @@ export default function FeatureDiv() {
           
           {/* Navigation buttons positioned outside the card */}
           <button
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-slate-700 transition-all"
+            className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-slate-700 transition-all"
             onClick={prevSlide}
             aria-label="Previous feature"
           >
@@ -149,7 +134,7 @@ export default function FeatureDiv() {
           </button>
           
           <button
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-slate-700 transition-all"
+            className="absolute right-1 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-slate-700 transition-all"
             onClick={nextSlide}
             aria-label="Next feature"
           >
