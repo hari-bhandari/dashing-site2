@@ -115,7 +115,7 @@ export default function Testimonials({
           interface, advanced features and robust security.
         </p>
       </div>
-      {/* Main content section - Added border and shadow */}
+      
       <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-8  ">
         <div 
           className="relative grid grid-cols-1 md:grid-cols-2 gap-20 bg-white p-8 rounded-2xl  shadow-lg dark:bg-slate-950 dark:border dark:border-gray-200"
@@ -131,7 +131,6 @@ export default function Testimonials({
                     initial={{
                       opacity: 0,
                       scale: 0.9,
-                      z: -100,
                       rotate: randomRotateY(),
                     }}
                     animate={{
@@ -140,14 +139,14 @@ export default function Testimonials({
                       z: isActive(index) ? 0 : -100,
                       rotate: isActive(index) ? 0 : randomRotateY(),
                       zIndex: isActive(index)
-                        ? 999
+                        ? 50
                         : testimonials.length + 2 - index,
                       y: isActive(index) ? [0, -80, 0] : 0,
                     }}
                     exit={{
                       opacity: 0,
                       scale: 0.9,
-                      z: 100,
+                      
                       rotate: randomRotateY(),
                     }}
                     transition={{
@@ -237,7 +236,7 @@ export default function Testimonials({
                   handlePrev();
                 }}
                 aria-label="Previous testimonial"
-                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-[999]"
+                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative"
               >
                 <IconArrowLeft className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
               </button>
@@ -247,7 +246,7 @@ export default function Testimonials({
                   handleNext();
                 }}
                 aria-label="Next testimonial"
-                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-[999]"
+                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative "
               >
                 <IconArrowRight className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
               </button>

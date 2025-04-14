@@ -100,7 +100,6 @@ export default function Navbar() {
             </Link>
           </div>
 
-          {/* Mobile menu button */}
           <div className="flex items-center md:hidden">
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
@@ -127,7 +126,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Desktop navigation */}
           <div className="hidden md:flex md:items-center md:space-x-4">
             <NavLinks isMobile={false} />
             <button
@@ -151,7 +149,6 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile menu */}
         <div 
           className={`${
             isMenuOpen ? 'block' : 'hidden'
