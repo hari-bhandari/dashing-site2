@@ -3,14 +3,16 @@
 import { cn } from "@/app/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   IconDashboard,
   IconChartBar,
   IconFileDescription,
   IconUsers,
   IconBoxSeam,
-  IconTruck
+  IconTruck,
+  IconChevronLeft,
+  IconChevronRight
 } from '@tabler/icons-react';
 
 const featureItems = [
@@ -60,14 +62,39 @@ const featureItems = [
 
 export default function FeatureDiv() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Check if we're on mobile screen
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768); // md breakpoint in Tailwind
+    };
+    
+    checkIfMobile();
+    window.addEventListener("resize", checkIfMobile);
+    
+    return () => {
+      window.removeEventListener("resize", checkIfMobile);
+    };
+  }, []);
+
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % featureItems.length);
+  };
+
+  const prevSlide = () => {
+    setActiveIndex((prevIndex) => prevIndex === 0 ? featureItems.length - 1 : prevIndex - 1);
+  };
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 w-[75%] md:w-[60%] mx-auto gap-4">
+      {/* Desktop layout */}
+      <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 py-10 w-[75%] md:w-[60%] mx-auto gap-4">
         {featureItems.map((item, idx) => (
           <Link
             href={item.link}
-            key={item.id} // Using unique id instead of link
+            key={item.id}
             className="relative group block p-2 h-full w-full"
             onMouseEnter={() => setHoveredIndex(idx)}
             onMouseLeave={() => setHoveredIndex(null)}
@@ -75,7 +102,7 @@ export default function FeatureDiv() {
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.span
-                  className="absolute inset-0 h-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl "
+                  className="absolute inset-0 h-full bg-neutral-200 dark:bg-slate-800/[0.8] block rounded-3xl"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -94,6 +121,56 @@ export default function FeatureDiv() {
               <CardDescription>{item.description}</CardDescription>
             </Card>
           </Link>
+        ))}
+      </div>
+
+      {/* Mobile layout with improved navigation */}
+      <div className="md:hidden w-full py-10 px-2 sm:px-4">
+        <div className="relative w-full max-w-sm mx-auto">
+          {/* Card content */}
+          <div className="mx-8 sm:mx-12">
+            <Card>
+              <CardTitle icon={featureItems[activeIndex].icon}>
+                {featureItems[activeIndex].title}
+              </CardTitle>
+              <CardDescription>
+                {featureItems[activeIndex].description}
+              </CardDescription>
+            </Card>
+          </div>
+          
+          {/* Navigation buttons positioned outside the card */}
+          <button
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-slate-700 transition-all"
+            onClick={prevSlide}
+            aria-label="Previous feature"
+          >
+            <IconChevronLeft className="w-5 h-5 text-gray-600 dark:text-gray-200" />
+          </button>
+          
+          <button
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-slate-800 rounded-full p-2 shadow-md hover:bg-gray-100 dark:hover:bg-slate-700 transition-all"
+            onClick={nextSlide}
+            aria-label="Next feature"
+          >
+            <IconChevronRight className="w-5 h-5 text-gray-600 dark:text-gray-200" />
+          </button>
+        </div>
+      </div>
+      
+      {/* Mobile indicator dots */}
+      <div className="flex md:hidden justify-center space-x-2 mt-4">
+        {featureItems.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setActiveIndex(idx)}
+            className={`w-2 h-2 rounded-full transition-colors ${
+              idx === activeIndex 
+                ? "bg-blue-600 dark:bg-blue-400" 
+                : "bg-gray-300 dark:bg-gray-600"
+            }`}
+            aria-label={`Go to feature ${idx + 1}`}
+          />
         ))}
       </div>
       
