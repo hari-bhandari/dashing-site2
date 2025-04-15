@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { IconRobot, IconHeadset, IconDeviceDesktopCode } from '@tabler/icons-react'; 
 import { BsStars } from "react-icons/bs";
-import CalendlyPopup from "./CalendlyPopup";
+import CalendlyPopup from "../Popups/CalendlyPopup";
 
 export default function InfoDiv() {
   const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
@@ -22,7 +22,6 @@ export default function InfoDiv() {
           <div className="h-full px-2 py-12 sm:px-10">
             <Noise />
             <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-white h-full">
-              {/* Desktop version - hidden on mobile */}
               <div className="hidden md:flex flex-1 w-full text-center md:text-left flex-col">
                 <h2 className="text-2xl sm:text-4xl font-bold mb-4">
                   Ready to Transform Your Brokerage?

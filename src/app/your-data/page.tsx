@@ -1,9 +1,9 @@
 "use client";
 import dynamic from 'next/dynamic';
-const Navbar = dynamic(() => import('@/app/components/Navbar'), {
+const Navbar = dynamic(() => import('@/app/components/Navigation/Navbar'), {
   ssr: false
 });
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/Navigation/Footer";
 import { 
   IconShieldLock,
   IconUserCog,

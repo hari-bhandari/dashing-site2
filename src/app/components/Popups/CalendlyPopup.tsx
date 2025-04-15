@@ -13,7 +13,7 @@ interface CalendlyPopupProps {
 export default function CalendlyPopup({ isOpen, onClose }: CalendlyPopupProps) {
     const [isMobile, setIsMobile] = useState(false);
     
-    // Check if the screen is mobile
+
     useEffect(() => {
         const checkIfMobile = () => {
             setIsMobile(window.innerWidth < 768);
@@ -40,7 +40,7 @@ export default function CalendlyPopup({ isOpen, onClose }: CalendlyPopupProps) {
                             className={`bg-white dark:bg-gray-800 rounded-xl shadow-xl max-w-3xl w-full
                                 ${isMobile ? 'p-3 h-[95vh]' : 'p-6'} relative overflow-hidden`}
                         >
-                            {/* Close button - positioned differently on mobile */}
+                    
                             <button
                                 onClick={onClose}
                                 className={`absolute ${isMobile ? 'right-3 top-3' : 'right-6 top-6'} 
@@ -51,7 +51,7 @@ export default function CalendlyPopup({ isOpen, onClose }: CalendlyPopupProps) {
                                 <X className={`${isMobile ? 'h-5 w-5' : 'h-6 w-6'}`} />
                             </button>
                             
-                            {/* Added padding-right to create space for scrollbar */}
+                     
                             <div className="pr-2 overflow-hidden h-full">
                                 <InlineWidget 
                                     url="https://calendly.com/frank-mut4/dashing-demo"

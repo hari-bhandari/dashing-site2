@@ -1,7 +1,7 @@
 "use client";
-import Navbar from '@/app/components/Navbar';
-import Footer from "@/app/components/Footer";
-import FeaturedivExpanded from "@/app/components/FeaturedivExpanded";
+import Navbar from '@/app/components/Navigation/Navbar';
+import Footer from "@/app/components/Navigation/Footer";
+import FeaturedivExpanded from "@/app/components/Features/FeaturedivExpanded";
 
 
 

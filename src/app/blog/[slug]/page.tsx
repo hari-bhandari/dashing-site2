@@ -1,6 +1,6 @@
 "use client";
 
-import Footer from "@/app/components/Footer";
+import Footer from "@/app/components/Navigation/Footer";
 import RichText from "@/app/components/Blog/RichText";
 import { getBlogPostBySlug } from '@/app/lib/contentful';
 import Image from 'next/image';
@@ -10,7 +10,7 @@ import dynamic from 'next/dynamic';
 import { Entry } from 'contentful';
 import { Document } from '@contentful/rich-text-types';
 
-const DynamicNavbar = dynamic(() => import('@/app/components/Navbar'), {
+const DynamicNavbar = dynamic(() => import('@/app/components/Navigation/Navbar'), {
   ssr: false
 });
 

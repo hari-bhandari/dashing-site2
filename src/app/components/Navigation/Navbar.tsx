@@ -5,8 +5,8 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun, Menu, X } from 'lucide-react'
-import ContactPopup from './ContactPopup'
-import CalendlyPopup from './CalendlyPopup'
+import ContactPopup from '../Popups/ContactPopup'
+import CalendlyPopup from '../Popups/CalendlyPopup'
 
 export default function Navbar() {
   const [isContactOpen, setIsContactOpen] = useState(false)

@@ -44,7 +44,7 @@ const Slide = ({ slide, index, current }: SlideProps) => {
       style={{
         transform: current !== index ? "scale(0.98)" : "scale(1)",
         transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
-        display: current === index ? "flex" : "none" // Only show current slide
+        display: current === index ? "flex" : "none" 
       }}
     >
       <div
@@ -59,7 +59,7 @@ const Slide = ({ slide, index, current }: SlideProps) => {
           loading="eager"
           decoding="sync"
           alt="Office Images"
-          priority={index === 0} // Add priority to first image
+          priority={index === 0} 
         />
       </div>
     </li>

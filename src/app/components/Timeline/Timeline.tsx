@@ -6,7 +6,7 @@ import {
 } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { BsStars } from "react-icons/bs";
-import CalendlyPopup from "./CalendlyPopup";
+import CalendlyPopup from "../Popups/CalendlyPopup";
 
 interface TimelineEntry {
   title: string;
@@ -92,7 +92,6 @@ export default function Timeline() {
 
     const updateActiveDot = () => {
       const currentHeight = heightTransform.get();
-      // Find the highest index where dot position is less than current height
       const newActiveIndex = dotPositions.reduce((maxIndex, pos, index) => {
         return pos <= currentHeight ? index : maxIndex;
       }, -1);

@@ -24,8 +24,8 @@ import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image from "next/image";
-import CalendlyPopup from "../CalendlyPopup";
-import Typewriter from "./Typewriter"; // Import the default export
+import CalendlyPopup from "../Popups/CalendlyPopup";
+import Typewriter from "./Typewriter"; 
 
 export default function MacbookScroll({
   src,
@@ -44,7 +44,7 @@ export default function MacbookScroll({
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768); // md breakpoint
+      setIsMobile(window.innerWidth < 768); 
     };
 
     checkMobile();

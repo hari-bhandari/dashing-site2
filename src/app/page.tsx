@@ -1,16 +1,16 @@
 "use client";
 
 import { useTheme } from 'next-themes';
-import InfoBox from '@/app/components/Featureddiv';
-import Footer from "@/app/components/Footer";
-import InfoDiv from './components/InfoDiv';
-import InfoDivMobile from "@/app/components/InfoDivMobile";
+import InfoBox from '@/app/components/Features/Featureddiv';
+import Footer from "@/app/components/Navigation/Footer";
+import InfoDiv from '@/app/components/Info/InfoDiv';
+import InfoDivMobile from "@/app/components/Info/InfoDivMobile";
 import BlogPreview from "@/app/components/Blog/BlogPreview";
-import IntegrationsDiv from "@/app/components/Integrationsdiv";
+import IntegrationsDiv from "@/app/components/Integrations/Integrationsdiv";
 import MacbookScroll from '@/app/components/Hero/Hero';
-import Navbar from '@/app/components/Navbar';
-import Testimonials from '@/app/components/Testimonials';
-import Timeline from './components/Timeline';
+import Navbar from '@/app/components/Navigation/Navbar';
+import Testimonials from '@/app/components/Testimonials/Testimonials';
+import Timeline from './components/Timeline/Timeline';
 
 export default function Home() {
   const { theme } = useTheme();

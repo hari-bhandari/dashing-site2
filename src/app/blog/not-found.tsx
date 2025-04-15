@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import Navbar from '@/app/components/Navbar';
-import Footer from '@/app/components/Footer';
+import Navbar from '@/app/components/Navigation/Navbar';
+import Footer from '@/app/components/Navigation/Footer';
 
 export default function BlogNotFound() {
   return (

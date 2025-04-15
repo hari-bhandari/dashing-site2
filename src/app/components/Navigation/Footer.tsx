@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import {IconBrandLinkedin } from '@tabler/icons-react';
-import ContactPopup from './ContactPopup';
+import ContactPopup from '../Popups/ContactPopup';
 
 export default function Footer() {
   const [isContactOpen, setIsContactOpen] = useState(false);

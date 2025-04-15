@@ -1,5 +1,5 @@
-import Navbar from '@/app/components/Navbar';
-import Footer from "@/app/components/Footer";
+import Navbar from '@/app/components/Navigation/Navbar';
+import Footer from "@/app/components/Navigation/Footer";
 import { getAllBlogPosts } from '@/app/lib/contentful';
 import Image from 'next/image';
 import Link from 'next/link';
