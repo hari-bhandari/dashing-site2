@@ -1,9 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { IconRobot, IconHeadset, IconDeviceDesktopCode } from '@tabler/icons-react';
 import { BsStars } from "react-icons/bs";
+import CalendlyPopup from "../Popups/CalendlyPopup";
 
 export default function InfoDivMobile() {
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
+
   return (
     <section className="mx-auto w-[75%] bg-transparent relative rounded-2xl overflow-hidden">
       <div className="relative h-full bg-none sm:rounded-2xl overflow-hidden">
@@ -52,13 +55,21 @@ export default function InfoDivMobile() {
               </div>
             </div>
 
-            <button className="flex items-center justify-center gap-2 bg-[#22263e] dark:bg-white/[0.05] backdrop-blur-sm border border-white/[0.2] px-6 py-3 rounded-lg font-semibold hover:bg-[#2b3152] dark:hover:bg-white/[0.1] transition-colors w-full mt-4 text-white">
+            <button 
+              onClick={() => setIsCalendlyOpen(true)} 
+              className="flex items-center justify-center gap-2 bg-[#22263e] dark:bg-white/[0.05] backdrop-blur-sm border border-white/[0.2] px-6 py-3 rounded-lg font-semibold hover:bg-[#2b3152] dark:hover:bg-white/[0.1] transition-colors w-full mt-4 text-white"
+            >
               Get Started
               <BsStars className="w-4 h-4 text-white" />
             </button>
           </div>
         </div>
       </div>
+      
+      <CalendlyPopup
+        isOpen={isCalendlyOpen}
+        onClose={() => setIsCalendlyOpen(false)}
+      />
     </section>
   );
 }
