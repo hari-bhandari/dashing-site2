@@ -40,12 +40,11 @@ export default function MacbookScroll({
 }) {
   const [isMobile, setIsMobile] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false)
+  const [isCalendlyOpen, setIsCalendlyOpen] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768); // md breakpoint
-      
     };
 
     checkMobile();
@@ -65,7 +64,7 @@ export default function MacbookScroll({
   const translate = useTransform(
     scrollYProgress,
     [0, 0.5],
-    [0, isMobile ? 1000 : 325] 
+    [0, isMobile ? 1000 : 325]
   );
 
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
@@ -111,7 +110,7 @@ export default function MacbookScroll({
           </div>
 
           {/* Static heading for mobile instead of Typewriter */}
-          {title || 
+          {title || (
             <h1 className="text-4xl font-bold mb-6">
               <span className="text-neutral-800 dark:text-white">Software </span>
               <span className="text-neutral-800 dark:text-white">Built </span>
@@ -120,15 +119,19 @@ export default function MacbookScroll({
               <span className="text-neutral-800 dark:text-white">For </span>
               <span className="text-blue-500">Brokers</span>
             </h1>
-          }
-          
+          )}
+
           <p className="text-gray-400 text-base mb-8">
-          Unlock your business&apos;s full potential with innovative software designed to effortlessly manage, optimise, and scale your distribution operations, driving efficiency and growth every step of the way
+            Unlock your business&apos;s full potential with innovative software
+            designed to effortlessly manage, optimise, and scale your
+            distribution operations, driving efficiency and growth every step
+            of the way
           </p>
           <div className="mb-8">
-            <button 
+            <button
               className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg"
-              onClick={() => setIsCalendlyOpen(true)}>
+              onClick={() => setIsCalendlyOpen(true)}
+            >
               Book a Demo
             </button>
           </div>
@@ -140,7 +143,6 @@ export default function MacbookScroll({
           className="h-fit-content flex flex-col items-center py-48 justify-start flex-shrink-0 [perspective:800px] transform scale-100 origin-top"
         >
           <div className="text-center">
-            
             <motion.div
               style={{
                 translateY: textTransform,
@@ -152,22 +154,21 @@ export default function MacbookScroll({
               <span>Sell With Confidence & Ease</span>
             </motion.div>
 
-          
             <motion.div
               style={{
                 translateY: textTransform,
                 opacity: textOpacity,
               }}
-              className="mb-8 flex flex-col items-center" 
+              className="mb-8 flex flex-col items-center"
             >
-              {title || 
+              {title || (
                 <Typewriter
                   words={typewriterWords}
                   className="text-center text-4xl md:text-5xl"
                 />
-              }
+              )}
             </motion.div>
-            
+
             <motion.p
               style={{
                 translateY: textTransform,
@@ -175,23 +176,27 @@ export default function MacbookScroll({
               }}
               className="text-gray-400 text-lg mb-8 max-w-2xl mx-auto"
             >
-              Unlock your business&apos;s full potential with innovative software designed to effortlessly manage, optimise, and scale your distribution operations, driving efficiency and growth every step of the way
+              Unlock your business&apos;s full potential with innovative
+              software designed to effortlessly manage, optimise, and scale your
+              distribution operations, driving efficiency and growth every step
+              of the way
             </motion.p>
             {/* New button */}
             <motion.div className="mb-12">
-              <button 
+              <button
                 className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg"
-                onClick={() => setIsCalendlyOpen(true)}>
+                onClick={() => setIsCalendlyOpen(true)}
+              >
                 Book a Demo
               </button>
             </motion.div>
           </div>
           {/* Lid */}
-          <Lid 
-            src={src} 
-            scaleX={scaleX} 
-            scaleY={scaleY} 
-            rotate={rotate} 
+          <Lid
+            src={src}
+            scaleX={scaleX}
+            scaleY={scaleY}
+            rotate={rotate}
             translate={translate}
             setIsCalendlyOpen={setIsCalendlyOpen}
           />
@@ -219,27 +224,29 @@ export default function MacbookScroll({
             )}
             {badge && <div className="absolute bottom-4 left-4">{badge}</div>}
           </div>
-          
+
           {/* Motion button that follows the screen */}
-          <motion.div 
+          <motion.div
             className="text-center mt-8"
             style={{
               opacity: useTransform(scrollYProgress, [0.22, 0.3], [0, 1]),
-              translateY: useTransform(translate, 
-                [0, 100, 200, 325], 
+              translateY: useTransform(
+                translate,
+                [0, 100, 200, 325],
                 [0, 100, 200, 325]
               ),
               position: "relative",
               zIndex: 10,
               width: "48rem", // Match the MacBook width
-              maxWidth: "100%"
+              maxWidth: "100%",
             }}
-          >
-            
-          </motion.div>
+          ></motion.div>
         </div>
-        <CalendlyPopup isOpen={isCalendlyOpen} onClose={() => setIsCalendlyOpen(false)} />
       </div>
+      <CalendlyPopup
+        isOpen={isCalendlyOpen}
+        onClose={() => setIsCalendlyOpen(false)}
+      />
     </>
   );
 }
@@ -250,7 +257,7 @@ export const Lid = ({
   rotate,
   translate,
   src,
-  setIsCalendlyOpen
+  setIsCalendlyOpen,
 }: {
   scaleX: MotionValue<number>;
   scaleY: MotionValue<number>;
@@ -279,41 +286,43 @@ export const Lid = ({
         </div>
       </div>
       <motion.div
-  style={{
-    scaleX: scaleX,
-    scaleY: scaleY,
-    rotateX: rotate,
-    translateY: translate,
-    transformStyle: "preserve-3d",
-    transformOrigin: "top",
-  }}
-  className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
->
-  <div className="absolute inset-0 bg-[#272729] rounded-lg" />
-  <Image
-    src={src as string}
-    alt="Product Preview"
-    fill
-    priority // Add this to prioritize loading
-    loading="eager" // Ensure it loads early
-    className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full blur-[2px] brightness-95" // Added blur and adjusted brightness
-    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // More specific sizes
-    quality={85} // Slightly reduce quality for better load time
-  />
-  
-  {/* Call-to-action button on screen */}
-  <div className="absolute inset-0 flex items-center justify-center">
-    <div className="bg-black/50 backdrop-blur-sm p-6 rounded-xl shadow-2xl flex flex-col items-center">
-      <h3 className="text-white text-xl font-bold mb-4">Want to learn more?</h3>
-      <button 
-        onClick={() => setIsCalendlyOpen(true)}
-        className="px-3 py-2 bg-[#22263e] hover:bg-blue-700 text-white text-[13px] font-semibold rounded-lg transition-colors duration-200 shadow-lg"
+        style={{
+          scaleX: scaleX,
+          scaleY: scaleY,
+          rotateX: rotate,
+          translateY: translate,
+          transformStyle: "preserve-3d",
+          transformOrigin: "top",
+        }}
+        className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
-        Book a Demo 
-      </button>
-    </div>
-  </div>
-</motion.div>
+        <div className="absolute inset-0 bg-[#272729] rounded-lg" />
+        <Image
+          src={src as string}
+          alt="Product Preview"
+          fill
+          priority // Add this to prioritize loading
+          loading="eager" // Ensure it loads early
+          className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full blur-[2px] brightness-95" // Added blur and adjusted brightness
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // More specific sizes
+          quality={85} // Slightly reduce quality for better load time
+        />
+
+        {/* Call-to-action button on screen */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="bg-black/50 backdrop-blur-sm p-6 rounded-xl shadow-2xl flex flex-col items-center">
+            <h3 className="text-white text-xl font-bold mb-4">
+              Want to learn more?
+            </h3>
+            <button
+              onClick={() => setIsCalendlyOpen(true)}
+              className="px-3 py-2 bg-[#22263e] hover:bg-blue-700 text-white text-[13px] font-semibold rounded-lg transition-colors duration-200 shadow-lg"
+            >
+              Book a Demo
+            </button>
+          </div>
+        </div>
+      </motion.div>
     </div>
   );
 };

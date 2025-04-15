@@ -121,7 +121,7 @@ export default function Timeline() {
               for success.
             </p>
             <button 
-              className="flex items-center gap-2 bg-[#22263e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors relative z-[60]"
+              className="flex items-center gap-2 bg-[#22263e] text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors relative"
               onClick={() => setIsCalendlyOpen(true)}
             >
               Get Started

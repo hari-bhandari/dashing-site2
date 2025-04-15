@@ -289,7 +289,7 @@ export default function Testimonials({
                     initial={{
                       opacity: 0,
                       scale: 0.9,
-                      z: -100,
+                      z: -20,
                       rotate: randomRotateY(),
                     }}
                     animate={{
@@ -298,14 +298,14 @@ export default function Testimonials({
                       z: isActive(index) ? 0 : -100,
                       rotate: isActive(index) ? 0 : randomRotateY(),
                       zIndex: isActive(index)
-                        ? 50
+                        ? 20
                         : testimonials.length + 2 - index,
                       y: isActive(index) ? [0, -80, 0] : 0,
                     }}
                     exit={{
                       opacity: 0,
                       scale: 0.9,
-                      z: 100,
+                      z: 20,
                       rotate: randomRotateY(),
                     }}
                     transition={{
@@ -395,7 +395,7 @@ export default function Testimonials({
                   handlePrev();
                 }}
                 aria-label="Previous testimonial"
-                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-[999]"
+                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-10"
               >
                 <IconArrowLeft className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:rotate-12 transition-transform duration-300" />
               </button>
@@ -405,7 +405,7 @@ export default function Testimonials({
                   handleNext();
                 }}
                 aria-label="Next testimonial"
-                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-[999]"
+                className="h-7 w-7 rounded-full bg-gray-100 dark:bg-neutral-800 flex items-center justify-center group/button relative z-10"
               >
                 <IconArrowRight className="h-5 w-5 text-black dark:text-neutral-400 group-hover/button:-rotate-12 transition-transform duration-300" />
               </button>

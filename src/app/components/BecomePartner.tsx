@@ -60,7 +60,7 @@ export default function BecomePartner() {
                 Add Content here
               </h3>
               <button 
-                className="flex items-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 relative z-[60]"
+                className="flex items-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 relative z-20"
                 onClick={() => setIsContactOpen(true)}
               >
                 Contact Us
