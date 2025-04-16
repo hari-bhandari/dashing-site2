@@ -44,7 +44,7 @@ const options = {
   },
   renderNode: {
     [BLOCKS.PARAGRAPH]: (_node: Block, children: React.ReactNode) => <p className="mb-6">{children}</p>,
-    [BLOCKS.HEADING_1]: (_node: Block, children: React.ReactNode) => <h1 className="text-4xl font-bold mt-10 mb-4">{children}</h1>,
+    [BLOCKS.HEADING_1]: (_node: Block, children: React.ReactNode) => <h2 className="text-4xl font-bold mt-10 mb-4">{children}</h2>,
     [BLOCKS.HEADING_2]: (_node: Block, children: React.ReactNode) => <h2 className="text-3xl font-bold mt-8 mb-3">{children}</h2>,
     [BLOCKS.HEADING_3]: (_node: Block, children: React.ReactNode) => <h3 className="text-2xl font-bold mt-6 mb-2">{children}</h3>,
     [BLOCKS.HEADING_4]: (_node: Block, children: React.ReactNode) => <h4 className="text-xl font-bold mt-4 mb-2">{children}</h4>,

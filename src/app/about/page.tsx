@@ -24,7 +24,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
       <Navbar />
       <div className="w-full flex flex-col gap-10 mt-20 md:mt-32 px-4">
-        <h1 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Who are we?</h1>
+        <h2 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Who are we?</h2>
         <h2 className="text-lg md:text-xl text-gray-500 text-center font-semibold w-full md:max-w-[80%] lg:max-w-[60%] mx-auto dark:text-white">
           Powering the Electronic Component Distribution industry, we are the leading provider of software on the market. Built to lead industry standards, Dashing Distribution Software is where cutting edge technology meets timeless reliability. 
         </h2>
@@ -32,14 +32,14 @@ export default function Home() {
         
         <div className="flex flex-col gap-12 mx-auto mt-16 md:mt-20"> 
           <div className='w-full md:max-w-[80%] lg:max-w-[60%] mx-auto px-4'>
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-2 dark:text-white">Our Motto</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 dark:text-white">Our Motto</h2>
             <p className="text-lg md:text-xl text-gray-600 text-center dark:text-white">
               Dashing Distribution Software – Quality, Speed, Future.
             </p>
           </div>
 
           <div className='w-full md:max-w-[80%] lg:max-w-[60%] mx-auto px-4'>
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">The Dashing Difference</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">The Dashing Difference</h2>
             <p className="text-lg md:text-xl text-gray-600 text-center dark:text-white">
               We set out to find the perfect electronic component distribution software. When we couldn&apos;t find it, we built it ourselves.
               For three years, we developed a solution that truly delivers what the industry needs: efficient, visually appealing, and lightning fast. We didn&apos;t cut corners. We didn&apos;t settle. We created something we&apos;re genuinely proud of.
@@ -52,7 +52,7 @@ export default function Home() {
 
           
           <div className='w-full md:max-w-[80%] lg:max-w-[60%] mx-auto px-4'>
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">Why Dashing?</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">Why Dashing?</h2>
             <p className="text-lg md:text-xl text-gray-600 text-center dark:text-white">
               As industry leaders with decades of collective experience in electronic components distribution and software development, we&apos;ve crafted a system that truly understands your challenges. 
               Our solution makes your data simultaneously accessible and secure, whilst providing comprehensive tracking for orders in progress, processed shipments, and inventory management. We&apos;ve designed it to deliver exactly what you need, where you need it.
@@ -64,7 +64,7 @@ export default function Home() {
 
           
           <div className='w-full md:max-w-[80%] lg:max-w-[60%] mx-auto px-4'>
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">Support your Success</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">Support your Success</h2>
             <p className="text-lg md:text-xl text-gray-600 text-center dark:text-white">
               We understand the frustration of being left without assistance when you need it most. That&apos;s why we&apos;re committed to providing round the clock support, 24/7, no matter where your business operates across the globe. When you need us, we are there. Our dedication extends beyond the initial implementation. We relentlessly pursue excellence, regularly deploying software updates and introducing new industry leading features that keep you ahead of the competition.
               We believe that powerful software deserves skilled users. Our consistent approach to continued education ensures your team harnesses Dashing&apos;s full capabilities, maximising your return on investment and operational efficiency.
@@ -74,7 +74,7 @@ export default function Home() {
 
           
           <div className='w-full md:max-w-[80%] lg:max-w-[60%] mx-auto px-4'>
-            <h1 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">What drives us?</h1>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 md:mb-6 dark:text-white">What drives us?</h2>
             <p className="text-lg md:text-xl text-gray-600 text-center dark:text-white">
               At Dashing, we&apos;re guided by a few simple principles that are reflected in everything we do...
             </p>

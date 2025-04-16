@@ -19,7 +19,7 @@ export default function YourData() {
     <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
       <Navbar />
       <div className="mt-24 md:mt-32 w-full px-4 md:max-w-[80%] lg:max-w-[60%] mx-auto">
-        <h1 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Your Data is your Data</h1>
+        <h2 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Your Data is your Data</h2>
         <h2 className="text-lg md:text-xl text-gray-500 text-center mx-auto dark:text-white mt-4">Your data is what makes your business unique. We understand the importance of keeping your data safe and secure. Our software is designed to work independently from your data, ensuring you have complete control over your valuable company information.</h2>
       </div>
       <div className="w-full px-4 md:max-w-[80%] lg:max-w-[60%] mx-auto mb-16 md:mb-20 mt-10 md:mt-14">

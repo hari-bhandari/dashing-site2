@@ -13,7 +13,7 @@ export default async function BlogPage() {
       <Navbar />
       
       <main className="flex-grow container mx-auto px-4 py-12 mt-20">
-        <h1 className="text-4xl font-bold text-center mb-12 dark:text-white">Latest Blog Posts...</h1>
+        <h2 className="text-4xl font-bold text-center mb-12 dark:text-white">Latest Blog Posts...</h2>
         
         {blogPosts.length === 0 ? (
           <div className="text-center py-20">

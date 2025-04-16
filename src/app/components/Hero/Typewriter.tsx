@@ -111,7 +111,6 @@ const TypewriterEffectSmooth = ({
   className?: string;
   cursorClassName?: string;
 }) => {
-  // Split text inside of words into array of characters
   const wordsArray = words.map((word) => {
     return {
       ...word,
@@ -142,9 +141,9 @@ const TypewriterEffectSmooth = ({
   };
 
   return (
-    <div className={cn("flex items-center", className)}> {/* Removed my-6, added items-center */}
+    <div className={cn("flex items-center", className)}> 
       <motion.div
-        className="overflow-hidden" /* Removed pb-2 */
+        className="overflow-hidden" 
         initial={{
           width: "0%",
         }}
@@ -158,7 +157,7 @@ const TypewriterEffectSmooth = ({
         }}
       >
         <div
-          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold flex items-center" /* Added flex and items-center */
+          className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl font-bold flex items-center" 
           style={{
             whiteSpace: "nowrap",
           }}
@@ -179,7 +178,7 @@ const TypewriterEffectSmooth = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "block rounded-sm w-[4px] h-6 sm:h-7 md:h-8 lg:h-10 xl:h-12 bg-blue-500 self-center", /* Added self-center */
+          "block rounded-sm w-[4px] h-6 sm:h-7 md:h-8 lg:h-10 xl:h-12 bg-blue-500 self-center", 
           cursorClassName
         )}
       ></motion.span>

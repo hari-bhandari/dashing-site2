@@ -10,7 +10,7 @@ export default function IntegrationsDiv() {
           <IntegrationsAnimation />
         </div>     
         <div className="w-full md:w-1/2 space-y-4 text-left">
-          <h1 className="text-2xl md:text-4xl font-bold dark:text-white">Everything in One Place</h1>
+          <h2 className="text-2xl md:text-4xl font-bold dark:text-white">Everything in One Place</h2>
           <h2 className="text-sm md:text-xl text-gray-600 dark:text-white">
             No more jumping between different tools—Dashing does it all for you. 
             What used to take multiple apps is now seamlessly handled in one place, 

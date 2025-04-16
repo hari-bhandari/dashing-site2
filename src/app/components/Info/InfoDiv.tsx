@@ -41,7 +41,7 @@ export default function InfoDiv() {
                   <div className="flex items-center gap-3">
                     <IconRobot className="w-10 h-10 text-white" />
                     <div>
-                      <h1 className="font-bold">AI-Powered Workflow</h1>
+                      <h2 className="font-bold">AI-Powered Workflow</h2>
                       <h2>Ask Dashing AI streamlines RFQs, tariff codes, datasheets, and images for seamless component distribution.</h2>
                     </div>
                   </div>
@@ -51,7 +51,7 @@ export default function InfoDiv() {
                   <div className="flex items-center gap-3">
                     <IconHeadset className="w-10 h-10 text-white" />
                     <div>
-                      <h1 className="font-bold">Exceptional Customer Service</h1>
+                      <h2 className="font-bold">Exceptional Customer Service</h2>
                       <h2>We deliver 24/7 unmatched support on-site, phone, live tickets, and chat to keep your business running smoothly.</h2>
                     </div>
                   </div>
@@ -61,7 +61,7 @@ export default function InfoDiv() {
                   <div className="flex items-center gap-3">
                     <IconDeviceDesktopCode className="w-10 h-10 text-white" />
                     <div>
-                      <h1 className="font-bold">Cutting-Edge Software Suite</h1>
+                      <h2 className="font-bold">Cutting-Edge Software Suite</h2>
                       <h2>Broker-designed software: sales, inventory, and finance tools in one platform for efficiency</h2>
                     </div>
                   </div>

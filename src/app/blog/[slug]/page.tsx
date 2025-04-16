@@ -96,7 +96,7 @@ export default function BlogPostPage({ params }: BlogPostProps) {
       <main className="flex-grow container mx-auto px-4 py-12 mt-20 max-w-3xl">
         <article>
           <header className="mb-10">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white">{title}</h1>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 dark:text-white">{title}</h2>
             <div className="flex items-center text-gray-600 dark:text-gray-300 mb-6">
               {author && (
                 <div className="flex items-center mr-6">

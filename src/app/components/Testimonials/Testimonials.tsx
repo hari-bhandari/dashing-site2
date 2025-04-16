@@ -116,29 +116,29 @@ export default function Testimonials({
     return null;
   }
 
-  // Render compact mobile view
+
   if (isMobile) {
     return (
       <div>
         <style jsx global>{scrollbarStyles}</style>
-        {/* Mobile Header section */}
+     
         <div className="text-center max-w-xs mx-auto mb-4">
-          <h1 className="text-2xl font-bold mb-2 text-black dark:text-white">
+          <h2 className="text-2xl font-bold mb-2 text-black dark:text-white">
             Don&apos;t Just Take Our Word For It!
-          </h1>
+          </h2>
           <p className="text-sm text-gray-600 dark:text-white">
             Our users love our software
           </p>
         </div>
         
-        {/* Mobile content section - more compact */}
+ 
         <div className="max-w-xs mx-auto antialiased font-sans px-3 py-4">
           <div 
             className="relative bg-white p-4 rounded-xl shadow-md dark:bg-slate-950 dark:border dark:border-gray-700"
             onTouchStart={() => setIsPaused(true)}
             onTouchEnd={() => setIsPaused(false)}
           >
-            {/* Top row with navigation */}
+            
             <div className="flex justify-between items-center mb-3">
               <p className="text-xs font-medium text-gray-500 dark:text-gray-400">
                 {`${active + 1} / ${testimonials.length}`}
@@ -265,9 +265,9 @@ export default function Testimonials({
       <style jsx global>{scrollbarStyles}</style>
       {/* Header section */}
       <div className="text-center max-w-4xl mx-auto mb-8">
-        <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">
+        <h2 className="text-4xl font-bold mb-4 text-black dark:text-white">
           Don&apos;t Just Take Our Word For It!
-        </h1>
+        </h2>
         <p className="text-xl text-gray-600 dark:text-white">
           Our users consistently praise our software for its user-friendly
           interface, advanced features and robust security.
