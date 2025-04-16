@@ -40,7 +40,7 @@ const Slide = ({ slide, index, current }: SlideProps) => {
   return (
     <li
       ref={slideRef}
-      className="flex flex-1 flex-col items-center justify-center relative text-center opacity-100 transition-all duration-300 ease-in-out w-full h-[40vmin]"
+      className="flex flex-1 flex-col items-center justify-center relative text-center opacity-100 transition-all duration-300 ease-in-out w-full h-[45vmin] sm:h-[40vmin]"
       style={{
         transform: current !== index ? "scale(0.98)" : "scale(1)",
         transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -107,7 +107,7 @@ export default function Carousel() {
   
   return (
     <div 
-      className="relative w-full max-w-[60%] mx-auto mt-24 h-[40vmin]" // Added mt-24 for spacing below navbar
+      className="relative w-[90%] sm:w-[85%] md:w-[80%] lg:w-[70%] mx-auto mt-16 md:mt-24 h-[45vmin] sm:h-[40vmin]" 
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul className="w-full h-full">

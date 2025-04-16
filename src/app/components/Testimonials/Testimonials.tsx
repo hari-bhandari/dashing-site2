@@ -78,7 +78,7 @@ export default function Testimonials({
   const { resolvedTheme } = useTheme();
   const [isMobile, setIsMobile] = useState(false);
 
-  // Check if the screen is mobile
+ 
   useEffect(() => {
     const checkIfMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -186,7 +186,7 @@ export default function Testimonials({
                       z: isActive(index) ? 0 : -100,
                       rotate: isActive(index) ? 0 : randomRotateY(),
                       zIndex: isActive(index)
-                        ? 50
+                        ? 20
                         : testimonials.length + 2 - index,
                       y: isActive(index) ? [0, -40, 0] : 0,
                     }}
