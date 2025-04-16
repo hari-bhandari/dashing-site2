@@ -12,7 +12,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Type for node data for embedded assets
+
 interface EmbeddedAssetData {
   target: {
     fields: {
@@ -31,7 +31,6 @@ interface EmbeddedAssetData {
   }
 }
 
-// Type for node data for hyperlinks
 interface HyperlinkData {
   uri: string;
 }

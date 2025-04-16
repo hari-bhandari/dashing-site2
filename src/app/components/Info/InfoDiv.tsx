@@ -35,7 +35,7 @@ export default function InfoDiv() {
                 </button>
               </div>
               
-              {/* Cards section */}
+              
               <div className="flex-1 flex flex-col gap-4 w-full">
                 <div className="bg-white bg-opacity-10 p-4 rounded-lg">
                   <div className="flex items-center gap-3">
@@ -68,7 +68,7 @@ export default function InfoDiv() {
                 </div>
               </div>
 
-              {/* Mobile button - shown below md breakpoint */}
+              
               <div className="md:hidden w-full mt-auto">
                 <button 
                   className="flex items-center justify-center gap-2 bg-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors bg-opacity-25 w-full relative z-[60]"
@@ -83,7 +83,7 @@ export default function InfoDiv() {
         </div>
       </section>
 
-      {/* Add the CalendlyPopup component */}
+      
       <CalendlyPopup 
         isOpen={isCalendlyOpen}
         onClose={() => setIsCalendlyOpen(false)}

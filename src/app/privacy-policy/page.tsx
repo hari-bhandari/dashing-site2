@@ -15,7 +15,6 @@ export default function PrivacyPolicy() {
         </h1>
         
         <div className="space-y-12 text-gray-700 dark:text-gray-300">
-          {/* Introduction */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">Introduction</h2>
             <p>
@@ -25,16 +24,12 @@ export default function PrivacyPolicy() {
               This privacy policy provides you with the reasons why we collect, use and share your personal information, how we protect the privacy of your information, and explains your data protection rights.
             </p>
           </section>
-
-          {/* Data Controller */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">Data Controller</h2>
             <p>
               Dashing Disty is the Data Controller for your data. Please direct any queries, complaints, or data protection requests to <a href="mailto:sales@dashingdisty.com" className="text-blue-600 dark:text-blue-400 hover:underline">sales@dashingdisty.com</a>.
             </p>
           </section>
-
-          {/* Personal Information Collection */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">Personal Information We May Collect</h2>
             <ul className="list-disc pl-6 space-y-2">
@@ -45,8 +40,6 @@ export default function PrivacyPolicy() {
               <li>Any additional personal information that you may provide to Dashing Disty</li>
             </ul>
           </section>
-
-          {/* How We Use Your Information */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">How We Use Your Information</h2>
             <p>We use your personal information to:</p>
@@ -59,8 +52,6 @@ export default function PrivacyPolicy() {
               <li>Analyze and improve our website performance</li>
             </ul>
           </section>
-
-          {/* Legal Basis */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">Legal Basis for Processing</h2>
             <p>We process your personal information based on the following legal grounds:</p>
@@ -71,14 +62,10 @@ export default function PrivacyPolicy() {
               <li>For our legitimate business interests</li>
             </ul>
           </section>
-
-          {/* Data Retention */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">Data Retention</h2>
             <p>We retain your personal information for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
           </section>
-
-          {/* Your Rights */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">Your Rights</h2>
             <p>You have the following rights regarding your personal information:</p>
@@ -92,8 +79,6 @@ export default function PrivacyPolicy() {
               <li>The right to withdraw consent</li>
             </ul>
           </section>
-
-          {/* Contact Us */}
           <section className="space-y-4">
             <h2 className="text-2xl font-semibold dark:text-white">Contact Us</h2>
             <p>If you have any questions or concerns about this privacy policy or our data practices, please contact us at <a href="mailto:sales@dashingdisty.com" className="text-blue-600 dark:text-blue-400 hover:underline">sales@dashingdisty.com</a>.</p>

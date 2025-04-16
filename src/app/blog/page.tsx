@@ -4,7 +4,7 @@ import { getAllBlogPosts } from '@/app/lib/contentful';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Server Component by default
+
 export default async function BlogPage() {
   const blogPosts = await getAllBlogPosts();
   

@@ -318,7 +318,6 @@ export default function BlogPreview({ blogs = [], initialScroll = 0, useCMS = tr
 
   return (
     <div className="w-full">
-      {/* Heading section with reduced bottom margin */}
       <div className="text-center mb-2 md:mb-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white">
           Our Latest Blog Posts
@@ -326,8 +325,6 @@ export default function BlogPreview({ blogs = [], initialScroll = 0, useCMS = tr
         <p className="mt-2 md:mt-3 text-gray-600 dark:text-gray-300 max-w-2xl mx-auto px-4">
           Insights, updates, and expert perspectives on distribution software and industry trends
         </p>
-        
-        {/* View All button */}
         <div className="mt-4 mb-4">
           <Link 
             href="/blog" 

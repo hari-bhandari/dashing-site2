@@ -6,12 +6,9 @@ export default function IntegrationsDiv() {
   return (
     <div className="relative w-full max-w-6xl mx-auto py-16 px-4">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-        {/* Animation on the left for desktop, top for mobile */}
         <div className="w-full md:w-1/2">
           <IntegrationsAnimation />
-        </div>
-        
-        {/* Text content on the right for desktop, bottom for mobile */}
+        </div>     
         <div className="w-full md:w-1/2 space-y-4 text-left">
           <h1 className="text-2xl md:text-4xl font-bold dark:text-white">Everything in One Place</h1>
           <h2 className="text-sm md:text-xl text-gray-600 dark:text-white">

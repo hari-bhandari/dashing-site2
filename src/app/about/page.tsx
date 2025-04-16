@@ -30,7 +30,7 @@ export default function Home() {
         </h2>
         <Carousel />
         
-        <div className="flex flex-col gap-12 mx-auto mt-20"> {/* Increased gap between sections */}
+        <div className="flex flex-col gap-12 mx-auto mt-20"> 
           <div className='max-w-[60%] mx-auto'>
             <h1 className="text-4xl font-bold text-center mb-2 dark:text-white">Our Motto</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
@@ -50,7 +50,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* New Strengths section */}
+          
           <div className='max-w-[60%] mx-auto'>
             <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Why Dashing?</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
@@ -62,7 +62,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* New Customer Support section */}
+          
           <div className='max-w-[60%] mx-auto'>
             <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">Support your Success</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
@@ -72,7 +72,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* New What Drives Us section */}
+          
           <div className='max-w-[60%] mx-auto'>
             <h1 className="text-4xl font-bold text-center mb-6 dark:text-white">What drives us?</h1>
             <p className="text-xl text-gray-600 text-center dark:text-white">
@@ -80,10 +80,10 @@ export default function Home() {
             </p>
           </div>
 
-          {/* New Features Grid section */}
+          
           <div className='max-w-[60%] mx-auto mb-20'>
             <div className="grid grid-cols-4 gap-6 mb-6">
-              {/* First row */}
+              
               <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
                 <IconHeadset className="w-10 h-10 text-blue-500 mb-4" />
                 <h3 className="font-bold mb-2 dark:text-white">Unparalleled Customer Support</h3>
@@ -107,7 +107,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-3 gap-6">
-              {/* Second row */}
+              
               <div className="bg-white dark:bg-slate-900 p-6 rounded-xl shadow-lg flex flex-col items-center text-center">
                 <IconMessage className="w-10 h-10 text-blue-500 mb-4" />
                 <h3 className="font-bold mb-2 dark:text-white">Active Feedback Seekers</h3>
