@@ -15,6 +15,11 @@ const barlow = Barlow({
 export const metadata: Metadata = {
   title: "Dashing Distrubution Software",
   description: "Dashing Distribution Software provides a dedicated distribution software package designed specifically for the electronic components industry.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
