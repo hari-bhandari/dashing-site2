@@ -2,8 +2,8 @@
 
 import React, { forwardRef, useRef } from "react";
 
-import { cn } from "@/lib/utils";
-import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import { cn } from "@/app/lib/utils";
+import { AnimatedBeam } from "@/app/components/magicui/animated-beam";
 import { LuFileSearch, LuFilePenLine, LuTruck } from "react-icons/lu";
 
 const Circle = forwardRef<

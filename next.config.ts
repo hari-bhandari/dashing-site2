@@ -12,7 +12,7 @@ const nextConfig = {
       },
     ],
   },
-  // Add this to disable the type checking that's causing the error
+  
   typescript: {
     // !! WARN !!
     // Dangerously allow production builds to successfully complete even if
