@@ -357,7 +357,7 @@ export default function Testimonials({
                 </p>
               </div>
               
-              {/* Scrollable testimonial text container */}
+  
               <div className="mt-8 overflow-y-auto max-h-[200px] pr-2 hide-scrollbar">
                 <motion.p className="text-lg text-gray-500 dark:text-white">
                   {testimonials[active].quote.split(" ").map((word, index) => (
