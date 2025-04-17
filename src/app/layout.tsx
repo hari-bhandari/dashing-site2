@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Barlow } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from 'next-themes';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import TabAttentionTitle from "./components/TabAttentionTitle";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -22,11 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
-      <SpeedInsights />
       <body className={`${barlow.variable} font-sans antialiased overflow-x-hidden`}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
+          <GoogleAnalytics measurementId="G-ME240VW0QZ" />
+          <SpeedInsights />
         </ThemeProvider>
+        <TabAttentionTitle />
       </body>
     </html>
   );

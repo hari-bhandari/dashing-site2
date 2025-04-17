@@ -10,20 +10,18 @@ console.log("Environment variables:", {
   allEnvVars: process.env
 });
 
-// Check if environment variables are available
+
 if (!spaceId || !accessToken) {
   throw new Error(
     'Contentful environment variables are missing. Please check your .env.local file.'
   );
 }
 
-// Initialize Contentful client with your space ID and access token
 export const contentfulClient = createClient({
   space: spaceId,
   accessToken: accessToken,
 });
 
-// Type definitions for blog post
 export interface BlogPost {
   sys: {
     id: string;
@@ -47,7 +45,7 @@ export interface BlogPost {
       };
     };
     excerpt?: string;
-    content: Document; // Rich text content
+    content: Document; 
     author?: {
       fields: {
         name: string;
@@ -63,8 +61,7 @@ export interface BlogPost {
   };
 }
 
-// Function to fetch all blog posts
-// This only runs on the server
+
 export async function getAllBlogPosts(): Promise<BlogPost[]> {
   try {
     const response = await contentfulClient.getEntries({
@@ -79,15 +76,14 @@ export async function getAllBlogPosts(): Promise<BlogPost[]> {
   }
 }
 
-// Function to fetch a single blog post by slug
-// This only runs on the server
+
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | null> {
   try {
     console.log("Fetching blog post with slug:", slug);
     const response = await contentfulClient.getEntries({
       content_type: 'blogPost',
       'fields.slug': slug,
-      include: 2, // Include 2 levels of linked entries (for author and other references)
+      include: 2, 
     });
     
     if (response.items.length === 0) {
