@@ -12,7 +12,6 @@ const messages = [
 const TabAttentionTitle = () => {
   // Start with an empty title in state so we don't access `document.title` on the server
   const [originalTitle, setOriginalTitle] = useState('')
-  const [index, setIndex] = useState(0)
   const intervalRef = useRef(null)
  
   useEffect(() => {
@@ -26,19 +25,14 @@ const TabAttentionTitle = () => {
           if (!intervalRef.current) {
             intervalRef.current = setInterval(() => {
               if (document.hidden) {
-                setIndex(prevIndex => {
-                  const nextIndex = (prevIndex + 1) % messages.length
-                  document.title = messages[nextIndex]
-                  return nextIndex
-                })
+                document.title = messages[(Math.floor(Date.now() / 2500) % messages.length)]
               }
             }, 2500)
           }
         } else {
           clearInterval(intervalRef.current)
           intervalRef.current = null
-          // Reset the index and restore the original title
-          setIndex(0)
+          // Restore the original title
           document.title = originalTitle
         }
       }
