@@ -13,7 +13,7 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Dashing Distrubution Software",
+  title: "Dashing Distribution Software",
   description: "Dashing Distribution Software provides a dedicated distribution software package designed specifically for the electronic components industry.",
   icons: {
     icon: "/favicon.svg",
