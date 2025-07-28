@@ -104,7 +104,7 @@ export default function Timeline() {
 
   return (
     <div
-      className="w-[90%] mx-auto bg-white dark:bg-neutral-950 font-sans px-4 md:px-10"
+      className="w-[90%] mx-auto bg-white dark:bg-slate-950 font-sans px-4 md:px-10"
       ref={containerRef}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
