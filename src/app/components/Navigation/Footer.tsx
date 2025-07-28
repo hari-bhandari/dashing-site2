@@ -18,6 +18,28 @@ export default function Footer() {
               Company
             </h3>
             <div className="flex flex-col space-y-2">
+              <p className="text-gray-600 dark:text-white text-sm">
+                Company Registration No. 13057652
+              </p>
+              <p className="text-gray-600 dark:text-white text-sm">
+                VAT Number: GB449952051
+              </p>
+            </div>
+          </div>
+
+          {/* Resources */}
+          <div className="col-span-1">
+            <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4 dark:text-white">
+              Resources
+            </h3>
+            <div className="flex flex-col space-y-2">
+              <Link 
+                href="/blog" 
+                aria-label="Read our blog posts"
+                className="text-gray-600 hover:text-gray-900 dark:text-white"
+              >
+                Blog
+              </Link>
               <Link 
                 href="/about" 
                 aria-label="Learn more about Dashing Distribution"
@@ -35,22 +57,6 @@ export default function Footer() {
                 className="text-gray-600 hover:text-gray-900 dark:text-white"
               >
                 Contact
-              </Link>
-            </div>
-          </div>
-
-          {/* Resources */}
-          <div className="col-span-1">
-            <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4 dark:text-white">
-              Resources
-            </h3>
-            <div className="flex flex-col space-y-2">
-              <Link 
-                href="/blog" 
-                aria-label="Read our blog posts"
-                className="text-gray-600 hover:text-gray-900 dark:text-white"
-              >
-                Blog
               </Link>
             </div>
           </div>
