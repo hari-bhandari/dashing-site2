@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import TabAttentionTitle from "./components/TabAttentionTitle";
 import GoogleAnalytics from "./components/GoogleAnalytics";
-import IntercomWrapper from "./components/IntercomWrapper";
+import ChatProvider from "./components/ChatProvider";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -45,14 +45,14 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
       <body className={`${barlow.variable} font-sans antialiased overflow-x-hidden`}>
-        <IntercomWrapper>
+        <ChatProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
             <GoogleAnalytics measurementId="G-ME240VW0QZ" />
             <SpeedInsights />
           </ThemeProvider>
           <TabAttentionTitle />
-        </IntercomWrapper>
+        </ChatProvider>
       </body>
     </html>
   );
