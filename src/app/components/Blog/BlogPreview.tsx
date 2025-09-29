@@ -227,7 +227,7 @@ const BlogCard = ({
 
 // Main component with internally defined props
 interface BlogPreviewProps {
-  blogs: Array<{
+  blogs?: Array<{
     src: string;
     title: string;
     category: string;
