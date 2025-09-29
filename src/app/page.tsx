@@ -11,6 +11,7 @@ import Navbar from '@/app/components/Navigation/Navbar';
 import Testimonials from '@/app/components/Testimonials/Testimonials';
 import Timeline from './components/Timeline/Timeline';
 import BrokersDilemma from "@/app/components/Sections/BrokersDilemma";
+import DashingGoal from "@/app/components/Sections/DashingGoal";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <BrokersDilemma />  
+      <DashingGoal />
       <Testimonials />
 
         <InfoBox/> 
