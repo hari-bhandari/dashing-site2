@@ -5,7 +5,7 @@ type HeroImageProps = {
 export default function HeroImage({ theme }: HeroImageProps) {
 	void theme;
 	return (
-		<div className="relative mx-auto mt-12 flex max-w-3xl items-center justify-center rounded-[2.5rem] border border-dashed border-slate-300 bg-white/80 p-16 text-center text-slate-500 shadow-[0_40px_80px_-40px_rgba(15,23,42,0.35)] backdrop-blur-md dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-400">
+		<div className="relative mx-auto mt-12 flex max-w-3xl items-center justify-center rounded-[2.5rem] border border-white/20 bg-white/10 p-16 text-center text-white/70 shadow-[0_45px_120px_-60px_rgba(12,10,43,0.8)] backdrop-blur-lg">
 			<span className="text-lg font-semibold uppercase tracking-[0.2em]">Placeholder Image</span>
 		</div>
 	);

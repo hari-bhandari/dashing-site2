@@ -1,36 +1,34 @@
 "use client";
 
-import InfoBox from '@/app/components/Features/Featureddiv';
+
 import Footer from "@/app/components/Navigation/Footer";
-import InfoDiv from '@/app/components/Info/InfoDiv';
-import InfoDivMobile from "@/app/components/Info/InfoDivMobile";
-import BlogPreview from "@/app/components/Blog/BlogPreview";
-import IntegrationsDiv from "@/app/components/Integrations/Integrationsdiv";
 import Hero from "@/app/components/Hero";
 import Navbar from '@/app/components/Navigation/Navbar';
 import Testimonials from '@/app/components/Testimonials/Testimonials';
-import Timeline from './components/Timeline/Timeline';
 import BrokersDilemma from "@/app/components/Sections/BrokersDilemma";
 import DashingGoal from "@/app/components/Sections/DashingGoal";
+import DashingTransformation from "@/app/components/Sections/DashingTransformation";
+import DashingCapabilities from "@/app/components/Sections/DashingCapabilities";
+import RoleSolutions from "@/app/components/Sections/RoleSolutions";
+import DashingJourney from "@/app/components/Sections/DashingJourney";
+import DashingResources from "@/app/components/Sections/DashingResources";
+import DashingCTA from "@/app/components/Sections/DashingCTA";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
+    <div className="flex flex-col min-h-screen text-white">
       <Navbar />
       <Hero />
       <BrokersDilemma />  
       <DashingGoal />
+      <DashingTransformation />
+      <DashingCapabilities />
+      <RoleSolutions />
+      <DashingJourney />
+      <DashingResources />
+      <DashingCTA />
       <Testimonials />
-
-        <InfoBox/> 
-        <InfoDivMobile />
-
-        <InfoDiv />
-
-        <IntegrationsDiv />
-        <Timeline />
-        <BlogPreview />
-        <Footer /> 
+      <Footer /> 
  
     </div>
   );

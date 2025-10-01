@@ -116,6 +116,12 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply min-h-screen text-white antialiased;
+    background-color: #090123;
+    background-image:
+      radial-gradient(circle at 15% 20%, rgba(129, 103, 255, 0.25), transparent 55%),
+      radial-gradient(circle at 85% 10%, rgba(250, 204, 21, 0.18), transparent 60%),
+      linear-gradient(180deg, #0b0323 0%, #140930 55%, #090123 100%);
+    color: #f8fafc;
   }
 }

@@ -1,0 +1,55 @@
+const resources = [
+  {
+    title: "Blog / Insights",
+    description:
+      "SEO-driven content covering topics like \"How brokers can improve quoting speed\" and industry best practices.",
+    footnote:
+      "Resources fuel SEO and credibility while supporting nurture campaigns for prospects at every stage of their journey.",
+  },
+  {
+    title: "Case Studies",
+    description:
+      "Proof of success with early customer stories demonstrating measurable improvements and ROI.",
+    footnote: "Provide tangible evidence that validates your value and shortens decision cycles.",
+  },
+  {
+    title: "Webinars & Events",
+    description:
+      "Lead-generation events and thought-leadership recordings to support your professional development.",
+    footnote: "Stay ahead with practical guidance and real-world examples you can implement immediately.",
+  },
+];
+
+export default function DashingResources() {
+  return (
+    <section className="relative isolate overflow-hidden bg-[#170b3a] py-20 text-white sm:py-24">
+      <div
+        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.3),transparent_70%)]"
+        aria-hidden
+      />
+      <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
+        <div className="space-y-4">
+          <h2 className="text-4xl font-bold text-amber-300 sm:text-5xl">Resources &amp; Expertise</h2>
+          <p className="text-sm uppercase tracking-[0.35em] text-white/50">
+            (link to resources page — include current / recent examples below)
+          </p>
+          <p className="text-lg text-white/70 sm:text-xl">
+            Access valuable insights, proven success stories, and thought leadership content designed for brokers.
+          </p>
+        </div>
+        <div className="grid gap-8 text-left sm:grid-cols-2 lg:grid-cols-3">
+          {resources.map(({ title, description, footnote }) => (
+            <article
+              key={title}
+              className="flex h-full flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_35px_80px_-55px_rgba(12,10,43,0.8)] backdrop-blur"
+            >
+              <h3 className="text-lg font-semibold text-amber-200">{title}</h3>
+              <p className="text-sm leading-relaxed text-white/80">{description}</p>
+              <p className="mt-auto text-sm text-white/60">{footnote}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
