@@ -29,7 +29,7 @@ type Card = {
 
 
 // Import your existing contentful functions
-import { BlogPost } from "@/app/lib/contentful";
+
 
 // Function to fetch preview blog posts
 async function fetchPreviewBlogPosts() {
