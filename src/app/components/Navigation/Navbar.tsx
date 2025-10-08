@@ -5,10 +5,9 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
 import { Moon, Sun, Menu, X } from 'lucide-react'
-import ContactPopup from '../Popups/ContactPopup'
+
 
 export default function Navbar() {
-  const [isContactOpen, setIsContactOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { theme, setTheme } = useTheme()
@@ -31,11 +30,11 @@ export default function Navbar() {
         Home
       </Link>
       <Link 
-        href="/about" 
+        href="/for-sales-leaders" 
         className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
         onClick={() => setIsMenuOpen(false)}
       >
-        About Us
+        For Sales Leaders
       </Link>
       <Link 
         href="/features" 
@@ -59,15 +58,11 @@ export default function Navbar() {
         Blog
       </Link>
       <Link 
-        href="#" 
-        onClick={(e) => {
-          e.preventDefault();
-          setIsContactOpen(true);
-          setIsMenuOpen(false);
-        }} 
+        href="/contact" 
         className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
+        onClick={() => setIsMenuOpen(false)}      
       >
-        Contact Us
+        Contact
       </Link>
     </div>
   )
@@ -171,13 +166,6 @@ export default function Navbar() {
         </div>
 
       </div>
-
-
-
-      <ContactPopup
-        isOpen={isContactOpen}
-        onClose={() => setIsContactOpen(false)}
-      />
     </nav>
   )
 }
