@@ -44,6 +44,20 @@ export default function Navbar() {
         For Sales Leaders
       </Link>
       <Link 
+        href="/for-ceos" 
+        className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        For CEOs
+      </Link>
+      <Link
+        href="/our-story"
+        className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Our Story
+      </Link>
+      <Link 
         href="/resources" 
         className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
         onClick={() => setIsMenuOpen(false)}
