@@ -29,6 +29,13 @@ export default function Navbar() {
       >
         Home
       </Link>
+      <Link
+        href="/our-product"
+        className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        Our Product
+      </Link>
       <Link 
         href="/for-sales-leaders" 
         className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
@@ -37,28 +44,14 @@ export default function Navbar() {
         For Sales Leaders
       </Link>
       <Link 
-        href="/features" 
+        href="/resources" 
         className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
         onClick={() => setIsMenuOpen(false)}
       >
-        Features
+        Resources
       </Link>
       <Link 
-        href="/your-data" 
-        className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
-        onClick={() => setIsMenuOpen(false)}
-      >
-        Your Data
-      </Link>
-      <Link 
-        href="/blog" 
-        className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
-        onClick={() => setIsMenuOpen(false)}
-      >
-        Blog
-      </Link>
-      <Link 
-        href="/contact" 
+        href="" 
         className="text-xs font-medium text-white/75 transition-colors duration-200 hover:text-amber-200 sm:text-xs md:text-sm lg:text-base"
         onClick={() => setIsMenuOpen(false)}      
       >
