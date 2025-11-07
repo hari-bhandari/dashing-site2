@@ -11,9 +11,9 @@ const navigationLinks = [
 
 export default function Footer() {
   return (
-    <footer className="relative isolate overflow-hidden bg-[#2e1b53] text-white">
+    <footer className="relative isolate overflow-hidden bg-[#0a2440] text-white">
       <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(139,92,246,0.2),transparent_70%)]"
+        className="absolute inset-0 -z-10"
         aria-hidden
       />
       <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">

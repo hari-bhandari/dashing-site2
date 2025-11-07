@@ -18,9 +18,7 @@ export default function Hero() {
 	}, [theme, resolvedTheme]);
 
 	return (
-		<section className="relative overflow-hidden px-4 pb-24 pt-32 text-white sm:px-6 md:pt-36 lg:px-8 lg:pt-40">
-			<div className="absolute inset-0 -z-20 bg-gradient-to-b from-[#1b0f3f] via-[#140930] to-transparent" aria-hidden />
-			<div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(250,204,21,0.18),transparent_55%)]" aria-hidden />
+		<section className="relative overflow-hidden px-4 pb-24 pt-32 text-white sm:px-6 md:pt-36 lg:px-8 lg:pt-40 min-h-[750px]">
 			<div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 lg:flex-row lg:items-center">
 				<div className="flex w-full max-w-2xl flex-col items-center gap-10 lg:items-start">
 					<HeroText />

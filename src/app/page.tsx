@@ -17,7 +17,7 @@ import DashingCTA from "@/app/components/Sections/DashingCTA";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen text-white">
-      <Navbar />
+      <Navbar /> 
       <Hero />
       <BrokersDilemma />  
       <DashingGoal />

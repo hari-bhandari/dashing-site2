@@ -23,15 +23,15 @@ const outcomes = [
 
 export default function DashingGoal() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#11082c] py-20 text-white sm:py-24">
+    <section className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24">
       <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(34,197,94,0.35),transparent_65%)]"
+        className="absolute inset-0 -z-10 "
         aria-hidden
       />
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-emerald-200">The Dashing goal</p>
-          <h2 className="text-4xl font-bold text-emerald-400 sm:text-5xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-lime-400">The Dashing goal</p>
+          <h2 className="text-4xl font-bold text-white sm:text-5xl">
             Get our clients to profitable growth with faster deals and better visibility.
           </h2>
           <p className="text-lg text-white/70 sm:text-xl">
@@ -53,7 +53,7 @@ export default function DashingGoal() {
                 <div className="pt-4">
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center rounded-full bg-[#7061F5] px-5 py-2 text-sm font-semibold text-white shadow-[0_20px_45px_-25px_rgba(112,97,245,0.9)] transition hover:-translate-y-0.5 hover:bg-[#5b4ee6]"
+                    className="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(112,97,245,0.9)] transition hover:-translate-y-0.5 hover:bg-[#5b4ee6]"
                   >
                     See Dashing in Action
                   </Link>

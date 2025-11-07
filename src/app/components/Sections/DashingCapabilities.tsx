@@ -23,14 +23,14 @@ const capabilities = [
 
 export default function DashingCapabilities() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#150a35] py-20 text-white sm:py-24">
+    <section className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24">
       <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(250,204,21,0.35),transparent_70%)]"
+        className="absolute inset-0 -z-10"
         aria-hidden
       />
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-amber-300 sm:text-5xl">Everything You Need in One System</h2>
+          <h2 className="text-4xl font-bold text-white sm:text-5xl">Everything You Need in One System</h2>
           <p className="text-lg text-white/70 sm:text-xl">
             Dashing Distribution unifies all critical brokerage functions into a single, intuitive platform, streamlining operations and empowering your team.
           </p>
@@ -45,7 +45,7 @@ export default function DashingCapabilities() {
                 Placeholder
               </div>
               <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-amber-200">{capability.title}</h3>
+                <h3 className="text-lg font-semibold text-lime-400">{capability.title}</h3>
                 <p className="text-sm leading-relaxed text-white/75">{capability.description}</p>
               </div>
             </article>

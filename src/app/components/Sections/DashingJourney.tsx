@@ -30,15 +30,15 @@ const journey = [
 
 export default function DashingJourney() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#14073a] py-20 text-white sm:py-24">
+    <section className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24">
       <div
-        className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_left,rgba(129,103,255,0.4),transparent_70%)]"
+        className="absolute inset-0 -z-10"
         aria-hidden
       />
       <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-16 lg:px-8">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h2 className="text-4xl font-bold text-amber-300 sm:text-5xl">
+            <h2 className="text-4xl font-bold text-white sm:text-5xl">
               From enquiry to growth, simplified
             </h2>
             <p className="text-lg text-white/70 sm:text-xl">
@@ -51,7 +51,7 @@ export default function DashingJourney() {
                 key={title}
                 className="flex items-start gap-4 rounded-3xl bg-white/5 p-5 shadow-[0_35px_70px_-60px_rgba(12,10,43,0.8)]"
               >
-                <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-amber-200">
+                <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-lime-400">
                   <Icon className="h-6 w-6" aria-hidden />
                 </span>
                 <div className="space-y-2">
@@ -63,7 +63,7 @@ export default function DashingJourney() {
           </ol>
           <Link
             href="/contact"
-            className="inline-flex w-fit items-center justify-center rounded-full bg-[#7C5CFF] px-6 py-3 text-base font-semibold text-white shadow-[0_25px_50px_-20px_rgba(124,92,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6846f0]"
+            className="inline-flex w-fit items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(124,92,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6846f0]"
           >
             Book a Demo — See It in Action
           </Link>

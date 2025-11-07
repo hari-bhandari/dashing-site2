@@ -42,7 +42,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="overflow-x-hidden" suppressHydrationWarning>
-      <body className={`${barlow.variable} font-sans antialiased overflow-x-hidden`}>
+      <body className={`${barlow.variable} font-sans antialiased overflow-x-hidden bg-[#0a2440] text-white`}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
             <SpeedInsights />

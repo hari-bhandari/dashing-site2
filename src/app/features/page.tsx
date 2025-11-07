@@ -8,7 +8,7 @@ import FeaturedivExpanded from "@/app/components/Features/FeaturedivExpanded";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Navbar />
       <div className=' mt-32'>
         <h2 className="text-center text-5xl font-bold dark:text-white">Discover Our Features</h2>
