@@ -92,7 +92,7 @@ export default function ContactPopup({ isOpen, onClose }: ContactPopupProps) {
                         <strong>Email:</strong> support@dashingdisty.com
                       </p>
                       <p className="text-gray-600 dark:text-gray-300">
-                        <strong>Phone:</strong> +44 1904 946777
+                        <strong>Phone:</strong> +44 1904 935608
                       </p>
                       <p className="text-gray-600 dark:text-gray-300 text-sm">
                         <strong>Address:</strong> Dashing Distribution Software, Independence House, Millfield Lane, Nether Poppleton, York, YO26 6PH
