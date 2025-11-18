@@ -75,7 +75,7 @@ export default function Footer() {
             
             <div className="border-t border-white/20 pt-6">
               <p className="text-sm text-white/60">
-                © 2024 Dashing. All rights reserved. Designed for brokerages who demand excellence.
+                © 2025 Dashing. All rights reserved. 
               </p>
             </div>
           </div>

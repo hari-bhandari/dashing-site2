@@ -37,9 +37,9 @@ const features: Feature[] = [
 export default function AllInOneERP() {
   return (
     <section className="relative isolate overflow-hidden py-16 sm:py-24">
-      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-7xl px-4 pt-12 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">All-in-One ERP for Brokers</h1>
+          <h1 className="text-4xl font-extrabold text-white sm:text-5xl">All-in-One ERP for Brokers</h1>
           <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white/80 sm:text-lg">
             Transform your brokerage operations with Dashing&#39;s comprehensive ERP solution. From real-time quoting to
             financial dashboards, we&#39;ve built everything brokers need to streamline operations and drive profitable
@@ -49,7 +49,7 @@ export default function AllInOneERP() {
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-[#8167FF] px-5 py-3 text-sm font-semibold text-white shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0] sm:text-base"
+              className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0] sm:text-base"
             >
               Explore Features in a Demo
             </Link>
@@ -70,7 +70,7 @@ export default function AllInOneERP() {
               className="rounded-2xl border border-white/10 bg-white/[0.06] p-6 ring-1 ring-white/10 shadow-[inset_0_1px_0_rgba(255,255,255,0.04),0_25px_60px_-35px_rgba(12,10,43,0.65)]"
             >
               <div className="mb-4 inline-flex items-center justify-center rounded-full bg-white/5 p-3 ring-1 ring-white/10">
-                <Icon className="h-5 w-5 text-white/85" aria-hidden />
+                <Icon className="h-5 w-5 text-lime-400" aria-hidden />
               </div>
               <h3 className="text-xl font-bold text-white">{title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-white/80 sm:text-base">{description}</p>
