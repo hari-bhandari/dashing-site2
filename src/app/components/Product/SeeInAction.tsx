@@ -54,24 +54,6 @@ export default function SeeInAction() {
             </Link>
           </div>
 
-          {/* Get Started list */}
-          <div className="mt-10 bg-">
-            <h4 className="text-xl font-extrabold text-amber-300 sm:text-2xl">Get Started</h4>
-            <p className="mt-2 max-w-4xl text-sm leading-relaxed text-white/80 sm:text-base">
-              Ready to transform your brokerage? Fill in your details below and we&#39;ll arrange a personalised
-              demonstration at your convenience.
-            </p>
-            <div className="mt-4">
-              <p className="font-semibold text-white">Demo Request Form:</p>
-              <ul className="mt-2 list-disc space-y-1 pl-6 text-white/90">
-                <li>Full Name</li>
-                <li>Email Address</li>
-                <li>Company Name</li>
-                <li>Your Role</li>
-                <li>Preferred Demo Date</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
