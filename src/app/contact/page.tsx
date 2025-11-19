@@ -7,11 +7,8 @@ export default function contact() {
     return (
         <div className="flex min-h-screen flex-col text-white">
             <Navbar />
-            <main className="mx-auto w-full max-w-7xl pt-28 sm:pt-32">
                 <ContactDemoSection />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <ContactInfoSection />
-            </main>
             <Footer />
         </div>
     );
