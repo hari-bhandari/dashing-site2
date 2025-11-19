@@ -17,17 +17,17 @@ const afterItems = [
 
 export default function SalesLeadersBeforeAfter() {
   return (
-    <section className="relative isolate overflow-hidden py-16 sm:py-24">
+    <section className="relative isolate overflow-hidden sm:py-32 bg-white ">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">
+        <h2 className="text-4xl font-extrabold text-[#0a2440] sm:text-5xl">
           From missed deals to faster wins
         </h2>
 
         <div className="mt-10 grid gap-12 lg:grid-cols-2">
           {/* Before */}
           <div>
-            <h3 className="text-lg font-semibold text-amber-200">Before (The Pain)</h3>
-            <ul className="mt-4 space-y-3 text-white/90">
+            <h3 className="text-lg font-semibold text-rose-400">Before (The Pain)</h3>
+            <ul className="mt-4 space-y-3 text-[#0a2440]/90">
               {beforeItems.map((text) => (
                 <li key={text} className="flex items-start gap-3">
                   <span className="mt-1 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-sm bg-rose-600/20 text-rose-400 ring-1 ring-rose-500/40">
@@ -42,7 +42,7 @@ export default function SalesLeadersBeforeAfter() {
           {/* After */}
           <div>
             <h3 className="text-lg font-semibold text-emerald-300">After (With Dashing)</h3>
-            <ul className="mt-4 space-y-3 text-white/90">
+            <ul className="mt-4 space-y-3 text-[#0a2440]/90">
               {afterItems.map((text) => (
                 <li key={text} className="flex items-start gap-3">
                   <span className="mt-1 inline-flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-sm bg-emerald-500/20 text-emerald-300 ring-1 ring-emerald-400/40">
@@ -55,7 +55,7 @@ export default function SalesLeadersBeforeAfter() {
           </div>
         </div>
 
-        <p className="mt-8 text-white/85">
+        <p className="mt-8 text-[#0a2440]">
           <span role="img" aria-hidden>
             👉
           </span>{" "}

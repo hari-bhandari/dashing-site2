@@ -38,14 +38,14 @@ export default function SalesLeadersHowHelps() {
   return (
     <section className="relative isolate overflow-hidden py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">
+        <h2 className="text-4xl font-extrabold text-white sm:text-5xl">
           How Dashing helps sales teams win more deals
         </h2>
 
         <div className="mt-10 grid gap-x-12 gap-y-12 sm:grid-cols-2">
           {items.map(({ icon: Icon, title, description }) => (
             <div key={title}>
-              <Icon className="h-5 w-5 text-white/60" aria-hidden />
+              <Icon className="h-5 w-5 text-lime-400" aria-hidden />
               <hr className="my-3 border-white/15" />
               <h3 className="text-lg font-semibold leading-snug text-white sm:text-xl">{title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-white/80 sm:text-base">{description}</p>
@@ -56,7 +56,7 @@ export default function SalesLeadersHowHelps() {
         <div className="mt-10">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#8167FF] px-6 py-3 text-base font-semibold text-white shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
           >
             <span aria-hidden>👉</span>
             Get a Demo — See Faster Quoting in Action

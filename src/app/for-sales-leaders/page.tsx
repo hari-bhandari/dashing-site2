@@ -10,23 +10,15 @@ import SalesLeadersFinalCTA from "@/app/components/RolePages/SalesLeadersFinalCT
 
 export default function ForSalesLeaders() {
     return (
-        <div className="flex min-h-screen flex-col text-white">
+        <div className="flex flex-col min-h-screen">
             <Navbar />
-            <main className="mx-auto w-full max-w-7xl pt-28 sm:pt-32">
                 <SalesLeadersHero />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <SalesLeadersPainPoints />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <SalesLeadersHowHelps />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <SalesLeadersBeforeAfter />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <SalesLeadersTrust />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <SalesLeadersStreamlined />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <SalesLeadersFinalCTA />
-            </main>
             <Footer />
         </div>
     );

@@ -13,14 +13,14 @@ export default function SalesLeadersFinalCTA() {
 
         {/* Right: copy + CTA */}
         <div className="order-1 space-y-6 lg:order-2">
-          <h2 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">Ready to win more deals?</h2>
+          <h2 className="text-4xl font-extrabold text-white sm:text-5xl">Ready to win more deals?</h2>
           <p className="max-w-xl text-2xl font-semibold leading-snug text-white/90">
             See how <span className="text-white">Dashing</span> empowers broker sales teams with speed, clarity, and confidence.
           </p>
           <div>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#8167FF] px-6 py-3 text-base font-semibold text-white shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-lime-400 px-6 py-3 text-[#0a2440] font-semibold shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
             >
               <span aria-hidden>👉</span>
               Book a Demo Today

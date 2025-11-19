@@ -24,56 +24,56 @@ export default function Navbar() {
     <div className={`${isMobile ? 'flex flex-col space-y-6' : 'flex items-center gap-4 md:gap-8 lg:gap-8'} ${className}`}>
       <Link 
         href="/" 
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}
       >
         Home
       </Link>
       <Link
         href="/our-product"
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}
       >
         Our Product
       </Link>
       <Link 
         href="/for-sales-leaders" 
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}
       >
         For Sales Leaders
       </Link>
       <Link 
         href="/for-finance-leaders" 
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}
       >
         For Finance Leaders
       </Link>
       <Link 
         href="/for-ceos" 
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}
       >
         For CEOs
       </Link>
       <Link
         href="/our-story"
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}
       >
         Our Story
       </Link>
       <Link 
         href="/resources" 
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}
       >
         Resources
       </Link>
       <Link 
         href="" 
-        className="text-xs font-medium text-white transition-colors duration-200 hover:text-slate-900 sm:text-xs md:text-sm lg:text-base"
+        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
         onClick={() => setIsMenuOpen(false)}      
       >
         Contact

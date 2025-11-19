@@ -10,12 +10,12 @@ export default function SalesLeadersTrust() {
         <div className="mb-8 flex h-56 w-full items-center justify-center rounded-2xl border border-dashed border-white/20 bg-white/5 text-sm font-semibold uppercase tracking-[0.25em] text-white/70">
           Background Image Placeholder
         </div>
-        <h2 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">Trusted by brokers like you</h2>
+        <h2 className="text-4xl font-extrabold text-white sm:text-5xl">Trusted by brokers like you</h2>
         </div>
         <div className="mt-2 flex max-w-5xl flex-col gap-6">
           <div className="flex items-start gap-4">
             <div className="h-full w-1 rounded-full bg-amber-300/70" aria-hidden />
-            <p className="text-2xl font-bold leading-snug text-amber-200 sm:text-3xl md:text-4xl">
+            <p className="text-2xl font-bold leading-snug text-white sm:text-3xl md:text-4xl">
               &ldquo;I highly recommend Dashing if you want to get ahead of the competition. Their professionalism,
               expertise, and exceptional distribution solutions have greatly benefited my business. Their team is
               responsive and dedicated, providing outstanding customer service. They are lightyears ahead of any
