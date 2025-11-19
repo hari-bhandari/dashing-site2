@@ -18,7 +18,7 @@ export default function Hero() {
 	}, [theme, resolvedTheme]);
 
 	return (
-		<section className="relative overflow-hidden px-4 pb-24 pt-32 text-white sm:px-6 md:pt-36 lg:px-8 lg:pt-40 min-h-[750px]">
+		<section className="relative overflow-hidden px-4 pb-24 pt-32 text-white sm:px-6 md:pt-36 lg:px-8 lg:pt-48 min-h-[810px]">
 			<div className="mx-auto flex w-full max-w-6xl flex-col items-center gap-12 lg:flex-row lg:items-center">
 				<div className="flex w-full max-w-2xl flex-col items-center gap-10 lg:items-start">
 					<HeroText />
