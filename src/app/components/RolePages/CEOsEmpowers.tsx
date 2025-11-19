@@ -1,35 +1,43 @@
 import Link from "next/link";
+import { IconArrowsMaximize, IconGauge, IconShieldCheck, IconBolt } from "@tabler/icons-react";
 
 export default function CEOsEmpowers() {
   const items = [
-    { title: "Scalable platform", desc: "supports multi-location, multi-employee growth." },
-    { title: "Operational efficiency", desc: "grow revenue per employee." },
-    { title: "Risk reduction", desc: "compliance and control built in." },
-    { title: "Faster deal cycles", desc: "drive top-line growth without chaos." },
+    { title: "Scalable platform", desc: "supports multi-location, multi-employee growth.", Icon: IconArrowsMaximize },
+    { title: "Operational efficiency", desc: "grow revenue per employee.", Icon: IconGauge },
+    { title: "Risk reduction", desc: "compliance and control built in.", Icon: IconShieldCheck },
+    { title: "Faster deal cycles", desc: "drive top-line growth without chaos.", Icon: IconBolt },
   ];
 
   return (
-    <section className="relative isolate overflow-hidden py-16 sm:py-24">
+    <section className="relative isolate overflow-hidden bg-white py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">
+        <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Empowers</p>
+        <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">
           Dashing empowers leaders to grow with confidence
         </h2>
 
         <div className="mt-8 grid gap-6 sm:grid-cols-2">
-          {items.map(({ title, desc }) => (
-            <div key={title} className="rounded-2xl border border-white/12 bg-white/[0.06] p-6 ring-1 ring-white/10">
-              <h3 className="text-xl font-bold text-white">{title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-white/80 sm:text-base">{desc}</p>
-            </div>
+          {items.map(({ title, desc, Icon }) => (
+            <article
+              key={title}
+              className="rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-0.5"
+            >
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0a2440]/5">
+                <Icon className="h-5 w-5 text-lime-400" aria-hidden />
+              </div>
+              <h3 className="text-xl font-bold text-[#0a2440]">{title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80 sm:text-base">{desc}</p>
+            </article>
           ))}
         </div>
 
         <div className="mt-8">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center rounded-lg bg-[#8167FF] px-6 py-3 text-base font-semibold text-white shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+            className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-6 py-3 font-semibold text-white shadow-[0_20px_45px_-25px_rgba(163,230,53,0.85)] transition hover:-translate-y-0.5 hover:bg-lime-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0a2440]/20"
           >
-            Get a Demo - Future-Proof Your Brokerage
+            Get a Demo — Future-Proof Your Brokerage
           </Link>
         </div>
       </div>

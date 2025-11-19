@@ -1,3 +1,5 @@
+import { IconGitBranch, IconUsersGroup, IconEyeOff, IconRocket } from "@tabler/icons-react";
+
 export default function CEOsGrowthStalls() {
   const bullets = [
     "Fragmented systems create inefficiencies",
@@ -5,9 +7,10 @@ export default function CEOsGrowthStalls() {
     "Lack of transparency increases operational risk",
     "Competitors with modern systems win deals faster",
   ];
+  const icons = [IconGitBranch, IconUsersGroup, IconEyeOff, IconRocket];
 
   return (
-    <section className="relative isolate overflow-hidden py-16 sm:py-24">
+    <section className="relative isolate overflow-hidden py-16 sm:py-32">
       <div className="mx-auto grid w-full max-w-7xl items-stretch gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
         {/* Left: placeholder image */}
         <div className="order-2 min-h-[320px] lg:order-1">
@@ -20,14 +23,19 @@ export default function CEOsGrowthStalls() {
 
         {/* Right: copy */}
         <div className="order-1 lg:order-2">
-          <h2 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">Why growth stalls for many brokers</h2>
+          <h2 className="text-4xl font-extrabold text-white sm:text-5xl">Why growth stalls for many brokers</h2>
           <ul className="mt-8 space-y-5 text-white/90">
-            {bullets.map((text) => (
-              <li key={text} className="grid grid-cols-[40px_auto] items-start gap-4">
-                <span className="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-b from-white/10 to-white/5 ring-1 ring-white/15" />
-                <span className="text-lg font-semibold leading-snug">{text}</span>
-              </li>
-            ))}
+            {bullets.map((text, idx) => {
+              const Icon = icons[idx % icons.length];
+              return (
+                <li key={text} className="grid grid-cols-[40px_auto] items-start gap-4">
+                  <span className="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-b from-white/10 to-white/5 ring-1 ring-white/15">
+                    <Icon className="h-4 w-4 text-lime-400" aria-hidden />
+                  </span>
+                  <span className="text-lg font-semibold leading-snug">{text}</span>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

@@ -18,12 +18,12 @@ export default function LeadershipTeam() {
   ];
 
   return (
-    <section className="w-full px-6 py-16 sm:py-24">
+    <section className="w-full px-6 py-16 sm:py-32 bg-white">
       <div className="mx-auto w-full max-w-7xl">
-        <h2 className="text-left text-3xl font-extrabold tracking-tight text-amber-400 sm:text-4xl">
+        <h2 className="text-left text-3xl font-extrabold tracking-tight text-[#0a2440] sm:text-4xl">
           Leadership Team
         </h2>
-        <p className="mt-4 max-w-4xl text-base leading-relaxed text-gray-300">
+        <p className="mt-4 max-w-4xl text-base leading-relaxed text-[#0a2440]">
           Our leadership combines deep industry expertise with cutting-edge technology vision. Each team member brings decades of experience from leading brokerage firms and technology companies, ensuring Dashing addresses real broker challenges with practical, innovative solutions.
         </p>
 
@@ -34,8 +34,8 @@ export default function LeadershipTeam() {
               className="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-6 shadow-xl ring-1 ring-white/10 backdrop-blur-sm transition hover:border-violet-400/30 hover:ring-violet-400/30"
             >
               <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-400/50 to-transparent" />
-              <p className="text-lg font-extrabold text-white">{leader.name}</p>
-              <p className="mt-2 text-sm font-semibold text-white">{leader.title}</p>
+              <p className="text-lg font-extrabold text-[#0a2440]">{leader.name}</p>
+              <p className="mt-2 text-sm font-semibold text-[#0a2440]">{leader.title}</p>
               <p className="mt-4 text-sm leading-relaxed text-gray-300">{leader.blurb}</p>
             </div>
           ))}

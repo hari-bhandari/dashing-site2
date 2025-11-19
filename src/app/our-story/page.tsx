@@ -6,17 +6,12 @@ import JoinOurTeam from "../components/OurStory/JoinOurTeam"
 
 export default function OurStoryPage() {
 return (
-     <div className="flex min-h-screen flex-col text-white">
+     <div className="flex min-h-screen flex-col">
         <Navbar />
-            <main className="w-full pt-28 sm:pt-32">
-               <BrokersTimeline />
-               <div className="mx-auto my-12 h-px w-11/12 max-w-7xl bg-gradient-to-r from-transparent via-violet-500/30 to-transparent" />
-               <LeadershipTeam />
-               <div className="mx-auto my-12 h-px w-11/12 max-w-7xl bg-gradient-to-r from-transparent via-violet-500/30 to-transparent" />
-               <JoinOurTeam />
-               <div className="mx-auto my-12 h-px w-11/12 max-w-7xl bg-gradient-to-r from-transparent via-violet-500/30 to-transparent" />
-            </main>
-            <Footer />
+            <BrokersTimeline />
+            <LeadershipTeam />
+            <JoinOurTeam />
+         <Footer />
      </div>
     )
 }

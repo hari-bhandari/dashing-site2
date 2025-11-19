@@ -9,21 +9,14 @@ import CEOsStrategyExecution from "@/app/components/RolePages/CEOsStrategyExecut
 
 export default function ForCeosPage() {
     return (
-        <div className="flex min-h-screen flex-col text-white">
+        <div className="flex min-h-screen flex-col">
             <Navbar />
-            <main className="mx-auto w-full max-w-7xl pt-28 sm:pt-32">
                 <CEOsHero />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <CEOsGrowthStalls />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <CEOsEmpowers />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <CEOsBlindSpots />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <CEOsLeadersChoose />
-                <div className="mx-auto my-8 h-px w-full max-w-7xl bg-gradient-to-r from-transparent via-white/10 to-transparent" aria-hidden />
                 <CEOsStrategyExecution />
-            </main>
             <Footer />
         </div>
     );

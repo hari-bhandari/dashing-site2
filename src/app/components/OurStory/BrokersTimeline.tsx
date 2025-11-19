@@ -1,8 +1,8 @@
 export default function BrokersTimeline() {
   return (
-    <section className="relative w-full px-6 py-16 sm:py-24">
+    <section className="relative w-full px-6 py-16 sm:py-32">
       <div className="mx-auto w-full max-w-7xl">
-        <h2 className="text-center text-3xl font-extrabold tracking-tight text-amber-400 sm:text-4xl">
+        <h2 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-4xl">
           Built by Brokers, for Brokers
         </h2>
 

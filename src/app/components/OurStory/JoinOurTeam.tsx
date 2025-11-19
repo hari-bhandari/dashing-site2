@@ -11,10 +11,10 @@ export default function JoinOurTeam() {
   return (
     <section className="w-full px-6 py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl">
-        <p className="text-sm font-semibold uppercase tracking-wider text-amber-400/90">
+        <p className="text-sm font-semibold uppercase tracking-wider text-white">
           Join Our Team
         </p>
-        <h2 className="mt-2 text-4xl font-extrabold leading-tight text-amber-400 sm:text-5xl">
+        <h2 className="mt-2 text-4xl font-extrabold leading-tight text-white sm:text-5xl">
           Building the Future of Broker ERP
         </h2>
         <p className="mt-4 max-w-4xl text-base leading-relaxed text-gray-300">
@@ -38,7 +38,7 @@ export default function JoinOurTeam() {
         </div>
 
         {/* Roles list */}
-        <h3 className="mt-10 text-2xl font-extrabold text-amber-400">Current Opportunities</h3>
+        <h3 className="mt-10 text-2xl font-extrabold text-white">Current Opportunities</h3>
         <ul className="mt-4 list-disc space-y-2 pl-6 text-sm text-gray-200">
           {roles.map((role) => (
             <li key={role}>{role}</li>
@@ -48,7 +48,7 @@ export default function JoinOurTeam() {
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
             href="#"
-            className="inline-flex items-center justify-center rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500"
+            className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-4 py-2 text-sm font-semibold text-[#0a2440] shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500"
           >
             View Open Roles
           </Link>
@@ -65,14 +65,14 @@ export default function JoinOurTeam() {
 
         {/* Connect CTA row */}
         <div className="text-center">
-          <h3 className="text-2xl font-extrabold text-amber-400">Connect With Our Team</h3>
+          <h3 className="text-2xl font-extrabold text-white">Connect With Our Team</h3>
           <p className="mx-auto mt-3 max-w-3xl text-sm leading-relaxed text-gray-300">
             Ready to discuss how Dashing can transform your brokerage operations? Our team of former brokers and technology experts are here to help.
           </p>
           <div className="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-3">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500"
+              className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-4 py-2 text-sm font-semibold text-[#0a2440] shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500"
             >
               Schedule a Demo
             </Link>

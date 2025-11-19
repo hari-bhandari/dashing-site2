@@ -11,7 +11,7 @@ export default function CEOsStrategyExecution() {
       <div className="mx-auto grid w-full max-w-7xl items-start gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
         {/* Left: heading + numbered items */}
         <div>
-          <h2 className="text-4xl font-extrabold text-amber-300 sm:text-5xl">
+          <h2 className="text-4xl font-extrabold text-white sm:text-5xl">
             From strategy to execution, simplified in one system
           </h2>
 
