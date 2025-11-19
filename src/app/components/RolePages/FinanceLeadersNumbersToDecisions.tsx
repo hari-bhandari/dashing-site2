@@ -27,22 +27,28 @@ const items = [
 
 export default function FinanceLeadersNumbersToDecisions() {
   return (
-    <section className="w-full px-6 py-16 sm:py-24">
-      <div className="mx-auto w-full max-w-7xl">
-        <h2 className="text-3xl font-extrabold leading-tight text-amber-400 sm:text-4xl">
+    <section className="w-full py-16 sm:py-24">
+      <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+        <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Decisions</p>
+        <h2 className="mt-2 text-3xl font-extrabold leading-tight text-white sm:text-4xl">
           From numbers to decisions, simplified in one system
         </h2>
 
-        <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2">
+        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
           {items.map((it) => (
-            <div key={it.num}>
-              <div className="mb-3 flex items-center gap-4 text-sm font-semibold text-white/70">
-                <span>{it.num}</span>
-                <span className="h-px w-full flex-1 bg-white/20" />
+            <article
+              key={it.num}
+              className="rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.05),0_25px_60px_-35px_rgba(0,0,0,0.55)] ring-1 ring-white/10 backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5 hover:border-white/20"
+            >
+              <div className="mb-4 flex items-center gap-3">
+                <div className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15">
+                  <span className="text-xs font-extrabold text-lime-400">{it.num}</span>
+                </div>
+                <span className="h-px flex-1 bg-white/15" />
               </div>
-              <h3 className="text-lg font-extrabold text-white">{it.title}</h3>
-              <p className="mt-3 max-w-xl text-sm leading-relaxed text-gray-300">{it.body}</p>
-            </div>
+              <h3 className="text-base font-semibold text-white sm:text-lg">{it.title}</h3>
+              <p className="mt-2 max-w-xl text-sm leading-relaxed text-white/70 sm:text-base">{it.body}</p>
+            </article>
           ))}
         </div>
       </div>

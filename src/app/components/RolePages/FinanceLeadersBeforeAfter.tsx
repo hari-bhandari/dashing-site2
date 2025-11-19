@@ -5,13 +5,13 @@ export default function FinanceLeadersBeforeAfter() {
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 md:grid-cols-2">
         {/* Left copy */}
         <div>
-          <h2 className="text-3xl font-extrabold leading-tight text-amber-400 sm:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-tight text-white sm:text-5xl">
             From blind spots to real-time control
           </h2>
 
           <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2">
             <div>
-              <h3 className="text-xl font-extrabold text-amber-300">Before Dashing:</h3>
+              <h3 className="text-xl font-extrabold text-white">Before Dashing:</h3>
               <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-200">
                 <li>Manual reporting takes days</li>
                 <li>No single source of truth for cashflow or stock</li>
@@ -19,7 +19,7 @@ export default function FinanceLeadersBeforeAfter() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xl font-extrabold text-amber-300">After Dashing:</h3>
+              <h3 className="text-xl font-extrabold text-white">After Dashing:</h3>
               <ul className="mt-4 list-disc space-y-3 pl-5 text-gray-200">
                 <li>Live dashboards for cashflow &amp; inventory</li>
                 <li>Automated reporting you can trust</li>

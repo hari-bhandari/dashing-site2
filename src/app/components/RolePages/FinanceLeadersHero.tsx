@@ -20,7 +20,7 @@ export default function FinanceLeadersHero() {
       />
 
       <div className="mx-auto flex min-h-[70vh] w-full max-w-7xl flex-col justify-center px-6 py-16 sm:py-28">
-        <h1 className="max-w-5xl text-4xl font-extrabold leading-tight text-amber-400 drop-shadow sm:text-5xl md:text-6xl">
+        <h1 className="max-w-5xl text-4xl font-extrabold leading-tight text-white drop-shadow sm:text-5xl md:text-6xl">
           Gain Real-Time Control of Cashflow &amp; Inventory
         </h1>
         <p className="mt-6 max-w-3xl text-base leading-relaxed text-gray-200">
@@ -29,7 +29,7 @@ export default function FinanceLeadersHero() {
         <div className="mt-8">
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-violet-600 px-5 py-3 text-sm font-semibold text-white shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500"
+            className="inline-flex items-center gap-2 rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-lg ring-1 ring-white/10 transition hover:bg-lime-500"
           >
             <span role="img" aria-label="pointing hand">👉</span>
             Book a Demo - See Real-Time Control
