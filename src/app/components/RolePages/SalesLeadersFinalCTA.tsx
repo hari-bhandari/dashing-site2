@@ -1,13 +1,21 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SalesLeadersFinalCTA() {
   return (
     <section className="relative isolate overflow-hidden py-16 sm:py-24">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
-        {/* Left: image placeholder */}
+        {/* Left: rocket laptop image */}
         <div className="order-2 lg:order-1">
-          <div className="flex aspect-[4/5] w-full items-center justify-center rounded-2xl border border-dashed border-white/20 bg-[url('/Pattern.svg')] bg-cover bg-center text-sm font-semibold uppercase tracking-[0.25em] text-white/70">
-            Image Placeholder
+          <div className="relative w-full h-[320px] sm:h-[360px] lg:h-[400px] overflow-hidden rounded-2xl">
+            <Image
+              src="/laptoprocket.png"
+              alt="Laptop launching upward with rocket symbolizing accelerated broker growth"
+              fill
+              sizes="(min-width:1280px) 560px, (min-width:1024px) 480px, (min-width:640px) 90vw, 100vw"
+              className="object-contain object-center select-none"
+              priority
+            />
           </div>
         </div>
 

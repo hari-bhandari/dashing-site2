@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SalesLeadersHero() {
   return (
@@ -31,13 +32,19 @@ export default function SalesLeadersHero() {
           </div>
         </div>
 
-        {/* Right panel image placeholder */}
-  <div className="relative min-h-[320px] overflow-hidden">
-          <div className="flex h-full w-full items-center justify-center bg-[url('/Pattern.svg')] bg-cover bg-center p-6 text-white/70">
-            <div className="flex h-[360px] w-full max-w-md items-center justify-center rounded-[2rem] ring-1 ring-white/15 bg-white/10 text-center text-sm font-semibold uppercase tracking-[0.25em]">
-              Image Placeholder
-            </div>
-          </div>
+        {/* Right panel hero image */}
+        <div className="relative h-[400px] sm:h-[420px] lg:h-[450px] w-full overflow-hidden">
+ 
+              <Image
+                src="/LaptopUpArrow.png"
+                alt="Broker sales dashboard on laptop with upward growth visualization"
+                fill
+                sizes="(min-width:1024px) 480px, (min-width:640px) 360px, 90vw"
+                className="object-contain select-none"
+                priority
+              />
+            
+
         </div>
       </div>
     </section>

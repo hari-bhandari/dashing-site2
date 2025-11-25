@@ -1,5 +1,6 @@
 import { IconClipboardList, IconFileDollar, IconGauge, IconChartBar } from "@tabler/icons-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const journey = [
   {
@@ -69,8 +70,15 @@ export default function DashingJourney() {
           </Link>
         </div>
         <div className="flex h-full w-full items-center justify-center">
-          <div className="flex h-[360px] w-full max-w-md items-center justify-center rounded-[2.5rem] border border-dashed border-white/25 bg-white/10 text-lg font-semibold uppercase tracking-[0.25em] text-white/60">
-            Placeholder Image
+          <div className="relative h-[420px] sm:h-[440px] lg:h-[480px] w-full max-w-lg overflow-hidden">
+            <Image
+              src="/fromEnquiryToGrowth.png"
+              alt="Illustration of brokerage workflow growth progression"
+              fill
+              sizes="(min-width:1280px) 640px, (min-width:1024px) 560px, (min-width:640px) 420px, 90vw"
+              className="object-cover select-none"
+              priority={false}
+            />
           </div>
         </div>
       </div>

@@ -1,23 +1,33 @@
+import Image from "next/image";
+
 const capabilities = [
   {
     title: "Realtime Quoting",
     description:
       "Generate accurate quotes instantly with integrated product data and dynamic pricing, reducing manual effort and accelerating deal closures.",
+    imgSrc: "/capabilities/cap-erp.png",
+    alt: "ERP-powered quoting connecting systems",
   },
   {
     title: "Finance Dashboard",
     description:
       "Track profitability, cash flow, and key performance indicators in real-time with comprehensive dashboards and reporting tools.",
+    imgSrc: "/capabilities/cap-finance.png",
+    alt: "Financial analytics and dashboards",
   },
   {
     title: "Inventory Control",
     description:
       "Manage stock levels, track movements, and optimise your inventory with precision, ensuring product availability and minimising holding costs.",
+    imgSrc: "/capabilities/cap-inventory.png",
+    alt: "Inventory with location tracking",
   },
   {
     title: "Compliance Tools",
     description:
       "Maintain audit trails and regulatory compliance with automated reporting features tailored for broker operations.",
+    imgSrc: "/capabilities/cap-compliance.png",
+    alt: "Secure cloud compliance tools",
   },
 ];
 
@@ -41,8 +51,15 @@ export default function DashingCapabilities() {
               key={capability.title}
               className="flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-left shadow-[0_40px_80px_-60px_rgba(12,10,43,0.7)] backdrop-blur"
             >
-              <div className="flex aspect-[4/3] w-full items-center justify-center rounded-2xl border border-dashed border-white/20 bg-white/10 text-sm font-semibold uppercase tracking-[0.25em] text-white/60">
-                Placeholder
+              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/15 bg-white/10">
+                <Image
+                  src={capability.imgSrc}
+                  alt={capability.alt}
+                  fill
+                  sizes="(min-width: 1024px) 240px, (min-width: 640px) 360px, 90vw"
+                  className="object-contain p-4 select-none"
+                  priority={false}
+                />
               </div>
               <div className="space-y-2">
                 <h3 className="text-lg font-semibold text-lime-400">{capability.title}</h3>
