@@ -70,7 +70,7 @@ export default function DashingJourney() {
           </Link>
         </div>
         <div className="flex h-full w-full items-center justify-center">
-          <div className="relative h-[420px] sm:h-[440px] lg:h-[480px] w-full max-w-lg overflow-hidden">
+          <div className="relative h-[450px] w-full max-w-lg overflow-hidden">
             <Image
               src="/fromEnquiryToGrowth.png"
               alt="Illustration of brokerage workflow growth progression"
