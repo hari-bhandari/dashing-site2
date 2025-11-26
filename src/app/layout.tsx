@@ -5,6 +5,7 @@ import { ThemeProvider } from 'next-themes';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import TabAttentionTitle from "./components/TabAttentionTitle";
 import ChatProvider from "./components/ChatProvider";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const barlow = Barlow({
   subsets: ["latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
         <ChatProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
+            <GoogleAnalytics measurementId="G-ME240VW0QZ"/>
             <SpeedInsights />
           </ThemeProvider>
           <TabAttentionTitle />
