@@ -48,13 +48,14 @@ export default function AllInOneERP() {
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/contact"
+              href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo?hs_previe%E2%80%A6"
               className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0] sm:text-base"
+              target="_blank"
             >
               Explore Features in a Demo
             </Link>
             <Link
-              href="#"
+              href="/our-product"
               className="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/15 transition hover:bg-white/15 sm:text-base"
             >
               Learn More

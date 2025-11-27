@@ -14,14 +14,14 @@ export default function FinanceLeadersHero() {
             Stop relying on spreadsheets and disconnected systems. Dashing gives Finance Directors instant visibility and control across the business.
           </p>
           <div>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
-            >
-              <span aria-hidden>👉</span>
-              Book a Demo - See Real-Time Control
-            </Link>
-          </div>
+        <Link
+          href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+          className="inline-flex items-center gap-2 rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+        >
+          <span aria-hidden>👉</span>
+          Book a Demo - See Real-Time Control
+        </Link>
+      </div>
         </div>
 
         {/* Right: hero image (update src as needed) */}

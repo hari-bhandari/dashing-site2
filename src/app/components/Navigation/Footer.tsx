@@ -86,11 +86,11 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Ready to Transform Your Brokerage?</h3>
             <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/20"
-            >
-              Book a Demo
-            </Link>
+          href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+          className="inline-flex items-center justify-center rounded-lg bg-white/10 px-4 py-2 text-sm font-semibold text-white backdrop-blur transition hover:bg-white/20"
+        >
+          Book a Demo
+        </Link>
           </div>
         </div>
       </div>

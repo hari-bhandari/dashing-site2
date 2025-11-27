@@ -63,14 +63,14 @@ export default function SalesLeadersBeforeAfter() {
         </p>
 
         <div className="mt-4">
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#8167FF] px-6 py-3 text-base font-semibold text-white shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
-          >
-            <span aria-hidden>👉</span>
-            Book a Demo — Experience the After
-          </Link>
-        </div>
+        <Link
+          href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+          className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#8167FF] px-6 py-3 text-base font-semibold text-white shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+        >
+          <span aria-hidden>👉</span>
+          Book a Demo — Experience the After
+        </Link>
+      </div>
       </div>
     </section>
   );
