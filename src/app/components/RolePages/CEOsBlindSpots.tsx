@@ -1,4 +1,5 @@
 import { IconAlertTriangle, IconCheck } from "@tabler/icons-react";
+import Image from "next/image";
 
 export default function CEOsBlindSpots() {
   const blindSpots = [
@@ -14,10 +15,10 @@ export default function CEOsBlindSpots() {
   ];
 
   return (
-    <section className="relative isolate overflow-hidden py-16 sm:py-24">
+    <section className="relative isolate overflow-hidden py-16 sm:py-24 bg-white">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Visibility</p>
-        <h2 className="mt-2 text-4xl font-extrabold text-white sm:text-5xl">From blind spots to real-time control</h2>
+        <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">From blind spots to real-time control</h2>
 
         <div className="mt-8 grid gap-10 md:grid-cols-2">
           <div>
@@ -28,7 +29,7 @@ export default function CEOsBlindSpots() {
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15">
                     <IconAlertTriangle className="h-4 w-4 text-red-500" aria-hidden />
                   </span>
-                  <span className="text-base leading-relaxed text-white/90">{t}</span>
+                  <span className="text-base leading-relaxed text-[#0a2440]/90">{t}</span>
                 </li>
               ))}
             </ul>
@@ -41,17 +42,24 @@ export default function CEOsBlindSpots() {
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15">
                     <IconCheck className="h-4 w-4 text-lime-400" aria-hidden />
                   </span>
-                  <span className="text-base leading-relaxed text-white/90">{t}</span>
+                  <span className="text-base leading-relaxed text-[#0a2440]/90">{t}</span>
                 </li>
               ))}
             </ul>
           </div>
         </div>
 
-        {/* Placeholder image */}
+        {/* Illustration image */}
         <div className="mt-10">
-          <div className="flex aspect-[16/9] w-full items-center justify-center rounded-2xl border border-white/15 bg-[url('/Pattern.svg')] bg-cover bg-center text-sm font-semibold uppercase tracking-[0.25em] text-white/70 ring-1 ring-white/10">
-            Image Placeholder
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/30 bg-white">
+            <Image
+              src="/blindspots.png"
+              alt="Visualisation contrasting blind spots with real-time broker control"
+              fill
+              sizes="(min-width:1024px) 1120px, (min-width:640px) 90vw, 100vw"
+              className="object-contain select-none"
+              priority={false}
+            />
           </div>
         </div>
       </div>

@@ -1,45 +1,43 @@
 import Link from "next/link";
+import Image from "next/image";
 
-export default function FinanceLeadersHero() {
+export default function CEOsHero() {
   return (
-    <section className="relative w-full overflow-hidden">
-      {/* Background image */}
-      <div
-        className="absolute inset-0 -z-10 bg-[url('/office.webp')] bg-cover bg-center"
-        aria-hidden
-      />
-      {/* Dark overlay */}
-      <div
-        className="absolute inset-0 -z-10 bg-black/60"
-        aria-hidden
-      />
-      {/* Subtle vignette */}
-      <div
-        className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_50%_40%,rgba(91,33,182,0.25)_0%,rgba(0,0,0,0.6)_50%,rgba(0,0,0,0.85)_100%)]"
-        aria-hidden
-      />
-
-      <div className="mx-auto flex min-h-[70vh] w-full max-w-7xl flex-col justify-center px-6 py-16 sm:py-28">
-        <h1 className="max-w-5xl text-4xl font-extrabold leading-tight text-white drop-shadow sm:text-5xl md:text-6xl">
-          Achieve Profitable Growth with Broker-Specific ERP
-        </h1>
-        <p className="mt-6 max-w-3xl text-base leading-relaxed text-gray-200">
-          Scaling a brokerage shouldn&apos;t come with growing pains. Dashing gives CEOs clarity, efficiency, and confidence to grow sustainably.
-        </p>
-        <div className="mt-8">
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-lg ring-1 ring-white/10 transition hover:bg-lime-500"
-          >
-            <span role="img" aria-label="pointing hand">👉</span>
-            Book a Demo - See How Dashing Can Help You Scale
-          </Link>
+    <section className="relative w-full overflow-hidden bg-[#0a2440]">
+      <div className="mx-auto grid min-h-[70vh] w-full max-w-7xl items-center gap-10 px-6 py-16 sm:py-24 lg:grid-cols-2 lg:gap-16">
+        {/* Left: headline + copy */}
+        <div className="space-y-6">
+          <h1 className="max-w-3xl text-4xl font-extrabold leading-tight text-white sm:text-5xl md:text-6xl">
+            Achieve Profitable Growth with Broker-Specific ERP
+          </h1>
+          <p className="max-w-2xl text-base leading-relaxed text-white/80 sm:text-lg">
+            Scaling a brokerage shouldn&apos;t come with growing pains. Dashing gives CEOs clarity, efficiency, and confidence to grow sustainably.
+          </p>
+          <div>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] ring-1 ring-white/10 transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+            >
+              <span aria-hidden>👉</span>
+              Book a Demo - See How Dashing Can Help You Scale
+            </Link>
+          </div>
         </div>
-      </div>
 
-      {/* Watermark placeholder bottom-right */}
-      <div className="pointer-events-none absolute bottom-4 right-4 -z-10 select-none text-4xl font-extrabold tracking-tight text-white/5">
-        Finsight Analytics
+        {/* Right: image (add src later) */}
+        <div className="flex w-full items-center justify-center">
+          <div className="relative h-[420px] sm:h-[460px] lg:h-[600px] w-full max-w-lg overflow-hidden ">
+            {/* TODO: update src when you have the final image path */}
+            <Image
+              src="/CEO hero.png"
+              alt="CEO dashboard and business growth illustration"
+              fill
+              sizes="(min-width:1280px) 480px, (min-width:1024px) 420px, (min-width:640px) 360px, 90vw"
+              className="object-contain select-none"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

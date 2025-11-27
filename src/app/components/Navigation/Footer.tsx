@@ -2,10 +2,12 @@ import Link from "next/link";
 
 const navigationLinks = [
   { href: "/", label: "Home" },
-  { href: "/features", label: "Solutions" },
-  { href: "/features", label: "Product" },
-  { href: "/blog", label: "Resources" },
-  { href: "/about", label: "About" },
+  { href: "/our-product", label: "Our Product" },
+  { href: "/for-sales-leaders", label: "For Sales Leaders" },
+  { href: "/for-finance-leaders", label: "For Finance Leaders" },
+  { href: "/for-ceos", label: "For CEOs" },
+  { href: "/our-story", label: "Our Story" },
+  { href: "/resources", label: "Resources" },
   { href: "/contact", label: "Contact" },
 ];
 

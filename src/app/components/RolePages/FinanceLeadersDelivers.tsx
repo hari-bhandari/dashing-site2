@@ -58,9 +58,9 @@ export default function FinanceLeadersDelivers() {
   ];
 
   return (
-    <section className="w-full px-6 py-16 sm:py-32 bg-white">
+    <section className="w-full px-6 py-16 sm:py-32 bg-[#0a2440]">
       <div className="mx-auto w-full max-w-7xl">
-        <h2 className="text-3xl font-extrabold leading-tight text-[#0a2440] sm:text-4xl">Dashing delivers</h2>
+        <h2 className="text-3xl font-extrabold leading-tight text-white sm:text-4xl">Dashing delivers</h2>
 
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
           {features.map((f) => (
@@ -68,8 +68,8 @@ export default function FinanceLeadersDelivers() {
               <div className="flex items-start">
                 <BadgeIcon>{f.icon}</BadgeIcon>
                 <div>
-                  <h3 className="text-lg font-extrabold text-[#0a2440]">{f.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[#0a2440]">{f.desc}</p>
+                  <h3 className="text-lg font-extrabold text-white">{f.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-white">{f.desc}</p>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ export default function FinanceLeadersDelivers() {
         </div>
 
         <div className="mt-8">
-          <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-4 py-2 text-sm font-semibold text-white shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500">
+          <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-4 py-2 text-sm font-semibold text-[#0a2440] shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500">
             Get a Demo - See Finance Clarity in Action
           </Link>
         </div>

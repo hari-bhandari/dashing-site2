@@ -33,18 +33,17 @@ export default function SalesLeadersHero() {
         </div>
 
         {/* Right panel hero image */}
-        <div className="relative h-[400px] sm:h-[420px] lg:h-[450px] w-full overflow-hidden">
- 
-              <Image
-                src="/LaptopUpArrow.png"
-                alt="Broker sales dashboard on laptop with upward growth visualization"
-                fill
-                sizes="(min-width:1024px) 480px, (min-width:640px) 360px, 90vw"
-                className="object-contain select-none"
-                priority
-              />
-            
-
+        <div className="flex w-full items-center justify-center">
+          <div className="relative h-[400px] w-full max-w-lg overflow-hidden ">
+            <Image
+              src="/LaptopUpArrow.png"
+              alt="Sales leaders dashboard and business growth illustration"
+              fill
+              sizes="(min-width:1280px) 480px, (min-width:1024px) 420px, (min-width:640px) 360px, 90vw"
+              className="object-cover select-none"
+              priority
+            />
+          </div>
         </div>
       </div>
     </section>

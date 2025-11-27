@@ -32,9 +32,9 @@ export default function FinanceLeadersHiddenRisks() {
   const icons = [IconHourglass, IconEyeOff, IconShieldX, IconChartBar];
 
   return (
-    <section className="w-full px-6 py-16 sm:py-24">
+    <section className="w-full px-6 py-16 sm:py-24 bg-white">
       <div className="mx-auto w-full max-w-7xl">
-        <h2 className="text-3xl font-extrabold leading-tight text-white sm:text-4xl">
+        <h2 className="text-3xl font-extrabold leading-tight text-[#0a2440] sm:text-4xl">
           Finance leaders in brokering face hidden risks:
         </h2>
 
@@ -44,15 +44,15 @@ export default function FinanceLeadersHiddenRisks() {
             return (
               <article
                 key={item.title}
-                className="rounded-2xl border border-white/10 bg-white/[0.05] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_60px_-35px_rgba(0,0,0,0.55)] ring-1 ring-white/10 backdrop-blur-sm"
+                className="rounded-2xl border border-white/30 bg-white/[0.05] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_25px_60px_-35px_rgba(0,0,0,0.55)] ring-1 ring-white/10 backdrop-blur-sm"
               >
                 <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/10 ring-1 ring-white/15">
                   <Icon className="h-6 w-6 text-lime-400" aria-hidden />
                 </div>
-                <h3 className="text-base font-semibold text-white sm:text-lg">
+                <h3 className="text-base font-semibold text-[#0a2440] sm:text-lg">
                   {item.title}
                 </h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/70 sm:text-base">
+                <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/70 sm:text-base">
                   {item.body}
                 </p>
               </article>

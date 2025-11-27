@@ -2,7 +2,7 @@ import { IconQuote, IconUsersGroup, IconLifebuoy } from "@tabler/icons-react";
 
 export default function CEOsLeadersChoose() {
   return (
-    <section className="relative isolate overflow-hidden bg-white py-16 sm:py-24">
+    <section className="relative isolate overflow-hidden py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Why Dashing</p>
         <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">

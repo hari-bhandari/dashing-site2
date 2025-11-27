@@ -12,11 +12,11 @@ export default function ForFinanceLeaders() {
         <div className="flex min-h-screen flex-col">
                     <Navbar />
                         <FinanceLeadersHero />
-                        <FinanceLeadersHiddenRisks />
-                        <FinanceLeadersDelivers />
-                        <FinanceLeadersBeforeAfter />
-                        <FinanceLeadersTrust />
-                        <FinanceLeadersNumbersToDecisions />
+                        <FinanceLeadersHiddenRisks /> 
+                        <FinanceLeadersDelivers /> 
+                        <FinanceLeadersBeforeAfter /> 
+                        <FinanceLeadersTrust /> 
+                        <FinanceLeadersNumbersToDecisions /> 
                     <Footer />
         </div>
     )
