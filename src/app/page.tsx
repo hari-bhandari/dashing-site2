@@ -29,7 +29,6 @@ export default function Home() {
       <DashingCTA />
       <Testimonials />
       <Footer /> 
- 
     </div>
   );
 }

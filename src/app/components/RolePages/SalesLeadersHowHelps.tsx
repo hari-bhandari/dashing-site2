@@ -59,7 +59,7 @@ export default function SalesLeadersHowHelps() {
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
           >
             <span aria-hidden>👉</span>
-            Get a Demo — See Faster Quoting in Action
+            Get a Demo and See Faster Quoting in Action
           </Link>
         </div>
       </div>

@@ -3,10 +3,10 @@ import { IconArrowsMaximize, IconGauge, IconShieldCheck, IconBolt } from "@table
 
 export default function CEOsEmpowers() {
   const items = [
-    { title: "Scalable platform", desc: "supports multi-location, multi-employee growth.", Icon: IconArrowsMaximize },
-    { title: "Operational efficiency", desc: "grow revenue per employee.", Icon: IconGauge },
-    { title: "Risk reduction", desc: "compliance and control built in.", Icon: IconShieldCheck },
-    { title: "Faster deal cycles", desc: "drive top-line growth without chaos.", Icon: IconBolt },
+    { title: "Scalable platform", desc: "Supports multi-location, multi-employee growth.", Icon: IconArrowsMaximize },
+    { title: "Operational efficiency", desc: "Grow revenue per employee.", Icon: IconGauge },
+    { title: "Risk reduction", desc: "Compliance and control built in.", Icon: IconShieldCheck },
+    { title: "Faster deal cycles", desc: "Drive top-line growth without chaos.", Icon: IconBolt },
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function CEOsEmpowers() {
             href="/contact"
             className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-6 py-3 font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(163,230,53,0.85)] transition hover:-translate-y-0.5 hover:bg-lime-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0a2440]/20"
           >
-            Get a Demo — Future-Proof Your Brokerage
+            Get a Demo and Future-Proof Your Brokerage
           </Link>
         </div>
       </div>
