@@ -46,9 +46,6 @@ export default function BrokersDilemma() {
             </article>
           ))}
         </div>
-        <p className="text-base font-medium text-[#0a2440]/80">
-          The need is clear: a modern system purpose-built for how brokers work.
-        </p>
       </div>
     </section>
   );

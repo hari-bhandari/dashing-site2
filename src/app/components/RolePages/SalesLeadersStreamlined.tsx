@@ -33,7 +33,7 @@ export default function SalesLeadersStreamlined() {
   return (
     <section className="relative isolate overflow-hidden py-16 sm:py-24 bg-white">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl">
+        <div className="max-w-4xl text-center mx-auto">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-lime-400">Sales Flow</p>
           <h2 className="mt-3 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">
             From first quote to closed deal, streamlined in one platform

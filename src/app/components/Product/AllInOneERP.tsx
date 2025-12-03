@@ -54,12 +54,7 @@ export default function AllInOneERP() {
             >
               Explore Features in a Demo
             </Link>
-            <Link
-              href="/our-product"
-              className="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/15 transition hover:bg-white/15 sm:text-base"
-            >
-              Learn More
-            </Link>
+        
           </div>
         </div>
 

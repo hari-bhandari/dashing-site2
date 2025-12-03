@@ -1,3 +1,4 @@
+import Link from "next/link";
 const resources = [
   {
     title: "Blog / Insights",
@@ -30,23 +31,25 @@ export default function DashingResources() {
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-[#0a2440] sm:text-5xl">Resources &amp; Expertise</h2>
-          <p className="text-sm font-semibold text-[#0a2440]/70">
-            (link to resources page — include current / recent examples below)
-          </p>
+ 
           <p className="text-lg text-[#0a2440]/70 sm:text-xl">
             Access valuable insights, proven success stories, and thought leadership content designed for brokers.
           </p>
         </div>
         <div className="grid gap-8 text-left sm:grid-cols-2 lg:grid-cols-3">
           {resources.map(({ title, description, footnote }) => (
-            <article
+            <Link
               key={title}
-              className="flex h-full flex-col gap-2 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_35px_80px_-55px_rgba(12,10,43,0.8)] backdrop-blur"
+              href="/resources"
+              className="flex h-full flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_35px_80px_-55px_rgba(12,10,43,0.8)] backdrop-blur transition hover:border-white/40 hover:bg-white/10"
             >
               <h3 className="text-lg font-bold text-lime-400">{title}</h3>
               <p className="text-m leading-relaxed font-semibold text-[#0a2440]">{description}</p>
-              <p className="mt-auto text-sm text-[#0a2440]/70">{footnote}</p>
-            </article>
+              <p className="text-sm text-[#0a2440]/70">{footnote}</p>
+              <span className="mt-auto text-xs font-semibold text-[#0a2440] underline underline-offset-4 transition hover:text-lime-400">
+                Learn more
+              </span>
+            </Link>
           ))}
         </div>
       </div>

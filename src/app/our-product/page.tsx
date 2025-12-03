@@ -5,7 +5,6 @@ import FlowSimplified from "@/app/components/Product/FlowSimplified";
 import SeamlessSetup from "@/app/components/Product/SeamlessSetup";
 import CompliancePeace from "@/app/components/Product/CompliancePeace";
 import SeeInAction from "@/app/components/Product/SeeInAction";
-import GetStartedForm from "../components/Sections/GetStartedForm";
 
 export default function OurProduct() {
     return (
@@ -16,7 +15,6 @@ export default function OurProduct() {
             <SeamlessSetup />
             <CompliancePeace />
             <SeeInAction />
-            <GetStartedForm />
             <Footer />
         </div>
     )

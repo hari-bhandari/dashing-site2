@@ -62,12 +62,14 @@ export default function DashingJourney() {
               </li>
             ))}
           </ol>
-          <Link
-        href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-        className="inline-flex w-fit items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(124,92,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6846f0]"
-      >
-            Book a Demo — See It in Action
-          </Link>
+          <div className="flex justify-center">
+            <Link
+          href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+          className="inline-flex w-fit items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(124,92,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6846f0]"
+        >
+              Book a Demo — See It in Action
+            </Link>
+          </div>
         </div>
         <div className="flex h-full w-full items-center justify-center">
           <div className="relative h-[450px] w-full max-w-lg overflow-hidden">

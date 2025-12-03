@@ -28,7 +28,7 @@ export default function FinanceLeadersHero() {
         <div className="flex w-full items-center justify-center">
           <div className="relative h-[400px] w-full max-w-lg overflow-hidden">
             <Image
-              src="/Picture1.png"
+              src="/financehero.png"
               alt="Finance leaders dashboard with real-time cashflow and inventory insights"
               fill
               sizes="(min-width:1280px) 480px, (min-width:1024px) 420px, (min-width:640px) 360px, 90vw"

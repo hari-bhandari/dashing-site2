@@ -7,7 +7,7 @@ export default function DashingCTA() {
         className="absolute inset-0 -z-10"
         aria-hidden
       />
-      <div className="mx-auto flex max-w-4xl flex-col gap-8 px-4 text-left sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-4xl flex-col gap-8 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-white sm:text-5xl">Book a Demo Today</h2>
           <p className="text-lg font-semibold text-emerald-300">
@@ -20,15 +20,17 @@ export default function DashingCTA() {
             Ready to win more deals and grow profitably?
           </p>
         </div>
-        <div className="flex flex-col gap-4 sm:flex-row">
+        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
           <Link
         href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(129,103,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6c53f1]"
       >
             Book Your Demo Now
           </Link>
           <Link
-            href="/your-data"
+            href="/contact"
             className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-base font-semibold text-white transition hover:-translate-y-0.5 hover:border-white/50"
           >
             General Contact

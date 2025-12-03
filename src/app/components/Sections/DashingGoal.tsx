@@ -49,18 +49,18 @@ export default function DashingGoal() {
               </span>
               <h3 className="text-xl font-semibold text-white">{outcome.title}</h3>
               <p className="text-sm leading-relaxed text-white/70 sm:text-base">{outcome.description}</p>
-              {outcome.number === "02" ? (
-                <div className="pt-4">
-                  <Link
-                    href="/contact"
-                    className="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(112,97,245,0.9)] transition hover:-translate-y-0.5 hover:bg-[#5b4ee6]"
-                  >
-                    See Dashing in Action
-                  </Link>
-                </div>
-              ) : null}
             </article>
           ))}
+        </div>
+        <div className="flex justify-center">
+          <Link
+            href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full bg-lime-400 px-5 py-2 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(112,97,245,0.9)] transition hover:-translate-y-0.5 hover:bg-[#5b4ee6]"
+          >
+            See Dashing in Action
+          </Link>
         </div>
       </div>
     </section>

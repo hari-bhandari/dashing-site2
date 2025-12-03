@@ -51,13 +51,13 @@ export default function DashingCapabilities() {
               key={capability.title}
               className="flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-left shadow-[0_40px_80px_-60px_rgba(12,10,43,0.7)] backdrop-blur"
             >
-              <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/15 bg-white/10">
+              <div className="relative aspect-[4/3] min-h-[200px] w-full overflow-hidden rounded-[28px] border border-white/15 bg-white/10">
                 <Image
                   src={capability.imgSrc}
                   alt={capability.alt}
                   fill
-                  sizes="(min-width: 1024px) 240px, (min-width: 640px) 360px, 90vw"
-                  className="object-contain p-4 select-none"
+                  sizes="(min-width: 1400px) 360px, (min-width: 1024px) 320px, (min-width: 640px) 280px, 90vw"
+                  className="object-contain p-6 select-none"
                   priority={false}
                 />
               </div>

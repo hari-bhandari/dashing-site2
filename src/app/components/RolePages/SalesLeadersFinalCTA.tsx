@@ -7,13 +7,13 @@ export default function SalesLeadersFinalCTA() {
       <div className="mx-auto grid w-full max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:gap-12 lg:px-8">
         {/* Left: rocket laptop image */}
         <div className="order-2 lg:order-1">
-          <div className="relative w-full h-[320px] sm:h-[360px] lg:h-[400px] overflow-hidden rounded-2xl">
+          <div className="relative w-full h-[380px] sm:h-[420px] lg:h-[520px] overflow-hidden rounded-3xl">
             <Image
               src="/laptoprocket.png"
               alt="Laptop launching upward with rocket symbolizing accelerated broker growth"
               fill
-              sizes="(min-width:1280px) 560px, (min-width:1024px) 480px, (min-width:640px) 90vw, 100vw"
-              className="object-contain object-center select-none"
+              sizes="(min-width:1300px) 600px, (min-width:1024px) 480px, (min-width:640px) 90vw, 100vw"
+              className="object-cover object-center select-none"
               priority
             />
           </div>
