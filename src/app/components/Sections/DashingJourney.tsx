@@ -36,7 +36,7 @@ export default function DashingJourney() {
         className="absolute inset-0 -z-10"
         aria-hidden
       />
-      <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:items-center lg:gap-16 lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-16 lg:px-8">
         <div className="space-y-8">
           <div className="space-y-4">
             <h2 className="text-4xl font-bold text-white sm:text-5xl">
@@ -72,9 +72,9 @@ export default function DashingJourney() {
           </div>
         </div>
         <div className="flex h-full w-full items-center justify-center">
-          <div className="relative h-[450px] w-full max-w-lg overflow-hidden">
+          <div className="relative h-[500px] w-full overflow-hidden">
             <Image
-              src="/fromEnquiryToGrowth.png"
+              src="/graph.png"
               alt="Illustration of brokerage workflow growth progression"
               fill
               sizes="(min-width:1280px) 640px, (min-width:1024px) 560px, (min-width:640px) 420px, 90vw"
