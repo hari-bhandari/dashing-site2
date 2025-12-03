@@ -61,7 +61,7 @@ export default function BrokersDilemma() {
         <div className="space-y-5">
           <p className="text-s font-semibold uppercase tracking-widest text-lime-400">The Problem</p>
           <h2 className="text-4xl font-extrabold text-[#0a2440] sm:text-5xl">The Broker&apos;s Dilemma</h2>
-          <p className="text-lg text-[#0a2440]/70 sm:text-xl">
+          <p className="text-xl text-[#0a2440]/70 sm:text-xl">
             Brokers across North America &amp; Europe face the same critical challenges that slow growth and limit profitability.
           </p>
         </div>
@@ -69,14 +69,19 @@ export default function BrokersDilemma() {
           {challenges.map(({ title, description, Icon }) => (
             <motion.article
               key={title}
-              className="group rounded-3xl border border-white/40 bg-white/80 p-7 shadow-[0_30px_70px_-45px_rgba(8,24,48,0.55)] backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-lime-200/70 hover:shadow-[0_35px_90px_-40px_rgba(46,73,116,0.45)]"
+              className="group rounded-3xl border border-gray-200/80 bg-white/80 p-7 shadow-[0_30px_70px_-45px_rgba(8,24,48,0.55)] backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:border-gray-400/90 hover:shadow-[0_35px_90px_-40px_rgba(46,73,116,0.45)]"
               variants={cardVariants}
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-lime-400/20 via-lime-300/10 to-transparent text-lime-400">
-                <Icon className="h-6 w-6" aria-hidden />
+              <div className="mb-4 flex items-center gap-4 text-left">
+                <div className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/90 text-[#0a2440] shadow-inner shadow-white/60">
+                  <Icon className="h-8 w-8" aria-hidden />
+                </div>
+                <div>
+                  <h3 className=" font-semibold text-[#0a2440] sm:text-xl">{title}</h3>
+                  <span className="mt-1 block h-0.5 w-12 rounded-full bg-[#0a2440]/10" />
+                </div>
               </div>
-              <h3 className="text-base font-semibold text-[#0a2440] sm:text-lg">{title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/75 sm:text-base">{description}</p>
+              <p className="text-sm leading-relaxed text-[#0a2440] sm:text-lg">{description}</p>
             </motion.article>
           ))}
         </motion.div>
