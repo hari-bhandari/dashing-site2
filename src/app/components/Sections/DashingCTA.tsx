@@ -10,7 +10,7 @@ export default function DashingCTA() {
       <div className="mx-auto flex max-w-4xl flex-col gap-8 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-white sm:text-5xl">Book a Demo Today</h2>
-          <p className="text-lg font-semibold text-emerald-300">
+          <p className="text-lg font-semibold text-lime-300">
             Experience the ERP built for brokers. Delivering speed, visibility, and clarity from day one.
           </p>
           <p className="text-base text-white/80">
