@@ -40,9 +40,9 @@ export default function RoleSolutions() {
           {personas.map(({ title, description, icon: Icon }) => (
             <article
               key={title}
-              className="flex h-full flex-col gap-4 rounded-3xl border border-white/15 bg-white/5 p-8 shadow-[0_40px_80px_-60px_rgba(12,10,43,0.7)] backdrop-blur"
+              className="group flex h-full flex-col gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-7 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/10 text-lime-400">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0a2440]/5 text-lime-400">
                 <Icon className="h-6 w-6" aria-hidden />
               </div>
               <div className="space-y-2">

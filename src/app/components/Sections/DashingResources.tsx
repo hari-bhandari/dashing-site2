@@ -36,17 +36,17 @@ export default function DashingResources() {
             Access valuable insights, proven success stories, and thought leadership content designed for brokers.
           </p>
         </div>
-        <div className="grid gap-8 text-left sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 text-left sm:grid-cols-2 lg:grid-cols-3">
           {resources.map(({ title, description, footnote }) => (
             <Link
               key={title}
               href="/resources"
-              className="flex h-full flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-8 shadow-[0_35px_80px_-55px_rgba(12,10,43,0.8)] backdrop-blur transition hover:border-white/40 hover:bg-white/10"
+              className="group flex h-full flex-col gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-7 text-[#0a2440] shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1"
             >
-              <h3 className="text-lg font-bold text-lime-400">{title}</h3>
-              <p className="text-m leading-relaxed font-semibold text-[#0a2440]">{description}</p>
+              <h3 className="text-base font-semibold text-lime-400 sm:text-lg">{title}</h3>
+              <p className="text-sm leading-relaxed font-semibold text-[#0a2440]/90 sm:text-base">{description}</p>
               <p className="text-sm text-[#0a2440]/70">{footnote}</p>
-              <span className="mt-auto text-xs font-semibold text-[#0a2440] underline underline-offset-4 transition hover:text-lime-400">
+              <span className="mt-auto text-xs font-semibold text-[#0a2440] underline underline-offset-4 transition group-hover:text-lime-400">
                 Learn more
               </span>
             </Link>
