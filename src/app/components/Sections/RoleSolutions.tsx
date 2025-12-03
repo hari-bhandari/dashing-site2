@@ -1,5 +1,6 @@
 import { IconBriefcase, IconCalculator, IconCrown } from "@tabler/icons-react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const personas = [
   {
@@ -22,13 +23,36 @@ const personas = [
   },
 ];
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const gridVariants = {
+  visible: { transition: { staggerChildren: 0.15, delayChildren: 0.15 } }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const ctaVariants = {
+  hidden: { opacity: 0, scale: 0.92 },
+  visible: { opacity: 1, scale: 1 }
+};
+
 export default function RoleSolutions() {
   return (
-    <section className="relative isolate overflow-hidden bg-white py-20 text-white sm:py-24">
-      <div
-        className="absolute inset-0 -z-10"
-        aria-hidden
-      />
+    <motion.section
+      className="relative isolate overflow-hidden bg-white py-20 text-white sm:py-24"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.35 }}
+      variants={sectionVariants}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <div className="absolute inset-0 -z-10" aria-hidden />
       <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-[#0a2440] sm:text-5xl">Solutions Tailored to Your Role</h2>
@@ -36,11 +60,12 @@ export default function RoleSolutions() {
             Whether you&apos;re a Sales Leader, Finance Director, or CEO/MD, Dashing Distribution addresses your specific challenges and objectives.
           </p>
         </div>
-        <div className="grid gap-6 text-left sm:grid-cols-2 lg:grid-cols-3 text-[#0a2440]">
+        <motion.div className="grid gap-6 text-left sm:grid-cols-2 lg:grid-cols-3 text-[#0a2440]" variants={gridVariants}>
           {personas.map(({ title, description, icon: Icon }) => (
-            <article
+            <motion.article
               key={title}
               className="group flex h-full flex-col gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-7 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1"
+              variants={cardVariants}
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0a2440]/5 text-lime-400">
                 <Icon className="h-6 w-6" aria-hidden />
@@ -52,10 +77,10 @@ export default function RoleSolutions() {
               <Link href="/contact" className="mt-auto text-sm font-semibold text-[#0a2440] underline-offset-4 hover:underline">
                 Learn more
               </Link>
-            </article>
+            </motion.article>
           ))}
-        </div>
-        <div className="mx-auto">
+        </motion.div>
+        <motion.div className="mx-auto" variants={ctaVariants} transition={{ duration: 0.45, ease: "easeOut", delay: 0.25 }}>
           <Link
             href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
             target="_blank"
@@ -64,8 +89,8 @@ export default function RoleSolutions() {
           >
             Book Demo
           </Link>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

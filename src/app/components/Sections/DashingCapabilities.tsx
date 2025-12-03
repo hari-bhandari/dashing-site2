@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const capabilities = [
   {
@@ -31,13 +32,33 @@ const capabilities = [
   },
 ];
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const cardsContainer = {
+  visible: {
+    transition: { staggerChildren: 0.15, delayChildren: 0.2 }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 26, scale: 0.98 },
+  visible: { opacity: 1, y: 0, scale: 1 }
+};
+
 export default function DashingCapabilities() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24">
-      <div
-        className="absolute inset-0 -z-10"
-        aria-hidden
-      />
+    <motion.section
+      className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.35 }}
+      variants={sectionVariants}
+      transition={{ duration: 0.65, ease: "easeOut" }}
+    >
+      <div className="absolute inset-0 -z-10" aria-hidden />
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-white sm:text-5xl">Everything You Need in One System</h2>
@@ -45,30 +66,31 @@ export default function DashingCapabilities() {
             Dashing Distribution unifies all critical brokerage functions into a single, intuitive platform, streamlining operations and empowering your team.
           </p>
         </div>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <motion.div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4" variants={cardsContainer}>
           {capabilities.map((capability) => (
-            <article
+            <motion.article
               key={capability.title}
               className="flex h-full flex-col gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 text-left shadow-[0_40px_80px_-60px_rgba(12,10,43,0.7)] backdrop-blur"
+              variants={cardVariants}
             >
-              <div className="relative aspect-[4/3] min-h-[200px] w-full overflow-hidden rounded-[28px] border border-white/15 bg-white/10">
+              <div className="relative aspect-[4/3] min-h-[175px] w-full overflow-hidden rounded-[28px] border border-white/15 bg-white/10">
                 <Image
                   src={capability.imgSrc}
                   alt={capability.alt}
                   fill
                   sizes="(min-width: 1400px) 360px, (min-width: 1024px) 320px, (min-width: 640px) 280px, 90vw"
-                  className="object-contain p-6 select-none"
+                  className="object-cover p-6 select-none"
                   priority={false}
                 />
               </div>
               <div className="space-y-2">
                 <h3 className="text-lg font-semibold text-lime-400">{capability.title}</h3>
-                <p className="text-sm leading-relaxed text-white/75">{capability.description}</p>
+                <p className="text-sm leading-relaxed text-white">{capability.description}</p>
               </div>
-            </article>
+            </motion.article>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

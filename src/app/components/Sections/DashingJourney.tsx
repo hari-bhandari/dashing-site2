@@ -1,6 +1,7 @@
 import { IconClipboardList, IconFileDollar, IconGauge, IconChartBar } from "@tabler/icons-react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const journey = [
   {
@@ -29,13 +30,41 @@ const journey = [
   },
 ];
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const listVariants = {
+  visible: { transition: { staggerChildren: 0.18, delayChildren: 0.2 } }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 28 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const ctaVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { opacity: 1, scale: 1 }
+};
+
+const imageVariants = {
+  hidden: { opacity: 0, x: 40 },
+  visible: { opacity: 1, x: 0 }
+};
+
 export default function DashingJourney() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24">
-      <div
-        className="absolute inset-0 -z-10"
-        aria-hidden
-      />
+    <motion.section
+      className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.35 }}
+      variants={sectionVariants}
+      transition={{ duration: 0.65, ease: "easeOut" }}
+    >
+      <div className="absolute inset-0 -z-10" aria-hidden />
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-16 lg:px-8">
         <div className="space-y-8">
           <div className="space-y-4">
@@ -46,11 +75,12 @@ export default function DashingJourney() {
               Dashing streamlines your entire brokerage operation, transforming complex processes into a clear, four-step journey designed for efficiency and profitability.
             </p>
           </div>
-          <ol className="space-y-5">
+          <motion.ol className="space-y-5" variants={listVariants}>
             {journey.map(({ title, description, icon: Icon }) => (
-              <li
+              <motion.li
                 key={title}
                 className="flex items-start gap-4 rounded-3xl bg-white/5 p-5 shadow-[0_35px_70px_-60px_rgba(12,10,43,0.8)]"
+                variants={itemVariants}
               >
                 <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-lime-400">
                   <Icon className="h-6 w-6" aria-hidden />
@@ -59,19 +89,19 @@ export default function DashingJourney() {
                   <h3 className="text-lg font-semibold text-white">{title}</h3>
                   <p className="text-sm leading-relaxed text-white/75">{description}</p>
                 </div>
-              </li>
+              </motion.li>
             ))}
-          </ol>
-          <div className="flex justify-center">
+          </motion.ol>
+          <motion.div className="flex justify-center" variants={ctaVariants} transition={{ duration: 0.45, ease: "easeOut", delay: 0.25 }}>
             <Link
-          href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-          className="inline-flex w-fit items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(124,92,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6846f0]"
-        >
+              href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+              className="inline-flex w-fit items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(124,92,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6846f0]"
+            >
               Book a Demo — See It in Action
             </Link>
-          </div>
+          </motion.div>
         </div>
-        <div className="flex h-full w-full items-center justify-center">
+        <motion.div className="flex h-full w-full items-center justify-center" variants={imageVariants} transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}>
           <div className="relative h-[500px] w-full overflow-hidden">
             <Image
               src="/graph.png"
@@ -82,8 +112,8 @@ export default function DashingJourney() {
               priority={false}
             />
           </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }

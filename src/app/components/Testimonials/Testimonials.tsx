@@ -1,6 +1,7 @@
 "use client";
 
 import { IconQuote } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 
 type Testimonial = {
 	quote: string;
@@ -26,9 +27,26 @@ const defaultTestimonials: Testimonial[] = [
 	},
 ];
 
+const sectionVariants = {
+	hidden: { opacity: 0, y: 24 },
+	visible: { opacity: 1, y: 0 }
+};
+
+const cardsContainer = {
+	visible: { transition: { staggerChildren: 0.18, delayChildren: 0.2 } }
+};
+
+const cardVariants = {
+	hidden: { opacity: 0, y: 30 },
+	visible: { opacity: 1, y: 0 }
+};
+
 function TestimonialCard({ quote, name, designation }: Testimonial) {
 	return (
-		<article className="relative flex h-full flex-col gap-6 rounded-3xl border border-[#0a2440]/10 bg-white p-8 text-left text-[#0a2440] shadow-[0_30px_80px_-40px_rgba(10,36,64,0.4)]">
+		<motion.article
+			className="relative flex h-full flex-col gap-6 rounded-3xl border border-[#0a2440]/10 bg-white p-8 text-left text-[#0a2440] shadow-[0_30px_80px_-40px_rgba(10,36,64,0.4)]"
+			variants={cardVariants}
+		>
 			<IconQuote className="absolute -top-5 left-6 h-10 w-10 text-lime-400/80" aria-hidden />
 			<div className="space-y-4 pt-6">
 				<p className="text-base leading-relaxed text-[#0a2440]/80">{quote}</p>
@@ -38,7 +56,7 @@ function TestimonialCard({ quote, name, designation }: Testimonial) {
 				{designation ? <p className="text-sm text-[#0a2440]/70">{designation}</p> : null}
 			</div>
 			<IconQuote className="absolute -bottom-5 right-6 h-10 w-10 rotate-180 text-lime-400/70" aria-hidden />
-		</article>
+		</motion.article>
 	);
 }
 
@@ -48,7 +66,14 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
 	}
 
 	return (
-		<section className="relative isolate overflow-hidden py-20 sm:py-24 bg-white">
+		<motion.section
+			className="relative isolate overflow-hidden py-20 sm:py-24 bg-white"
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true, amount: 0.35 }}
+			variants={sectionVariants}
+			transition={{ duration: 0.6, ease: "easeOut" }}
+		>
 			<div className="relative mx-auto flex max-w-6xl flex-col gap-16 px-4 text-center sm:px-6 lg:px-8">
 				<div className="mx-auto max-w-3xl">
 					<p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#0a2440]">Testimonials</p>
@@ -57,12 +82,12 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
 						Join the growing community of brokers who&apos;ve transformed their operations with Dashing Distribution.
 					</p>
 				</div>
-				<div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+				<motion.div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3" variants={cardsContainer}>
 					{testimonials.map((testimonial, index) => (
 						<TestimonialCard key={`${testimonial.name}-${index}`} {...testimonial} />
 					))}
-				</div>
+				</motion.div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }

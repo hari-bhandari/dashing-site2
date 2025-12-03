@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const outcomes = [
   {
@@ -21,13 +22,38 @@ const outcomes = [
   },
 ];
 
+const sectionVariants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const cardsContainer = {
+  visible: {
+    transition: { staggerChildren: 0.18, delayChildren: 0.15 }
+  }
+};
+
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 }
+};
+
+const ctaVariants = {
+  hidden: { opacity: 0, scale: 0.92 },
+  visible: { opacity: 1, scale: 1 }
+};
+
 export default function DashingGoal() {
   return (
-    <section className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24">
-      <div
-        className="absolute inset-0 -z-10 "
-        aria-hidden
-      />
+    <motion.section
+      className="relative isolate overflow-hidden bg-[#0a2440] py-20 text-white sm:py-24"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.35 }}
+      variants={sectionVariants}
+      transition={{ duration: 0.65, ease: "easeOut" }}
+    >
+      <div className="absolute inset-0 -z-10 " aria-hidden />
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
           <p className="text-sm font-semibold uppercase tracking-[0.35em] text-lime-400">The Dashing goal</p>
@@ -38,21 +64,22 @@ export default function DashingGoal() {
             Dashing Distribution delivers three critical outcomes that separate winning brokers from the competition.
           </p>
         </div>
-        <div className="grid gap-6 text-left sm:grid-cols-2 lg:grid-cols-3">
+        <motion.div className="grid gap-6 text-left sm:grid-cols-2 lg:grid-cols-3" variants={cardsContainer}>
           {outcomes.map((outcome) => (
-            <article
+            <motion.article
               key={outcome.number}
               className="flex h-full flex-col gap-4 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+              variants={cardVariants}
             >
               <span className="text-sm font-semibold uppercase tracking-[0.3em] text-white/60">
                 {outcome.number}
               </span>
               <h3 className="text-xl font-semibold text-white">{outcome.title}</h3>
               <p className="text-sm leading-relaxed text-white/70 sm:text-base">{outcome.description}</p>
-            </article>
+            </motion.article>
           ))}
-        </div>
-        <div className="flex justify-center">
+        </motion.div>
+        <motion.div className="flex justify-center" variants={ctaVariants} transition={{ duration: 0.45, ease: "easeOut", delay: 0.25 }}>
           <Link
             href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
             target="_blank"
@@ -61,8 +88,8 @@ export default function DashingGoal() {
           >
             See Dashing in Action
           </Link>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
