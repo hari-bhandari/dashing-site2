@@ -3,10 +3,6 @@ import { createClient } from "contentful";
 const space = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
 const accessToken = process.env.NEXT_PUBLIC_CONTENTFUL_DELIVERY_TOKEN;
 
-if (!space || !accessToken) {
-  // eslint-disable-next-line no-console
-  console.warn("Contentful environment variables are not set. Blog section will render empty.");
-}
 
 export const contentfulClient = createClient({
   space: space ?? "",

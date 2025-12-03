@@ -1,5 +1,5 @@
 import { IconAlertTriangle, IconCheck } from "@tabler/icons-react";
-import Image from "next/image";
+
 
 export default function CEOsBlindSpots() {
   const blindSpots = [
@@ -46,20 +46,6 @@ export default function CEOsBlindSpots() {
                 </li>
               ))}
             </ul>
-          </div>
-        </div>
-
-        {/* Illustration image */}
-        <div className="mt-10">
-          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/30 bg-white">
-            <Image
-              src="/blindspots.png"
-              alt="Visualisation contrasting blind spots with real-time broker control"
-              fill
-              sizes="(min-width:1024px) 1120px, (min-width:640px) 90vw, 100vw"
-              className="object-contain select-none"
-              priority={false}
-            />
           </div>
         </div>
       </div>

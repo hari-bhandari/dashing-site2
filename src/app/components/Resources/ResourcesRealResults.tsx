@@ -74,19 +74,21 @@ export default function ResourcesRealResults() {
           Comprehensive case studies feature detailed implementation strategies, ROI calculations, long-term business impact and before/after comparisons across workflows and metrics.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-3">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link
-            href="#"
+            href="/our-product"
             className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(163,230,53,0.85)] transition hover:-translate-y-0.5 hover:bg-lime-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
           >
             See What Dashing Could Do for You
           </Link>
-          <Link
-        href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-        className="inline-flex items-center justify-center rounded-lg bg-white/10 px-6 py-3 text-base font-semibold text-white ring-1 ring-white/15 transition hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
-      >
+          <a
+            href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg bg-white/10 px-6 py-3 text-base font-semibold text-white ring-1 ring-white/15 transition hover:bg-white/15 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40"
+          >
             Book a Demo
-          </Link>
+          </a>
         </div>
       </div>
     </section>

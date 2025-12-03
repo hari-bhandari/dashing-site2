@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { IconArrowsMaximize, IconGauge, IconShieldCheck, IconBolt } from "@tabler/icons-react";
 
 export default function CEOsEmpowers() {
@@ -32,13 +31,15 @@ export default function CEOsEmpowers() {
           ))}
         </div>
 
-        <div className="mt-8">
-          <Link
-            href="/contact"
+        <div className="mt-8 justify-center flex">
+          <a
+            href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-6 py-3 font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(163,230,53,0.85)] transition hover:-translate-y-0.5 hover:bg-lime-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0a2440]/20"
           >
             Get a Demo and Future-Proof Your Brokerage
-          </Link>
+          </a>
         </div>
       </div>
     </section>

@@ -71,13 +71,6 @@ export default function Navbar() {
       >
         Resources
       </Link>
-      <Link 
-        href="" 
-        className={`text-xs font-medium ${isMobile ? 'text-[#0a2440]' : 'text-white'} transition-colors duration-200 hover:text-lime-400 sm:text-xs md:text-sm lg:text-base`}
-        onClick={() => setIsMenuOpen(false)}      
-      >
-        Contact
-      </Link>
     </div>
   )
 

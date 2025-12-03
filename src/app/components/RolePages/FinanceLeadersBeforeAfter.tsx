@@ -36,14 +36,14 @@ export default function FinanceLeadersBeforeAfter() {
         {/* Right image */}
         <div className="relative aspect-[16/10] overflow-hidden md:aspect-auto md:h-full">
           <Image
-            src="/trustedbybrokerlikeyou.png"
+            src="/monitors.png"
             alt="Finance leader viewing performance dashboards"
             fill
             className="object-cover"
             sizes="(min-width: 768px) 50vw, 100vw"
             priority={false}
           />
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+          <div className="pointer-events-none absolute inset-0" />
         </div>
       </div>
     </section>

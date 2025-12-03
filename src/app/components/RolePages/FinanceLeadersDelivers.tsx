@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 function BadgeIcon({ children }: { children: ReactNode }) {
@@ -58,28 +57,41 @@ export default function FinanceLeadersDelivers() {
   ];
 
   return (
-    <section className="w-full px-6 py-16 sm:py-32 bg-[#0a2440]">
-      <div className="mx-auto w-full max-w-7xl">
-        <h2 className="text-3xl font-extrabold leading-tight text-white sm:text-4xl">Dashing delivers</h2>
+    <section className="w-full bg-gradient-to-b from-[#06162b] via-[#0a2440] to-[#0d2d4f] px-6 py-20 sm:py-32">
+      <div className="mx-auto max-w-6xl rounded-[32px] border border-white/10 bg-white/5 p-10 shadow-[0_35px_120px_-45px_rgba(6,12,30,0.8)] ring-1 ring-white/10 backdrop-blur-xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-white/60">Finance leaders</p>
+          <h2 className="mt-4 text-3xl font-black leading-tight text-white sm:text-4xl">Dashing delivers the clarity your team needs</h2>
+          <p className="mt-4 text-base text-white/80 sm:text-lg">Surface cash positions, automate reporting, and stay audit-ready without chasing spreadsheets. Every metric stays trustworthy and actionable.</p>
+        </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
           {features.map((f) => (
-            <div key={f.title} className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 shadow-xl ring-1 ring-white/10 backdrop-blur-sm">
+            <div
+              key={f.title}
+              className="group rounded-2xl border border-white/10 bg-white/[0.06] p-6 shadow-xl ring-1 ring-white/10 transition duration-200 hover:-translate-y-1 hover:border-lime-300/60 hover:bg-white/[0.08]"
+            >
               <div className="flex items-start">
                 <BadgeIcon>{f.icon}</BadgeIcon>
                 <div>
                   <h3 className="text-lg font-extrabold text-white">{f.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-white">{f.desc}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-white/80">{f.desc}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-8">
-          <Link href="/contact" className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-4 py-2 text-sm font-semibold text-[#0a2440] shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500">
+        <div className="mt-12 flex justify-center">
+          <a
+            href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-lime-300 px-6 py-3 text-sm font-semibold text-[#06162b] shadow-[0_25px_45px_-25px_rgba(172,255,156,0.8)] transition hover:-translate-y-0.5 hover:bg-white"
+          >
+            <span aria-hidden>✨</span>
             Get a Demo and See Finance Clarity in Action
-          </Link>
+          </a>
         </div>
       </div>
     </section>

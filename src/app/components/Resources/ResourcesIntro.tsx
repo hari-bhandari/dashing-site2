@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 
 export default function ResourcesIntro() {
   return (
@@ -15,18 +15,20 @@ export default function ResourcesIntro() {
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">
-            <Link
-              href="/resources"
+            <button
+              onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
               className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0] sm:text-base"
             >
               Explore Resources
-            </Link>
-            <Link
-          href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-          className="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/15 transition hover:bg-white/15 sm:text-base"
-        >
-          Book a Demo
-        </Link>
+            </button>
+            <a
+              href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-semibold text-white ring-1 ring-white/15 transition hover:bg-white/15 sm:text-base"
+            >
+              Book a Demo
+            </a>
           </div>
         </div>
       </div>
