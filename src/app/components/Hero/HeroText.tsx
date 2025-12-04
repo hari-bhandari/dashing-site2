@@ -11,7 +11,7 @@ export default function HeroText() {
 					<span className={`block ${highlightClasses}`}>Grow Profitably.</span>
 				</h1>
 			</div>
-			<p className="text-lg text-white/70 lg:text-xl">
+			<p className=" text-white/70 text-2xl">
 				The broker-specific ERP that helps you close deals faster, see clearly, and scale with confidence.
 			</p>
 		</div>

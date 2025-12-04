@@ -51,7 +51,7 @@ export default function DashingResources() {
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-[#0a2440] sm:text-5xl">Resources &amp; Expertise</h2>
 
-          <p className="text-lg text-[#0a2440]/70 sm:text-xl">
+          <p className="text-2xl text-[#0a2440]/70">
             Access valuable insights, proven success stories, and thought leadership content designed for brokers.
           </p>
         </div>

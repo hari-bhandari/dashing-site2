@@ -50,7 +50,7 @@ export default function DashingTransformation() {
           <h2 className="text-4xl font-bold text-[#0a2440] sm:text-5xl">
             From Chaos to Clarity — See the Difference
           </h2>
-          <p className="text-lg text-[#0a2440] sm:text-xl">
+          <p className="text-xl text-[#0a2440] sm:text-xl">
             Are outdated processes holding your business back? Discover how Dashing transforms common broker challenges into streamlined, profitable operations.
           </p>
         </div>

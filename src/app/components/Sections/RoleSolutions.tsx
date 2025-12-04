@@ -56,7 +56,7 @@ export default function RoleSolutions() {
       <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
           <h2 className="text-4xl font-bold text-[#0a2440] sm:text-5xl">Solutions Tailored to Your Role</h2>
-          <p className="text-lg font-semibold sm:text-xl text-[#0a2440]/75">
+          <p className="text-2xl text-[#0a2440]/70">
             Whether you&apos;re a Sales Leader, Finance Director, or CEO/MD, Dashing Distribution addresses your specific challenges and objectives.
           </p>
         </div>

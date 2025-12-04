@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -6,19 +7,22 @@ const outcomes = [
     title: "Win More Deals",
     description:
       "Accelerate your quoting process and respond to opportunities faster than competitors. Close deals that would otherwise slip away.",
-    tag: "Deal velocity",
+    imageSrc: "/sales.png",
+    imageAlt: "Sales leader presenting accelerated deal flow",
   },
   {
     title: "Gain Real-Time Control",
     description:
       "Complete visibility across inventory, deals, and performance metrics. Make informed decisions with live data at your fingertips.",
-    tag: "Operational clarity",
+    imageSrc: "/control.png",
+    imageAlt: "Dashboard illustrating operational visibility",
   },
   {
     title: "Achieve Profitable Growth",
     description:
       "Optimise margins, reduce operational costs, and scale efficiently with systems designed for sustainable broker success.",
-    tag: "Margin impact",
+    imageSrc: "/profitablegrowth.png",
+    imageAlt: "Upward trending profitability chart",
   },
 ];
 
@@ -74,34 +78,17 @@ export default function DashingGoal() {
               className="flex h-full flex-col gap-5 rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur transition duration-200 hover:border-lime-300/60 hover:bg-white/10"
               variants={cardVariants}
             >
-              <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-lime-400/40 to-lime-300/20 text-white">
-                  <svg
-                    className="h-4 w-4"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    aria-hidden
-                  >
-                    <path
-                      d="M3 8h6m0 0L6.5 5.5M9 8 6.5 10.5"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M8.5 4.5h4v7h-4"
-                      stroke="currentColor"
-                      strokeWidth="1.6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+              <div className="flex items-center gap-4">
+                <div className="relative inline-flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl border border-white/20 bg-white/10 p-2 text-white shadow-inner shadow-white/10">
+                  <Image
+                    src={outcome.imageSrc}
+                    alt={outcome.imageAlt}
+                    width={64}
+                    height={64}
+                    className="h-full w-full object-contain"
+                  />
                 </div>
-                <span className="rounded-full border border-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-white/70">
-                  {outcome.tag}
-                </span>
+    
               </div>
               <h3 className="text-2xl font-semibold text-white">{outcome.title}</h3>
               <p className="text-sm leading-relaxed text-white/70 sm:text-base">{outcome.description}</p>

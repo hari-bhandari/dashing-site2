@@ -60,8 +60,8 @@ export default function BrokersDilemma() {
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-5">
           <p className="text-2xl font-semibold uppercase tracking-widest text-lime-400">The Problem</p>
-          <h2 className="text-4xl font-extrabold text-[#0a2440] sm:text-5xl">The Broker&apos;s Dilemma</h2>
-          <p className="text-xl text-[#0a2440]/70">
+          <h2 className="text-5xl font-extrabold text-[#0a2440] ">The Broker&apos;s Dilemma</h2>
+          <p className="text-2xl text-[#0a2440]/70">
             Brokers across North America &amp; Europe face the same critical challenges that slow growth and limit profitability.
           </p>
         </div>
@@ -77,11 +77,11 @@ export default function BrokersDilemma() {
                   <Icon className="h-8 w-8" aria-hidden />
                 </div>
                 <div>
-                  <h3 className=" font-semibold text-[#0a2440] sm:text-xl">{title}</h3>
+                  <h3 className=" font-semibold text-[#0a2440] sm:text-2xl">{title}</h3>
                   <span className="mt-1 block h-0.5 w-12 rounded-full bg-[#0a2440]/10" />
                 </div>
               </div>
-              <p className="text-sm leading-relaxed text-[#0a2440] sm:text-lg">{description}</p>
+              <p className="text-xl leading-relaxed text-[#0a2440] ">{description}</p>
             </motion.article>
           ))}
         </motion.div>
