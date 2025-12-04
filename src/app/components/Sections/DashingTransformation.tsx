@@ -47,10 +47,10 @@ export default function DashingTransformation() {
       <div className="absolute inset-0 -z-10" aria-hidden />
       <div className="mx-auto flex max-w-5xl flex-col gap-12 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
-          <h2 className="text-4xl font-bold text-[#0a2440] sm:text-5xl">
+          <h2 className="text-5xl font-bold text-[#0a2440]">
             From Chaos to Clarity — See the Difference
           </h2>
-          <p className="text-xl text-[#0a2440] sm:text-xl">
+          <p className="text-xl text-[#0a2440] sm:text-2xl">
             Are outdated processes holding your business back? Discover how Dashing transforms common broker challenges into streamlined, profitable operations.
           </p>
         </div>
@@ -59,8 +59,8 @@ export default function DashingTransformation() {
             className="group rounded-2xl border border-[#0a2440]/10 bg-white p-7 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)]"
             variants={cardVariants}
           >
-            <h3 className="text-base font-semibold text-red-500 sm:text-lg">Before: The Old Way</h3>
-            <ul className="mt-4 space-y-3 text-sm text-[#0a2440]/80 sm:text-base">
+            <h3 className="text-2xl font-semibold text-red-500">Before: The Old Way</h3>
+            <ul className="mt-4 space-y-3 text-lg text-[#0a2440]/80">
               {pointsBefore.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-red-50 text-xs font-bold text-red-500">✘</span>
@@ -73,8 +73,8 @@ export default function DashingTransformation() {
             className="group rounded-2xl border border-[#0a2440]/10 bg-white p-7 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)]"
             variants={cardVariants}
           >
-            <h3 className="text-base font-semibold text-emerald-500 sm:text-lg">After: With Dashing</h3>
-            <ul className="mt-4 space-y-3 text-sm text-[#0a2440]/80 sm:text-base">
+            <h3 className="text-2xl font-semibold text-emerald-500">After: With Dashing</h3>
+            <ul className="mt-4 space-y-3 text-lg text-[#0a2440]/80">
               {pointsAfter.map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 inline-flex h-7 w-7 items-center justify-center rounded-full bg-emerald-50 text-xs font-bold text-emerald-600">✔</span>
@@ -89,7 +89,7 @@ export default function DashingTransformation() {
             href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-[#0a2440] font-bold shadow-[0_25px_45px_-20px_rgba(109,75,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#5a3bdc]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-[#0a2440] font-semibold shadow-[0_25px_45px_-20px_rgba(109,75,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#5a3bdc]"
           >
             <span role="img" aria-hidden>
               👉

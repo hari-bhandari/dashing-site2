@@ -91,7 +91,7 @@ export default function DashingGoal() {
     
               </div>
               <h3 className="text-2xl font-semibold text-white">{outcome.title}</h3>
-              <p className="text-sm leading-relaxed text-white/70 sm:text-base">{outcome.description}</p>
+              <p className="text-lg leading-relaxed text-white/70">{outcome.description}</p>
             </motion.article>
           ))}
         </motion.div>
@@ -100,7 +100,7 @@ export default function DashingGoal() {
             href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-lime-300 to-lime-500 px-6 py-2.5 text-sm font-semibold text-[#0a2440] shadow-[0_25px_45px_-25px_rgba(132,225,188,0.8)] transition hover:-translate-y-0.5 hover:brightness-110"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-lime-300 to-lime-500 px-6 py-2.5 text-base font-semibold text-[#0a2440] shadow-[0_25px_45px_-25px_rgba(132,225,188,0.8)] transition hover:-translate-y-0.5 hover:brightness-110"
           >
             See Dashing in Action
             <svg className="h-3.5 w-3.5" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>

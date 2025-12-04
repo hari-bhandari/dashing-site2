@@ -76,7 +76,7 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
 		>
 			<div className="relative mx-auto flex max-w-6xl flex-col gap-16 px-4 text-center sm:px-6 lg:px-8">
 				<div className="mx-auto max-w-3xl">
-					<p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#0a2440]">Testimonials</p>
+					<p className="text-2xl font-semibold uppercase tracking-[0.35em] text-lime-400">Testimonials</p>
 					<h2 className="mt-4 text-4xl font-bold text-[#0a2440] sm:text-5xl">Trusted by Brokers Across North America &amp; Europe</h2>
 					<p className="mt-4 text-lg text-[#0a2440]/80">
 						Join the growing community of brokers who&apos;ve transformed their operations with Dashing Distribution Software.

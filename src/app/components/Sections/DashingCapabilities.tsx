@@ -15,6 +15,7 @@ const capabilities = [
       "Track profitability, cash flow, and key performance indicators in real-time with comprehensive dashboards and reporting tools.",
     imgSrc: "/capabilities/cap-finance.png",
     alt: "Financial analytics and dashboards",
+    imageClassName: "mb-2",
   },
   {
     title: "Inventory Control",
@@ -79,13 +80,13 @@ export default function DashingCapabilities() {
                   alt={capability.alt}
                   fill
                   sizes="(min-width: 1400px) 360px, (min-width: 1024px) 320px, (min-width: 640px) 280px, 90vw"
-                  className="object-cover p-6 select-none"
+                  className={`object-cover p-6 select-none ${capability.imageClassName ?? ""}`}
                   priority={false}
                 />
               </div>
               <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-lime-400">{capability.title}</h3>
-                <p className="text-sm leading-relaxed text-white">{capability.description}</p>
+                <h3 className="text-xl font-semibold text-lime-400">{capability.title}</h3>
+                <p className="text-base leading-relaxed text-white">{capability.description}</p>
               </div>
             </motion.article>
           ))}

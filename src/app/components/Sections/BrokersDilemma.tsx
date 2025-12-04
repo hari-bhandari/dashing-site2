@@ -77,11 +77,11 @@ export default function BrokersDilemma() {
                   <Icon className="h-8 w-8" aria-hidden />
                 </div>
                 <div>
-                  <h3 className=" font-semibold text-[#0a2440] sm:text-2xl">{title}</h3>
+                  <h3 className=" text-2xl font-semibold text-[#0a2440]">{title}</h3>
                   <span className="mt-1 block h-0.5 w-12 rounded-full bg-[#0a2440]/10" />
                 </div>
               </div>
-              <p className="text-xl leading-relaxed text-[#0a2440] ">{description}</p>
+              <p className="text-lg leading-relaxed text-[#0a2440]">{description}</p>
             </motion.article>
           ))}
         </motion.div>

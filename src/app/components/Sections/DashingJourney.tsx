@@ -68,10 +68,10 @@ export default function DashingJourney() {
       <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.5fr_1fr] lg:items-center lg:gap-16 lg:px-8">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h2 className="text-4xl font-bold text-white sm:text-5xl">
+            <h2 className="font-bold text-white text-5xl">
               From enquiry to growth, simplified
             </h2>
-            <p className="text-lg text-white/70 sm:text-xl">
+            <p className="text-2xl text-white/70 ">
               Dashing streamlines your entire brokerage operation, transforming complex processes into a clear, four-step journey designed for efficiency and profitability.
             </p>
           </div>
@@ -83,11 +83,11 @@ export default function DashingJourney() {
                 variants={itemVariants}
               >
                 <span className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/10 text-lime-400">
-                  <Icon className="h-6 w-6" aria-hidden />
+                  <Icon className="h-8 w-8" aria-hidden />
                 </span>
                 <div className="space-y-2">
-                  <h3 className="text-lg font-semibold text-white">{title}</h3>
-                  <p className="text-sm leading-relaxed text-white/75">{description}</p>
+                  <h3 className="text-2xl font-semibold text-white">{title}</h3>
+                  <p className="text-base leading-relaxed text-white/75">{description}</p>
                 </div>
               </motion.li>
             ))}
