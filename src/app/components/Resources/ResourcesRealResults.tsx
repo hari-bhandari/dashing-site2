@@ -35,7 +35,7 @@ export default function ResourcesRealResults() {
         <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Results</p>
         <h2 className="mt-2 text-4xl font-extrabold text-white sm:text-5xl">Real Brokers. Real Results.</h2>
         <p className="mt-4 max-w-4xl text-base leading-relaxed text-white/80 sm:text-lg">
-          Discover how leading commercial real estate brokerages have transformed their operations with innovative
+          Discover how leading electronic component brokers have transformed their operations with our innovative
           solutions. Case studies showcase tangible outcomes and measurable improvements demonstrating the power of strategic technology adoption.
         </p>
 
