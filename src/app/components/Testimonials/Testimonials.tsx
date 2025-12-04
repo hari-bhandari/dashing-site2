@@ -79,7 +79,7 @@ export default function Testimonials({ testimonials = defaultTestimonials }: { t
 					<p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#0a2440]">Testimonials</p>
 					<h2 className="mt-4 text-4xl font-bold text-[#0a2440] sm:text-5xl">Trusted by Brokers Across North America &amp; Europe</h2>
 					<p className="mt-4 text-lg text-[#0a2440]/80">
-						Join the growing community of brokers who&apos;ve transformed their operations with Dashing Distribution.
+						Join the growing community of brokers who&apos;ve transformed their operations with Dashing Distribution Software.
 					</p>
 				</div>
 				<motion.div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3" variants={cardsContainer}>
