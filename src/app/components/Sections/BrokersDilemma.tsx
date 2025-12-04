@@ -61,7 +61,7 @@ export default function BrokersDilemma() {
         <div className="space-y-5">
           <p className="text-s font-semibold uppercase tracking-widest text-lime-400">The Problem</p>
           <h2 className="text-4xl font-extrabold text-[#0a2440] sm:text-5xl">The Broker&apos;s Dilemma</h2>
-          <p className="text-xl text-[#0a2440]/70 sm:text-xl">
+          <p className="text-xl text-[#0a2440]/70">
             Brokers across North America &amp; Europe face the same critical challenges that slow growth and limit profitability.
           </p>
         </div>

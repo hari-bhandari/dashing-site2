@@ -61,12 +61,9 @@ export default function ResourcesRealResults() {
               <IconQuote className="h-5 w-5 text-lime-400" aria-hidden />
             </div>
             <p className="text-white/90">
-              &ldquo;I highly recommend Dashing if you looking to get ahead of the competition. Their professionalism,
-              expertise, and exceptional distribution solutions have greatly benefited my business. Their team is
-              responsive and dedicated, providing outstanding customer service. They are lightyears ahead of any other
-              software!!&rdquo;
+              The Dashing support team and programmers have been awesome to work with. They listened to our suggestions and continuously delivered improvements. I finally have an ERP I can rely on, with the support and flexibility this industry needs.
             </p>
-            <p className="mt-4 font-semibold text-white">- Dustin Osbourne, Chipstock LLC</p>
+            <p className="mt-4 font-semibold text-white">-Sonicare Solutions Inc.</p>
           </blockquote>
         </div>
 

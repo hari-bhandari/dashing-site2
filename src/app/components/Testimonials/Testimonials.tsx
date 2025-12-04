@@ -17,8 +17,8 @@ const defaultTestimonials: Testimonial[] = [
 	},
 	{
 		quote:
-			"I highly recommend Dashing if you want to stay ahead of the competition. Their expertise and distribution tools transformed our operations, and their responsive team delivers outstanding service every day.",
-		name: "Chipstock LLC",
+			"Dashing Distribution Software. Our journey to finding and utilizing a software platform was an exhausting, frustrating, and, at times, seemingly hopeless process. Thankfully, through word-of-mouth by a fellow distributor, Dashing was presented. The software flows nicely and is very user friendly. Purchase orders are easily created, sent, and received and are directly linked to the correlating sales order. The shipping process is easily navigated and has the ability to adhere to customer needs and requirements specifically.",
+		name: "K-1 Technologies",
 	},
 	{
 		quote:
