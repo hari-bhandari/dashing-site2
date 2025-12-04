@@ -3,14 +3,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
-import { Moon, Sun, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 
 export default function Navbar() {
   const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { theme, setTheme } = useTheme()
 
   useEffect(() => {
     setMounted(true)
@@ -91,17 +89,6 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center md:hidden">
-            <button
-              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-              className="mr-2 rounded-lg bg-black/5 p-2 text-slate-700 transition hover:bg-black/10"
-              aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
-            >
-              {theme === 'dark' ? (
-                <Sun className="h-5 w-5 text-[#8167FF]" aria-hidden="true" />
-              ) : (
-                <Moon className="h-5 w-5 text-[#8167FF]" aria-hidden="true" />
-              )}
-            </button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center rounded-md p-2 text-slate-700 transition hover:bg-black/5 hover:text-slate-900"
