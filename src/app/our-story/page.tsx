@@ -1,7 +1,7 @@
 import Navbar from "../components/Navigation/Navbar"
 import Footer from "../components/Navigation/Footer"
 import BrokersTimeline from "../components/OurStory/BrokersTimeline"
-import LeadershipTeam from "../components/OurStory/LeadershipTeam"
+import LeadershipTeam from "../components/OurStory/AboutUs"
 import JoinOurTeam from "../components/OurStory/JoinOurTeam"
 
 export default function OurStoryPage() {

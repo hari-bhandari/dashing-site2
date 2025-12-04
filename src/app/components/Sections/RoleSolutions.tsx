@@ -67,12 +67,15 @@ export default function RoleSolutions() {
               className="group flex h-full flex-col gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-7 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1"
               variants={cardVariants}
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0a2440]/5 text-lime-400">
-                <Icon className="h-6 w-6" aria-hidden />
-              </div>
               <div className="space-y-2">
-                <h3 className="text-lg font-semibold text-[#0a2440]">{title}</h3>
-                <p className="text-sm leading-relaxed text-[#0a2440]/75">{description}</p>
+                <div className="flex  gap-4 mb-4">
+                  <Icon className="h-8 w-8" aria-hidden />
+                  <div>
+                    <h3 className="text-xl font-semibold text-[#0a2440]">{title}</h3>
+                    <span className="mt-1 block h-0.5 w-12 rounded-full bg-[#0a2440]/10" />
+                  </div>
+                </div>
+                <p className="sm:text-lg text-sm leading-relaxed text-[#0a2440]/75">{description}</p>
               </div>
               <Link href="/contact" className="mt-auto text-sm font-semibold text-[#0a2440] underline-offset-4 hover:underline">
                 Learn more
