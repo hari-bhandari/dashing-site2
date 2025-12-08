@@ -17,7 +17,7 @@ export default function CEOsBlindSpots() {
   return (
     <section className="relative isolate overflow-hidden py-16 sm:py-24 bg-white">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Visibility</p>
+        <p className="text-2xl font-semibold uppercase tracking-widest text-lime-400">Visibility</p>
         <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">From blind spots to real-time control</h2>
 
         <div className="mt-8 grid gap-10 md:grid-cols-2">
