@@ -13,17 +13,17 @@ export default function SalesLeadersHero() {
           />
 
           <div className="space-y-5">
-            <h1 className="text-4xl font-extrabold text-white sm:text-5xl">
+            <h1 className="text-5xl font-extrabold text-white sm:text-5xl">
               Close More Deals, Faster
             </h1>
-            <p className="max-w-xl text-base leading-relaxed text-white/80 sm:text-lg">
+            <p className="max-w-xl text-xl leading-relaxed text-white/80">
               Finally, a broker-specific ERP that gives sales leaders real-time quoting, transparency,
               and workflows built to win deals.
             </p>
             <div>
           <Link
             href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-lime-400 px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-lime-400 px-5 py-3 text-base font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
           >
             <span aria-hidden>👉</span>
             Book a Demo — See It in Action

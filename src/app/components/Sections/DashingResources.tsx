@@ -62,10 +62,10 @@ export default function DashingResources() {
                 href="/resources"
                 className="group flex h-full flex-col gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-7 text-[#0a2440] shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1"
               >
-                <h2 className="text-xl font-semibold">{title}</h2>
-                <p className="text-sm leading-relaxed font-semibold text-[#0a2440]/90 sm:text-base">{description}</p>
-                <p className="text-sm text-[#0a2440]/70">{footnote}</p>
-                <span className="mt-auto text-xs font-semibold text-[#0a2440] underline underline-offset-4 transition group-hover:text-lime-400">
+                <h2 className="text-2xl font-semibold">{title}</h2>
+                <p className="text-lg leading-relaxed font-semibold text-[#0a2440]/90 sm:text-base">{description}</p>
+                <p className="text-md text-[#0a2440]/70">{footnote}</p>
+                <span className="mt-auto text-md font-semibold text-[#0a2440] underline underline-offset-4 transition group-hover:text-lime-400">
                   Learn more
                 </span>
               </Link>

@@ -13,7 +13,7 @@ export default function Resources() {
                 <ResourcesIntro />
                 <ResourcesInsights />
                 <ResourcesRealResults />
-                <ResourcesBlog hubspotBlogId="dashing-main-blog" />
+                <ResourcesBlog hubspotBlogId="https://blog.dashingdisty.com/blog/rss.xml" />
             <Footer />
         </div>
     );

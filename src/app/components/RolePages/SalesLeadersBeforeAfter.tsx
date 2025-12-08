@@ -21,10 +21,10 @@ export default function SalesLeadersBeforeAfter() {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-white to-lime-50/30" aria-hidden />
       <div className="mx-auto w-full max-w-6xl px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-4">
-          <h2 className="text-4xl font-extrabold text-[#0a2440] sm:text-5xl">
+          <h2 className="text-5xl font-extrabold text-[#0a2440]">
             From missed deals to faster wins
           </h2>
-          <p className="text-base text-[#0a2440]/75 sm:text-lg">
+          <p className="text-xl text-[#0a2440]/75">
             Show the team how quickly everything changes when quoting, visibility, and execution live in one broker-specific system.
           </p>
         </div>
@@ -40,7 +40,7 @@ export default function SalesLeadersBeforeAfter() {
                   <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md bg-rose-500/15 text-rose-500 ring-1 ring-rose-500/20">
                     <IconX className="h-3.5 w-3.5" aria-hidden />
                   </span>
-                  <p className="text-sm font-medium leading-relaxed sm:text-base">{text}</p>
+                  <p className="text-lg font-medium leading-relaxed">{text}</p>
                 </li>
               ))}
             </ul>
@@ -56,7 +56,7 @@ export default function SalesLeadersBeforeAfter() {
                   <span className="mt-1 inline-flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md bg-emerald-500/15 text-emerald-500 ring-1 ring-emerald-500/20">
                     <IconCheck className="h-3.5 w-3.5" aria-hidden />
                   </span>
-                  <p className="text-sm font-medium leading-relaxed sm:text-base">{text}</p>
+                  <p className="text-lg font-medium leading-relaxed">{text}</p>
                 </li>
               ))}
             </ul>
@@ -69,7 +69,7 @@ export default function SalesLeadersBeforeAfter() {
             href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-[#8167FF] px-6 py-3 text-base font-semibold text-white shadow-[0_25px_55px_-25px_rgba(129,103,255,0.8)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_55px_-25px_rgba(129,103,255,0.8)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
           >
             <span aria-hidden>🚀</span>
             Book a Demo — Experience the After

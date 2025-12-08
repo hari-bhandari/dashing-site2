@@ -40,7 +40,7 @@ export default function AllInOneERP() {
       <div className="mx-auto w-full max-w-7xl px-4 pt-12 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-extrabold text-white sm:text-5xl">All-in-One ERP for Brokers</h1>
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-white/80 sm:text-lg">
+          <p className="mx-auto mt-4 max-w-3xl text-xl leading-relaxed text-white/80">
             Transform your brokerage operations with Dashing&#39;s comprehensive ERP solution. From real-time quoting to
             financial dashboards, we&#39;ve built everything brokers need to streamline operations and drive profitable
             growth.

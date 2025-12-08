@@ -5,7 +5,7 @@ export default function SeamlessSetup() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08),transparent_60%)]" aria-hidden />
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-lime-400">Onboarding</p>
+          <p className="text-2xl font-semibold uppercase tracking-[0.35em] text-lime-400">Onboarding</p>
           <h2 className="mt-3 text-4xl font-extrabold text-white sm:text-5xl">Seamless Setup, Full Support</h2>
           <p className="mx-auto mt-5 max-w-4xl text-base leading-relaxed text-white/80 sm:text-lg">
             Transitioning to a new ERP doesn&apos;t have to be stressful. Our comprehensive migration and onboarding process

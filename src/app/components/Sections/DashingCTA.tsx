@@ -28,14 +28,14 @@ export default function DashingCTA() {
       <div className="absolute inset-0 -z-10" aria-hidden />
       <div className="mx-auto flex max-w-4xl flex-col gap-8 px-4 text-center sm:px-6 lg:px-8">
         <div className="space-y-6">
-          <h2 className="text-4xl font-bold text-white sm:text-5xl">Book a Demo Today</h2>
-          <p className="text-lg font-semibold text-lime-300">
+          <h2 className="text-5xl font-bold text-white">Book a Demo Today</h2>
+          <p className="text-2xl font-semibold text-lime-300">
             Experience the ERP built for brokers. Delivering speed, visibility, and clarity from day one.
           </p>
-          <p className="text-base text-white/80">
+          <p className="text-lg text-white/80">
             Built by brokers, for brokers. Our story begins with understanding your challenges because we&apos;ve lived them. Our leadership team and dedicated professionals are committed to your success.
           </p>
-          <p className="text-base font-semibold text-white">
+          <p className="text-2xl font-semibold text-white">
             Ready to win more deals and grow profitably?
           </p>
         </div>
@@ -51,12 +51,6 @@ export default function DashingCTA() {
             </Link>
           </motion.div>
           <motion.div variants={buttonVariant}>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-base font-semibold text-white transition hover:-translate-y-0.5 hover:border-white/50"
-            >
-              General Contact
-            </Link>
           </motion.div>
         </motion.div>
       </div>
