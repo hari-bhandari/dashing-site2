@@ -7,9 +7,9 @@ export default function ResourcesInsights() {
     <section className="relative isolate overflow-hidden bg-white py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Insights</p>
+          <p className="text-2xl font-semibold uppercase tracking-widest text-lime-400">Insights</p>
           <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">Expert Insights &amp; Industry Knowledge</h2>
-          <p className="mx-auto mt-4 max-w-4xl text-base leading-relaxed text-[#0a2440]/80 sm:text-lg">
+          <p className="mx-auto mt-4 max-w-4xl text-xl leading-relaxed text-[#0a2440]/80">
             Stay informed with our curated collection of articles covering the most pressing challenges facing commercial
             real estate brokers today. Our SEO-driven content delivers actionable strategies to help you work smarter,
             not harder.
@@ -21,9 +21,9 @@ export default function ResourcesInsights() {
           {/* Sales Efficiency */}
           <article className="group rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1">
             <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#0a2440]/5">
-              <IconTarget className="h-5 w-5 text-lime-400" aria-hidden />
+              <IconTarget className="h-8 w-8 text-[#0a2440]" aria-hidden />
             </div>
-            <h3 className="text-xl font-bold text-[#0a2440]">Sales Efficiency</h3>
+            <h3 className="text-2xl font-bold text-[#0a2440]">Sales Efficiency</h3>
             <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80">
               Streamline your deal flow with proven methodologies and cutting-edge technology solutions that reduce
               friction and accelerate closings.
@@ -40,7 +40,7 @@ export default function ResourcesInsights() {
           {/* Finance & Control */}
           <article className="group rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1">
             <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#0a2440]/5">
-              <IconFileInvoice className="h-5 w-5 text-lime-400" aria-hidden />
+              <IconFileInvoice className="h-8 w-8 text-[#0a2440]" aria-hidden />
             </div>
             <h3 className="text-xl font-bold text-[#0a2440]">Finance &amp; Control</h3>
             <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80">
@@ -59,7 +59,7 @@ export default function ResourcesInsights() {
           {/* Growth Strategies */}
           <article className="group rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-1">
             <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#0a2440]/5">
-              <IconRocket className="h-5 w-5 text-lime-400" aria-hidden />
+              <IconRocket className="h-8 w-8 text-[#0a2440]" aria-hidden />
             </div>
             <h3 className="text-xl font-bold text-[#0a2440]">Growth Strategies</h3>
             <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80">

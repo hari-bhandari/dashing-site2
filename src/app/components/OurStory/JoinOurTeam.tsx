@@ -11,7 +11,7 @@ export default function JoinOurTeam() {
   return (
     <section className="w-full px-6 py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl">
-        <p className="text-sm font-semibold uppercase tracking-wider text-white">
+        <p className="text-2xl font-semibold uppercase tracking-wider text-lime-400">
           Join Our Team
         </p>
         <h2 className="mt-2 text-4xl font-extrabold leading-tight text-white sm:text-5xl">

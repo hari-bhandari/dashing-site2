@@ -32,7 +32,7 @@ export default function ResourcesRealResults() {
   return (
     <section className="relative isolate overflow-hidden bg-[#0a2440] py-16 sm:py-24">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-        <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Results</p>
+        <p className="text-2xl font-semibold uppercase tracking-widest text-lime-400">Results</p>
         <h2 className="mt-2 text-4xl font-extrabold text-white sm:text-5xl">Real Brokers. Real Results.</h2>
         <p className="mt-4 max-w-4xl text-base leading-relaxed text-white/80 sm:text-lg">
           Discover how leading electronic component brokers have transformed their operations with our innovative
