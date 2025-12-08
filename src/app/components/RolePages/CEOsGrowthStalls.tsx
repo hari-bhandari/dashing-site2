@@ -38,7 +38,7 @@ export default function CEOsGrowthStalls() {
               return (
                 <li key={text} className="grid grid-cols-[40px_auto] items-start gap-4">
                   <span className="mt-0.5 inline-flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-b from-white/10 to-white/5 ring-1 ring-white/15">
-                    <Icon className="h-5 w-5 text-lime-400" aria-hidden />
+                    <Icon className="h-8 w-8 text-[#0a2440]" aria-hidden />
                   </span>
                   <span className="text-lg font-semibold leading-snug">{text}</span>
                 </li>
