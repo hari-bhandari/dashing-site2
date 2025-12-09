@@ -14,8 +14,7 @@ const capabilities = [
     description:
       "Track profitability, cash flow, and key performance indicators in real-time with comprehensive dashboards and reporting tools.",
     imgSrc: "/capabilities/cap-finance.png",
-    alt: "Financial analytics and dashboards",
-    imageClassName: "mb-2",
+    alt: "Financial analytics and dashboards"
   },
   {
     title: "Inventory Control",
