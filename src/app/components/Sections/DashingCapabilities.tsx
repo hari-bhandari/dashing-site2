@@ -79,7 +79,7 @@ export default function DashingCapabilities() {
                   alt={capability.alt}
                   fill
                   sizes="(min-width: 1400px) 360px, (min-width: 1024px) 320px, (min-width: 640px) 280px, 90vw"
-                  className={`object-cover p-6 select-none ${capability.imageClassName ?? ""}`}
+                  className={`object-cover p-6 select-none`}
                   priority={false}
                 />
               </div>
