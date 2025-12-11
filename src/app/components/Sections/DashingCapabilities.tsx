@@ -13,7 +13,7 @@ const capabilities = [
     title: "Finance Dashboard",
     description:
       "Track profitability, cash flow, and key performance indicators in real-time with comprehensive dashboards and reporting tools.",
-    imgSrc: "/capabilities/cap-finance.png",
+    imgSrc: "/capabilities/cap-financeold.png",
     alt: "Financial analytics and dashboards"
   },
   {
