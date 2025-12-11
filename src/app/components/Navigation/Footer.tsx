@@ -8,7 +8,6 @@ const navigationLinks = [
   { href: "/for-ceos", label: "For CEOs" },
   { href: "/our-story", label: "Our Story" },
   { href: "/resources", label: "Resources" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Footer() {

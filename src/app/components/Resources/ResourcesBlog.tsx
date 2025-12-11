@@ -15,6 +15,17 @@ interface HubspotPost {
 
 const decodeCdata = (value: string) => value.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").trim();
 
+const decodeHtmlEntities = (value: string) =>
+  value
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'")
+    .replace(/&#x2F;/g, "/")
+    .replace(/&nbsp;/g, " ");
+
 const extractTagValue = (item: string, tag: string) => {
   const regex = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i");
   const match = item.match(regex);
@@ -67,7 +78,7 @@ const pickExcerpt = (item: string) => {
     extractTagValue(item, "description"),
     extractTagValue(item, "summary")
   ];
-  const first = candidates.find(Boolean) ?? "";
+  const first = decodeHtmlEntities(candidates.find(Boolean) ?? "");
   const text = stripHtml(first);
   return text.length > 220 ? `${text.slice(0, 217)}…` : text;
 };

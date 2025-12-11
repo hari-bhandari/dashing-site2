@@ -71,7 +71,9 @@ export default function JoinOurTeam() {
           </p>
           <div className="mx-auto mt-6 flex max-w-3xl flex-wrap items-center justify-center gap-3">
             <Link
-              href="/contact"
+              href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg bg-lime-400 px-4 py-2 text-sm font-semibold text-[#0a2440] shadow-lg ring-1 ring-white/10 transition hover:bg-violet-500"
             >
               Schedule a Demo
@@ -83,7 +85,9 @@ export default function JoinOurTeam() {
               Connect on LinkedIn
             </Link>
             <Link
-              href="/contact"
+              href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg bg-white/5 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/10 transition hover:bg-white/10"
             >
               Talk to Our Team

@@ -77,7 +77,12 @@ export default function RoleSolutions() {
                 </div>
                 <p className="sm:text-lg text-sm leading-relaxed text-[#0a2440]/75">{description}</p>
               </div>
-              <Link href="/contact" className="mt-auto text-sm font-semibold text-[#0a2440] underline-offset-4 hover:underline">
+              <Link
+                href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-auto text-sm font-semibold text-[#0a2440] underline-offset-4 hover:underline"
+              >
                 Learn more
               </Link>
             </motion.article>
