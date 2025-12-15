@@ -18,7 +18,7 @@ export default function JoinOurTeam() {
           Building the Future of Broker ERP
         </h2>
         <p className="mt-4 max-w-4xl text-base leading-relaxed text-gray-300">
-          We&apos;re seeking passionate professionals who understand the insurance landscape and want to revolutionise how brokers operate. Join a team that values innovation, collaboration, and deep industry expertise.
+          We&apos;re seeking passionate professionals who understand the electronic components landscape and want to revolutionise how brokers operate. Join a team that values innovation, collaboration, and deep industry expertise.
         </p>
 
         {/* Culture + Growth cards */}
