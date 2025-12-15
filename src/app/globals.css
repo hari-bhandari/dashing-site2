@@ -116,6 +116,11 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply min-h-screen text-white antialiased;
+    /* Site-wide background */
+    background-color: #0a2440;
+    /* Remove decorative gradients for a solid brand background color */
+    background-image: none;
+    color: #f8fafc;
   }
 }

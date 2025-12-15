@@ -16,7 +16,7 @@ import {
 
 export default function YourData() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Navbar />
       <div className="mt-24 md:mt-32 w-full px-4 md:max-w-[80%] lg:max-w-[60%] mx-auto">
         <h2 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Your Data is your Data</h2>

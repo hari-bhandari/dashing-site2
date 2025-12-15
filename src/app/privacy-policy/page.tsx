@@ -7,16 +7,16 @@ import Footer from "@/app/components/Navigation/Footer";
 
 export default function PrivacyPolicy() {
   return (
-    <div className="flex flex-col items-stretch justify-between min-h-screen dark:bg-slate-950">
+    <div className="flex flex-col items-stretch justify-between min-h-screen">
       <Navbar />
       <main className="flex-grow max-w-4xl mx-auto px-4 py-32">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 dark:text-white">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
           Privacy Policy
         </h2>
         
-        <div className="space-y-12 text-gray-700 dark:text-gray-300">
+        <div className="space-y-12 text-white ">
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">Introduction</h2>
+            <h2 className="text-2xl font-semibold">Introduction</h2>
             <p>
               Dashing Distribution Software (us, our or Dashing Disty), which owns and operates this website (dashingdisty.com), is committed to protecting your personal information.
             </p>
@@ -25,13 +25,13 @@ export default function PrivacyPolicy() {
             </p>
           </section>
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">Data Controller</h2>
+            <h2 className="text-2xl font-semibold">Data Controller</h2>
             <p>
-              Dashing Disty is the Data Controller for your data. Please direct any queries, complaints, or data protection requests to <a href="mailto:sales@dashingdisty.com" className="text-blue-600 dark:text-blue-400 hover:underline">sales@dashingdisty.com</a>.
+              Dashing Disty is the Data Controller for your data. Please direct any queries, complaints, or data protection requests to <a href="mailto:sales@dashingdisty.com" className="text-blue-600 hover:underline">sales@dashingdisty.com</a>.
             </p>
           </section>
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">Personal Information We May Collect</h2>
+            <h2 className="text-2xl font-semibold">Personal Information We May Collect</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li>Your contact information, including your name and email address when you use our services</li>
               <li>Payment information when purchasing our distribution software products and services</li>
@@ -41,7 +41,7 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">How We Use Your Information</h2>
+            <h2 className="text-2xl font-semibold">How We Use Your Information</h2>
             <p>We use your personal information to:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>Provide and improve our distribution software services</li>
@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">Legal Basis for Processing</h2>
+            <h2 className="text-2xl font-semibold">Legal Basis for Processing</h2>
             <p>We process your personal information based on the following legal grounds:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>To fulfill our contractual obligations to you</li>
@@ -63,11 +63,11 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">Data Retention</h2>
+            <h2 className="text-2xl font-semibold">Data Retention</h2>
             <p>We retain your personal information for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements.</p>
           </section>
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">Your Rights</h2>
+            <h2 className="text-2xl font-semibold">Your Rights</h2>
             <p>You have the following rights regarding your personal information:</p>
             <ul className="list-disc pl-6 space-y-2">
               <li>The right to access your personal information</li>
@@ -80,8 +80,8 @@ export default function PrivacyPolicy() {
             </ul>
           </section>
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold dark:text-white">Contact Us</h2>
-            <p>If you have any questions or concerns about this privacy policy or our data practices, please contact us at <a href="mailto:sales@dashingdisty.com" className="text-blue-600 dark:text-blue-400 hover:underline">sales@dashingdisty.com</a>.</p>
+            <h2 className="text-2xl font-semibold">Contact Us</h2>
+            <p>If you have any questions or concerns about this privacy policy or our data practices, please contact us at <a href="mailto:sales@dashingdisty.com" className="text-blue-600 hover:underline">sales@dashingdisty.com</a>.</p>
           </section>
         </div>
       </main>

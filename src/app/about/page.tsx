@@ -21,7 +21,7 @@ const Carousel = dynamic(() => import('@/app/components/Carousel/Carousel'), {
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen dark:bg-slate-950">
+    <div className="flex flex-col items-center justify-center min-h-screen">
       <Navbar />
       <div className="w-full flex flex-col gap-10 mt-20 md:mt-32 px-4">
         <h2 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Who are we?</h2>
