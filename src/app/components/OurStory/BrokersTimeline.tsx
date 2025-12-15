@@ -99,7 +99,7 @@ export default function BrokersTimeline() {
             </div>
             <h3 className="text-xl font-semibold text-white sm:text-2xl">Growing Success</h3>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-gray-300">
-              Today, Dashing empowers brokers across the UK to operate more efficiently, serve clients better, and focus on what they do best — building relationships and growing their business.
+              Today, Dashing empowers brokers across the world to operate more efficiently, serve clients better, and focus on what they do best — building relationships and growing their business.
             </p>
           </div>
         </div>
