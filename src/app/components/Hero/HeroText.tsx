@@ -12,7 +12,7 @@ export default function HeroText() {
 				</h1>
 			</div>
 			<p className=" text-white/70 text-2xl">
-				The broker-specific ERP that helps you close deals faster, see clearly, and scale with confidence.
+				The electronic component broker-specific ERP that helps you close deals faster, see clearly, and scale with confidence.
 			</p>
 		</div>
 	);
