@@ -79,7 +79,7 @@ export default function JoinOurTeam() {
               Schedule a Demo
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/company/dashing-distribution-software"
               className="inline-flex items-center justify-center rounded-lg bg-white/5 px-4 py-2 text-sm font-semibold text-white ring-1 ring-white/10 transition hover:bg-white/10"
             >
               Connect on LinkedIn

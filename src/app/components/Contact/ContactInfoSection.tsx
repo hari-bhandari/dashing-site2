@@ -30,7 +30,7 @@ const enquiries: Enquiry[] = [
 
 export default function ContactInfoSection() {
   return (
-    <section className="relative isolate overflow-hidden bg-white py-16 sm:py-24">
+    <section className="relative isolate overflow-hidden bg-white py-16 sm:py-32">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-12">
           {/* Left: Intro + Enquiries */}
@@ -100,7 +100,7 @@ export default function ContactInfoSection() {
               </article>
               <p className="text-sm text-[#0a2440]/80">
                 Connect with us on{" "}
-                <Link href="https://www.linkedin.com" className="underline decoration-lime-400/50 underline-offset-4 hover:text-lime-500">
+                <Link href="https://www.linkedin.com/company/dashing-distribution-software" className="underline decoration-lime-400/50 underline-offset-4 hover:text-lime-500">
                   LinkedIn
                 </Link>{" "}
                 for industry insights and company updates.
