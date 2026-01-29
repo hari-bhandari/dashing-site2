@@ -78,7 +78,6 @@ export default function ContactInfoSection() {
                 <div>
                   <h4 className="text-lg font-semibold text-[#0a2440]">Phone</h4>
                   <p className="mt-2 font-semibold text-[#0a2440]">+44 1904 935608</p>
-                  <p className="mt-1 text-sm text-[#0a2440]/70">Mon–Fri, 9:00 AM – 6:00 PM GMT</p>
                 </div>
               </article>
               <article className="flex items-start gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)]">
