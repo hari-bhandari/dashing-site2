@@ -47,8 +47,8 @@ export default function ContactInfoSection() {
                   key={title}
                   className="rounded-2xl border border-[#0a2440]/10 bg-white p-5 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)] transition-transform duration-200 hover:-translate-y-0.5"
                 >
-                  <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0a2440]/5">
-                    <Icon className="h-5 w-5 text-lime-400" aria-hidden />
+                  <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/90 text-[#0a2440] shadow-inner shadow-white/60">
+                    <Icon className="h-8 w-8" aria-hidden />
                   </div>
                   <h3 className="text-base font-semibold text-[#0a2440] sm:text-lg">{title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80 sm:text-base">{description}</p>
@@ -62,8 +62,8 @@ export default function ContactInfoSection() {
             <h3 className="text-2xl font-extrabold text-[#0a2440] sm:text-3xl">Contact Information</h3>
             <div className="mt-6 space-y-6">
               <article className="flex items-start gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)]">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0a2440]/5">
-                  <IconMail className="h-5 w-5 text-lime-400" aria-hidden />
+                <span className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/90 text-[#0a2440] shadow-inner shadow-white/60">
+                  <IconMail className="h-8 w-8" aria-hidden />
                 </span>
                 <div>
                   <h4 className="text-lg font-semibold text-[#0a2440]">Email</h4>
@@ -72,8 +72,8 @@ export default function ContactInfoSection() {
                 </div>
               </article>
               <article className="flex items-start gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)]">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0a2440]/5">
-                  <IconPhone className="h-5 w-5 text-lime-400" aria-hidden />
+                <span className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/90 text-[#0a2440] shadow-inner shadow-white/60">
+                  <IconPhone className="h-8 w-8" aria-hidden />
                 </span>
                 <div>
                   <h4 className="text-lg font-semibold text-[#0a2440]">Phone</h4>
@@ -82,8 +82,8 @@ export default function ContactInfoSection() {
                 </div>
               </article>
               <article className="flex items-start gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)]">
-                <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0a2440]/5">
-                  <IconBuilding className="h-5 w-5 text-lime-400" aria-hidden />
+                <span className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/90 text-[#0a2440] shadow-inner shadow-white/60">
+                  <IconBuilding className="h-8 w-8" aria-hidden />
                 </span>
                 <div>
                   <h4 className="text-lg font-semibold text-[#0a2440]">Office</h4>
