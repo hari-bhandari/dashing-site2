@@ -48,7 +48,7 @@ export default function RootLayout({
         <ChatProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
-            <GoogleTagManager gtmId="G-ME240VW0QZ"/>
+            <GoogleTagManager gtmId="GTM-KTLDFGMD"/>
             <SpeedInsights />
           </ThemeProvider>
           <TabAttentionTitle />
