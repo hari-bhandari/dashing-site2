@@ -10,7 +10,7 @@ export default function ResourcesIntro() {
           </h1>
           <p className="mt-4 text-base leading-relaxed text-white/80 sm:mt-6 sm:text-lg">
             Access expert insights, proven strategies, and real-world success stories designed specifically for
-            commercial real estate professionals. Our comprehensive resource library helps brokers optimise operations,
+            commercial electronic component brokers professionals. Our comprehensive resource library helps brokers optimise operations,
             accelerate growth, and stay ahead of market trends.
           </p>
 

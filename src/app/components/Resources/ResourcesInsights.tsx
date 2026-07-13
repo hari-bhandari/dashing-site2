@@ -11,7 +11,7 @@ export default function ResourcesInsights() {
           <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">Expert Insights &amp; Industry Knowledge</h2>
           <p className="mx-auto mt-4 max-w-4xl text-xl leading-relaxed text-[#0a2440]/80">
             Stay informed with our curated collection of articles covering the most pressing challenges facing commercial
-            real estate brokers today. Our SEO-driven content delivers actionable strategies to help you work smarter,
+            electronic component brokers today. Our SEO-driven content delivers actionable strategies to help you work smarter,
             not harder.
           </p>
         </div>
