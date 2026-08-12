@@ -2,21 +2,12 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 
 export default function Navbar() {
-  const [mounted, setMounted] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
 
   const NavLinks = ({ className, isMobile }: { className?: string; isMobile?: boolean }) => (
     <div className={`${isMobile ? 'flex flex-col space-y-6' : 'flex items-center gap-4 md:gap-8 lg:gap-8'} ${className}`}>
