@@ -76,38 +76,6 @@ export default function ResourcesInsights() {
             </ul>
           </article>
         </div>
-
-        {/* Featured Articles 
-        <div className="mt-14 text-center">
-          <h3 className="text-3xl font-extrabold text-amber-300 sm:text-4xl">Featured Articles</h3>
-          <ul className="mx-auto mt-6 max-w-5xl list-disc space-y-3 pl-6 text-left text-[#0a2440]/90">
-            <li>
-              <em>&quot;5 Ways Brokers Can Close Deals Faster&quot;</em> - Proven techniques to reduce deal cycle times
-            </li>
-            <li>
-              <em>&quot;The Hidden Cost of Manual Finance Reporting&quot;</em> - Why automation pays for itself
-            </li>
-            <li>
-              <em>&quot;ERP Buyer&#39;s Guide for Brokers&quot;</em> - Essential features and implementation considerations
-            </li>
-          </ul>
-
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <Link
-              href="#"
-              className="inline-flex items-center justify-center rounded-lg bg-[#8167FF] px-5 py-3 text-sm font-semibold text-[#0a2440] shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0] sm:text-base"
-            >
-              Subscribe to Insights
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center rounded-lg bg-white/10 px-5 py-3 text-sm font-semibold text-[#0a2440] ring-1 ring-white/15 transition hover:bg-white/15 sm:text-base"
-            >
-              Book a Demo
-            </Link>
-          </div>
-        </div>
-        */}
       </div>
     </section>
   );
