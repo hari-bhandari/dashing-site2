@@ -1,38 +1,25 @@
 import { MetadataRoute } from 'next'
 
+const baseUrl = 'https://www.dashingdisty.com'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  
-  const baseUrl = 'https://dashing-website-2.vercel.app/'
-
   const routes = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      priority: 1.0
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: new Date(),
-      priority: 0.8
-    },
-    {
-      url: `${baseUrl}/features`,
-      lastModified: new Date(),
-      priority: 0.8
-    },
-
-    {
-      url: `${baseUrl}/your-data`,
-      lastModified: new Date(),
-      priority: 0.7
-    },
-    {
-      url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
-      priority: 0.3
-    }
+    { path: '', priority: 1.0 },
+    { path: '/our-product', priority: 0.9 },
+    { path: '/for-sales-leaders', priority: 0.8 },
+    { path: '/for-finance-leaders', priority: 0.8 },
+    { path: '/for-ceos', priority: 0.8 },
+    { path: '/resources', priority: 0.7 },
+    { path: '/contact', priority: 0.7 },
+    { path: '/about', priority: 0.6 },
+    { path: '/our-story', priority: 0.6 },
+    { path: '/your-data', priority: 0.5 },
+    { path: '/privacy-policy', priority: 0.3 },
   ]
 
-  return [...routes]
+  return routes.map(({ path, priority }) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: new Date(),
+    priority,
+  }))
 }
