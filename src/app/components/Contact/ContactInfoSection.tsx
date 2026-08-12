@@ -36,7 +36,7 @@ export default function ContactInfoSection() {
           {/* Left: Intro + Enquiries */}
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-lime-400">Contact</p>
-            <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">Get in Touch</h2>
+            <h1 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">Get in Touch</h1>
             <p className="mt-4 max-w-xl text-base leading-relaxed text-[#0a2440]/80 sm:text-lg">
               Whether you have questions about our solutions, are interested in partnership opportunities, or need
               technical support, we&#39;re here to help. Connect with our team through your preferred channel.
@@ -50,7 +50,7 @@ export default function ContactInfoSection() {
                   <div className="mb-3 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/90 text-[#0a2440] shadow-inner shadow-white/60">
                     <Icon className="h-8 w-8" aria-hidden />
                   </div>
-                  <h3 className="text-base font-semibold text-[#0a2440] sm:text-lg">{title}</h3>
+                  <h2 className="text-base font-semibold text-[#0a2440] sm:text-lg">{title}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80 sm:text-base">{description}</p>
                 </article>
               ))}
@@ -59,14 +59,14 @@ export default function ContactInfoSection() {
 
           {/* Right: Contact Cards */}
           <div>
-            <h3 className="text-2xl font-extrabold text-[#0a2440] sm:text-3xl">Contact Information</h3>
+            <h2 className="text-2xl font-extrabold text-[#0a2440] sm:text-3xl">Contact Information</h2>
             <div className="mt-6 space-y-6">
               <article className="flex items-start gap-4 rounded-2xl border border-[#0a2440]/10 bg-white p-6 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.15)]">
                 <span className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-white/90 text-[#0a2440] shadow-inner shadow-white/60">
                   <IconMail className="h-8 w-8" aria-hidden />
                 </span>
                 <div>
-                  <h4 className="text-lg font-semibold text-[#0a2440]">Email</h4>
+                  <h3 className="text-lg font-semibold text-[#0a2440]">Email</h3>
                   <p className="mt-2 font-semibold text-[#0a2440]">support@dashingdisty.com</p>
                   <p className="mt-1 text-sm text-[#0a2440]/70">Response within 24 hours during business days</p>
                 </div>
@@ -76,7 +76,7 @@ export default function ContactInfoSection() {
                   <IconPhone className="h-8 w-8" aria-hidden />
                 </span>
                 <div>
-                  <h4 className="text-lg font-semibold text-[#0a2440]">Phone</h4>
+                  <h3 className="text-lg font-semibold text-[#0a2440]">Phone</h3>
                   <p className="mt-2 font-semibold text-[#0a2440]">+44 1904 935608</p>
                 </div>
               </article>
@@ -85,7 +85,7 @@ export default function ContactInfoSection() {
                   <IconBuilding className="h-8 w-8" aria-hidden />
                 </span>
                 <div>
-                  <h4 className="text-lg font-semibold text-[#0a2440]">Office</h4>
+                  <h3 className="text-lg font-semibold text-[#0a2440]">Office</h3>
                   <p className="mt-2 font-semibold leading-relaxed text-[#0a2440]">
                     Dashing Distribution Software
                     <br />

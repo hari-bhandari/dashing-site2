@@ -12,9 +12,9 @@ export default function PrivacyPolicy() {
     <div className="flex flex-col items-stretch justify-between min-h-screen">
       <Navbar />
       <main className="flex-grow max-w-4xl mx-auto px-4 py-32">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-center mb-12">
           Privacy Policy
-        </h2>
+        </h1>
         
         <div className="space-y-12 text-white ">
           <section className="space-y-4">

@@ -23,10 +23,10 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen">
       <Navbar />
       <div className="w-full flex flex-col gap-10 mt-20 md:mt-32 px-4">
-        <h2 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Who are we?</h2>
-        <h2 className="text-lg md:text-xl text-gray-500 text-center font-semibold w-full md:max-w-[80%] lg:max-w-[60%] mx-auto dark:text-white">
-          Powering the Electronic Component Distribution industry, we are the leading provider of software on the market. Built to lead industry standards, Dashing Distribution Software is where cutting edge technology meets timeless reliability. 
-        </h2>
+        <h1 className="text-center text-3xl md:text-5xl font-bold dark:text-white">Who are we?</h1>
+        <p className="text-lg md:text-xl text-gray-500 text-center font-semibold w-full md:max-w-[80%] lg:max-w-[60%] mx-auto dark:text-white">
+          Powering the Electronic Component Distribution industry, we are the leading provider of software on the market. Built to lead industry standards, Dashing Distribution Software is where cutting edge technology meets timeless reliability.
+        </p>
         <Carousel />
         
         <div className="flex flex-col gap-12 mx-auto mt-16 md:mt-20"> 

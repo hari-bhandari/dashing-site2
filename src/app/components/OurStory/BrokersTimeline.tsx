@@ -2,9 +2,9 @@ export default function BrokersTimeline() {
   return (
     <section className="relative w-full px-6 py-16 sm:py-32">
       <div className="mx-auto w-full max-w-7xl">
-        <h2 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-4xl">
+        <h1 className="text-center text-4xl font-extrabold tracking-tight text-white sm:text-4xl">
           Built by Brokers, for Brokers
-        </h2>
+        </h1>
 
         {/* Center vertical line on md+ */}
         <div
@@ -21,9 +21,9 @@ export default function BrokersTimeline() {
               </span>
               <span className="h-px flex-1 bg-violet-500/30" />
             </div>
-            <h3 className="text-xl font-semibold text-white sm:text-2xl">
+            <h2 className="text-xl font-semibold text-white sm:text-2xl">
               Industry Challenge Recognised
-            </h3>
+            </h2>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-gray-300">
               Our founders, seasoned brokers with decades of experience, identified critical gaps in existing ERP solutions that were hindering operational efficiency across the industry.
             </p>
@@ -53,7 +53,7 @@ export default function BrokersTimeline() {
               </span>
               <span className="h-px flex-1 bg-violet-500/30" />
             </div>
-            <h3 className="text-xl font-semibold text-white sm:text-2xl">Vision Takes Shape</h3>
+            <h2 className="text-xl font-semibold text-white sm:text-2xl">Vision Takes Shape</h2>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-gray-300">
               Drawing from real-world broker challenges, we began developing a comprehensive platform designed specifically for the unique workflows and regulatory requirements of insurance intermediaries.
             </p>
@@ -67,7 +67,7 @@ export default function BrokersTimeline() {
               </span>
               <span className="h-px flex-1 bg-violet-500/30" />
             </div>
-            <h3 className="text-xl font-semibold text-white sm:text-2xl">Dashing is Born</h3>
+            <h2 className="text-xl font-semibold text-white sm:text-2xl">Dashing is Born</h2>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-gray-300">
               Our ERP solution launched with innovative features tailored to broker operations, streamlining everything from client management to compliance reporting with industry-specific expertise.
             </p>
@@ -97,7 +97,7 @@ export default function BrokersTimeline() {
               </span>
               <span className="h-px flex-1 bg-violet-500/30" />
             </div>
-            <h3 className="text-xl font-semibold text-white sm:text-2xl">Growing Success</h3>
+            <h2 className="text-xl font-semibold text-white sm:text-2xl">Growing Success</h2>
             <p className="mt-3 max-w-xl text-base leading-relaxed text-gray-300">
               Today, Dashing empowers brokers across the world to operate more efficiently, serve clients better, and focus on what they do best — building relationships and growing their business.
             </p>
