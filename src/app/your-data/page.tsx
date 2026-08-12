@@ -1,18 +1,17 @@
-"use client";
-import dynamic from 'next/dynamic';
-const Navbar = dynamic(() => import('@/app/components/Navigation/Navbar'), {
-  ssr: false
-});
+import type { Metadata } from "next";
+import Navbar from '@/app/components/Navigation/Navbar';
 import Footer from "@/app/components/Navigation/Footer";
-import { 
+import {
   IconShieldLock,
   IconUserCog,
   IconServer,
   IconTargetArrow
 } from '@tabler/icons-react';
 
-
-
+export const metadata: Metadata = {
+  title: "Your Data, Your Control | Dashing Distribution Software",
+  description: "See how Dashing Distribution Software keeps your business data secure, independent, and fully under your control.",
+};
 
 export default function YourData() {
   return (

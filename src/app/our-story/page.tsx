@@ -1,8 +1,14 @@
+import type { Metadata } from "next"
 import Navbar from "../components/Navigation/Navbar"
 import Footer from "../components/Navigation/Footer"
 import BrokersTimeline from "../components/OurStory/BrokersTimeline"
 import LeadershipTeam from "../components/OurStory/AboutUs"
 import JoinOurTeam from "../components/OurStory/JoinOurTeam"
+
+export const metadata: Metadata = {
+  title: "Our Story | Dashing Distribution Software",
+  description: "Learn the story behind Dashing Distribution Software and meet the team building the leading ERP for electronic component brokers.",
+}
 
 export default function OurStoryPage() {
 return (

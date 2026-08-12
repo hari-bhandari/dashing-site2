@@ -1,9 +1,11 @@
-"use client";
-import dynamic from 'next/dynamic';
-const Navbar = dynamic(() => import('@/app/components/Navigation/Navbar'), {
-  ssr: false
-});
+import type { Metadata } from "next";
+import Navbar from '@/app/components/Navigation/Navbar';
 import Footer from "@/app/components/Navigation/Footer";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Dashing Distribution Software",
+  description: "Read Dashing Distribution Software's privacy policy to learn how we collect, use, and protect your personal information.",
+};
 
 export default function PrivacyPolicy() {
   return (

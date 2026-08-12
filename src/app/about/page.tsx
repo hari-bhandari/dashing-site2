@@ -1,23 +1,22 @@
-"use client";
-
-import { 
-    IconDeviceAnalytics, 
-    IconShieldLock, 
-    IconUsers, 
-    IconRotate, 
+import type { Metadata } from "next";
+import {
+    IconDeviceAnalytics,
+    IconShieldLock,
+    IconUsers,
+    IconRotate,
     IconHeadset,
     IconMessage,
     IconCash
   } from '@tabler/icons-react';
 
-import dynamic from 'next/dynamic';
-const Navbar = dynamic(() => import('@/app/components/Navigation/Navbar'), {
-  ssr: false
-});
+import Navbar from '@/app/components/Navigation/Navbar';
 import Footer from "@/app/components/Navigation/Footer";
-const Carousel = dynamic(() => import('@/app/components/Carousel/Carousel'), {
-  ssr: false
-});
+import Carousel from '@/app/components/Carousel/Carousel';
+
+export const metadata: Metadata = {
+  title: "About Us | Dashing Distribution Software",
+  description: "Learn about Dashing Distribution Software, the leading ERP built specifically for the electronic component distribution industry.",
+};
 
 export default function Home() {
   return (
