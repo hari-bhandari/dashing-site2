@@ -10,9 +10,7 @@ export default function ResourcesInsights() {
           <p className="text-2xl font-semibold uppercase tracking-widest text-lime-400">Insights</p>
           <h2 className="mt-2 text-4xl font-extrabold text-[#0a2440] sm:text-5xl">Expert Insights &amp; Industry Knowledge</h2>
           <p className="mx-auto mt-4 max-w-4xl text-xl leading-relaxed text-[#0a2440]/80">
-            Stay informed with our curated collection of articles covering the most pressing challenges facing commercial
-            electronic component brokers today. Our SEO-driven content delivers actionable strategies to help you work smarter,
-            not harder.
+          Practical articles, guides, and broker perspectives on the challenges that matter most - from quoting speed and inventory control to migrating away from legacy software.
           </p>
         </div>
 
@@ -25,11 +23,10 @@ export default function ResourcesInsights() {
             </div>
             <h3 className="text-2xl font-bold text-[#0a2440]">Sales Efficiency</h3>
             <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80">
-              Streamline your deal flow with proven methodologies and cutting-edge technology solutions that reduce
-              friction and accelerate closings.
+              Practical guides on quoting faster, improving RFQ win rates, and giving your sales team the visibility they need to close before the competition does.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-[#0a2440]/85">
-              {['Lead qualification frameworks','Deal pipeline optimisation','Client relationship management'].map(item => (
+              {['Improving RFQ response times','Quoting accuracy and margin control','Pipeline visibility for sales teams'].map(item => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="mt-1 h-2 w-2 rounded-full bg-lime-400" />
                   <span>{item}</span>
@@ -44,11 +41,10 @@ export default function ResourcesInsights() {
             </div>
             <h3 className="text-xl font-bold text-[#0a2440]">Finance &amp; Control</h3>
             <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80">
-              Master the financial aspects of brokerage operations with comprehensive guides on reporting, compliance,
-              and cost management.
+              Guides on the financial visibility broker owners and finance directors actually need: cashflow, inventory value, deal margins, and compliance without the manual work.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-[#0a2440]/85">
-              {['Commission tracking systems','Financial reporting automation','Regulatory compliance'].map(item => (
+              {['Real-time cashflow and margin tracking','Inventory valuation and cost control','Audit trails and compliance reporting'].map(item => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="mt-1 h-2 w-2 rounded-full bg-lime-400" />
                   <span>{item}</span>
@@ -63,11 +59,10 @@ export default function ResourcesInsights() {
             </div>
             <h3 className="text-xl font-bold text-[#0a2440]">Growth Strategies</h3>
             <p className="mt-2 text-sm leading-relaxed text-[#0a2440]/80">
-              Scale your brokerage with strategic insights on market expansion, team development, and technology
-              integration.
+              Insights on building a broker operation that doesn&apos;t break as you grow, from moving off spreadsheets to choosing systems that compound over time.
             </p>
             <ul className="mt-4 space-y-2 text-sm text-[#0a2440]/85">
-              {['Market penetration tactics','Team performance metrics','Technology adoption roadmaps'].map(item => (
+              {['Moving beyond spreadsheets and legacy software','KPIs worth tracking in a broker business','Choosing software that grows with you'].map(item => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="mt-1 h-2 w-2 rounded-full bg-lime-400" />
                   <span>{item}</span>
