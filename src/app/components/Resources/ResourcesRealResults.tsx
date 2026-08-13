@@ -36,7 +36,7 @@ export default function ResourcesRealResults() {
         <h2 className="mt-2 text-4xl font-extrabold text-white sm:text-5xl">Real Brokers. Real Results.</h2>
         <p className="mt-4 max-w-4xl text-base leading-relaxed text-white/80 sm:text-lg">
           Discover how leading electronic component brokers have transformed their operations with our innovative
-          solutions. Case studies showcase tangible outcomes and measurable improvements demonstrating the power of strategic technology adoption.
+          solutions.
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -66,10 +66,6 @@ export default function ResourcesRealResults() {
             <p className="mt-4 font-semibold text-white">-Sonicare Solutions Inc.</p>
           </blockquote>
         </div>
-
-        <p className="mt-8 max-w-5xl text-sm leading-relaxed text-white/75 sm:text-base">
-          Comprehensive case studies feature detailed implementation strategies, ROI calculations, long-term business impact and before/after comparisons across workflows and metrics.
-        </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link
