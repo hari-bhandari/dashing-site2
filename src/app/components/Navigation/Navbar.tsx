@@ -105,10 +105,9 @@ export default function Navbar() {
             <NavLinks isMobile={false} />
 
             <Link
-              href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+              href="/book-a-demo"
               className="rounded-full bg-lime-400 px-3 py-2 text-xs font-semibold text-[#0a2440] transition hover:-translate-y-0.5 hover:bg-lime-400 md:px-4 md:text-sm lg:text-base"
               aria-label="Schedule a demo"
-              target='_blank'
             >
               Book a Demo
             </Link>
@@ -126,7 +125,7 @@ export default function Navbar() {
               <NavLinks isMobile={true} />
               <div className="mt-6 border-t border-gray-200 pt-6">
                 <Link
-                  href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+                  href="/book-a-demo"
                   className='flex w-full justify-center rounded-full bg-[#8167FF] px-4 py-3 font-semibold text-white shadow-[0_25px_50px_-20px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]'
                   aria-label="Schedule a demo"
                 >

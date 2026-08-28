@@ -42,9 +42,7 @@ export default function DashingCTA() {
         <motion.div className="flex flex-col gap-4 sm:flex-row sm:justify-center" variants={buttonsVariants}>
           <motion.div variants={buttonVariant}>
             <Link
-              href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/book-a-demo"
               className="inline-flex items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(129,103,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6c53f1]"
             >
               Book Your Demo Now

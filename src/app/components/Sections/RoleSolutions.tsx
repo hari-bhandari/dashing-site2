@@ -78,9 +78,7 @@ export default function RoleSolutions() {
                 <p className="sm:text-lg text-sm leading-relaxed text-[#0a2440]/75">{description}</p>
               </div>
               <Link
-                href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/book-a-demo"
                 className="mt-auto text-sm font-semibold text-[#0a2440] underline-offset-4 hover:underline"
               >
                 Learn more
@@ -90,9 +88,7 @@ export default function RoleSolutions() {
         </motion.div>
         <motion.div className="mx-auto" variants={ctaVariants} transition={{ duration: 0.45, ease: "easeOut", delay: 0.25 }}>
           <Link
-            href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/book-a-demo"
             className="inline-flex items-center justify-center rounded-full bg-lime-400 px-6 py-3 text-base font-semibold text-[#0a2440] shadow-[0_25px_50px_-20px_rgba(129,103,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
           >
             Book Demo

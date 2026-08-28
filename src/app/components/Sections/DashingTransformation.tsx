@@ -86,9 +86,7 @@ export default function DashingTransformation() {
         </motion.div>
         <motion.div className="mx-auto flex w-full max-w-xl flex-col items-center gap-8" variants={ctaVariants} transition={{ duration: 0.45, ease: "easeOut", delay: 0.3 }}>
           <Link
-            href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/book-a-demo"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-lime-400 px-6 py-3 text-[#0a2440] font-semibold shadow-[0_25px_45px_-20px_rgba(109,75,255,0.9)] transition hover:-translate-y-0.5 hover:bg-[#5a3bdc]"
           >
             <span role="img" aria-hidden>

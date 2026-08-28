@@ -27,7 +27,7 @@ export default function SalesLeadersFinalCTA() {
           </p>
           <div>
             <Link
-          href="https://dashing-distribution-software-144785672.hubspotpagebuilder.eu/book-a-dashing-demo"
+          href="/book-a-demo"
           className="inline-flex items-center justify-center gap-2 rounded-lg bg-lime-400 px-6 py-3 text-[#0a2440] font-semibold shadow-[0_20px_45px_-25px_rgba(129,103,255,0.85)] transition hover:-translate-y-0.5 hover:bg-[#6d54f0]"
         >
               <span aria-hidden>👉</span>

@@ -20,6 +20,32 @@ const nextConfig = {
     // !! WARN !!
     ignoreBuildErrors: true,
   },
+
+  async rewrites() {
+    // HubSpot serves the blog itself under /blog, but its static assets
+    // (css/js bundles, uploaded files, CMS internals) are referenced as
+    // root-relative paths outside /blog, so those need proxying too.
+    const hubspotAssetPrefixes = ['hs', 'hubfs', 'hs-fs', '_hcms', 'hsappstatic', 'hs-legacy'];
+
+    return [
+      {
+        source: '/blog',
+        destination: 'https://blog.dashingdisty.com/blog',
+      },
+      {
+        source: '/blog/:path*',
+        destination: 'https://blog.dashingdisty.com/blog/:path*',
+      },
+      {
+        source: '/book-a-demo',
+        destination: 'https://blog.dashingdisty.com/book-a-dashing-demo',
+      },
+      ...hubspotAssetPrefixes.map((prefix) => ({
+        source: `/${prefix}/:path*`,
+        destination: `https://blog.dashingdisty.com/${prefix}/:path*`,
+      })),
+    ];
+  },
 };
 
 module.exports = nextConfig;
