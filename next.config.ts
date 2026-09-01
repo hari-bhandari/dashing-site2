@@ -28,14 +28,9 @@ const nextConfig = {
     const hubspotAssetPrefixes = ['hs', 'hubfs', 'hs-fs', '_hcms', 'hsappstatic', 'hs-legacy'];
 
     return [
-      {
-        source: '/blog',
-        destination: 'https://blog.dashingdisty.com/blog',
-      },
-      {
-        source: '/blog/:path*',
-        destination: 'https://blog.dashingdisty.com/blog/:path*',
-      },
+      // NOTE: /blog is NOT rewritten here - it is proxied by
+      // src/app/blog/[[...slug]]/route.ts, which also rewrites HubSpot's absolute
+      // blog.dashingdisty.com URLs out of the HTML so links/canonicals stay on this domain.
       {
         source: '/book-a-demo',
         destination: 'https://blog.dashingdisty.com/book-a-dashing-demo',
