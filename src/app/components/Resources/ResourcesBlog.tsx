@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { toLocalBlogPath } from "../../lib/hubspotBlog";
 
 interface ResourcesBlogProps {
   /** Provide the public HubSpot RSS feed URL. */
@@ -34,21 +35,6 @@ const extractTagValue = (item: string, tag: string) => {
 };
 
 const stripHtml = (value: string) => value.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").trim();
-
-/**
- * The feed returns absolute blog.dashingdisty.com URLs. The blog is served on this
- * domain under /blog (see src/app/blog/[[...slug]]/route.ts), so reduce HubSpot links
- * to their path and keep visitors on our domain.
- */
-const toLocalBlogPath = (link: string) => {
-  if (!link || !/blog\.dashingdisty\.com/i.test(link)) return link;
-  try {
-    const { pathname, search } = new URL(link);
-    return `${pathname}${search}`;
-  } catch {
-    return link;
-  }
-};
 
 const parseLink = (item: string) => {
   const tagLink = /<link[^>]*>([\s\S]*?)<\/link>/i.exec(item);

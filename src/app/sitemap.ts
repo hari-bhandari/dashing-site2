@@ -1,6 +1,9 @@
 import { MetadataRoute } from 'next'
+import { fetchBlogFeedEntries } from './lib/hubspotBlog'
 
 const baseUrl = 'https://www.dashingdisty.com'
+
+export const revalidate = 3600
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const routes = [
@@ -19,9 +22,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/privacy-policy', priority: 0.3 },
   ]
 
-  return routes.map(({ path, priority }) => ({
+  const now = new Date()
+
+  const staticEntries = routes.map(({ path, priority }) => ({
     url: `${baseUrl}${path}`,
-    lastModified: new Date(),
+    lastModified: now,
     priority,
   }))
+
+  // Individual blog posts live in HubSpot; the RSS feed is the list of published slugs.
+  // If HubSpot is unreachable the helper returns [] so the sitemap still builds.
+  const postEntries = (await fetchBlogFeedEntries()).map(({ path, lastModified }) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: lastModified ?? now,
+    priority: 0.6,
+  }))
+
+  return [...staticEntries, ...postEntries]
 }
