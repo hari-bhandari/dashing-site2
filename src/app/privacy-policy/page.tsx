@@ -5,6 +5,9 @@ import Footer from "@/app/components/Navigation/Footer";
 export const metadata: Metadata = {
   title: "Privacy Policy | Dashing Distribution Software",
   description: "Read Dashing Distribution Software's privacy policy to learn how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicy() {

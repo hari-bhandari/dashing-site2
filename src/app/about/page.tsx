@@ -16,6 +16,9 @@ import Carousel from '@/app/components/Carousel/Carousel';
 export const metadata: Metadata = {
   title: "About Us | Dashing Distribution Software",
   description: "Learn about Dashing Distribution Software, the leading ERP built specifically for the electronic component distribution industry.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function Home() {

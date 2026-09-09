@@ -43,6 +43,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.dashingdisty.com"),
   title: "Dashing Distribution Software",
   description: "Dashing Distribution Software provides a dedicated distribution software package designed specifically for the electronic components industry.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

@@ -8,6 +8,9 @@ import JoinOurTeam from "../components/OurStory/JoinOurTeam"
 export const metadata: Metadata = {
   title: "Our Story | Dashing Distribution Software",
   description: "Learn the story behind Dashing Distribution Software and meet the team building the leading ERP for electronic component brokers.",
+  alternates: {
+    canonical: "/our-story",
+  },
 }
 
 export default function OurStoryPage() {

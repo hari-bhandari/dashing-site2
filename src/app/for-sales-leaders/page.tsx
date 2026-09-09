@@ -12,6 +12,9 @@ import SalesLeadersFinalCTA from "@/app/components/RolePages/SalesLeadersFinalCT
 export const metadata: Metadata = {
   title: "For Sales Leaders | Dashing Distribution Software",
   description: "Discover how Dashing Distribution Software helps sales leaders in electronic component distribution streamline workflows and close more deals.",
+  alternates: {
+    canonical: "/for-sales-leaders",
+  },
 };
 
 export default function ForSalesLeaders() {

@@ -11,6 +11,9 @@ import FinanceLeadersNumbersToDecisions from "../components/RolePages/FinanceLea
 export const metadata: Metadata = {
   title: "For Finance Leaders | Dashing Distribution Software",
   description: "See how Dashing Distribution Software gives finance leaders in electronic component distribution clearer numbers, lower risk, and faster decisions.",
+  alternates: {
+    canonical: "/for-finance-leaders",
+  },
 }
 
 export default function ForFinanceLeaders() {

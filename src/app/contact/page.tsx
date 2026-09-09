@@ -6,6 +6,9 @@ import ContactInfoSection from "@/app/components/Contact/ContactInfoSection";
 export const metadata: Metadata = {
   title: "Contact Us | Dashing Distribution Software",
   description: "Get in touch with the Dashing Distribution Software team for sales, support, or general enquiries about our electronic component distribution ERP.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function contact() {

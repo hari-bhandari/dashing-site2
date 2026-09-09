@@ -9,6 +9,9 @@ import ResourcesBlog from "@/app/components/Resources/ResourcesBlog";
 export const metadata: Metadata = {
   title: "Resources & Insights | Dashing Distribution Software",
   description: "Explore guides, insights, and real results from Dashing Distribution Software, the ERP built for electronic component distributors.",
+  alternates: {
+    canonical: "/resources",
+  },
 };
 
 export default function Resources() {

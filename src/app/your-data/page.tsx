@@ -11,6 +11,9 @@ import {
 export const metadata: Metadata = {
   title: "Your Data, Your Control | Dashing Distribution Software",
   description: "See how Dashing Distribution Software keeps your business data secure, independent, and fully under your control.",
+  alternates: {
+    canonical: "/your-data",
+  },
 };
 
 export default function YourData() {
