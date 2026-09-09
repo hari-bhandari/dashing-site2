@@ -21,6 +21,18 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 
+  async redirects() {
+    return [
+      // /features was a real page until it was folded into /our-product; keep the
+      // old indexed URL alive with a permanent redirect instead of a 404.
+      {
+        source: '/features',
+        destination: '/our-product',
+        permanent: true,
+      },
+    ];
+  },
+
   async rewrites() {
     // HubSpot serves the blog itself under /blog, but its static assets
     // (css/js bundles, uploaded files, CMS internals) are referenced as
