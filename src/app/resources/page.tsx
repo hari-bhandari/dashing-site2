@@ -7,8 +7,8 @@ import ResourcesRealResults from "@/app/components/Resources/ResourcesRealResult
 import ResourcesBlog from "@/app/components/Resources/ResourcesBlog";
 
 export const metadata: Metadata = {
-  title: "Resources & Insights | Dashing Distribution Software",
-  description: "Explore guides, insights, and real results from Dashing Distribution Software, the ERP built for electronic component distributors.",
+  title: "Resources for Component Brokers | Dashing Distribution",
+  description: "Guides, articles, and case studies for independent electronic component brokers on quoting, inventory, legacy migration, and profitable operations.",
   alternates: {
     canonical: "/resources",
   },

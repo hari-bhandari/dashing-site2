@@ -9,8 +9,8 @@ import SeeInAction from "@/app/components/Product/SeeInAction";
 import JsonLd from "@/app/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Our Product | Dashing Distribution Software",
-  description: "Explore Dashing Distribution Software's all-in-one ERP platform, built for the electronic component distribution industry with seamless setup and compliance built in.",
+  title: "All-in-One ERP for Component Brokers | Dashing Distribution",
+  description: "All-in-one ERP for independent electronic component brokers and distributors. Real-time quoting, inventory management, finance dashboards, compliance, and full migration support.",
   alternates: {
     canonical: "/our-product",
   },

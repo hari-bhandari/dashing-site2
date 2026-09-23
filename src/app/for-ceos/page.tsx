@@ -9,8 +9,8 @@ import CEOsLeadersChoose from "@/app/components/RolePages/CEOsLeadersChoose";
 import CEOsStrategyExecution from "@/app/components/RolePages/CEOsStrategyExecution";
 
 export const metadata: Metadata = {
-  title: "For CEOs & Managing Directors | Dashing Distribution Software",
-  description: "Discover how Dashing Distribution Software helps CEOs and MDs of electronic component distributors scale operations, close blind spots, and execute strategy faster.",
+  title: "ERP for Broker CEOs & MDs | Dashing Distribution",
+  description: "Complete visibility for electronic component broker business leaders. Real-time dashboards, performance KPIs, and the tools to scale your brokerage without adding complexity.",
   alternates: {
     canonical: "/for-ceos",
   },

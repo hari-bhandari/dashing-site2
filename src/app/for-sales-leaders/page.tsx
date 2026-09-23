@@ -10,8 +10,8 @@ import SalesLeadersStreamlined from "@/app/components/RolePages/SalesLeadersStre
 import SalesLeadersFinalCTA from "@/app/components/RolePages/SalesLeadersFinalCTA";
 
 export const metadata: Metadata = {
-  title: "For Sales Leaders | Dashing Distribution Software",
-  description: "Discover how Dashing Distribution Software helps sales leaders in electronic component distribution streamline workflows and close more deals.",
+  title: "Quoting & RFQ Software for Component Brokers | Dashing",
+  description: "Help your sales team quote faster, win more RFQs, and see the full pipeline in real time. ERP purpose-built for the speed of electronic component brokerage.",
   alternates: {
     canonical: "/for-sales-leaders",
   },

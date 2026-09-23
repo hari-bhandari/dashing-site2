@@ -9,8 +9,8 @@ import FinanceLeadersTrust from "../components/RolePages/FinanceLeadersTrust"
 import FinanceLeadersNumbersToDecisions from "../components/RolePages/FinanceLeadersNumbersToDecisions"
 
 export const metadata: Metadata = {
-  title: "For Finance Leaders | Dashing Distribution Software",
-  description: "See how Dashing Distribution Software gives finance leaders in electronic component distribution clearer numbers, lower risk, and faster decisions.",
+  title: "Finance Dashboard & Control for Component Brokers | Dashing",
+  description: "Real-time cashflow, margin tracking, and inventory valuation for electronic component broker finance teams. Compliance reporting built in.",
   alternates: {
     canonical: "/for-finance-leaders",
   },
