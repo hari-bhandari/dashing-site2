@@ -10,18 +10,21 @@ const testimonials = [
     name: "Michael",
     designation: "Sonicare Solutions Inc.",
     src: "/testimonials/Sonicare.png",
+    logoAlt: "Sonicare Solutions logo",
   },
   {
     quote: "Our new Dashing software has been instrumental in streamlining our operations and the customer service and technical support is on point. Highly recommend!",
     name: "Travis",
     designation: "Sonar",
     src: "/testimonials/Sonar.png",
+    logoAlt: "Sonar Electronics logo",
   },
   {
     quote: "Dashing Distribution Software. Our journey to finding and utilizing a software platform was an exhausting, frustrating, and, at times, seemingly hopeless process. Thankfully, through word-of-mouth by a fellow distributor, Dashing was presented. The software flows nicely and is very user friendly. Purchase orders are easily created, sent, and received and are directly linked to the correlating sales order. The shipping process is easily navigated and has the ability to adhere to customer needs and requirements specifically. Myself and my team certainly feel relieved. This industry is unique and securing the appropriate software is difficult. The Dashing team is amazing. I could not be happier, quite honestly.",
     name: "Michelle Gorman",
     designation: "K-1 Technologies",
     src: "/testimonials/K1.png",
+    logoAlt: "K-1 Technologies logo",
   },
 ];
 
@@ -40,7 +43,7 @@ export default function SalesLeadersTrust() {
             <div className="relative w-56 h-56 flex items-center justify-center bg-white rounded-lg">
               <Image
                 src={testimonials[current].src}
-                alt={testimonials[current].designation}
+                alt={testimonials[current].logoAlt}
                 width={200}
                 height={80}
                 className="object-contain max-w-full max-h-full"

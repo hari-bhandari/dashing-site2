@@ -32,8 +32,8 @@ export default function CEOsStrategyExecution() {
         <div className="relative flex items-center justify-center">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-white/30">
             <Image
-              src="/untitled-37.png"
-              alt="Illustration of connected systems turning CEO strategy into execution"
+              src="/Untitled-37.png"
+              alt="Laptop with a padlock on screen, surrounded by scattered fragments"
               fill
               sizes="(min-width:1024px) 420px, (min-width:640px) 360px, 90vw"
               className="object-cover select-none"

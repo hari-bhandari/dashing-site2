@@ -105,7 +105,7 @@ export default function DashingJourney() {
           <div className="relative h-[500px] w-full overflow-hidden">
             <Image
               src="/graph.png"
-              alt="Illustration of brokerage workflow growth progression"
+              alt="3D bar chart rising above a city skyline linked by data network lines, representing brokerage growth"
               fill
               sizes="(min-width:1280px) 640px, (min-width:1024px) 560px, (min-width:640px) 420px, 90vw"
               className="object-cover select-none"

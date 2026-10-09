@@ -78,7 +78,7 @@ export default function Navbar() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logodark.svg"
-                alt="Logo"
+                alt="Dashing Distribution Software home"
                 width={100}
                 height={100}
                 className="h-12 w-auto"

@@ -37,7 +37,7 @@ export default function FinanceLeadersBeforeAfter() {
         <div className="relative aspect-[16/10] overflow-hidden md:aspect-auto md:h-full">
           <Image
             src="/monitors.png"
-            alt="Finance leader viewing performance dashboards"
+            alt="Wide curved display of financial dashboards showing KPIs, charts and a world map"
             fill
             className="object-cover"
             sizes="(min-width: 768px) 50vw, 100vw"

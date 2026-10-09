@@ -29,7 +29,7 @@ export default function FinanceLeadersHero() {
           <div className="relative h-[400px] w-full max-w-lg overflow-hidden">
             <Image
               src="/financehero.png"
-              alt="Finance leaders dashboard with real-time cashflow and inventory insights"
+              alt="Rocket launching beside a rising bar chart and upward trend line, representing financial growth"
               fill
               sizes="(min-width:1280px) 480px, (min-width:1024px) 420px, (min-width:640px) 360px, 90vw"
               className="object-cover select-none"

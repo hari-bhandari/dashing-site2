@@ -8,21 +8,18 @@ const outcomes = [
     description:
       "Accelerate your quoting process and respond to opportunities faster than competitors. Close deals that would otherwise slip away.",
     imageSrc: "/sales.png",
-    imageAlt: "Sales leader presenting accelerated deal flow",
   },
   {
     title: "Gain Real-Time Control",
     description:
       "Complete visibility across inventory, deals, and performance metrics. Make informed decisions with live data at your fingertips.",
     imageSrc: "/control.png",
-    imageAlt: "Dashboard illustrating operational visibility",
   },
   {
     title: "Achieve Profitable Growth",
     description:
       "Optimise margins, reduce operational costs, and scale efficiently with systems designed for sustainable broker success.",
     imageSrc: "/profitablegrowth.png",
-    imageAlt: "Upward trending profitability chart",
   },
 ];
 
@@ -82,7 +79,7 @@ export default function DashingGoal() {
                 <div className="relative inline-flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl border border-white/20 bg-white/10 p-2 text-white shadow-inner shadow-white/10">
                   <Image
                     src={outcome.imageSrc}
-                    alt={outcome.imageAlt}
+                    alt=""
                     width={64}
                     height={64}
                     className="h-full w-full object-contain"

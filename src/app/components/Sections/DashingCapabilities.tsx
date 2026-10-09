@@ -7,28 +7,28 @@ const capabilities = [
     description:
       "Generate accurate quotes instantly with integrated product data and dynamic pricing, reducing manual effort and accelerating deal closures.",
     imgSrc: "/capabilities/cap-erp.png",
-    alt: "ERP-powered quoting connecting systems",
+    alt: "Illustration of a calculator, pricing figures and charts, representing real-time quoting",
   },
   {
     title: "Finance Dashboard",
     description:
       "Track profitability, cash flow, and key performance indicators in real-time with comprehensive dashboards and reporting tools.",
     imgSrc: "/capabilities/cap-financeold.png",
-    alt: "Financial analytics and dashboards"
+    alt: "Illustration of a laptop running ERP software, connected to cloud and reporting tools"
   },
   {
     title: "Inventory Control",
     description:
       "Manage stock levels, track movements, and optimise your inventory with precision, ensuring product availability and minimising holding costs.",
     imgSrc: "/capabilities/cap-inventory.png",
-    alt: "Inventory with location tracking",
+    alt: "Stacked shipping boxes beside a globe with a location pin, representing stock tracked across locations",
   },
   {
     title: "Compliance Tools",
     description:
       "Maintain audit trails and regulatory compliance with automated reporting features tailored for broker operations.",
     imgSrc: "/capabilities/cap-compliance.png",
-    alt: "Secure cloud compliance tools",
+    alt: "Cloud-connected servers and laptop protected by a security shield, representing secure, compliant data",
   },
 ];
 

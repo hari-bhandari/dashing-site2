@@ -37,7 +37,7 @@ export default function SalesLeadersHero() {
           <div className="relative h-[400px] w-full max-w-lg overflow-hidden ">
             <Image
               src="/LaptopUpArrow.png"
-              alt="Sales leaders dashboard and business growth illustration"
+              alt="Laptop displaying a rising sales chart with a glowing upward arrow"
               fill
               sizes="(min-width:1280px) 480px, (min-width:1024px) 420px, (min-width:640px) 360px, 90vw"
               className="object-cover select-none"
