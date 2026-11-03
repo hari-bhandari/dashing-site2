@@ -16,7 +16,6 @@ return (
         <Navbar />
             <BrokersTimeline />
             <LeadershipTeam />
-            <JoinOurTeam />
          <Footer />
      </div>
     )
