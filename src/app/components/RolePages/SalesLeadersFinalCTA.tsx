@@ -10,7 +10,7 @@ export default function SalesLeadersFinalCTA() {
           <div className="relative h-[420px] sm:h-[500px] lg:h-[650px] overflow-hidden rounded-3xl">
             <Image
               src="/rocketlaptop.png"
-              alt="Laptop launching upward with rocket symbolizing accelerated broker growth"
+              alt="Rocket launching out of a laptop screen, representing faster deal flow"
               fill
               sizes="(min-width:1280px) 560px, (min-width:1024px) 480px, (min-width:640px) 75vw, 100vw"
               className="object-contain object-center select-none p-5"

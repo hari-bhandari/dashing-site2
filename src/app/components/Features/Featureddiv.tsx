@@ -20,42 +20,42 @@ const featureItems = [
     id: 1,
     title: "Interactive Dashboard",
     description: "Experience a colourful and informative dashboard with an interactive map to visualise your global business reach. Monitor sales, invoicing, quote to order ratios along with company performance metrics making instant decisions easy.",
-    link: "/features",
+    link: "/our-product",
     icon: IconDashboard
   },
   {
     id: 2,
     title: "Sales Management",
     description: "Set and monitor Team and individual sales targets in multi currencies. Track Quote to Order ratio’s, manage customer performance, including effective merging of multi channel offices.",
-    link: "/features",
+    link: "/our-product",
     icon: IconChartBar
   },
   {
     id: 3,
     title: "Quoting",
     description: "Create, manage, and send quotes using live franchised stock and price checkers. Add descriptions and images, handle single-line items or full BOMs, and customise pricing margins. Easily offer price breaks with instant multi line additions.",
-    link: "/features",
+    link: "/our-product",
     icon: IconFileDescription
   },
   {
     id: 4,
     title: "Customer and Supplier Management",
     description: "Manage customers and suppliers with a single company record. Set different terms and currencies, merge and associate companies, monitor interactions, rate companies, and manage their shipping and invoice addresses.",
-    link: "/features",
+    link: "/our-product",
     icon: IconUsers
   },
   {
     id: 5,
     title: "Inventory Management",
     description: "Efficiently manage your inventory - physical, logical, availability, product testing, store locations, images, datasheets and more. Handle consignments, costings, and export stock lists for seamless operations.",
-    link: "/features",
+    link: "/our-product",
     icon: IconBoxSeam
   },
   {
     id: 6,
     title: "Shipping Management",
     description: "Integrate EasyPost with your system to manage shipments, collections, and deliveries. Track packages online, and generate commercial invoices and customs paperwork effortlessly.",
-    link: "/features",
+    link: "/our-product",
     icon: IconTruck
   }
 ];
@@ -159,7 +159,7 @@ export default function FeatureDiv() {
     
             <div className="mt-8 mb-12">
         <Link 
-          href="/features" 
+          href="/our-product" 
           className="px-8 py-3 bg-[#22263e] text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 shadow-lg inline-block"
         >
           Explore More Features

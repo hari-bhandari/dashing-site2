@@ -10,7 +10,7 @@ export default function HeroImage({ theme }: HeroImageProps) {
 		
 		<Image
 				src="/heroGraphic.png"
-				alt="Hero product analytics and performance dashboards"
+				alt="Laptop displaying business analytics dashboards with floating chart panels"
 				width={820}
 				height={620}
 				priority

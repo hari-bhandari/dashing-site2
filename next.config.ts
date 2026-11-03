@@ -21,6 +21,18 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
 
+  async redirects() {
+    return [
+      // /features was a real page until it was folded into /our-product; keep the
+      // old indexed URL alive with a permanent redirect instead of a 404.
+      {
+        source: '/features',
+        destination: '/our-product',
+        permanent: true,
+      },
+    ];
+  },
+
   async rewrites() {
     // HubSpot serves the blog itself under /blog, but its static assets
     // (css/js bundles, uploaded files, CMS internals) are referenced as
@@ -28,14 +40,9 @@ const nextConfig = {
     const hubspotAssetPrefixes = ['hs', 'hubfs', 'hs-fs', '_hcms', 'hsappstatic', 'hs-legacy'];
 
     return [
-      {
-        source: '/blog',
-        destination: 'https://blog.dashingdisty.com/blog',
-      },
-      {
-        source: '/blog/:path*',
-        destination: 'https://blog.dashingdisty.com/blog/:path*',
-      },
+      // NOTE: /blog is NOT rewritten here - it is proxied by
+      // src/app/blog/[[...slug]]/route.ts, which also rewrites HubSpot's absolute
+      // blog.dashingdisty.com URLs out of the HTML so links/canonicals stay on this domain.
       {
         source: '/book-a-demo',
         destination: 'https://blog.dashingdisty.com/book-a-dashing-demo',

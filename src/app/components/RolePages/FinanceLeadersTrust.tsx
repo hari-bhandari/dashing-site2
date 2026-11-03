@@ -17,7 +17,7 @@ export default function FinanceLeadersTrust() {
           <div className="mx-auto flex max-w-4xl flex-col gap-8 rounded-3xl border border-white/10 bg-white/[0.06] p-8 shadow-[0_25px_60px_-35px_rgba(12,10,43,0.35)] sm:flex-row sm:items-center">
             <div className="flex flex-col items-center gap-4 sm:w-1/3">
               <div className="inline-flex items-center justify-center rounded-2xl border border-white/10 bg-white/5 px-4 py-2">
-                <Image src="/testimonials/Sonar.png" alt="Sonar Electronics" width={110} height={48} className="h-auto w-auto" />
+                <Image src="/testimonials/Sonar.png" alt="Sonar Electronics logo" width={110} height={48} className="h-auto w-auto" />
               </div>
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#0a2440]/10">
                 <IconQuote className="h-6 w-6 text-lime-400" aria-hidden />

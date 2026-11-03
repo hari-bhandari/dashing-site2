@@ -19,7 +19,7 @@ export default function CEOsGrowthStalls() {
             <div className="relative h-[460px] w-full max-w-lg overflow-visible rounded-xl bg-white">
               <Image
                 src="/Untitled-36.png"
-                alt="Bar chart illustration showing stalled and growing broker performance"
+                alt="Laptop with a warning alert on screen breaking apart into fragments, representing systems that hold growth back"
                 fill
                 sizes="(min-width:1024px) 520px, (min-width:640px) 420px, 90vw"
                 className="object-cover object-center select-none transform-gpu scale-110"

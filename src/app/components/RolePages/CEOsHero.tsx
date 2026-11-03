@@ -30,7 +30,7 @@ export default function CEOsHero() {
             {/* TODO: update src when you have the final image path */}
             <Image
               src="/CEO hero.png"
-              alt="CEO dashboard and business growth illustration"
+              alt="Desktop monitor and laptop displaying business performance dashboards"
               fill
                 sizes="(min-width:1280px) 560px, (min-width:1024px) 480px, (min-width:640px) 400px, 90vw"
               className="object-contain select-none"
