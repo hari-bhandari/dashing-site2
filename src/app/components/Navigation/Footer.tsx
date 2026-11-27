@@ -10,6 +10,35 @@ const navigationLinks = [
   { href: "/resources", label: "Resources" },
 ];
 
+const linkColumns = [
+  {
+    title: "Industries",
+    links: [
+      { href: "/industries/independent-brokers", label: "Independent brokers" },
+      { href: "/industries/semiconductor-distributors", label: "Semiconductor distributors" },
+      { href: "/industries/excess-obsolete-inventory", label: "Excess and obsolete inventory" },
+    ],
+  },
+  {
+    title: "Features",
+    links: [
+      { href: "/features/real-time-quoting", label: "Real-time quoting" },
+      { href: "/features/inventory-management", label: "Inventory management" },
+      { href: "/features/finance-dashboard", label: "Finance dashboard" },
+      { href: "/features/compliance", label: "Compliance and security" },
+      { href: "/features/customer-and-team-management", label: "Customer and team" },
+    ],
+  },
+  {
+    title: "Learn",
+    links: [
+      { href: "/switching-from-legacy-broker-software", label: "Switching from legacy software" },
+      { href: "/faq", label: "FAQ" },
+      { href: "/glossary", label: "Glossary" },
+    ],
+  },
+];
+
 export default function Footer() {
   return (
     <footer className="relative isolate overflow-hidden bg-[#0a2440] text-white">
@@ -40,6 +69,26 @@ export default function Footer() {
               </nav>
             </div>
             
+            <div className="grid gap-8 sm:grid-cols-3">
+              {linkColumns.map(({ title, links }) => (
+                <div key={title} className="space-y-3">
+                  <h3 className="text-lg font-semibold text-white">{title}</h3>
+                  <ul className="space-y-2">
+                    {links.map(({ href, label }) => (
+                      <li key={href}>
+                        <Link
+                          href={href}
+                          className="text-white/70 underline underline-offset-4 transition hover:text-white hover:no-underline"
+                        >
+                          {label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
             <div className="space-y-4">
               <p className="text-white/80">
                 Empowering brokerages with intelligent technology solutions across North America and Europe.

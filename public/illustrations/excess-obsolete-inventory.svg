@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Stacked component reels and boxes with a value tag and a rising margin line">
+<title>Stacked component reels and boxes with a value tag and a rising margin line</title>
+<defs>
+  <radialGradient id="glow" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#1f5592" stop-opacity=".85"/><stop offset="1" stop-color="#0c2a4a" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity=".07"/></pattern>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#020b16" flood-opacity=".55"/></filter>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+  <linearGradient id="limeGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3e635" stop-opacity=".45"/><stop offset="1" stop-color="#a3e635" stop-opacity="0"/></linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4577"/><stop offset="1" stop-color="#13365e"/></linearGradient>
+</defs>
+<rect width="640" height="480" rx="32" fill="#0c2a4a"/>
+<rect width="640" height="480" rx="32" fill="url(#glow)"/>
+<rect width="640" height="480" rx="32" fill="url(#dots)"/>
+
+  <path d="M90 230 C 170 215, 220 190, 300 150 S 450 95, 540 70 V 230 Z" fill="url(#limeGrad)" opacity=".5"/>
+  <path d="M90 230 C 170 215, 220 190, 300 150 S 450 95, 540 70" stroke="#a3e635" stroke-width="12" fill="none" opacity=".35" filter="url(#blur)" stroke-linecap="round"/>
+   <path d="M90 230 C 170 215, 220 190, 300 150 S 450 95, 540 70" stroke="#a3e635" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M528 62 l18 6 l-12 14" fill="none" stroke="#a3e635" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g filter="url(#sh)">
+  <rect x="330" y="300" width="120" height="100" rx="6" fill="#c9a874"/>
+  <rect x="330" y="300" width="120" height="22" rx="6" fill="#d8bb8a"/>
+  <rect x="382" y="300" width="16" height="55.00000000000001" fill="#e7d3ab" opacity=".8"/>
+  <rect x="344.4" y="358" width="48" height="24" rx="3" fill="#fff" opacity=".85"/>
+</g>
+  <g filter="url(#sh)">
+  <rect x="460" y="320" width="100" height="80" rx="6" fill="#c9a874"/>
+  <rect x="460" y="320" width="100" height="17.6" rx="6" fill="#d8bb8a"/>
+  <rect x="502" y="320" width="16" height="44" fill="#e7d3ab" opacity=".8"/>
+  <rect x="472" y="366.4" width="40" height="19.2" rx="3" fill="#fff" opacity=".85"/>
+</g>
+  <g filter="url(#sh)">
+  <rect x="380" y="230" width="110" height="72" rx="6" fill="#c9a874"/>
+  <rect x="380" y="230" width="110" height="15.84" rx="6" fill="#d8bb8a"/>
+  <rect x="427" y="230" width="16" height="39.6" fill="#e7d3ab" opacity=".8"/>
+  <rect x="393.2" y="271.76" width="44" height="17.28" rx="3" fill="#fff" opacity=".85"/>
+</g>
+  <g filter="url(#sh)">
+  <circle cx="170" cy="340" r="72" fill="#1d4a80" stroke="#8fb0d6" stroke-width="2"/>
+  <circle cx="170" cy="340" r="56.160000000000004" fill="none" stroke="#2b5f9c" stroke-width="15.84"/>
+  <line x1="184.4" y1="340" x2="214.64" y2="340" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="177.2" y1="352.4707658144959" x2="192.32" y2="378.65937402493734" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="162.8" y1="352.4707658144959" x2="147.68" y2="378.65937402493734" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="155.6" y1="340" x2="125.36" y2="340" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="162.79999999999998" y1="327.5292341855041" x2="147.67999999999998" y2="301.34062597506266" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="177.2" y1="327.5292341855041" x2="192.32" y2="301.34062597506266" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/>
+  <circle cx="170" cy="340" r="14.4" fill="#0c2a4a" stroke="#a3e635" stroke-width="3"/>
+</g>
+  <g filter="url(#sh)">
+  <circle cx="270" cy="380" r="44" fill="#1d4a80" stroke="#8fb0d6" stroke-width="2"/>
+  <circle cx="270" cy="380" r="34.32" fill="none" stroke="#2b5f9c" stroke-width="9.68"/>
+  <line x1="278.8" y1="380" x2="297.28" y2="380" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="274.4" y1="387.6210235533031" x2="283.64" y2="403.6251730152395" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="265.6" y1="387.6210235533031" x2="256.36" y2="403.6251730152395" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="261.2" y1="380" x2="242.72" y2="380" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="265.6" y1="372.3789764466969" x2="256.36" y2="356.37482698476055" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="274.4" y1="372.3789764466969" x2="283.64" y2="356.3748269847605" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/>
+  <circle cx="270" cy="380" r="8.8" fill="#0c2a4a" stroke="#a3e635" stroke-width="3"/>
+</g>
+  <g filter="url(#sh)">
+  <circle cx="285" cy="290" r="40" fill="#1d4a80" stroke="#8fb0d6" stroke-width="2"/>
+  <circle cx="285" cy="290" r="31.200000000000003" fill="none" stroke="#2b5f9c" stroke-width="8.8"/>
+  <line x1="293" y1="290" x2="309.8" y2="290" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="289" y1="296.9282032302755" x2="297.4" y2="311.4774300138541" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="281" y1="296.9282032302755" x2="272.6" y2="311.4774300138541" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="277" y1="290" x2="260.2" y2="290" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="281" y1="283.0717967697245" x2="272.59999999999997" y2="268.5225699861459" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/><line x1="289" y1="283.0717967697245" x2="297.4" y2="268.5225699861459" stroke="#8fb0d6" stroke-width="2.5" opacity=".6"/>
+  <circle cx="285" cy="290" r="8" fill="#0c2a4a" stroke="#a3e635" stroke-width="3"/>
+</g>
+  <g filter="url(#sh)" transform="rotate(-10 520 200)">
+    <path d="M470 175 h88 a10 10 0 0 1 10 10 v40 a10 10 0 0 1 -10 10 h-88 l-26 -30 Z" fill="#a3e635"/>
+    <circle cx="468" cy="205" r="6" fill="#0c2a4a"/>
+  </g>
+  <text x="522" y="212" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="800" fill="#0c2a4a" text-anchor="middle" transform="rotate(-10 520 200)">+£4.2k</text>
+  
+</svg>

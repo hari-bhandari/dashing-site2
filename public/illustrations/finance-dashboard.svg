@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="A finance dashboard with a cash flow line, margin bars and a stock value tile">
+<title>A finance dashboard with a cash flow line, margin bars and a stock value tile</title>
+<defs>
+  <radialGradient id="glow" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#1f5592" stop-opacity=".85"/><stop offset="1" stop-color="#0c2a4a" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity=".07"/></pattern>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#020b16" flood-opacity=".55"/></filter>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+  <linearGradient id="limeGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3e635" stop-opacity=".45"/><stop offset="1" stop-color="#a3e635" stop-opacity="0"/></linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4577"/><stop offset="1" stop-color="#13365e"/></linearGradient>
+</defs>
+<rect width="640" height="480" rx="32" fill="#0c2a4a"/>
+<rect width="640" height="480" rx="32" fill="url(#glow)"/>
+<rect width="640" height="480" rx="32" fill="url(#dots)"/>
+
+  <g filter="url(#sh)"><rect x="70" y="60" width="500" height="360" rx="20" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="1.5"/></g>
+  <text x="96" y="96" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#8fb0d6" text-anchor="start" >Cash flow</text>
+  <text x="96" y="126" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff" text-anchor="start" >£412,800</text>
+  <text x="250" y="126" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#a3e635" text-anchor="start" >▲ 12%</text>
+  <rect x="90" y="140" width="300" height="130" rx="12" fill="#0a1f38" opacity=".6"/>
+  <path d="M104 250 C 140 240, 160 210, 196 216 S 250 190, 282 180 S 340 160, 376 150 V 262 H 104 Z" fill="url(#limeGrad)"/>
+  <path d="M104 250 C 140 240, 160 210, 196 216 S 250 190, 282 180 S 340 160, 376 150" stroke="#a3e635" stroke-width="11" fill="none" opacity=".35" filter="url(#blur)" stroke-linecap="round"/>
+   <path d="M104 250 C 140 240, 160 210, 196 216 S 250 190, 282 180 S 340 160, 376 150" stroke="#a3e635" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="376" cy="150" r="6" fill="#a3e635" stroke="#0c2a4a" stroke-width="2"/>
+  <rect x="408" y="80" width="144" height="190" rx="14" fill="#0a1f38" opacity=".6"/>
+  <text x="424" y="110" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#8fb0d6" text-anchor="start" >Stock value</text>
+  <text x="424" y="142" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff" text-anchor="start" >£1.24M</text>
+  <circle cx="480" cy="212" r="38" fill="none" stroke="#1c3a60" stroke-width="12"/>
+  <path d="M480 174 A38 38 0 1 1 446 229" fill="none" stroke="#a3e635" stroke-width="12" stroke-linecap="round"/>
+  <text x="480" y="218" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="800" fill="#ffffff" text-anchor="middle" >72%</text>
+  <text x="96" y="304" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#8fb0d6" text-anchor="start" >Margin by deal</text>
+  <rect x="98" y="354" width="26" height="46" rx="5" fill="#3b82f6"/><rect x="142" y="338" width="26" height="62" rx="5" fill="#3b82f6"/><rect x="186" y="362" width="26" height="38" rx="5" fill="#a3e635"/><rect x="230" y="326" width="26" height="74" rx="5" fill="#3b82f6"/><rect x="274" y="344" width="26" height="56" rx="5" fill="#3b82f6"/><rect x="318" y="316" width="26" height="84" rx="5" fill="#a3e635"/><rect x="362" y="334" width="26" height="66" rx="5" fill="#3b82f6"/><rect x="406" y="310" width="26" height="90" rx="5" fill="#3b82f6"/><rect x="450" y="342" width="26" height="58" rx="5" fill="#a3e635"/><rect x="494" y="304" width="26" height="96" rx="5" fill="#3b82f6"/>
+  
+</svg>

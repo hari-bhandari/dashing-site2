@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="A microchip with a glowing trail linking supplier, warehouse and customer">
+<title>A microchip with a glowing trail linking supplier, warehouse and customer</title>
+<defs>
+  <radialGradient id="glow" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#1f5592" stop-opacity=".85"/><stop offset="1" stop-color="#0c2a4a" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity=".07"/></pattern>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#020b16" flood-opacity=".55"/></filter>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+  <linearGradient id="limeGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3e635" stop-opacity=".45"/><stop offset="1" stop-color="#a3e635" stop-opacity="0"/></linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4577"/><stop offset="1" stop-color="#13365e"/></linearGradient>
+</defs>
+<rect width="640" height="480" rx="32" fill="#0c2a4a"/>
+<rect width="640" height="480" rx="32" fill="url(#glow)"/>
+<rect width="640" height="480" rx="32" fill="url(#dots)"/>
+
+    <path d="M140 120 C 220 120, 230 170, 238 210" stroke="#a3e635" stroke-width="12" fill="none" opacity=".35" filter="url(#blur)" stroke-linecap="round"/>
+   <path d="M140 120 C 220 120, 230 170, 238 210" stroke="#a3e635" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M402 240 C 420 240, 440 240, 500 240" stroke="#a3e635" stroke-width="12" fill="none" opacity=".35" filter="url(#blur)" stroke-linecap="round"/>
+   <path d="M402 240 C 420 240, 440 240, 500 240" stroke="#a3e635" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M140 370 C 210 370, 230 320, 238 275" stroke="#a3e635" stroke-width="2" stroke-dasharray="5 7" fill="none" opacity="0.7" stroke-linecap="round"/>
+    <g filter="url(#sh)"><rect x="256" y="176" width="128" height="128" rx="14" fill="#16283f" stroke="#8fb0d6" stroke-width="2"/></g>
+    <rect x="268" y="160" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="268" y="304" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="240" y="188" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="384" y="188" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="287.2" y="160" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="287.2" y="304" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="240" y="207.2" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="384" y="207.2" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="306.4" y="160" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="306.4" y="304" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="240" y="226.4" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="384" y="226.4" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="325.6" y="160" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="325.6" y="304" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="240" y="245.6" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="384" y="245.6" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="344.8" y="160" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="344.8" y="304" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="240" y="264.8" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="384" y="264.8" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="364" y="160" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="364" y="304" width="8" height="16" rx="2" fill="#8fb0d6"/><rect x="240" y="284" width="16" height="8" rx="2" fill="#8fb0d6"/><rect x="384" y="284" width="16" height="8" rx="2" fill="#8fb0d6"/>
+    <rect x="282" y="202" width="76" height="76" rx="8" fill="#0a1f38" stroke="#a3e635" stroke-width="2.5"/>
+    <rect x="282" y="202" width="76" height="76" rx="8" fill="#a3e635" opacity=".12"/>
+    <text x="320" y="244" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="800" fill="#a3e635" text-anchor="middle" >IC</text>
+    <text x="320" y="262" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="9" font-weight="600" fill="#8fb0d6" text-anchor="middle" >LOT 2431</text>
+    
+    <g filter="url(#sh)"><circle cx="110" cy="120" r="46" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="2"/></g>
+    <path d="M88 142 V120 l14 -9 v9 l14 -9 v9 l14 -9 V142 Z" fill="#ffffff"/><rect x="120" y="102" width="8" height="18" fill="#ffffff"/>
+    <text x="110" y="192" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#8fb0d6" text-anchor="middle" >Supplier</text>
+    
+    <g filter="url(#sh)"><circle cx="110" cy="370" r="46" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="2"/></g>
+    <path d="M110 352 l22 10 v24 l-22 10 l-22 -10 v-24 Z" fill="#c9a874"/><path d="M110 352 l22 10 l-22 10 l-22 -10 Z" fill="#e2c897"/><path d="M110 372 v24" stroke="#a88a5c" stroke-width="2"/>
+    <text x="110" y="442" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#8fb0d6" text-anchor="middle" >Warehouse</text>
+    
+    <g filter="url(#sh)"><circle cx="540" cy="240" r="46" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="2"/></g>
+    <circle cx="540" cy="236" r="10" fill="#ffffff"/><path d="M522 266 q18 -30 36 0 Z" fill="#ffffff"/>
+    <text x="540" y="312" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#8fb0d6" text-anchor="middle" >Customer</text>
+    <circle cx="146" cy="86" r="12" fill="#a3e635"/><path d="M140.6 86 l3.5999999999999996 3.84 l7.199999999999999 -7.4399999999999995" stroke="#0c2a4a" stroke-width="2.64" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="576" cy="206" r="12" fill="#a3e635"/><path d="M570.6 206 l3.5999999999999996 3.84 l7.199999999999999 -7.4399999999999995" stroke="#0c2a4a" stroke-width="2.64" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="146" cy="336" r="12" fill="#a3e635"/><path d="M140.6 336 l3.5999999999999996 3.84 l7.199999999999999 -7.4399999999999995" stroke="#0c2a4a" stroke-width="2.64" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+</svg>

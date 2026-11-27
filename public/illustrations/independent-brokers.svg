@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="A broker's laptop showing a quote, with stock, margin and cash panels around it">
+<title>A broker's laptop showing a quote, with stock, margin and cash panels around it</title>
+<defs>
+  <radialGradient id="glow" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#1f5592" stop-opacity=".85"/><stop offset="1" stop-color="#0c2a4a" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity=".07"/></pattern>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#020b16" flood-opacity=".55"/></filter>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+  <linearGradient id="limeGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3e635" stop-opacity=".45"/><stop offset="1" stop-color="#a3e635" stop-opacity="0"/></linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4577"/><stop offset="1" stop-color="#13365e"/></linearGradient>
+</defs>
+<rect width="640" height="480" rx="32" fill="#0c2a4a"/>
+<rect width="640" height="480" rx="32" fill="url(#glow)"/>
+<rect width="640" height="480" rx="32" fill="url(#dots)"/>
+
+  <path d="M125 180 C 135 190, 150 200, 168 208" stroke="#a3e635" stroke-width="2" stroke-dasharray="5 7" fill="none" opacity="0.7" stroke-linecap="round"/>
+  <path d="M455 190 C 445 200, 435 215, 422 228" stroke="#a3e635" stroke-width="2" stroke-dasharray="5 7" fill="none" opacity="0.7" stroke-linecap="round"/>
+  <path d="M455 340 C 445 340, 435 335, 422 325" stroke="#a3e635" stroke-width="2" stroke-dasharray="5 7" fill="none" opacity="0.7" stroke-linecap="round"/>
+  <g filter="url(#sh)">
+    <rect x="150" y="200" width="270" height="170" rx="12" fill="#0b213c" stroke="#2a5a92" stroke-width="2"/>
+    <path d="M128 372 H442 l-12 15 H140 Z" fill="#c8d7ea"/>
+    <rect x="257" y="372" width="56" height="5" rx="2.5" fill="#9fb4cf"/>
+  </g>
+  <rect x="158" y="208" width="254" height="154" rx="7" fill="#0a1f38"/>
+  
+    <rect x="168" y="216" width="70" height="14" rx="4" fill="#a3e635"/>
+    <text x="203" y="227" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="10" font-weight="800" fill="#0c2a4a" text-anchor="middle" >QUOTE</text>
+    <rect x="350" y="218" width="52" height="9" rx="4" fill="#2c5687"/>
+    <rect x="168" y="244" width="88.92" height="7" rx="4" fill="#3d6a9e"/><rect x="275.64" y="244" width="51.48" height="7" rx="4" fill="#2c5687"/><rect x="345.84000000000003" y="244" width="56.16" height="7" rx="4" fill="#2c5687"/><rect x="168" y="263" width="88.92" height="7" rx="4" fill="#3d6a9e"/><rect x="275.64" y="263" width="51.48" height="7" rx="4" fill="#2c5687"/><rect x="345.84000000000003" y="263" width="56.16" height="7" rx="4" fill="#2c5687"/><rect x="168" y="282" width="88.92" height="7" rx="4" fill="#3d6a9e"/><rect x="275.64" y="282" width="51.48" height="7" rx="4" fill="#2c5687"/><rect x="345.84000000000003" y="282" width="56.16" height="7" rx="4" fill="#2c5687"/><rect x="168" y="301" width="88.92" height="7" rx="4" fill="#3d6a9e"/><rect x="275.64" y="301" width="51.48" height="7" rx="4" fill="#2c5687"/><rect x="345.84000000000003" y="301" width="56.16" height="7" rx="4" fill="#2c5687"/>
+    <rect x="318" y="326" width="86" height="24" rx="12" fill="#a3e635"/>
+    <text x="361" y="342" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="11" font-weight="700" fill="#0c2a4a" text-anchor="middle" >Send quote</text>
+    <rect x="168" y="334" width="90" height="9" rx="4" fill="#3d6a9e"/>
+  
+  <g filter="url(#sh)"><rect x="40" y="50" width="170" height="110" rx="14" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="1.5"/></g>
+    <text x="58" y="78" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#8fb0d6" text-anchor="start" >Stock</text>
+    <text x="58" y="110" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="28" font-weight="800" fill="#ffffff" text-anchor="start" >12,480</text>
+    <rect x="58" y="128" width="40" height="14" rx="4" fill="#a3e635"/><rect x="102" y="128" width="30" height="14" rx="4" fill="#3b82f6"/><rect x="136" y="128" width="56" height="14" rx="4" fill="#3d6a9e"/>
+  
+  <g filter="url(#sh)"><rect x="455" y="80" width="160" height="120" rx="14" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="1.5"/></g>
+    <text x="473" y="108" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#8fb0d6" text-anchor="start" >Margin</text>
+    <text x="473" y="140" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="26" font-weight="800" fill="#a3e635" text-anchor="start" >+18.4%</text>
+    <polyline points="473,178 499,168 521,172 545,156 571,160 597,142" fill="none" stroke="#a3e635" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <g filter="url(#sh)"><rect x="455" y="290" width="160" height="110" rx="14" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="1.5"/></g>
+    <text x="473" y="318" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="600" fill="#8fb0d6" text-anchor="start" >Cash flow</text>
+    <rect x="475" y="360" width="14" height="22" rx="3" fill="#3b82f6"/><rect x="497" y="348" width="14" height="34" rx="3" fill="#3b82f6"/><rect x="519" y="354" width="14" height="28" rx="3" fill="#3b82f6"/><rect x="541" y="338" width="14" height="44" rx="3" fill="#3b82f6"/><rect x="563" y="344" width="14" height="38" rx="3" fill="#3b82f6"/><rect x="585" y="328" width="14" height="54" rx="3" fill="#a3e635"/>
+  
+  
+</svg>

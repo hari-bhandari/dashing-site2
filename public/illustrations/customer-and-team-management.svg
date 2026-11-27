@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Three connected laptops for sales, finance and operations sharing one central dashboard">
+<title>Three connected laptops for sales, finance and operations sharing one central dashboard</title>
+<defs>
+  <radialGradient id="glow" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#1f5592" stop-opacity=".85"/><stop offset="1" stop-color="#0c2a4a" stop-opacity="0"/></radialGradient>
+  <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" opacity=".07"/></pattern>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#020b16" flood-opacity=".55"/></filter>
+  <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+  <linearGradient id="limeGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a3e635" stop-opacity=".45"/><stop offset="1" stop-color="#a3e635" stop-opacity="0"/></linearGradient>
+  <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b4577"/><stop offset="1" stop-color="#13365e"/></linearGradient>
+</defs>
+<rect width="640" height="480" rx="32" fill="#0c2a4a"/>
+<rect width="640" height="480" rx="32" fill="url(#glow)"/>
+<rect width="640" height="480" rx="32" fill="url(#dots)"/>
+
+    <path d="M150 150 C 190 190, 220 200, 250 210" stroke="#a3e635" stroke-width="11" fill="none" opacity=".35" filter="url(#blur)" stroke-linecap="round"/>
+   <path d="M150 150 C 190 190, 220 200, 250 210" stroke="#a3e635" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M490 150 C 450 190, 420 200, 390 210" stroke="#a3e635" stroke-width="11" fill="none" opacity=".35" filter="url(#blur)" stroke-linecap="round"/>
+   <path d="M490 150 C 450 190, 420 200, 390 210" stroke="#a3e635" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M320 318 V 300" stroke="#a3e635" stroke-width="11" fill="none" opacity=".35" filter="url(#blur)" stroke-linecap="round"/>
+   <path d="M320 318 V 300" stroke="#a3e635" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <g filter="url(#sh)"><rect x="240" y="160" width="160" height="140" rx="16" fill="url(#panelGrad)" stroke="#2a5a92" stroke-width="1.5"/></g>
+      <text x="258" y="186" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#8fb0d6" text-anchor="start" >Customer</text>
+      <circle cx="274" cy="214" r="16" fill="#3b82f6"/><circle cx="274" cy="209" r="6" fill="#ffffff"/><path d="M262 224 q12 -14 24 0" fill="#ffffff"/>
+      <rect x="298" y="206" width="80" height="7" rx="4" fill="#3d6a9e"/><rect x="298" y="218" width="56" height="7" rx="4" fill="#2c5687"/>
+      <rect x="258" y="246" width="124" height="8" rx="4" fill="#1c3a60"/><rect x="258" y="246" width="90" height="8" rx="4" fill="#a3e635"/>
+      <text x="258" y="280" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="start" >4 open deals</text>
+    
+    
+    <g filter="url(#sh)">
+    <rect x="50" y="50" width="150" height="96" rx="12" fill="#0b213c" stroke="#2a5a92" stroke-width="2"/>
+    <path d="M28 148 H222 l-12 9 H40 Z" fill="#c8d7ea"/>
+    <rect x="97" y="148" width="56" height="5" rx="2.5" fill="#9fb4cf"/>
+  </g>
+  <rect x="58" y="58" width="134" height="80" rx="7" fill="#0a1f38"/>
+  
+      <rect x="68" y="70" width="50" height="8" rx="4" fill="#a3e635"/>
+      <rect x="68" y="90" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="120.44" y="90" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="154.64" y="90" width="27.36" height="7" rx="4" fill="#2c5687"/><rect x="68" y="105" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="120.44" y="105" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="154.64" y="105" width="27.36" height="7" rx="4" fill="#2c5687"/><rect x="68" y="120" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="120.44" y="120" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="154.64" y="120" width="27.36" height="7" rx="4" fill="#2c5687"/>
+    
+    <text x="125" y="186" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#8fb0d6" text-anchor="middle" >Sales</text>
+    
+    <g filter="url(#sh)">
+    <rect x="440" y="50" width="150" height="96" rx="12" fill="#0b213c" stroke="#2a5a92" stroke-width="2"/>
+    <path d="M418 148 H612 l-12 9 H430 Z" fill="#c8d7ea"/>
+    <rect x="487" y="148" width="56" height="5" rx="2.5" fill="#9fb4cf"/>
+  </g>
+  <rect x="448" y="58" width="134" height="80" rx="7" fill="#0a1f38"/>
+  
+      <rect x="458" y="70" width="50" height="8" rx="4" fill="#3b82f6"/>
+      <rect x="458" y="90" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="510.44" y="90" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="544.64" y="90" width="27.36" height="7" rx="4" fill="#2c5687"/><rect x="458" y="105" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="510.44" y="105" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="544.64" y="105" width="27.36" height="7" rx="4" fill="#2c5687"/><rect x="458" y="120" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="510.44" y="120" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="544.64" y="120" width="27.36" height="7" rx="4" fill="#2c5687"/>
+    
+    <text x="515" y="186" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#8fb0d6" text-anchor="middle" >Finance</text>
+    
+    <g filter="url(#sh)">
+    <rect x="245" y="318" width="150" height="96" rx="12" fill="#0b213c" stroke="#2a5a92" stroke-width="2"/>
+    <path d="M223 416 H417 l-12 9 H235 Z" fill="#c8d7ea"/>
+    <rect x="292" y="416" width="56" height="5" rx="2.5" fill="#9fb4cf"/>
+  </g>
+  <rect x="253" y="326" width="134" height="80" rx="7" fill="#0a1f38"/>
+  
+      <rect x="263" y="338" width="50" height="8" rx="4" fill="#d9f99d"/>
+      <rect x="263" y="358" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="315.44" y="358" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="349.64" y="358" width="27.36" height="7" rx="4" fill="#2c5687"/><rect x="263" y="373" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="315.44" y="373" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="349.64" y="373" width="27.36" height="7" rx="4" fill="#2c5687"/><rect x="263" y="388" width="43.32" height="7" rx="4" fill="#3d6a9e"/><rect x="315.44" y="388" width="25.080000000000002" height="7" rx="4" fill="#2c5687"/><rect x="349.64" y="388" width="27.36" height="7" rx="4" fill="#2c5687"/>
+    
+    <text x="320" y="454" font-family="Barlow, 'Segoe UI', Arial, sans-serif" font-size="15" font-weight="700" fill="#8fb0d6" text-anchor="middle" >Operations</text>
+    
+</svg>
